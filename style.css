@@ -1,22 +1,27 @@
 :root {
     --color-default: #fff;
-    --color-text: #fff;
+    --text-color: #333;  
   }
   @media (prefers-color-scheme: dark){
       :root{
           --color-default: #181818;
+          --text-color: #e0e0e0;
+
       }
   }
   [data-theme='dark'] {
     --color-default: #181818;
+    --text-color: #e0e0e0;
   }
   [data-theme='light'] {
     --color-default: #fff;
+    --text-color: #333;
   }
 
   body {
       background-color: var(--color-default);
-      font-family: 100%/1.5 system-ui,helvetica,sans-serif
+      font-family: 100%/1.5 system-ui,helvetica,sans-serif;
+      color: var(--text-color);
   }
 
   .tagline {
@@ -65,7 +70,9 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-
+.btn, .is-hidden {
+    white-space: nowrap;
+}
 h3 {
     font-size: 1.1em;
     padding-top: 20px;
