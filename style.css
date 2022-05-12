@@ -1,6 +1,6 @@
 :root {
     --color-default: #fff;
-    --color-text: #e0e0e0;
+    --color-text: #fff;
   }
   @media (prefers-color-scheme: dark){
       :root{
@@ -10,18 +10,10 @@
   [data-theme='dark'] {
     --color-default: #181818;
   }
-  [data-theme='black'] {
-    --color-default: #000000;
+  [data-theme='light'] {
+    --color-default: #fff;
   }
-  [data-theme='🌸'] {
-    --color-default: #ffabc8;
-  }
-  [data-theme='🐬'] {
-    --color-default: #7ec6ff;
-  }
-  [data-theme='🐤'] {
-    --color-default: #ffd65a;
-  }
+
   body {
       background-color: var(--color-default);
       font-family: 100%/1.5 system-ui,helvetica,sans-serif
@@ -101,21 +93,19 @@ a:hover, a:focus, a:visited {
     font-family: 'Lobster', cursive;
     font-size: 1.7em;
 }
-.navbar-default .navbar-nav li a {
-    color: #fffdf8;
-}
+
 .navbar-default .navbar-nav li a:hover,
 .navbar-default .navbar-nav li a:focus {
-    color: orange;
+    color: #33aef1;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: orange;
+    color: #33aef1;
     background-color: transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: orange; /* Changes regular toggle color */
+  background-color: #33aef1; /* Changes regular toggle color */
 }
 /* navbar change on scroll */
 .logo-blanc {
@@ -173,7 +163,6 @@ header .social-network {
 }
 h1{
     font-family: 'Lobster', cursive;
-    color: #fffdf8;
     text-align: center;
     margin-top: 250px;
     font-size: 6em;
@@ -187,179 +176,6 @@ h1{
     margin-top: -30px;
 }
 
-/************* ABOUT *************/
-.about {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2em;
-    color: #fffdf8;
-
-    background-color: gray;
-}
-.about p {
-    margin-bottom: 80px;
-    text-align: center;
-}
-
-/************* PORTFOLIO *************/
-
-.folio, .skills, .cv {
-    font-family: 'Raleway', sans-serif;
-    color: #222222;
-    background-color: #fffdf8;
-    text-align: center;
-    padding-bottom: 80px;
-
-}
-
-.thumbnail img:hover {
-    transform: scale(1.1);
-    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(50%);
-}
-.thumbnail img {
-    transition: all 0.3s ease 0s;
-    width: 100%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    padding: 5px;
-
-}
-.thumbnail {
-    overflow: hidden;
-    border: none;
-    box-shadow: 1px 1px 5px #222222;
-    background-color: #eddbc3;
-}
-
-.frame {
-    background-color: gray;
-    padding-top: 15px;
-
-}
-.frame h3 {
-    background-color: gray;
-    color: #eddbc3;
-    margin-top: -15px;
-    padding-bottom: 15px;
-    font-weight: bold;
-    text-align: center;
-}
-.soon img:hover{
-   transform: none;
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: none;
-}
-.soon img{
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-   filter: none;
-}
-.soon h3{
-    color: transparent;
-}
-/************* COMPETENCES *************/
-
-
-.skills h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-top: -35px;
-    padding: 50px;
-}
-
-/************* SEPARATOR *************/
-.separator {
-    background-color: gray;
-    height: 30px;
-}
-/************* PARCOURS *************/
-.carousel-control.right, .carousel-control.left {
-  background-image:none;
-    color: orange;
-}
-.carousel {
-    margin: 50px;
-}
-.date {
-    font-weight: bold;
-    font-size: 0.9em;
-}
-.cv {
-    margin-bottom: 50px;
-    background-color: #fffdf8;
-    min-height: 780px;
-
-}
-.cv h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-top: -35px;
-    padding: 50px;
-}
-.cv .btn {
-    margin-top: 20px;
-}
-/************* CONTACT *************/
-
-footer {
-    font-family: 'Raleway', sans-serif;
-    color: #fffdf8;
-    text-align: center;
-    background-color: transparent;
-    min-height: 500px;
-     background: url('https://cdna.artstation.com/p/assets/images/images/030/922/120/large/patrick-metz-patrick-retroterminal01.jpg?1602062433') no-repeat center center scroll;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-
-}
-footer img {
-    border: 6px;
-    border-style: solid;
-    border-color: #f0ad4e;
-    border-radius: 100%;
-    /*opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-footer .conclusion {
-    padding: 0px 0px 40px 0px;
-}
-/* Forms---------------------------------- */
-.form-control {
-	height: 35px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-    background-color: rgba(255, 243, 248, 0.6);
-}
-.form-control-feedback {
-	color: #4f929f;
-}
-.has-feedback label.sr-only ~ .form-control-feedback {
-	top: 10px;
-}
-textarea {
-	resize: vertical;
-}
-form .btn {
-    min-width: 30%;
-    color: #4f929f;
-    background-color: #fffdf8;
-    margin-bottom: 50px;
-}
-form .btn:hover {
-    color: orange;
-}
-/* Fin forms---------------------------------- */
-p .fa-envelope {
-    padding-top: 30px;
-}
-.email {
-    font-size: 1.5em;
-}
 .social-network i {
     background-color: #fffdf8;
     border-radius: 100%;
@@ -367,12 +183,4 @@ p .fa-envelope {
     padding: 5px 6px 5px 6px;
     margin: 13px 0px 0px 5px;
 }
-.social-network .fa-facebook {
-    padding: 5px 8px 5px 8px;
-}
-.social-network i:hover {
-    color: orange;
-}
-.cr {
-    font-size: 0.8em;
-}
+
