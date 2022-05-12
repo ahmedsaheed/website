@@ -91,22 +91,7 @@ h2 {
 .btn, .is-hidden {
     white-space: nowrap;
 }
-/* h3 {
-    display: block;
-    font-size: 2.80rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    
-    font-family: 100%/1.5 system-ui,helvetica,sans-serif;
-} */
-ol {
-    text-align: left;
-}
-a:hover, a:focus, a:visited {
-    text-decoration: none;
-}
+
 /*** MENU ***/
 .navbar-brand {
     margin-top: -22px;
@@ -148,7 +133,7 @@ a:hover, a:focus, a:visited {
     margin-top: -30;
 }
 .affix {
-  background-color: #fffdf8;
+  background-color: var(--color-default);
   padding:0px;
   -webkit-transition:padding 0.2s linear;
   -moz-transition:padding 0.2s linear;
@@ -156,7 +141,7 @@ a:hover, a:focus, a:visited {
   transition:padding 0.2s linear;
 }
 .affix .navbar-nav li a {
-    color: #222222;
+    color: var(--text-color);
     font-size: 0.9em;
 }
 .affix .logo-blanc {
@@ -198,14 +183,11 @@ h1{
     font-size: 6em;
 
 }
- .sous-titre{
-    font-size: 2.5em;
-    color: #fffdf8;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    margin-top: -30px;
+p{
+    font-family: 'Lobster';
+    font-size: 1.2em;
+    
 }
-
 .social-network i {
     background-color: #fffdf8;
     border-radius: 100%;
