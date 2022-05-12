@@ -1,9 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
-body {
-    background-color: #fffdf8;
-    font-family: 'Raleway', sans-serif;
+:root {
+    --color-default: #fff;
+    --text-color: #333;  
+    --color-border:#e7e7e7;
+  }
+  @media (prefers-color-scheme: dark){
+      :root{
+          --color-default: #181818;
+          --text-color: #e0e0e0;
+          --color-border:#e7e7e7;
+
+
+      }
+  }
+  [data-theme='dark'] {
+    --color-default: #181818;
+    --text-color: #e0e0e0;
+    --color-border:#e7e7e7;
+
+  }
+  [data-theme='light'] {
+    --color-default: #fff;
+    --text-color: #333;
+  }
+
+  body {
+      background-color: var(--color-default);
+      font-family: 100%/1.5 system-ui,helvetica,sans-serif;
+      color: var(--text-color);
+  }
+
+  p {
+    margin-bottom: 1.6rem;
+    font-size: 1.125rem;
+}
+.feature :last-child {
+    margin-bottom: 0;
 }
 
+h1, h2, h3, h4, h5 {
+    line-height: 1.1;
+}
+
+  .tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3;
+  }
+
+  .cta, .tagline {
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 4rem auto;
+    max-width: 80rem;
+    padding: 0 2rem;
+}
+
+.feature {
+    flex: 1 1 33%;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.feature-title {
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
 
 h2 {
     font-family: 'Lobster', cursive;
@@ -12,17 +83,15 @@ h2 {
     margin-top: 80px;
     margin-bottom: 60px;
 }
-h3 {
-    font-size: 1.1em;
-    padding-top: 20px;
-    margin-bottom: 0;
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-ol {
-    text-align: left;
+.btn, .is-hidden {
+    white-space: nowrap;
 }
-a:hover, a:focus, a:visited {
-    text-decoration: none;
-}
+
 /*** MENU ***/
 .navbar-brand {
     margin-top: -22px;
@@ -39,21 +108,19 @@ a:hover, a:focus, a:visited {
     font-family: 'Lobster', cursive;
     font-size: 1.7em;
 }
-.navbar-default .navbar-nav li a {
-    color: #fffdf8;
-}
+
 .navbar-default .navbar-nav li a:hover,
 .navbar-default .navbar-nav li a:focus {
-    color: orange;
+    color: #33aef1;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: orange;
+    color: #33aef1;
     background-color: transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: orange; /* Changes regular toggle color */
+  background-color: #33aef1; /* Changes regular toggle color */
 }
 /* navbar change on scroll */
 .logo-blanc {
@@ -66,7 +133,7 @@ a:hover, a:focus, a:visited {
     margin-top: -30;
 }
 .affix {
-  background-color: #fffdf8;
+  background-color: var(--color-default);
   padding:0px;
   -webkit-transition:padding 0.2s linear;
   -moz-transition:padding 0.2s linear;
@@ -74,7 +141,7 @@ a:hover, a:focus, a:visited {
   transition:padding 0.2s linear;
 }
 .affix .navbar-nav li a {
-    color: #222222;
+    color: var(--text-color);
     font-size: 0.9em;
 }
 .affix .logo-blanc {
@@ -101,7 +168,7 @@ header .social-network {
 }
 /************* HEADER *************/
 .image-bg1 {
- background: url('https://cdna.artstation.com/p/assets/images/images/027/339/216/large/francisco-paioes-render01.jpg?1591265643') no-repeat center center scroll;
+ /* background: url('https://cdna.artstation.com/p/assets/images/images/027/339/216/large/francisco-paioes-render01.jpg?1591265643') no-repeat center center scroll; */
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -111,192 +178,15 @@ header .social-network {
 }
 h1{
     font-family: 'Lobster', cursive;
-    color: #fffdf8;
     text-align: center;
     margin-top: 250px;
     font-size: 6em;
 
 }
- .sous-titre{
-    font-size: 2.5em;
-    color: #fffdf8;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    margin-top: -30px;
-}
-
-/************* ABOUT *************/
-.about {
-    font-family: 'Raleway', sans-serif;
+p{
+    font-family: 'Lobster';
     font-size: 1.2em;
-    color: #fffdf8;
-
-    background-color: gray;
-}
-.about p {
-    margin-bottom: 80px;
-    text-align: center;
-}
-
-/************* PORTFOLIO *************/
-
-.folio, .skills, .cv {
-    font-family: 'Raleway', sans-serif;
-    color: #222222;
-    background-color: #fffdf8;
-    text-align: center;
-    padding-bottom: 80px;
-
-}
-
-.thumbnail img:hover {
-    transform: scale(1.1);
-    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(50%);
-}
-.thumbnail img {
-    transition: all 0.3s ease 0s;
-    width: 100%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    padding: 5px;
-
-}
-.thumbnail {
-    overflow: hidden;
-    border: none;
-    box-shadow: 1px 1px 5px #222222;
-    background-color: #eddbc3;
-}
-
-.frame {
-    background-color: gray;
-    padding-top: 15px;
-
-}
-.frame h3 {
-    background-color: gray;
-    color: #eddbc3;
-    margin-top: -15px;
-    padding-bottom: 15px;
-    font-weight: bold;
-    text-align: center;
-}
-.soon img:hover{
-   transform: none;
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: none;
-}
-.soon img{
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-   filter: none;
-}
-.soon h3{
-    color: transparent;
-}
-/************* COMPETENCES *************/
-
-
-.skills h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-top: -35px;
-    padding: 50px;
-}
-
-/************* SEPARATOR *************/
-.separator {
-    background-color: gray;
-    height: 30px;
-}
-/************* PARCOURS *************/
-.carousel-control.right, .carousel-control.left {
-  background-image:none;
-    color: orange;
-}
-.carousel {
-    margin: 50px;
-}
-.date {
-    font-weight: bold;
-    font-size: 0.9em;
-}
-.cv {
-    margin-bottom: 50px;
-    background-color: #fffdf8;
-    min-height: 780px;
-
-}
-.cv h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-top: -35px;
-    padding: 50px;
-}
-.cv .btn {
-    margin-top: 20px;
-}
-/************* CONTACT *************/
-
-footer {
-    font-family: 'Raleway', sans-serif;
-    color: #fffdf8;
-    text-align: center;
-    background-color: transparent;
-    min-height: 500px;
-     background: url('https://cdna.artstation.com/p/assets/images/images/030/922/120/large/patrick-metz-patrick-retroterminal01.jpg?1602062433') no-repeat center center scroll;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-
-}
-footer img {
-    border: 6px;
-    border-style: solid;
-    border-color: #f0ad4e;
-    border-radius: 100%;
-    /*opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-footer .conclusion {
-    padding: 0px 0px 40px 0px;
-}
-/* Forms---------------------------------- */
-.form-control {
-	height: 35px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-    background-color: rgba(255, 243, 248, 0.6);
-}
-.form-control-feedback {
-	color: #4f929f;
-}
-.has-feedback label.sr-only ~ .form-control-feedback {
-	top: 10px;
-}
-textarea {
-	resize: vertical;
-}
-form .btn {
-    min-width: 30%;
-    color: #4f929f;
-    background-color: #fffdf8;
-    margin-bottom: 50px;
-}
-form .btn:hover {
-    color: orange;
-}
-/* Fin forms---------------------------------- */
-p .fa-envelope {
-    padding-top: 30px;
-}
-.email {
-    font-size: 1.5em;
+    
 }
 .social-network i {
     background-color: #fffdf8;
@@ -305,12 +195,7 @@ p .fa-envelope {
     padding: 5px 6px 5px 6px;
     margin: 13px 0px 0px 5px;
 }
-.social-network .fa-facebook {
-    padding: 5px 8px 5px 8px;
-}
-.social-network i:hover {
-    color: orange;
-}
-.cr {
-    font-size: 0.8em;
+.footer {
+    padding: 2rem 0;
+    border-top: 0.0625rem solid var(--color-border);
 }
