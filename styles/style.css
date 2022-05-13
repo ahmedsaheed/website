@@ -105,9 +105,9 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-.btn, .is-hidden {
+/* .btn, .is-hidden {
     white-space: nowrap;
-}
+} */
 
 .header {
     background: var(--color-default);
@@ -172,27 +172,35 @@ div.social-network a {
 .footer {
     padding: 2rem 0;
     border-top: 0.0625rem solid var(--color-border);
+    text-align: center;
+    margin-left: 15px;
+
+
 }
 
-.footer-text{
-    /* position: relative; */
-    left: 50%;
-    right: 50%
+footer p{
+    text-align: center;
+    margin-left: 15px;
 }
 
-.back-titre{
+/* .back-titre{
   
-        display: flex;
-        max-width: 40rem;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin: 4rem auto 2rem;
-    
-
-
+    display: flex;
+    max-width: 40rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 4rem auto 2rem;
     padding: 2rem;
-    background: var(--color-default);
+    background: var(--color-code-bg);
     text-align: center;
 
+} */
+
+.back-titre h1  {
+    font-size: 90px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--text-color);
+    text-align: center;
+    padding-top: 15%;
 }
