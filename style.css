@@ -36,6 +36,10 @@
 .feature :last-child {
     margin-bottom: 0;
 }
+.feature:hover{
+    outline: 1px solid var(--text-color);
+    border-radius: 10px;
+}
 
 h1, h2, h3, h4, h5 {
     line-height: 1.1;
