@@ -15,7 +15,7 @@ export default class extends Component {
         </head>
         
         <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
-        <div class="header-area"><header class="header"><nav aria-label="primary" class="menu"><a href="https://github.com/ahmedsaheed" class="menu-item menu-logo" data-active=""><span class="menu-item-inner">AHMED</span></a><a href="/docs" class="menu-item"><span class="menu-item-inner">BLOG</span></a></nav>
+        <div class="header-area"><header class="header"><nav aria-label="primary" class="menu"><a href="#" class="menu-item menu-logo" data-active=""><span class="menu-item-inner">AHMED</span></a><a href="/blog" class="menu-item"><span class="menu-item-inner">BLOG</span></a></nav>
         <nav> 
                                 <div class="social-network">
                                     <a href="https://github.com/ahmedsaheed" target="_blank"><i class="bi-github" aria-hidden="true"></i></a>
@@ -42,25 +42,20 @@ export default class extends Component {
                         <h2 class="tagline">Tolstoy's Fan & Official family tech support since 7.</h2>
 
                     </div>
-                    <div class="feature-grid"><div class="feature"><a href="blog.html">
+                    <div class="feature-grid"><div class="feature"><a href="/blog">
                         <h3 class="feature-title">Leo Tolstoy</h3><p>I have lived through much, and now I think I have found what is needed for happiness. A quite secluded
                             life in the country, with the possibility of being useful to people to whom it is easy to do good, and who ar not accustomed to have it done to them; then work which one hope
                             may be of use; then rest, nature, books, music, love for ones neighbor - such is my ideal of happiness.
                         </p></a></div>
-                        <div class="feature"><a href="blog.html"><h3 class="feature-title">The Internet</h3><p>In science fiction which was published around the 1920s, "It is always expected that future human beings would have enormous heads because they would have very big brains and they would be very wise. It didn't work that ways, what happened is the human race is building a brain outside its body. That is to say an interlocking electronic network of telephonic, television, radionic communication which is rapidly intelocked with computers, so that you will within a few years be able to plug your brain into a computer".</p></a></div>
-                        <div class="feature"><a href="blog.html"><h3 class="feature-title">End Of Everything</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
-                        <div class="feature"><a href="blog.html"><h3 class="feature-title">FLOW</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
-                        <div class="feature"><a href="blog.html"><h3 class="feature-title">Mastery Of Love</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
-                        <div class="feature"><a href="blog.html"><h3 class="feature-title">Believes, Cultures & Religion</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div></div>
+                        <div class="feature"><a href="/blog"><h3 class="feature-title">The Internet</h3><p>In science fiction which was published around the 1920s, "It is always expected that future human beings would have enormous heads because they would have very big brains and they would be very wise. It didn't work that ways, what happened is the human race is building a brain outside its body. That is to say an interlocking electronic network of telephonic, television, radionic communication which is rapidly intelocked with computers, so that you will within a few years be able to plug your brain into a computer".</p></a></div>
+                        <div class="feature"><a href="/blog"><h3 class="feature-title">End Of Everything</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
+                        <div class="feature"><a href="/blog"><h3 class="feature-title">FLOW</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
+                        <div class="feature"><a href="/blog"><h3 class="feature-title">Mastery Of Love</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
+                        <div class="feature"><a href="/blog"><h3 class="feature-title">Believes, Cultures & Religion</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div></div>
                 <br></br><br></br><br></br>
                 <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-text">Made with ❤︎ by the <a href="https://github.com/ahmedsaheed">Ahmed</a></p></div></div></footer>
                 
             </body></>
-
-
-
-
-
 
     )
   }
