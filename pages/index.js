@@ -54,6 +54,7 @@ export default class extends Component {
                         <div class="feature"><a href="blog.html"><h3 class="feature-title">Believes, Cultures & Religion</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div></div>
                 <br></br><br></br><br></br>
                 <footer class="footer"><div class="container"><div class="footer-inner"><p class="footer-text">Made with ❤︎ by the <a href="https://github.com/ahmedsaheed">Ahmed</a></p></div></div></footer>
+                
             </body></>
 
 
