@@ -4,53 +4,24 @@ import React, { Component } from "react"
 export default class extends Component {
   render () {
     return (
- <>  <head>
- {/* <meta charset="UTF-8"></meta> */}
- <title>Ahmed Saheed</title>
- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.min.css'/><link rel='stylesheet' href="./style.css"/>
-  <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"></link>
-  <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
-
-
+ <> <head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link href="../blog.css" rel="stylesheet"/>
+ <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
-<div className="header-area"><header className="header"><nav aria-label="primary" className="menu"><a href="/" className="menu-item menu-logo" data-active=""><span className="menu-item-inner">AHMED</span></a><a href="/blog" className="menu-item"><span className="menu-item-inner">BLOG</span></a></nav>
-<nav> 
-                     <div className="social-network">
-                         <a href="https://github.com/ahmedsaheed" target="_blank"><i className="bi-github" aria-hidden="true"></i></a>
-                         <a href="https://twitter.com/helloahmed_" target="_blank"><i className="bi-twitter" aria-hidden="true"></i></a>
-                         <a href="https://www.goodreads.com/user/show/139740691-ahmed-saheed" target="_blank"><i className="bi-book" aria-hidden="true"></i></a>
-                         
-                     </div>
-                     <div className="theme">
-                     🌞
-                         <div className="inline-block w-10">
-                             <span data-toggle-theme="light" data-act-class="pl-4" class="border rounded-full border-green-700 flex items-center cursor-pointer w-10 transition-all duration-300 ease-in-out pl-0">
-                                 <span className="rounded-full w-3 h-3 m-1 bg-green-700">
-                                 </span>
-                             </span>
-                         </div>
-                         🌚
-                         </div>
-                             </nav>
-                             </header>
-                         </div>
-         
-         <div className="feature-grid"><div className="feature"><a href="/blog">
-             <h3 className="feature-title">Books</h3><img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32" />
-             <p>I have lived through much, and now I think I have found what is needed for happiness. A quite secluded
-                 life in the country, with the possibility of being useful to people to whom it is easy to do good, and who ar not accustomed to have it done to them; then work which one hope
-                 may be of use; then rest, nature, books, music, love for ones neighbor - such is my ideal of happiness.
-             </p></a></div>
-             <div className="feature"><a href="/blog"><h3 className="feature-title">The Internet</h3><p>In science fiction which was published around the 1920s, "It is always expected that future human beings would have enormous heads because they would have very big brains and they would be very wise. It didn't work that ways, what happened is the human race is building a brain outside its body. That is to say an interlocking electronic network of telephonic, television, radionic communication which is rapidly intelocked with computers, so that you will within a few years be able to plug your brain into a computer".</p></a></div>
-             <div className="feature"><a href="/blog"><h3 className="feature-title">End Of Everything</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
-             <div className="feature"><a href="/blog"><h3 className="feature-title">FLOW</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
-             <div className="feature"><a href="/blog"><h3 className="feature-title">Mastery Of Love</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div>
-             <div className="feature"><a href="/blog"><h3 className="feature-title">Believes, Cultures & Religion</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at viverra ex, ut cursus ligula. Nullam fermentum molestie erat vitae tincidunt. Ut rutrum mi ac urna bibendum iaculis. In non sapien aliquet, semper dolor ut, volutpat felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor in urna vel finibus.</p></a></div></div>
-     <br></br><br></br><br></br>
-     <footer className="footer"><div className="container"><div className="footer-inner"><p className="footer-text">Made with ❤︎ by the <a href="https://github.com/ahmedsaheed">Ahmed</a></p></div></div></footer>
- </body></>
+<body>
+  <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10" ><div class="bg-am-black text-am-white px-5 py-2.5 w-full rounded-lg sm:flex justify-between" data-theme="business" style = {{fontfamily: "ui-serif"}}><a href="/">AHMED</a><div class="space-x-4 flex items-center"><a class="false" href="/books">books</a><a class="text-am-green-light" href="/projects">projects</a><a class="false" href="/learnings">internet</a><a class="false" href="/uses">tools</a><a class="false" href="/me">me</a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="hover:cursor-pointer hover:text-am-green-light" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"></path></svg></div></div></nav>
+  <header class="mx-auto max-w-3xl space-y-5"><h1 class="text-4xl font-am px-10" style = {{fontfamily: "ui-serif"}}>Garden 🌱</h1><div class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full" data-theme="business"><p class="first-line:uppercase first-line:tracking-widest
+    first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left">
+    In science fiction which was published around the 1920s, "It is always expected that future human beings would have enormous heads because they would have very big brains and they would be very wise. It didn't work that ways, what happened is the human race is building a brain outside its body. That is to say an interlocking electronic network of telephonic, television, radionic communication which is rapidly intelocked with computers, so that you will within a few years be able to plug your brain into a computer".</p></div></header>
+    <main class="m-10 px-10 space-y-20"><section class="grid grid-cols-1 md:grid-cols-2 md:gap-28 xl:gap-56 space-y-28 md:space-y-0"><div class="col-span-1 space-y-10"><div class="flex justify-between items-center"><h2 class="text-4xl font-am">Projects</h2><div class="arrow-link flex items-center space-x-1"><a class="text-sm" href="/projects"><span>all projects</span></a><div class="arrow transition-all duration-300"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></div></div></div><div class="space-y-10"><a class="content-card block" href="/projects/war-room"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">Donation Hub</div><div class="text-xs">Completed</div></div><div class="text-sm">An App which habours many donation bodies</div></a><a class="content-card block" href="/projects/poke"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">Boomerang</div><div class="text-xs">Completed</div></div><div class="text-sm">Child care webapp</div></a><a class="content-card block" href="/projects/stx-me"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">This Garden</div><div class="text-xs">In Progress</div></div><div class="text-sm">Retouch on my personal webpage</div></a><a class="content-card block" href="/projects/gme"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">Naija Jobs</div><div class="text-xs">In Progress</div></div><div class="text-sm">Flutter app to help Nigerians find jobs</div></a></div></div>
+    <div class="col-span-1 space-y-10"><div class="flex justify-between items-center"><h2 class="text-4xl font-am">Books</h2><div class="arrow-link flex items-center space-x-1"><a class="text-sm" href="/words"><span>Library</span></a><div class="arrow transition-all duration-300"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></div></div></div><div class="space-y-10"><a class="content-card block" href="/words/12-products-12-months"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">Man Search For Meaning</div><div class="text-xs">Viktor Frankl</div></div><div class="text-sm">An enduring work of survival literature</div></a><a class="content-card block" href="/words/obtaining-your-ideal-software-job"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">Normal People</div><div class="text-xs">Sally Roony</div></div><div class="text-sm">Subtle</div></a><a class="content-card block" href="/words/build-from-source"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">The Death Of Ivan Ilyich & Other stories</div><div class="text-xs">Leo Tolstoy</div></div><div class="text-sm">There was no death instead there was light.</div></a><a class="content-card block" href="/words/finding-my-value"><div class="flex justify-between items-center"><div class="text-lg font-medium mb-1 font-am">MK Gandhi An AutoBiography</div><div class="text-xs">MK Gandhi</div></div><div class="text-sm">Absolute teaching of non-violence</div></a></div></div></section></main>
+
+    <nav class="sticky top-0 px-5 py-2.5 w-full z-10 font-am mb-10" ><div class="bg-am-black text-am-white px-5 py-2.5 sw-full rounded-lg sm:flex justify-between" data-theme="business" style = {{fontfamily: "ui-serif"}}><a href="/">Made with ❤️ by Ahmed</a><div class="space-x-4 flex items-center"><a class="false" href="https://anthonymorris.dev/"/>Inspired by amorriscode<a href="https://anthonymorris.dev/"/><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="hover:cursor-pointer hover:text-am-green-light" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"></path></svg></div></div></nav>
+
+</body></>
 
     )
   }
