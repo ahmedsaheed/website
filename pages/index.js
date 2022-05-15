@@ -23,16 +23,7 @@ export default class extends Component {
                                     <a href="https://www.goodreads.com/user/show/139740691-ahmed-saheed" target="_blank"><i className="bi-book" aria-hidden="true"></i></a>
                                     
                                 </div>
-                                <div className="theme">
-                                🌞
-                                    <div className="inline-block w-10">
-                                        <span data-toggle-theme="dark" data-act-class="pl-4" className="border rounded-full border-green-700 flex items-center cursor-pointer w-10 transition-all duration-300 ease-in-out pl-0">
-                                            <span className="rounded-full w-3 h-3 m-1 bg-green-700">
-                                            </span>
-                                        </span>
-                                    </div>
-                                    🌚
-                                    </div>
+                                
                                         </nav>
                                         </header>
                                     </div>
