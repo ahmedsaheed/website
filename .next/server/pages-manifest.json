@@ -2,7 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/internet/phpMailer": "pages/internet/phpMailer.js",
-  "/internet/internetHome": "pages/internet/internetHome.js",
-  "/internet/userInput": "pages/internet/userInput.js"
+  "/books": "pages/books.js"
 }
