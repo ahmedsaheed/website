@@ -1,1 +1,8 @@
-{}
+{
+  "books.js -> gapi-script": {
+    "id": "books.js -> gapi-script",
+    "files": [
+      "static/chunks/node_modules_gapi-script_index_js.js"
+    ]
+  }
+}
