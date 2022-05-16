@@ -1,29 +1,30 @@
-import {GoogleLogin} from 'react-google-login';
+// import {GoogleLogin} from 'react-google-login';
 
-const clientId = '377077904697-bcaped50sbc1vuah30p9aescbc4nr24l.apps.googleusercontent.com';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
+import { render } from 'react-dom';
+
+
+const clientID = '377077904697-bcaped50sbc1vuah30p9aescbc4nr24l.apps.googleusercontent.com';
+<GoogleOAuthProvider clientId='377077904697-bcaped50sbc1vuah30p9aescbc4nr24l.apps.googleusercontent.com'>
+
+
+</GoogleOAuthProvider>;
 
 function Login(){
 
-    const onSuccess =(res) => {
-        console.log("Login Confirmed", res.profileObj)
-
-    }
-
-    const onFailure =(res) => {
-        console.log("Login Failed", res)
-    }
     return(
-        <div>
-            <GoogleLogin
-                clientId={clientId}
-                buttonText = "Login"
-                onSuccess={onSuccess}
-                onFailure={onFailure}
-                cookiePolicy={'single_host_origin'}
-                isSignedIn = {true}
-            />
-        </div>
-    )
+    <GoogleLogin
+    onSuccess={credentialResponse => {
+      console.log(credentialResponse);
+    }}
+    onError={() => {
+      console.log('Login Failed');
+    }}
+    useOneTap
+  />);
+    
+    
 }
 
 export default Login;
