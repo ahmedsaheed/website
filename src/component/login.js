@@ -17,7 +17,6 @@ function Login(){
     <GoogleLogin
     onSuccess={credentialResponse => {
       console.log(credentialResponse);
-      style="visibility: hidden";
     }}
     onError={() => {
       console.log('Login Failed');
