@@ -6,13 +6,11 @@ function Login(){
 
     const onSuccess =(res) => {
         console.log("Login Confirmed", res.profileObj)
-       alert("Login Confirmed", res.profileObj)
 
     }
 
     const onFailure =(res) => {
         console.log("Login Failed", res)
-        alert('Login Failed', res)
     }
     return(
         <div>
