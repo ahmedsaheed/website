@@ -50,6 +50,7 @@ export default class extends Component {
         style={{display: "none", marginLeft: "25px"}}>Revoke access</button> */}  
     </header>
    <br/><br/><br/><br/> <br/><br/>
+   <LoginButton/>
 
 
 
