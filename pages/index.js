@@ -5,8 +5,7 @@ export default class extends Component {
   render () {
     return (
  <><head>
-            {/* <meta charset="UTF-8"></meta> */}
-            <title>Ahmed Saheed</title>
+            <title>👋 Ahmed Saheed</title>
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.min.css'/><link rel='stylesheet' href="./style.css"/>
              <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"></link>
              <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
@@ -15,13 +14,11 @@ export default class extends Component {
         </head>
         
         <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
-        <div className="header-area"><header className="header"><nav aria-label="primary" className="menu"><a href="#" className="menu-item menu-logo" data-active=""><span className="menu-item-inner">AHMED</span></a><a href="/blog" className="menu-item"><span className="menu-item-inner">BLOG</span></a></nav>
+        <div className="header-area"><header className="header"><nav aria-label="primary" className="menu"><a href="/blog" className="menu-item"><span className="text menu-item-inner">BACKYARD 🌼</span></a></nav>
         <nav> 
                                 <div className="social-network">
-                                    <a href="https://github.com/ahmedsaheed" target="_blank"><i className="bi-github" aria-hidden="true"></i></a>
-                                    <a href="https://twitter.com/helloahmed_" target="_blank"><i className="bi-twitter" aria-hidden="true"></i></a>
-                                    <a href="https://www.goodreads.com/user/show/139740691-ahmed-saheed" target="_blank"><i className="bi-book" aria-hidden="true"></i></a>
-                                    
+                                    <a href="https://github.com/ahmedsaheed" target="_blank"><i className="text bi-github" aria-hidden="true"></i></a>
+                                    <a href="https://twitter.com/helloahmed_" target="_blank"><i className="text bi-twitter" aria-hidden="true"></i></a>                                    
                                 </div>
                             
                                         </nav>

@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/internet/internetHome": "pages/internet/internetHome.js",
-  "/": "pages/index.js"
+  "/blog": "pages/blog.js",
+  "/books": "pages/books.js"
 }
