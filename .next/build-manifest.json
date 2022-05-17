@@ -34,16 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/blog.js"
-    ],
-    "/books": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/books.js"
-    ],
-    "/internet/internetHome": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/internet/internetHome.js"
     ]
   },
   "ampFirstPages": []
