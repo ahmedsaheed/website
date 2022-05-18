@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component, useEffect} from "react"
 
 var greetings = ["Hi, welcome 👋🏾",
                 "Come in peace ☮️",
@@ -6,12 +6,14 @@ var greetings = ["Hi, welcome 👋🏾",
                 "Salam Alaykum ☪️"
 ];
 var now = greetings[Math.floor(Math.random()*greetings.length)];
+
 export default class extends Component {
      
-  render () {
+  render () 
+  {
     return (
  <><head>
-            <title>👋 Ahmed Saheed</title>
+            <title class ="typing-demo">👋 Ahmed Saheed</title>
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.min.css'/><link rel='stylesheet' href="./style.css"/>
              <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"></link>
              <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
@@ -31,7 +33,10 @@ export default class extends Component {
                                         </header>
                                     </div>
                     <div className="back-titre">
-                        <h1>Ahmed Saheed</h1>
+                        <div className="wrapper">
+                        <h1 class ="typing-demo">AHMED SAHEED</h1>
+                        </div>
+                        
                         <h2 className="tagline">Tolstoy's Fan & Official family tech support since 7.</h2>
                         <h2 className="tagline">{now}</h2>
 
