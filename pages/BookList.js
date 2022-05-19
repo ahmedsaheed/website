@@ -2,6 +2,9 @@ import React, { Component } from "react"
 import BookCard from './bookcard';
 
 const BookList = (props) => {
+    if(!props){
+        return null;
+    }
     return(
        <div>
             {
