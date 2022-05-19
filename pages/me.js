@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import Book from './api';
-
+import  Dairy from "./dairy";
 export default class extends Component {
 
   render () {
@@ -20,8 +19,8 @@ export default class extends Component {
   <header class="mx-auto max-w-3xl space-y-5"><h1 class="text-3xl font-am px-10" style = {{fontfamily: "ui-serif"}}>👨🏾‍🦲 Moi</h1><div class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full" data-theme="business"><p class="first-line:uppercase first-line:tracking-widest
     first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left">
     In science fiction which was published around the 1920s, "It is always expected that future human beings would have enormous heads because they would have very big brains and they would be very wise. It didn't work that ways, what happened is the human race is building a brain outside its body. That is to say an interlocking electronic network of telephonic, television, radionic communication which is rapidly intelocked with computers, so that you will within a few years be able to plug your brain into a computer".</p></div>
+    <Dairy/>
     </header>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 </body> 
@@ -33,8 +32,6 @@ export default class extends Component {
     )
   }
 }
-
-
 
 
 

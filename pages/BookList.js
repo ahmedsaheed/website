@@ -12,15 +12,11 @@ const BookList = (props) => {
                         image={book.volumeInfo.imageLinks.thumbnail}
                         title={book.volumeInfo.title}
                         author={book.volumeInfo.authors}
+                        url={book.selfLink}
                     
                     />
-                     <BookCard
-                    key={i}
-                        image={book.volumeInfo.imageLinks.thumbnail}
-                        title={book.volumeInfo.title}
-                        author={book.volumeInfo.authors}
-                    
-                    />
+                     
+                   
                     </section>
                 })
             }
