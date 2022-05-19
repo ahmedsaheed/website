@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/internet/internetHome": [
+    "/books": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/internet/internetHome.js"
+      "static/chunks/pages/books.js"
     ]
   },
   "ampFirstPages": []
