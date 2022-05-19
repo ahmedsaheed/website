@@ -4,16 +4,18 @@ const BookCard = (props) => {
     return(
 
             <div class="card card-side bg-base-100 shadow-xl">
-            {/* <figure><img src={props.image} alt="Books"/></figure>
+                <a href={props.url}>
+                <figure><img src={props.image} alt="Books"/></figure>
+                </a>
             <div class="card-body">
                 <p class="card-title">Title: {props.title}</p>
                 <p>Author: {props.author}</p>
             <div class="card-actions justify-end">
-                <br/> */}
+                <br/>
       {/* <button class="btn btn-primary">Wanna See?</button> */}
       <br/>
       <hr/>
-    </div>
+    </div></div></div>
   
     )
 }
