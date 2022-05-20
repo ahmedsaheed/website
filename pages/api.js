@@ -10,7 +10,7 @@ class Book extends Component{
       }
     }
      componentDidMount(){
-       request.get("https://www.googleapis.com/books/v1/users/101611817084658660916/bookshelves/4/volumes?key=AIzaSyDNMnPGw3yUzfIwUnH3PR4oMJiP-PecbhU")
+       request.get("https://www.googleapis.com/books/v1/users/101611817084658660916/bookshelves/4/volumes?&startIndex=0&maxResults=40&key=AIzaSyDNMnPGw3yUzfIwUnH3PR4oMJiP-PecbhU")
       .query(null)
       .then((data) =>{
        console.log(data);
