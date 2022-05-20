@@ -194,6 +194,19 @@ footer p{
 	  border-color: transparent
 	}
   }
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    border: 1px solid var(--color-border);
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+  }
 /* .back-titre:hover{
     transform: perspective(1000px) translateZ(0px) rotateX(-11.5562deg) rotateY(-5.73487deg);
     transition: all 150ms linear 0s;

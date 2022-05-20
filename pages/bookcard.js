@@ -3,20 +3,19 @@ import React, { Component } from "react"
 const BookCard = (props) => {
     return(
 
-            <div class="card card-side bg-base-100 shadow-xl">
+     
+        <div class="grid-item">
+                <h1 class="feature-title"/><h1>{props.title}</h1>
+                <h1>{props.author}</h1>
+                <p>Rating: {props.rating}</p>
+
                 <a href={props.url}>
-                <figure><img src={props.image} alt="Books"/></figure>
+                <center><img src={props.image} alt="Books"/></center>
                 </a>
-            <div class="card-body">
-                <p class="card-title">Title: {props.title}</p>
-                <p>Author: {props.author}</p>
-            <div class="card-actions justify-end">
-                <br/>
-      {/* <button class="btn btn-primary">Wanna See?</button> */}
-      <br/>
-      <hr/>
-    </div></div></div>
-  
+                
+
+            </div>
+    
     )
 }
 
