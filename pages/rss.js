@@ -1,5 +1,5 @@
 
-// import React from "react";
+import React from "react";
 // import { NextPageContext } from "next";
 
 // const blogPostsRssXml = (blogPosts: IBlogPost[]) => {
@@ -44,7 +44,12 @@
 //   </rss>`;
 // };
 
-// export default class Rss extends React.Component {
+export default class Rss extends React.Component {
+    render() {
+        return (
+            <></>
+        )
+    }
 //   static async getInitialProps({ res }: NextPageContext) {
 //     if (!res) {
 //       return;
@@ -54,4 +59,4 @@
 //     res.write(getRssXml(blogPosts));
 //     res.end();
 //   }
-// }
+}
