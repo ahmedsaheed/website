@@ -13,11 +13,12 @@ const MainDiary = (props) => {
                       {/* <img src={'https://i.pinimg.com/originals/23/a2/06/23a20662a7217cbccf9e1329305b72d1.jpg'} alt="Books"/> */}
                      <DiarySession
                     key={i}
-                        title={entries.data.description}
-                        content={entries.data.files.ahmed.content}
-                        Date={entries.data.created_at}                    
+                        title={entries.created_at}
+                        content={entries.body}
+                        Date={entries.created_at}                  
                     />
                     </div>
+                    
                    
                     
                 })

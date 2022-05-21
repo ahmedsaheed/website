@@ -18,7 +18,7 @@ class Dairy extends Component{
         auth: token
       })
       
-       const response = await octokit.request('GET /gists/{gist_id}', {
+       const response = await octokit.request('GET /gists/{gist_id}/comments', {
         headers: {
             accept: 'application/vnd.github.v3+json',
           },
@@ -26,11 +26,13 @@ class Dairy extends Component{
         
       })
       console.log(response);
-      console.log(response.data.description);
-      console.log(response.data.files.ahmed.content);
-      console.log(response.data.created_at);
+      console.log(response.data);
+      // console.log(response.data);
 
-      this.setState({entry: [response]})
+      // console.log(response.data.files.ahmed.content);
+      console.log(response.data.body);
+
+      this.setState({entry: [...response.data]})
 
     }
   render(){

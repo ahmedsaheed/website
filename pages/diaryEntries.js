@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 
 const BookCard = (props) => {
+  var dates = props.Date;
+  var date = dates.substring(0, 10);
     return(
 <> <head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -13,11 +15,13 @@ const BookCard = (props) => {
         
     <div class="content__inner" id="tab-1">
       <div class="page">
-          <p>{props.Date}</p><p>{props.title}</p><br/>
+      
+        <p>DATE: {date}</p>
+        {/* <p>{props.title}</p><br/> */}
         <p>{props.content}</p>
-        
+       
       </div>
-    </div>
+    </div><br/>
        </>
        
     
