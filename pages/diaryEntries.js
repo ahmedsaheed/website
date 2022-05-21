@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 const BookCard = (props) => {
   var dates = props.Date;
-  var date = dates.substring(0, 10);
+  var date = dates?.substring(0, 10);
     return(
 <> <head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
