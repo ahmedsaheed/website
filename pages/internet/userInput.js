@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { CopyBlock, dracula } from "react-code-blocks";
+import ReactMarkdown from 'react-markdown'
+
 export default class extends Component {
   render () {
     return (
@@ -11,7 +13,7 @@ export default class extends Component {
 </head>
 
 <body>
-  <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10" ><div class="bg-am-black text-am-white px-5 py-2.5 w-full rounded-lg sm:flex justify-between" data-theme="business" style = {{fontfamily: "ui-serif"}}><a href="/">AHMED</a><div class="space-x-4 flex items-center hover:text-blue-600"><a class="text false" href="/books">books</a><a class="text" href="/projects">projects</a><a class="here false" href="#">internet</a><a class="text false" href="/tools">tools</a><a class="text false" href="/me">me</a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="hover:cursor-pointer hover:text-am-green-light" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"></path></svg></div></div></nav>
+  <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10" ><div class="bg-am-black text-am-white px-5 py-2.5 w-full rounded-lg sm:flex justify-between" data-theme="business" style = {{fontfamily: "ui-serif"}}><a href="/">AHMED</a><div class="space-x-4 flex items-center hover:text-blue-600"><a class="text false" href="/books">books</a><a class="text" href="/projects">projects</a><a class="here false" href="#">internet</a><a class="text false" href="/uses">tools</a><a class="text false" href="/me">me</a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="hover:cursor-pointer hover:text-am-green-light" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"></path></svg></div></div></nav>
   <header class="mx-auto max-w-3xl px-10 space-y-5"><div><h1 class="font-am text-4xl">Regex & Input Purification</h1></div></header>
   <article class="prose mx-auto max-w-3xl p-10"><p>I lost so much marks while learning PHP because i never validated and sanitized the users input, so if there was to be an sql injection i'd deeply pay for it.</p>
 <p>Ideally whenever I use PHP and i have to collect sensitive input data from the users, there's a very simple and reliable trick i learnt from my friend Mauricio, It's the pass_input() and Preg Match() sanitation.</p>
