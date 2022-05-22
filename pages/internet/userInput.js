@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { CopyBlock, dracula } from "react-code-blocks";
+import ReactMarkdown from 'react-markdown'
+
 export default class extends Component {
   render () {
     return (

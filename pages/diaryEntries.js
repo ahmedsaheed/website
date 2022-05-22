@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import ReactMarkdown from 'react-markdown'
+
 
 const BookCard = (props) => {
   var dates = props.Date;
@@ -18,7 +20,7 @@ const BookCard = (props) => {
       
         <p>DATE: {date}</p>
         {/* <p>{props.title}</p><br/> */}
-        <p>{props.content}</p>
+        <p><ReactMarkdown>{props.content}</ReactMarkdown></p>
        
       </div>
     </div><br/>

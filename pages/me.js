@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import  Dairy from "./dairy";
+import ReactDom from 'react-dom'
 export default class extends Component {
 
-  render () {
+render () {
 
     return (
  <> 
