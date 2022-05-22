@@ -1,5 +1,10 @@
 import React, { Component } from "react"
 import ReactMarkdown from 'react-markdown'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import 'katex/dist/katex.min.css'
+import remarkGfm from 'remark-gfm'
+
 
 
 const BookCard = (props) => {
@@ -13,15 +18,18 @@ const BookCard = (props) => {
             {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/> */}
         </head>
 
-
-        
     <div class="content__inner" id="tab-1">
       <div class="page">
       
-        <p>DATE: {date}</p>
+        <p>DATE: {date}</p><br/>
         {/* <p>{props.title}</p><br/> */}
-        <p><ReactMarkdown>{props.content}</ReactMarkdown></p>
        
+        <ReactMarkdown
+        children = {props.content}
+        remarkPlugins={[remarkMath, remarkGfm]}
+         rehypePlugins={[rehypeKatex]}
+        />
+        
       </div>
     </div><br/>
        </>

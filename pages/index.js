@@ -13,7 +13,7 @@ export default class extends Component {
   {
     return (
  <><head>
-            <title class ="typing-demo">Ahmed Saheed</title>
+            <title class>Ahmed Saheed</title>
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.min.css'/><link rel='stylesheet' href="./style.css"/>
              <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"></link>
              <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>

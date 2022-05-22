@@ -11,7 +11,7 @@ render () {
  <meta charset="UTF-8"/>
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <link href="../styles/blog.css" rel="stylesheet"/>
- <title>Moi 👨🏾‍🦲</title>
+ <title>Moi 👨🏾‍🦲 | Ahmed Saheed</title>
  <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
  
 </head>

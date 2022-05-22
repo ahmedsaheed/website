@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Octokit } from "@octokit/core"
 import MainDiary from './mainDiary';
 
-
 const token = process.env.github_api;
 const id = "a928b1fbcf1738da26ea5d7125e911cb";
 
@@ -35,7 +34,7 @@ class Dairy extends Component{
       this.setState({entry: [...response.data]})
 
     }
-  render(){
+    render(){
     return(
        <div>
        <MainDiary entry={this.state.entry}/>

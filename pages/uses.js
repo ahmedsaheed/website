@@ -8,7 +8,7 @@ export default class extends Component {
  <meta charset="UTF-8"/>
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <link href="../styles/blog.css" rel="stylesheet"/>
- <title>Tools 🛠️</title>
+ <title>Tools 🛠️ | Ahmed Saheed</title>
  <link href="../styles/hovers.css" rel="stylesheet"/>
 
  <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
