@@ -22,7 +22,6 @@ const BookCard = (props) => {
       <div class="page">
       
         <p>DATE: {date}</p><br/>
-        {/* <p>{props.title}</p><br/> */}
        
         <ReactMarkdown
         children = {props.content}
