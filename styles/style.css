@@ -49,6 +49,20 @@
     font-size: 1.125rem;
 }
 
+header, main, footer {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
 .tagline {
     font-size: 2.3vw;
     font-weight: 300;
@@ -263,7 +277,17 @@ footer p{
   display: none;
 }
 .iframe-link:hover iframe {
+  -webkit-animation: slow 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: slow 2s; /* Firefox < 16 */
+        -ms-animation: slow 2s; /* Internet Explorer */
+         -o-animation: slow 2s; /* Opera < 12.1 */
+            animation: slow 2s;
   display: block;
   /* opacity: 1; */
 
+}
+
+@keyframes slow {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
