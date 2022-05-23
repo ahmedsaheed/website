@@ -46,7 +46,7 @@ export default class extends Component {
     first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left">
     This vestibule door opens onto my so fine and maybe unfine datasets of my brain. More like a library where i store valuable peice of computer related information.<br/> Currently, i am still doing college work while doing some not so useful side projects just to while away time. Also i am having great a great time being lost in Tolstoy's literature and puzzling about existence. <br/>Please feel free to look around, you're highly welcomed.</p></div></header>
                <br/>
-                <footer className="footer"><div className="container"><div className="footer-inner"><p className="footer-text">Made with ❤︎ by the <a href="https://github.com/ahmedsaheed">Ahmed</a></p></div></div></footer>
+                <footer className="footer"><div className="container"><div className="footer-inner"><p className="footer-text">© <a href="https://github.com/ahmedsaheed">Ahmed Saheed 2022</a></p></div></div></footer>
                 
             </body></>
 
