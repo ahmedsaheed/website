@@ -1,4 +1,6 @@
 import React, { Component, useEffect} from "react"
+import { NextSeo } from 'next-seo'
+
 
 var greetings = ["Hi, welcome 👋🏾",
                 "Come in peace ☮️",
@@ -12,7 +14,18 @@ export default class extends Component {
   render () 
   {
     return (
- <><head>
+ <>
+ <NextSeo
+        title="Ahmed Saheed"
+        description="Vestibule to my brain datasets"
+        canonical="https://saheed.codes/"
+        openGraph={{
+          url: 'https://saheed.codes/',
+          title: "Ahmed Saheed",
+          description: 'Vestibule to my brain datasets',
+        }}
+      />
+ <head>
             <title class>Ahmed Saheed</title>
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.min.css'/><link rel='stylesheet' href="./style.css"/>
              <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"></link>

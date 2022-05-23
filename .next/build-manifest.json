@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/me": [
+    "/blog": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/me.js"
+      "static/chunks/pages/blog.js"
     ],
     "/uses": [
       "static/chunks/webpack.js",

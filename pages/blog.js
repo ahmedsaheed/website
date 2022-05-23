@@ -1,10 +1,21 @@
 import React, { Component } from "react"
-
+import { NextSeo } from 'next-seo'
 
 export default class extends Component {
   render () {
     return (
- <> <head>
+ <> 
+ <NextSeo
+        title="Backyard"
+        description="Vestibule to Ahmed Saheed's brain datasets"
+        canonical="https://saheed.codes/blog"
+        openGraph={{
+          url: 'https://saheed.codes/blog',
+          title: "Ahmed Saheed",
+          description: 'Vestibule to Ahmed Saheed brain datasets',
+        }}
+      />
+ <head>
  <meta charset="UTF-8"/>
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <link href="../styles/blog.css" rel="stylesheet"/>

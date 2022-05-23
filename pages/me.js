@@ -1,12 +1,22 @@
 import React, { Component } from "react"
 import  Dairy from "./dairy";
-import ReactDom from 'react-dom'
+import { NextSeo } from 'next-seo'
 export default class extends Component {
 
 render () {
 
     return (
  <> 
+ <NextSeo
+        title="Ahmed Saheed's TIL"
+        description="A place to document 'Today I Learnt'"
+        canonical="https://saheed.codes/me"
+        openGraph={{
+          url: 'https://saheed.codes/me',
+          title: "Ahmed Saheed's TIL",
+          description: "A place to document 'Today I Learnt'",
+        }}
+      />
 <head>
  <meta charset="UTF-8"/>
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
