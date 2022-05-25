@@ -13,6 +13,7 @@ class Book extends Component{
        request.get("https://www.googleapis.com/books/v1/users/101611817084658660916/bookshelves/4/volumes?&startIndex=0&maxResults=40&key=AIzaSyDNMnPGw3yUzfIwUnH3PR4oMJiP-PecbhU")
       .query(null)
       .then((data) =>{
+        console.log(data.body);
         this.setState({books: [...data.body.items]})
         
       })
