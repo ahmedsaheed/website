@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Yomogi&display=swap');
 :root {
     --color-default: #fff;
     --text-color: #333;  
@@ -35,7 +36,7 @@
 
   body {
       background-color: var(--color-default);
-      font-family: 100%/1.5 system-ui,helvetica,sans-serif;
+      font-family: 100%/1.5 "Yomogi", system-ui,helvetica,sans-serif;
       color: var(--text-color);
       --header-height: 3.5rem;
       height: 100%;
@@ -125,14 +126,14 @@ h2 {
 }
 
 h1{
-    font-family: 'ui-serif', ;
+    font-family: "Yomogi",'ui-serif', ;
     /* text-align: center;
      margin-top: 250px;
     font-size: 6em; */
 
 }
 p{
-    font-family: 'ui-serif';
+    font-family: "Yomogi",'ui-serif';
     font-size: 1.2em;
     
 }
@@ -225,10 +226,15 @@ footer p{
     text-align: center;
   }
 
+  .grid-container:hover{
+    transform: scale(1.05, 1.05);
+  }
+
 /* .back-titre:hover{
     transform: perspective(1000px) translateZ(0px) rotateX(-11.5562deg) rotateY(-5.73487deg);
     transition: all 150ms linear 0s;
 } */
+
 
 
 .page {

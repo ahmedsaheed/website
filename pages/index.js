@@ -57,7 +57,8 @@ export default class extends Component {
                 <div class ="whiteSpace"></div>
                 <header class="mx-auto max-w-3xl space-y-5"><h1 class="text-4xl font-am px-10" style = {{fontfamily: "ui-serif"}}> </h1><div class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full" data-theme="business"><p class="first-line:uppercase first-line:tracking-widest
     first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left">
-    This vestibule door opens onto my so fine and maybe unfine datasets of my brain. More like a library where i store valuable peice of computer related information.<br/> Currently, i am still doing college work while doing some not so useful side projects just to while away time. Also i am having great a great time being lost in Tolstoy's literature and puzzling about existence. <br/>Please feel free to look around, you're highly welcomed.</p></div></header>
+    This vestibule door opens onto my so fine and maybe unfine datasets of my brain. More like a library where i store valuable peice of computer related information.<br/> Currently, i am still doing college work while doing some not so useful side projects just to while away time. Also i am having great a great time being lost in Tolstoy's literature and puzzling about existence. Please feel free to look around, you're highly welcomed.</p></div>
+    </header>
                <br/>
                 <footer className="footer"><div className="container"><div className="footer-inner"><p className="footer-text">© <a href="https://github.com/ahmedsaheed">Ahmed Saheed 2022</a></p></div></div></footer>
                 
