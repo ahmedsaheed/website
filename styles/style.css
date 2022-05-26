@@ -71,6 +71,7 @@ header, main, footer {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.3;
+    font-family: "Yomogi";
   }
 
   .cta, .tagline {
