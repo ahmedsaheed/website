@@ -40,6 +40,7 @@ export default class extends Component {
                                 <div className="social-network">
                                     <a href="https://github.com/ahmedsaheed" target="_blank"><i className="text bi-github" aria-hidden="true"></i></a>
                                     <a href="https://twitter.com/helloahmed_" target="_blank"><i className="text bi-twitter" aria-hidden="true"></i></a>                                    
+                                    <a href="/rss/feed.xml" target="_blank"><i className="text bi bi-rss" aria-hidden="true"></i></a>                                    
                                 </div>
                             
                                         </nav>

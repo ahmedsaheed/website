@@ -1,62 +1,64 @@
+import { Feed } from "feed";
+import { Octokit } from "@octokit/core"
+import ReactMarkdown from 'react-markdown'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import * as fs from 'fs';
 
-import React from "react";
-// import { NextPageContext } from "next";
+const token = process.env.github_api;
+const id = "a928b1fbcf1738da26ea5d7125e911cb";
 
-// const blogPostsRssXml = (blogPosts: IBlogPost[]) => {
-//   let latestPostDate: string = "";
-//   let rssItemsXml = "";
-//   blogPosts.forEach(post => {
-//     const postDate = Date.parse(post.createdAt);
-//     if (!latestPostDate || postDate > Date.parse(latestPostDate)) {
-//       latestPostDate = post.createdAt;
-//     }
-//     rssItemsXml += `
-//       <item>
-//         <title>${post.title}</title>
-//         <link>
-//           ${post.href}
-//         </link>
-        
-//         <pubDate>${post.createdAt}</pubDate>
-//         <description>
-//         <![CDATA[${post.text}]]>
-//         </description>
-//     </item>`;
-//   });
-//   return {
-//     rssItemsXml,
-//     latestPostDate
-//   };
-// };
+async function generateRssFeed() {
+ 
 
-// const getRssXml = (blogPosts: IBlogPost[]) => {
-//   const { rssItemsXml, latestPostDate } = blogPostsRssXml(blogPosts);
-//   return `<?xml version="1.0" ?>
-//   <rss version="2.0">
-//     <channel>
-//         <title>Blog by Fredrik Bergqvist</title>
-//         <link>https://www.bergqvist.it</link>
-//         <description>${shortSiteDescription}</description>
-//         <language>en</language>
-//         <lastBuildDate>${latestPostDate}</lastBuildDate>
-//         ${rssItemsXml}
-//     </channel>
-//   </rss>`;
-// };
+  const date = new Date();
+  const feed = new Feed({
+    title: `Saheed's TIL`,
+    description: 'Welcome to my TIL!',
+    id: "https://www.saheed.codes/til/",
+    link: "https://www.saheed.codes/til/",
+    language: 'en',
+    copyright: `© Ahmed Saheed ${date.getFullYear()}`,
+    updated: date,
+    generator: 'Next.js using Feed for Node.js',
+    feedLinks: {
+      rss2: "https://www.saheed.codes/rss/feed.xml",
+      json: "https://www.saheed.codes/rss/feed.json",
+      atom: "https://www.saheed.codes/rss/atom.xml"
+    },
+    author: "Ahmed Saheed"
+  });
+  const octokit = new Octokit({
+    auth: token
+  });
+  const reply = await octokit.request('GET /gists/{gist_id}/comments', {
+    headers: {
+        accept: 'application/vnd.github.v3+json',
+      },
+    gist_id: id,
+    
+  });
 
-export default class Rss extends React.Component {
-    render() {
-        return (
-            <></>
-        )
-    }
-//   static async getInitialProps({ res }: NextPageContext) {
-//     if (!res) {
-//       return;
-//     }
-//     const blogPosts = getRssBlogPosts();
-//     res.setHeader("Content-Type", "text/xml");
-//     res.write(getRssXml(blogPosts));
-//     res.end();
-//   }
+  const posts = [...reply.data]
+  if(!posts){return;}
+  posts.forEach((post) => {
+    const url = "https://www.saheed.codes/me/";
+    feed.addItem({
+      title: post.title,
+      id: url,
+      link: url,
+      description:  "TIL on " +new Date(post.created_at),
+      content:(post.body),
+       author: "Ahmed Saheed",
+      // contributor: [author],
+      date: new Date(post.created_at)
+    });
+  });
+
+  fs.mkdirSync('./public/rss', { recursive: true });
+  fs.writeFileSync('./public/rss/feed.xml', feed.rss2());
+  // fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
+  // fs.writeFileSync('./public/rss/feed.json', feed.json1());
 }
+
+export default generateRssFeed;

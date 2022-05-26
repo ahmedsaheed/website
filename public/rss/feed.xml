@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Saheed's TIL</title>
+        <link>https://www.saheed.codes/til/</link>
+        <description>Welcome to my TIL!</description>
+        <lastBuildDate>Thu, 26 May 2022 17:51:23 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Next.js using Feed for Node.js</generator>
+        <language>en</language>
+        <copyright>© Ahmed Saheed 2022</copyright>
+        <item>
+            <link>https://www.saheed.codes/me/</link>
+            <guid>https://www.saheed.codes/me/</guid>
+            <pubDate>Sat, 21 May 2022 20:59:51 GMT</pubDate>
+            <description><![CDATA[TIL on Sat May 21 2022 21:59:51 GMT+0100 (Irish Standard Time)]]></description>
+            <content:encoded><![CDATA[**Test: Sum of Array Recursively**
+
+```java
+class Test {
+    static int arr[] = { 1, 2, 3, 4, 5 };
+ 
+    // Return sum of elements in A[0..N-1]
+    // using recursion.
+    static int findSum(int A[], int N)
+    {
+        if (N <= 0)
+            return 0;
+        return (findSum(A, N - 1) + A[N - 1]);
+    }
+ 
+    // Driver method
+    public static void main(String[] args)
+    {
+        System.out.println(findSum(arr, arr.length));
+    }
+}
+```]]></content:encoded>
+        </item>
+        <item>
+            <link>https://www.saheed.codes/me/</link>
+            <guid>https://www.saheed.codes/me/</guid>
+            <pubDate>Sun, 22 May 2022 00:36:30 GMT</pubDate>
+            <description><![CDATA[TIL on Sun May 22 2022 01:36:30 GMT+0100 (Irish Standard Time)]]></description>
+            <content:encoded><![CDATA[**Test: Permutate A String**
+
+```java
+public class Permutation
+{
+    public static void main(String[] args)
+    {
+        String str = "ABC";
+        int n = str.length();
+        Permutation permutation = new Permutation();
+        permutation.permute(str, 0, n-1);
+    }
+ 
+    /**
+    * permutation function
+    * @param str string to calculate permutation for
+    * @param l starting index
+    * @param r end index
+    */
+    private void permute(String str, int l, int r)
+    {
+        if (l == r)
+            System.out.println(str);
+        else
+        {
+            for (int i = l; i <= r; i++)
+            {
+                str = swap(str,l,i);
+                permute(str, l+1, r);
+                str = swap(str,l,i);
+            }
+        }
+    }
+ 
+    /**
+    * Swap Characters at position
+    * @param a string value
+    * @param i position 1
+    * @param j position 2
+    * @return swapped string
+    */
+    public String swap(String a, int i, int j)
+    {
+        char temp;
+        char[] charArray = a.toCharArray();
+        temp = charArray[i] ;
+        charArray[i] = charArray[j];
+        charArray[j] = temp;
+        return String.valueOf(charArray);
+    }
+ 
+}
+```]]></content:encoded>
+        </item>
+        <item>
+            <link>https://www.saheed.codes/me/</link>
+            <guid>https://www.saheed.codes/me/</guid>
+            <pubDate>Sun, 22 May 2022 01:34:33 GMT</pubDate>
+            <description><![CDATA[TIL on Sun May 22 2022 02:34:33 GMT+0100 (Irish Standard Time)]]></description>
+            <content:encoded><![CDATA[**Testing the new mathematic support in markdown**
+
+Example:
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
+[More guides here](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)]]></content:encoded>
+        </item>
+        <item>
+            <link>https://www.saheed.codes/me/</link>
+            <guid>https://www.saheed.codes/me/</guid>
+            <pubDate>Sun, 22 May 2022 13:51:25 GMT</pubDate>
+            <description><![CDATA[TIL on Sun May 22 2022 14:51:25 GMT+0100 (Irish Standard Time)]]></description>
+            <content:encoded><![CDATA[**Testing the markdown table & Tasklist**
+
+Example:
+
+| a | b  |  c |  d  |
+| - | :- | -: | :-: |
+
+## Tasklist
+
+* [ ] to do
+* [x] done]]></content:encoded>
+        </item>
+        <item>
+            <link>https://www.saheed.codes/me/</link>
+            <guid>https://www.saheed.codes/me/</guid>
+            <pubDate>Mon, 23 May 2022 20:53:24 GMT</pubDate>
+            <description><![CDATA[TIL on Mon May 23 2022 21:53:24 GMT+0100 (Irish Standard Time)]]></description>
+            <content:encoded><![CDATA[**Easy Palindrome Number**
+
+```java
+    public static boolean isPalindrome(int x) {
+        //convert given to string
+        String convertedInt  = Integer.toString(x);
+        //reverse the string
+        String reversed = "";
+        char a;
+        for(int i = 0; i < convertedInt.length(); i++){
+            a= convertedInt.charAt(i); 
+            reversed= a+reversed;
+        }
+        //make comparisom
+        return convertedInt.equals(reversed);
+    }
+```]]></content:encoded>
+        </item>
+        <item>
+            <link>https://www.saheed.codes/me/</link>
+            <guid>https://www.saheed.codes/me/</guid>
+            <pubDate>Wed, 25 May 2022 13:22:28 GMT</pubDate>
+            <description><![CDATA[TIL on Wed May 25 2022 14:22:28 GMT+0100 (Irish Standard Time)]]></description>
+            <content:encoded><![CDATA[**Had Microsoft Internship Interview Today.**
+Total Question : 3
+Answered : 3
+
+1. **Largest Alphabetic Character**
+Given a string S, find the largest alphabetic character, whose both uppercase and lowercase character appear in string str. The uppercase character should be returned. If there is no such character, return NO.
+
+Solution: 
+```java
+public static String largestCharacter(String str)
+	{
+		boolean[] uppercase = new boolean[26];
+		boolean[] lowercase = new boolean[26];
+
+		char[] arr = str.toCharArray();
+
+		for (char c : arr) {
+
+			if (Character.isLowerCase(c))
+				lowercase[c-'a'] = true;
+
+			if (Character.isUpperCase(c))
+				uppercase[c-'A'] = true;
+		}
+
+		for (int i = 25; i >= 0; i--) {
+
+			if (uppercase[i] && lowercase[i])
+				return (char)(i + 'A') + "";
+		}
+
+		return "NO";
+	}
+```
+
+2. **Find N Unique Integers Sum up to Zero**
+Given an integer n, return any array containing n unique integers such that they add up to 0
+
+```java
+public int[] sumZero(int n) {
+    int []arr = new int [n];
+    if(n == 1) arr[0] = 0;
+    for(int i = 0; i < n; i++){
+        if(n % 2 == 0 && i >= n/2){
+            arr[i] = -n/2 + (i + 1);
+        }
+        else{
+            arr[i] = -n/2 + i;
+        }
+    }
+    return arr;
+}
+```
+
+3. ~~Can't remember the last question tho~~
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
