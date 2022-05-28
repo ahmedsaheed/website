@@ -25,8 +25,10 @@
   },
   "homepage": "https://github.com/ahmedsaheed/ahmed-saheed#readme",
   "dependencies": {
+    "@observablehq/runtime": "^4.21.1",
     "@octokit/core": "^3.6.0",
     "daisyui": "^2.14.3",
+    "f4b54f268f34af5a": "https://api.observablehq.com/d/f4b54f268f34af5a.tgz?v=3",
     "feed": "^4.2.2",
     "fs": "^0.0.2",
     "fs-extra": "^10.1.0",
