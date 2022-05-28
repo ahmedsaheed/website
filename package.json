@@ -28,7 +28,7 @@
     "@octokit/core": "^3.6.0",
     "daisyui": "^2.14.3",
     "feed": "^4.2.2",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "fs-extra": "^10.1.0",
     "next": "^12.1.6",
     "next-seo": "^5.4.0",
