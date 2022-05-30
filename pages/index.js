@@ -37,7 +37,7 @@ export default class extends Component {
         </head>
         
         <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
-        <div className="header-area"><header className="header"><nav aria-label="primary" className="menu"><a href="/blog" className="menu-item"><span className="text menu-item-inner"><br/>BACKYARD 🌼</span></a></nav>
+        <div className="header-area"><header className="header"><nav aria-label="primary" className="menu"><a href="/blah" className="menu-item"><span className="text menu-item-inner"><br/>BACKYARD 🌼</span></a></nav>
         <nav> 
                                 <div className="social-network">
                                     <a href="https://github.com/ahmedsaheed" target="_blank"><i className="text bi-github" aria-hidden="true"></i></a>
