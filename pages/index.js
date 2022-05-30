@@ -1,8 +1,10 @@
 import React, { Component, useEffect} from "react"
 import { NextSeo } from 'next-seo'
+import { currentDayName } from '../src/date'
 
 
-var greetings = ["Hi, welcome 👋🏾",
+
+var greetings = ["Hi 👋🏾 ,",
                 "Come in peace ☮️",
                 "🕉️  Namaste",
                 "Salam Alaykum ☪️"
@@ -52,7 +54,7 @@ export default class extends Component {
                         </div>
                         
                         <h2 className="tagline">An upcoming software engineer & Family tech support since 7.</h2>
-                        <h2 className="tagline">{now}</h2>
+                        <h2 className="tagline">{now} Hope you're having a good {currentDayName()} ?</h2>
 
                     </div>
                 <div class ="whiteSpace"></div>

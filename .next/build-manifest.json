@@ -20,6 +20,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/TIL": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/TIL.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,20 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/fun/selectionsort": [
+    "/fun": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/fun/selectionsort.js"
-    ],
-    "/me": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/me.js"
-    ],
-    "/uses": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/uses.js"
+      "static/chunks/pages/fun.js"
     ]
   },
   "ampFirstPages": []
