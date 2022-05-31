@@ -1,69 +1,88 @@
 import { Feed } from "feed";
 import { Octokit } from "@octokit/core"
 import React, { Component } from "react"
-import * as fs from 'fs';
+// var fs = require('browserify-fs');
 
 const token = process.env.github_api;
 const id = "a928b1fbcf1738da26ea5d7125e911cb";
-
-export default class rss extends Component {
-  componentDidMount() {
-    this.generateRssFeed();
-  }
-  generateRssFeed = async () => {
-    const date = new Date();
-    const feed = new Feed({
-      title: `Saheed's TIL`,
-      description: 'Welcome to my TIL!',
-      id: "https://www.saheed.codes/til/",
-      link: "https://www.saheed.codes/til/",
-      language: 'en',
-      copyright: `© Ahmed Saheed ${date.getFullYear()}`,
-      updated: date,
-      generator: 'Next.js using Feed for Node.js',
-      feedLinks: {
-        rss2: "https://www.saheed.codes/rss/feed.xml",
-        json: "https://www.saheed.codes/rss/feed.json",
-        atom: "https://www.saheed.codes/rss/atom.xml"
-      },
-      author: "Ahmed Saheed"
-    });
-     const octokit = new Octokit({
-      auth: token
-    });
-    const reply = await octokit.request('GET /gists/{gist_id}/comments', {
-      headers: {
-          accept: 'application/vnd.github.v3+json',
-        },
-      gist_id: id,
+export default class extends Component  {
+  constructor(props){
+      super(props);
+      this.state = {
+         posts: [],
+      }
+    }
+    async componentDidMount()  {
+      const octokit = new Octokit({
+        auth: token
+      })
       
-    });
-    const posts = [...reply.data]
-    if(!posts){return;}
-    posts?.map((post) => {
-      const url = "https://www.saheed.codes/me/";
-      feed.addItem({
-        title: post.title,
-        id: url,
-        link: url,
-        description:  "TIL on " +new Date(post.created_at),
-        content:(post.body),
-         author: "Ahmed Saheed",
-        // contributor: [author],
-        date: new Date(post.created_at)
+       const response = await octokit.request('GET /gists/{gist_id}/comments', {
+        headers: {
+            accept: 'application/vnd.github.v3+json',
+          },
+        gist_id: id,
+        
+      })
+      const date = new Date();
+      const feed = new Feed({
+        title: "Saheed's TIL",
+        description: "Kinda my daily Encyclopedia",
+        id: "https://www.saheed.codes/til/",
+        link: "https://www.saheed.codes/til/",
+        language: "en",
+        copyright: `© Ahmed Saheed ${date.getFullYear()}`,
+        updated: date, 
+        generator: "Feed", // optional, default = 'Feed for Node.js'
+        feedLinks: {
+          json: "https://www.saheed.codes/til/",
+          atom: "https://www.saheed.codes/til/"
+        },
+        author: {
+          name: "Ahmed Saheed",
+          email: "ahmedsaheed2@outlook.com",
+          link: "https://www.saheed.codes/til/"
+        }
       });
-    });
-  
-    //  fs.mkdirSync('./public/rss', { recursive: true });
-    //  fs.writeFileSync('./public/rss/feed.xml', feed.rss2());
+      
+      response.data.forEach(post => {
+         feed.addItem({
+          title: post.body.substring(0, 45) + "...",
+          id: "https://www.saheed.codes/til/",
+          link: "https://www.saheed.codes/til/",
+          description: post.description,
+          content:  post.body,
+          author: [
+            {
+              name: "Ahmed Saheed",
+              email: "ahmedsaheed2@outlook.com",
+              link: "https://saheed.codes/til"
+            },
+          ],
+          date: new Date(post.created_at)
+         
+        });
+      });
+      
+      feed.addCategory("Today I Learnt");
+      
+      feed.addContributor({
+        name: "Ahmed Saheed",
+        email: "ahmedsaheed2@outlook.com",
+        link: "https://saheed.codes/til"
+      });
+      
+   
+      console.log(feed.rss2());
+         //  fs.mkdirSync('./public/rss', { recursive: true });
+      //fs.writeFile('./public/rss/feed.xml', feed.rss2());
     // fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
     // fs.writeFileSync('./public/rss/feed.json', feed.json1());
-    
+   
+
   }
   render () {
 
-    return (null)
+    return (<></>)
+  }
 }
-
-}
-
