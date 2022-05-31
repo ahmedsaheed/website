@@ -28,8 +28,8 @@ export default class extends Component  {
       const feed = new Feed({
         title: "Saheed's TIL",
         description: "Kinda my daily Encyclopedia",
-        id: "https://www.saheed.codes/til/",
-        link: "https://www.saheed.codes/til/",
+        id: "https://saheed.codes/TIL",
+        link: "https://saheed.codes/TIL",
         language: "en",
         copyright: `© Ahmed Saheed ${date.getFullYear()}`,
         updated: date, 
@@ -41,22 +41,22 @@ export default class extends Component  {
         author: {
           name: "Ahmed Saheed",
           email: "ahmedsaheed2@outlook.com",
-          link: "https://www.saheed.codes/til/"
+          link: "https://saheed.codes/TIL"
         }
       });
       
       response.data.forEach(post => {
          feed.addItem({
           title: post.body.substring(0, 45) + "...",
-          id: "https://www.saheed.codes/til/",
-          link: "https://www.saheed.codes/til/",
+          id: "https://saheed.codes/TIL",
+          link: "https://saheed.codes/TIL",
           description: post.description,
           content:  post.body,
           author: [
             {
               name: "Ahmed Saheed",
               email: "ahmedsaheed2@outlook.com",
-              link: "https://saheed.codes/til"
+              link: "https://saheed.codes/TIL"
             },
           ],
           date: new Date(post.created_at)

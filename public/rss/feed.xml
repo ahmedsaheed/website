@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Saheed's TIL</title>
-        <link>https://www.saheed.codes/til/</link>
+        <link>https://saheed.codes/TIL</link>
         <description>Kinda my daily Encyclopedia</description>
-        <lastBuildDate>Tue, 31 May 2022 17:53:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 May 2022 18:03:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed</generator>
         <language>en</language>
@@ -14,8 +14,8 @@
             <title><![CDATA[**Test: Sum of Array Recursively**
 
 ```java...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Sat, 21 May 2022 20:59:51 GMT</pubDate>
             <content:encoded><![CDATA[**Test: Sum of Array Recursively**
 
@@ -46,8 +46,8 @@ class Test {
 
 ```java
 publ...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Sun, 22 May 2022 00:36:30 GMT</pubDate>
             <content:encoded><![CDATA[**Test: Permutate A String**
 
@@ -106,8 +106,8 @@ public class Permutation
         </item>
         <item>
             <title><![CDATA[**Testing the new mathematic support in markd...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Sun, 22 May 2022 01:34:33 GMT</pubDate>
             <content:encoded><![CDATA[**Testing the new mathematic support in markdown**
 
@@ -122,8 +122,8 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
             <title><![CDATA[**Testing the markdown table & Tasklist**
 
 ...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Sun, 22 May 2022 13:51:25 GMT</pubDate>
             <content:encoded><![CDATA[**Testing the markdown table & Tasklist**
 
@@ -143,8 +143,8 @@ Example:
 
 ```java
     pu...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Mon, 23 May 2022 20:53:24 GMT</pubDate>
             <content:encoded><![CDATA[**Easy Palindrome Number**
 
@@ -167,8 +167,8 @@ Example:
         </item>
         <item>
             <title><![CDATA[**Had Microsoft Internship Interview Today.**...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Wed, 25 May 2022 13:22:28 GMT</pubDate>
             <content:encoded><![CDATA[**Had Microsoft Internship Interview Today.**
 Total Question : 3
@@ -230,8 +230,8 @@ public int[] sumZero(int n) {
         </item>
         <item>
             <title><![CDATA[I'd successfully passed the online microsoft ...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Fri, 27 May 2022 21:16:15 GMT</pubDate>
             <content:encoded><![CDATA[I'd successfully passed the online microsoft coding assessments, now i've been invited for an interview via teams and i found this documents online and just jumped on some the question 
 [<ins>Click here to see<ins>](https://github.com/CourtneyThurston/microsoft-internships/blob/master/README.md) 
@@ -305,8 +305,8 @@ Question 3 : Remove duplicates in this list.
 
 ```php
 if (isset($_SE...]]></title>
-            <link>https://www.saheed.codes/til/</link>
-            <guid>https://www.saheed.codes/til/</guid>
+            <link>https://saheed.codes/TIL</link>
+            <guid>https://saheed.codes/TIL</guid>
             <pubDate>Sun, 29 May 2022 14:13:15 GMT</pubDate>
             <content:encoded><![CDATA[PHP session timeout
 
