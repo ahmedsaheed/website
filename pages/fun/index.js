@@ -106,7 +106,7 @@ export default class extends Component {
               class="text-3xl font-am px-10"
               style={{ fontfamily: "ui-serif" }}
             >
-              Algorithm
+              Algorithms
             </h1>
             <div
               class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
@@ -160,6 +160,18 @@ export default class extends Component {
               <Dropdown
                 title="3. Insertion Sort"
                 content="https://observablehq.com/embed/2ba0d61c2112721f?cells=code%2Cintro%2Csub%2Cvisual%2Cviewof+size"
+              />
+            </div>
+          </header>
+          <br />
+          <header class="mx-auto max-w-3xl space-y-5">
+            <div
+              class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+              
+            >
+              <Dropdown
+                title="4. Merge Sort"
+                content="https://observablehq.com/embed/9cfad59162ff2265?cells=code%2Cintro%2Csub%2Cvisual%2Cviewof+s%2Cviewof+b"
               />
             </div>
           </header>
