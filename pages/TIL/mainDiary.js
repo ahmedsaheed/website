@@ -40,7 +40,7 @@ const MainDiary = (props) => {
                     <div class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 " > 
                     
                     <Dropdown title =   {<ReactMarkdown
-                                children = {entries.created_at?.substring(0, 10)+ " "+entries.body.substring(0, 40)+"...."}
+                                children = {entries.created_at?.substring(0, 10)+ " "+entries.body.substring(0, 30)+"...."}
                                 remarkPlugins={[remarkMath, remarkGfm]}
                                 rehypePlugins={[rehypeKatex]}
                                 />} content= {<DiarySession
