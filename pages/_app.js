@@ -1,7 +1,5 @@
 import "../styles/style.css"
 import "../styles/blog.css"
-import "../styles/hovers.css"
-
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 
