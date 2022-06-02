@@ -65,7 +65,7 @@ export default class extends Component {
               data-theme="business"
               style={{ fontfamily: "ui-serif" }}
             >
-              <a href="/">AHMED</a>
+              <a class='text' href="/">AHMED</a>
               <div class="space-x-4 flex items-center hover:text-blue-600">
                 <a class="false" href="/books">
                   books
@@ -131,8 +131,7 @@ export default class extends Component {
           <br />
           <header class="mx-auto max-w-3xl space-y-5">
             <div
-              class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
-              data-theme="business"
+              class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
             >
               <Dropdown
                 title="1. Bubble Sort"
@@ -143,8 +142,8 @@ export default class extends Component {
           <br />
           <header class="mx-auto max-w-3xl space-y-5">
             <div
-              class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
-              data-theme="business"
+              class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+              
             >
               <Dropdown
                 title="2. Selection Sort"

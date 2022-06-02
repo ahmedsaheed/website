@@ -5,7 +5,7 @@ import { currentDayName } from "../src/date";
 var greetings = [
   "Hi 👋🏾 ,",
   "Come in peace ☮️",
-  "🕉️  Namaste",
+  "🕉️  Namaste,",
   "Salam Alaykum ☪️",
 ];
 var now = greetings[Math.floor(Math.random() * greetings.length)];
@@ -38,7 +38,7 @@ export default class extends Component {
           <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
         </head>
 
-        <body
+        <body 
           id="page-top"
           data-spy="scroll"
           data-target=".navbar-fixed-top"
@@ -48,7 +48,7 @@ export default class extends Component {
             <header className="header">
               <nav aria-label="primary" className="menu">
                 <a href="/blah" className="menu-item">
-                  <span className="text menu-item-inner">
+                  <span className="menu-item-inner">
                     <br />
                     BACKYARD 🌼
                   </span>
@@ -78,7 +78,7 @@ export default class extends Component {
               An upcoming software engineer & Family tech support since 7.
             </h2>
             <h2 className="tagline">
-              {now} Hope you're having a good {currentDayName()} ?
+              {now} hope you're having a good {currentDayName()} ?
             </h2>
           </div>
           <div class="whiteSpace"></div>
@@ -95,7 +95,7 @@ export default class extends Component {
             >
               <p
                 class="first-line:uppercase first-line:tracking-widest
-    first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
+                  first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
               >
                 This vestibule door opens onto my so fine and maybe unfine
                 datasets of my brain. More like a library where i store valuable

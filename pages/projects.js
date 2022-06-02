@@ -34,7 +34,7 @@ export default class extends Component {
               data-theme="business"
               style={{ fontfamily: "ui-serif" }}
             >
-              <a href="/">AHMED</a>
+              <a class='text' href="/">AHMED</a>
               <div class="space-x-4 flex items-center hover:text-blue-600">
                 <a class="text false" href="/books">
                   books

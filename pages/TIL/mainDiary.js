@@ -37,10 +37,10 @@ const MainDiary = (props) => {
             {
                 props && props.entry?.map((entries, i) => {
                     return <> <header class="mx-auto max-w-3xl space-y-5">
-                    <div class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 " data-theme="business"> 
+                    <div class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 " > 
                     
                     <Dropdown title =   {<ReactMarkdown
-                                children = {entries.created_at?.substring(0, 10)+ " "+entries.body.substring(0, 50)+"...."}
+                                children = {entries.created_at?.substring(0, 10)+ " "+entries.body.substring(0, 40)+"...."}
                                 remarkPlugins={[remarkMath, remarkGfm]}
                                 rehypePlugins={[rehypeKatex]}
                                 />} content= {<DiarySession

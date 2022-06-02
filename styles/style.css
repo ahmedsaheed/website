@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith%20One&display=swap');
+
+
 :root {
     --color-default: #fff;
     --text-color: #333;  
     --color-border:#e7e7e7;
     --header-height: 3.5rem;
     --dairy: #333;
+    --til-color: #e5e7eb;
+
 
   }
   @media (prefers-color-scheme: dark){
@@ -14,6 +19,7 @@
           --color-border:#e7e7e7;
           --header-height: 3.5rem;
           --dairy: #333;
+          --til-color: #212121;
 
 
       }
@@ -24,6 +30,8 @@
     --color-border:#e7e7e7;
     --header-height: 3.5rem;
     --dairy: #333;
+    --til-color: #212121;
+
 
 
   }
@@ -32,6 +40,7 @@
     --text-color: #333;
     --header-height: 3.5rem;
     --dairy: #333;
+    --til-color: #e5e7eb;
 
   }
 
@@ -46,17 +55,21 @@
 
   }
 
+  .til{
+    background-color: var(--til-color) ;
+  }
+
   p {
     margin-bottom: 1.6rem;
     font-size: 1.125rem;
 }
 
-header, main, footer {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+header, .tagline, main, footer {
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
 }
 
 @keyframes fadein {
@@ -72,14 +85,14 @@ header, main, footer {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.3;
-    font-family: "Yomogi";
+    font-family: "Hammersmith One";
   }
 
   .cta, .tagline {
     margin-bottom: 2rem;
 }
 h2 {
-    font-family: 'Lobster', cursive;
+    font-family: "Hammersmith One";
     text-align: center;
     margin-top: 80px;
     margin-bottom: 60px;
@@ -89,21 +102,16 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-/* .btn, .is-hidden {
-    white-space: nowrap;
-} */
+
 
 .header {
     background: var(--color-default);
-    /* position: fixed; */
     top: 0;
     left: 0;
-    /* z-index: 200; */
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    /* padding: 0 0rem; */
     border-bottom: 0.0625rem solid var(--color-default);
     transition: background .3s;
 }
@@ -129,10 +137,6 @@ h2 {
 
 h1{
     font-family: "Yomogi",'ui-serif', ;
-    /* text-align: center;
-     margin-top: 250px;
-    font-size: 6em; */
-
 }
 p{
     font-family: "Yomogi",'ui-serif';
@@ -142,13 +146,13 @@ p{
 div.social-network a {
     background-color: var(--color-default);
     border-radius: 100%;
-    /* color: #f7d35d; */
     padding: 5px 6px 5px 6px;
     position: relative; 
     top: 25px;
     right: 25px;
 
 }
+
 
 .footer {
     padding: 2rem 0;
@@ -163,23 +167,8 @@ footer p{
     text-align: center;
     margin-left: 15px;
 }
-
-/* .back-titre{
-  
-    display: flex;
-    max-width: 40rem;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 4rem auto 2rem;
-    padding: 2rem;
-    background: var(--color-code-bg);
-    text-align: center;
-
-} */
-
 .back-titre h1  {
-    font-size: 10vw;
+    font-size: 8vw;
     color: transparent;
     -webkit-text-stroke: 2px var(--text-color);
     text-align: center;
@@ -199,8 +188,6 @@ footer p{
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 3px solid;
-	font-family: monospace;
-	font-size: 2em;
   }
   
   @keyframes typing {
@@ -231,13 +218,6 @@ footer p{
   .grid-container:hover{
     transform: scale(1.05, 1.05);
   }
-
-/* .back-titre:hover{
-    transform: perspective(1000px) translateZ(0px) rotateX(-11.5562deg) rotateY(-5.73487deg);
-    transition: all 150ms linear 0s;
-} */
-
-
 
 .page {
   padding: 1.5rem;
@@ -357,4 +337,14 @@ image {
 }
 .pad{
   padding-left: 1rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  font-family: 'Hammersmith One';
+}
+
+.text{
+  font-family: 'Hammersmith One';
+
 }
