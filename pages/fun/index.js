@@ -152,6 +152,18 @@ export default class extends Component {
             </div>
           </header>
           <br />
+          <header class="mx-auto max-w-3xl space-y-5">
+            <div
+              class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+              
+            >
+              <Dropdown
+                title="3. Insertion Sort"
+                content="https://observablehq.com/embed/2ba0d61c2112721f?cells=code%2Cintro%2Csub%2Cvisual%2Cviewof+size"
+              />
+            </div>
+          </header>
+          <br />
         </body>
         <footer>
           <nav class="sticky top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
