@@ -48,7 +48,7 @@ export default class extends Component {
             <header className="header">
               <nav aria-label="primary" className="menu">
                 <a href="/blah" className="menu-item">
-                  <span className="menu-item-inner">
+                  <span className="text2 menu-item-inner">
                     <br />
                     BACKYARD 🌼
                   </span>

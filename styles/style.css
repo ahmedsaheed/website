@@ -348,3 +348,14 @@ image {
   font-family: 'Hammersmith One';
 
 }
+
+.text:hover{
+  color: #ffc400;
+}
+.here{
+  color: #ffc400;
+}
+.text2:hover{
+  color: #ffc400;
+
+}
