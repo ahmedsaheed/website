@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Dairy from "./dairy";
+import Dairy from "./api";
 import { NextSeo } from "next-seo";
+import Footer from "../../lib/footer";
+
 export default class extends Component {
   render() {
     return (
@@ -22,7 +24,7 @@ export default class extends Component {
             content="width=device-width, initial-scale=1.0"
           />
           <link href="../styles/blog.css" rel="stylesheet" />
-          <title>Moi 👨🏾‍🦲 | Ahmed Saheed</title>
+          <title>TIL | Ahmed Saheed</title>
           <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         </head>
         <body>
@@ -32,7 +34,9 @@ export default class extends Component {
               data-theme="business"
               style={{ fontfamily: "ui-serif" }}
             >
-              <a class='text' href="/">AHMED</a>
+              <a class="text" href="/">
+                AHMED
+              </a>
               <div class="space-x-4 flex items-center hover:text-blue-600">
                 <a class="false" href="/books">
                   books
@@ -83,15 +87,28 @@ export default class extends Component {
                 class="first-line:uppercase first-line:tracking-widest
     first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
               >
-                In science fiction which was published around the 1920s, "It is
-                always expected that future human beings would have enormous
-                heads because they would have very big brains and they would be
-                very wise. It didn't work that ways, what happened is the human
-                race is building a brain outside its body. That is to say an
-                interlocking electronic network of telephonic, television,
-                radionic communication which is rapidly intelocked with
-                computers, so that you will within a few years be able to plug
-                your brain into a computer".
+                A catalog of referenceable notes documented at least thrice a
+                week. I first heard about til from{" "}
+                <a
+                  class="text"
+                  href="https://github.com/M0nica"
+                  style={{ textDecorationLine: "underline" }}
+                >
+                  Monica Powell's
+                </a>{" "}
+                <a
+                  class="text"
+                  href="https://github.com/readme/guides/private-documentation"
+                  style={{ textDecorationLine: "underline" }}
+                >
+                  writing on GitHub's Blog
+                </a>
+                . TIL is a way to summarise information learnt in few sentences
+                which can be of great relivence when commited to on a long run.
+                I hacked up this rust cli program which helps me add my til as a
+                gist comment on GitHub. In the nearest future, I would like to
+                create a search mechanism for this website which would help
+                search through the contents of my til as they increase.
               </p>
             </div>
             <br />
@@ -99,22 +116,7 @@ export default class extends Component {
             <Dairy />
           </header>
         </body>
-        <footer>
-          <nav class="sticky top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
-            <div
-              class="bg-am-black text-am-white px-5 py-2.5 sw-full rounded-lg sm:flex justify-between"
-              data-theme="business"
-              style={{ fontfamily: "ui-serif" }}
-            >
-              <a href="/">Made with ❤️ by Ahmed</a>
-              <div class="space-x-4 flex items-center">
-                <a class="false" href="/">
-                  © Ahmed Saheed 2022
-                </a>
-              </div>
-            </div>
-          </nav>
-        </footer>
+        <Footer />
       </>
     );
   }

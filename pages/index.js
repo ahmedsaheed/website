@@ -1,14 +1,7 @@
 import React, { Component, useEffect } from "react";
 import { NextSeo } from "next-seo";
-import { currentDayName } from "../src/date";
-
-var greetings = [
-  "Hi 👋🏾 ,",
-  "Come in peace ☮️",
-  "🕉️  Namaste,",
-  "Salam Alaykum ☪️",
-];
-var now = greetings[Math.floor(Math.random() * greetings.length)];
+import { currentDayName } from "../lib/date";
+import { greeting } from "../lib/greetings";
 
 export default class extends Component {
   render() {
@@ -26,16 +19,11 @@ export default class extends Component {
         />
         <head>
           <title class>Ahmed Saheed</title>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.min.css"
-          />
           <link rel="stylesheet" href="./style.css" />
           <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
           ></link>
-          <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
         </head>
 
         <body 
@@ -78,7 +66,7 @@ export default class extends Component {
               An upcoming software engineer & Family tech support since 7.
             </h2>
             <h2 className="tagline">
-              {now} hope you're having a good {currentDayName()} ?
+              {greeting()} hope you're having a good {currentDayName()} ?
             </h2>
           </div>
           <div class="whiteSpace"></div>
@@ -100,9 +88,28 @@ export default class extends Component {
                 This vestibule door opens onto my so fine and maybe unfine
                 datasets of my brain. More like a library where i store valuable
                 peice of computer related information.
-                <br /> Currently, i am engaging in college work while doing some
-                side projects and contributing to open source. Also i am having
-                a great time being lost in Tolstoy's literature alongside
+                <br /> Currently, i am engaging in {" "}
+                <a
+                  class="text"
+                  href="https://www.griffith.ie/"
+                  style={{ textDecorationLine: "underline" }}
+                >
+                  college work
+                </a> {" "}while doing some
+                side projects and <a
+                  class="text"
+                  href="https://www.github.com/ahmedsaheed"
+                  style={{ textDecorationLine: "underline" }}
+                >
+                  contributing to open source
+                </a> {" "}. Also i am having
+                a great time being lost in <a
+                  class="text"
+                  href="https://www.saheed.codes/books"
+                  style={{ textDecorationLine: "underline" }}
+                >
+                  Tolstoy's Literature
+                </a> {" "} alongside
                 puzzling human existence. Please feel free and navigate around,
                 you're highly welcomed.
               </p>
