@@ -26,7 +26,7 @@ export default class extends Component {
           ></link>
         </head>
 
-        <body 
+        <body
           id="page-top"
           data-spy="scroll"
           data-target=".navbar-fixed-top"
@@ -88,30 +88,32 @@ export default class extends Component {
                 This vestibule door opens onto my so fine and maybe unfine
                 datasets of my brain. More like a library where i store valuable
                 peice of computer related information.
-                <br /> Currently, i am engaging in {" "}
+                <br /> Currently, i am engaging in{" "}
                 <a
                   class="text"
                   href="https://www.griffith.ie/"
                   style={{ textDecorationLine: "underline" }}
                 >
                   college work
-                </a> {" "}while doing some
-                side projects and <a
+                </a>{" "}
+                while doing some side projects and{" "}
+                <a
                   class="text"
                   href="https://www.github.com/ahmedsaheed"
                   style={{ textDecorationLine: "underline" }}
                 >
                   contributing to open source
-                </a> {" "}. Also i am having
-                a great time being lost in <a
+                </a>{" "}
+                . Also i am having a great time being lost in{" "}
+                <a
                   class="text"
                   href="https://www.saheed.codes/books"
                   style={{ textDecorationLine: "underline" }}
                 >
                   Tolstoy's Literature
-                </a> {" "} alongside
-                puzzling human existence. Please feel free and navigate around,
-                you're highly welcomed.
+                </a>{" "}
+                alongside puzzling human existence. Please feel free and
+                navigate around, you're highly welcomed.
               </p>
             </div>
           </header>
