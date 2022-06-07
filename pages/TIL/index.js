@@ -71,7 +71,7 @@ export default class extends Component {
                         </div>
                     </nav>
                     <Summary 
-                    title="Daily Encyclopedia"
+                    title="Daily Encyclopedia: Today I Learnt"
                     content = {
                         <>A catalog of referenceable notes documented at least thrice a week.
                         I first heard about til from{" "}
