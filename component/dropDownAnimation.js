@@ -1,4 +1,4 @@
-import {React} from 'react';
+import { React } from "react"
 import { useState, useRef, useEffect } from "react"
 import autoAnimate from "@formkit/auto-animate"
 
@@ -22,4 +22,4 @@ const Dropdown = ({ title, content }) => {
     )
 }
 
-export default Dropdown;
+export default Dropdown

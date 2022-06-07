@@ -71,13 +71,14 @@ export default class extends Component {
                         </div>
                     </nav>
                     <Summary
-                    title = "Projects 🚧"
-                    content = {
-                        <>The machine code of the genes is uncannily computer-like. Apart from
-                        differences in jargon, the pages of a molecular biology journal
-                        might be interchanged with those of a computer engineering journal.
-                        </>
-                    }
+                        title="Projects 🚧"
+                        content={
+                            <>
+                                The machine code of the genes is uncannily computer-like. Apart from
+                                differences in jargon, the pages of a molecular biology journal
+                                might be interchanged with those of a computer engineering journal.
+                            </>
+                        }
                     />
                     <main class="mx-auto max-w-3xl space-y-10 p-10">
                         <a

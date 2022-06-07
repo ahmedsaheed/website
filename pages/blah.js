@@ -72,9 +72,9 @@ export default class extends Component {
                     </nav>
                     <Summary
                         title="Backyard 🌼"
-                        content = {
+                        content={
                             <>
-                            Throughout the world there are many different gardens that people
+                                Throughout the world there are many different gardens that people
                                 have designed. In a Japanese garden, every tree is perfectly pruned,
                                 without a leaf out of place. Nothing is planted without forethought
                                 as to the exact place appropriate to it.There are English gardens

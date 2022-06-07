@@ -71,11 +71,11 @@ export default class extends Component {
                         </h2>
                     </div>
                     <div class="whiteSpace"></div>
-                    <Summary 
-                    title = ''
-                    content = {
-                        <>
-                        This vestibule door opens onto my so fine and maybe unfine datasets
+                    <Summary
+                        title=""
+                        content={
+                            <>
+                                This vestibule door opens onto my so fine and maybe unfine datasets
                                 of my brain. More like a library where i store valuable peice of
                                 computer related information.
                                 <br /> Currently, i am engaging in{" "}
@@ -104,10 +104,10 @@ export default class extends Component {
                                 </a>{" "}
                                 alongside puzzling human existence. Please feel free and navigate
                                 around, you're highly welcomed.
-                        </>
-                    }
+                            </>
+                        }
                     />
-                    
+
                     <br />
                     <footer className="footer">
                         <div className="container">

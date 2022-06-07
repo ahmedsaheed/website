@@ -49,7 +49,6 @@ If you prefer browsing the contents of this site through a list instead of a gra
 
 - 👀 [Discord Community](https://discord.gg/cRFFHYye7t)[]()`
 export default class extends Component {
-
     render() {
         return (
             <>
@@ -115,11 +114,11 @@ export default class extends Component {
                             </div>
                         </div>
                     </nav>
-                    <Summary 
-                    title = "Digital Garden"
-                    content = {
-                        <>
-                        In science fiction which was published around the 1920s, "It is
+                    <Summary
+                        title="Digital Garden"
+                        content={
+                            <>
+                                In science fiction which was published around the 1920s, "It is
                                 always expected that future human beings would have enormous heads
                                 because they would have very big brains and they would be very wise.
                                 It didn't work that ways, what happened is the human race is
@@ -127,21 +126,25 @@ export default class extends Component {
                                 electronic network of telephonic, television, radionic communication
                                 which is rapidly intelocked with computers, so that you will within
                                 a few years be able to plug your brain into a computer".
-                        </>
-                    }
-                    /><br/><br/><br/><br/>
-                <header class="mx-auto max-w-3xl space-y-5">
-                <ReactMarkdown
-                                                children={
-                                                    markdown
-                                                }
-                                                remarkPlugins={[remarkMath, remarkGfm]}
-                                                rehypePlugins={[rehypeKatex]}
-                                            />
-                </header>
-                    
-                       
-                        <br/><br/><br/><br/>
+                            </>
+                        }
+                    />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <header class="mx-auto max-w-3xl space-y-5">
+                        <ReactMarkdown
+                            children={markdown}
+                            remarkPlugins={[remarkMath, remarkGfm]}
+                            rehypePlugins={[rehypeKatex]}
+                        />
+                    </header>
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </body>
                 <Footer />
             </>

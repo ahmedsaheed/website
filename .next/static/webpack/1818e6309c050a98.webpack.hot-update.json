@@ -1,1 +1,12 @@
-{"c":["webpack"],"r":["pages/second-brain/[slugs]"],"m":["./component/layout.tsx","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fahmedsaheed%2FDesktop%2FDesktop%2Fsaheed.codes%2Fpages%2Fsecond-brain%2F%5Bslugs%5D.tsx&page=%2Fsecond-brain%2F%5Bslugs%5D!","./node_modules/next/dist/client/link.js","./node_modules/next/dist/client/use-intersection.js","./node_modules/next/link.js","./pages/second-brain/[slugs].tsx"]}
+{
+    "c": ["webpack"],
+    "r": ["pages/second-brain/[slugs]"],
+    "m": [
+        "./component/layout.tsx",
+        "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fahmedsaheed%2FDesktop%2FDesktop%2Fsaheed.codes%2Fpages%2Fsecond-brain%2F%5Bslugs%5D.tsx&page=%2Fsecond-brain%2F%5Bslugs%5D!",
+        "./node_modules/next/dist/client/link.js",
+        "./node_modules/next/dist/client/use-intersection.js",
+        "./node_modules/next/link.js",
+        "./pages/second-brain/[slugs].tsx"
+    ]
+}

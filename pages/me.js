@@ -69,11 +69,11 @@ export default class extends Component {
                             </div>
                         </div>
                     </nav>
-                    <Summary 
-                    title = "👨🏾‍🦲 Moi"
-                    content = {
-                        <>
-                        In science fiction which was published around the 1920s, "It is
+                    <Summary
+                        title="👨🏾‍🦲 Moi"
+                        content={
+                            <>
+                                In science fiction which was published around the 1920s, "It is
                                 always expected that future human beings would have enormous heads
                                 because they would have very big brains and they would be very wise.
                                 It didn't work that ways, what happened is the human race is
@@ -81,13 +81,20 @@ export default class extends Component {
                                 electronic network of telephonic, television, radionic communication
                                 which is rapidly intelocked with computers, so that you will within
                                 a few years be able to plug your brain into a computer".
-                        </>
-                    }
-                    /><br/><br/><br/><br/>
+                            </>
+                        }
+                    />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <center class="text-3xl font-am px-10">
-                            Some things are better left unseen!
-                        </center>
-                        <br/><br/><br/><br/>
+                        Some things are better left unseen!
+                    </center>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </body>
                 <Footer />
             </>

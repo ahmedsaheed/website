@@ -72,15 +72,14 @@ export default class extends Component {
                         </div>
                     </nav>
                     <Summary
-                    title = " Tools 🛠️"
-                    content = {
-                        <>
-                         Indeed, the woes of Software Engineering are not due to lack of
+                        title=" Tools 🛠️"
+                        content={
+                            <>
+                                Indeed, the woes of Software Engineering are not due to lack of
                                 tools, or proper management, but largely due to lack of sufficient
                                 technical competence.
-                        </>
-                    }
-                    
+                            </>
+                        }
                     />
                     <br />
                     <br />

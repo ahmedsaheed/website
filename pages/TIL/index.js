@@ -70,36 +70,37 @@ export default class extends Component {
                             </div>
                         </div>
                     </nav>
-                    <Summary 
-                    title="Daily Encyclopedia: Today I Learnt"
-                    content = {
-                        <>A catalog of referenceable notes documented at least thrice a week.
-                        I first heard about til from{" "}
-                        <a
-                            class="text"
-                            href="https://github.com/M0nica"
-                            style={{ textDecorationLine: "underline" }}
-                        >
-                            Monica Powell's
-                        </a>{" "}
-                        <a
-                            class="text"
-                            href="https://github.com/readme/guides/private-documentation"
-                            style={{ textDecorationLine: "underline" }}
-                        >
-                            writing on GitHub's Blog
-                        </a>
-                        . TIL is a way to summarise information learnt in few sentences
-                        which can be of great relivence when commited to on a long run. I
-                        hacked up this rust cli program which helps me add my til as a gist
-                        comment on GitHub. In the nearest future, I would like to create a
-                        search mechanism for this website which would help search through
-                        the contents of my til as they increase.</>
-                    }
+                    <Summary
+                        title="Daily Encyclopedia: Today I Learnt"
+                        content={
+                            <>
+                                A catalog of referenceable notes documented at least thrice a week.
+                                I first heard about til from{" "}
+                                <a
+                                    class="text"
+                                    href="https://github.com/M0nica"
+                                    style={{ textDecorationLine: "underline" }}
+                                >
+                                    Monica Powell's
+                                </a>{" "}
+                                <a
+                                    class="text"
+                                    href="https://github.com/readme/guides/private-documentation"
+                                    style={{ textDecorationLine: "underline" }}
+                                >
+                                    writing on GitHub's Blog
+                                </a>
+                                . TIL is a way to summarise information learnt in few sentences
+                                which can be of great relivence when commited to on a long run. I
+                                hacked up this rust cli program which helps me add my til as a gist
+                                comment on GitHub. In the nearest future, I would like to create a
+                                search mechanism for this website which would help search through
+                                the contents of my til as they increase.
+                            </>
+                        }
                     />
-                   <br /> 
-                <Dairy />
-
+                    <br />
+                    <Dairy />
                 </body>
                 <Footer />
             </>

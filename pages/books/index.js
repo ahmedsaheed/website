@@ -72,10 +72,10 @@ export default class extends Component {
                         </div>
                     </nav>
                     <Summary
-                    title = "Books 📚"
-                    content= {
-                        <>
-                         In science fiction which was published around the 1920s, "It is
+                        title="Books 📚"
+                        content={
+                            <>
+                                In science fiction which was published around the 1920s, "It is
                                 always expected that future human beings would have enormous heads
                                 because they would have very big brains and they would be very wise.
                                 It didn't work that ways, what happened is the human race is
@@ -86,14 +86,14 @@ export default class extends Component {
                                 These are all the books i've currently read, this list is updated
                                 dynamically whenever I complete a new book. Kinda my virtual
                                 shelf...
-                        </>
-                    }
+                            </>
+                        }
                     />
                     <br />
                     <center>
                         <Book />
                     </center>
-                     <br />
+                    <br />
 
                     <Footer />
                 </body>
