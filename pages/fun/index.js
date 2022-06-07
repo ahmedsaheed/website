@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import { NextSeo } from "next-seo"
 import { useState, useRef, useEffect } from "react"
 import autoAnimate from "@formkit/auto-animate"
-import Footer from "../../components/footer"
-import Summary from "../../components/summary"
+import Footer from "../../component/footer"
+import Summary from "../../component/summary"
 
 const Dropdown = ({ title, content }) => {
     const [show, setShow] = useState(false)

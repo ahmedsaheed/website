@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import Book from "./api"
 import { NextSeo } from "next-seo"
-import Footer from "../../components/footer"
-import Summary from "../../components/summary"
+import Footer from "../../component/footer"
+import Summary from "../../component/summary"
 
 export default class extends Component {
     render() {

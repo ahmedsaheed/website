@@ -5,7 +5,7 @@ import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
-import Dropdown from "../../components/dropDownAnimation"
+import Dropdown from "../../component/dropDownAnimation"
 
 const MainDiary = (props) => {
     if (!props) {

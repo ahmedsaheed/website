@@ -1,8 +1,8 @@
 import React, { Component, useEffect } from "react"
 import { NextSeo } from "next-seo"
-import { currentDayName } from "../components/date"
-import { greeting } from "../components/greetings"
-import Summary from "../components/summary"
+import { currentDayName } from "../component/date"
+import { greeting } from "../component/greetings"
+import Summary from "../component/summary"
 
 export default class extends Component {
     render() {
