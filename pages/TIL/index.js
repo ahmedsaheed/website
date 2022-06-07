@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import Dairy from "./api"
 import { NextSeo } from "next-seo"
-import Footer from "../../lib/footer"
+import Footer from "../../components/footer"
+import Summary from "../../components/summary"
 
 export default class extends Component {
     render() {
@@ -69,46 +70,36 @@ export default class extends Component {
                             </div>
                         </div>
                     </nav>
-                    <header class="mx-auto max-w-3xl space-y-5">
-                        <h1 class="text-3xl font-am px-10" style={{ fontfamily: "ui-serif" }}>
-                            Daily Encyclopedia
-                        </h1>
-                        <div
-                            class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
-                            data-theme="business"
+                    <Summary 
+                    title="Daily Encyclopedia"
+                    content = {
+                        <>A catalog of referenceable notes documented at least thrice a week.
+                        I first heard about til from{" "}
+                        <a
+                            class="text"
+                            href="https://github.com/M0nica"
+                            style={{ textDecorationLine: "underline" }}
                         >
-                            <p
-                                class="first-line:uppercase first-line:tracking-widest
-    first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
-                            >
-                                A catalog of referenceable notes documented at least thrice a week.
-                                I first heard about til from{" "}
-                                <a
-                                    class="text"
-                                    href="https://github.com/M0nica"
-                                    style={{ textDecorationLine: "underline" }}
-                                >
-                                    Monica Powell's
-                                </a>{" "}
-                                <a
-                                    class="text"
-                                    href="https://github.com/readme/guides/private-documentation"
-                                    style={{ textDecorationLine: "underline" }}
-                                >
-                                    writing on GitHub's Blog
-                                </a>
-                                . TIL is a way to summarise information learnt in few sentences
-                                which can be of great relivence when commited to on a long run. I
-                                hacked up this rust cli program which helps me add my til as a gist
-                                comment on GitHub. In the nearest future, I would like to create a
-                                search mechanism for this website which would help search through
-                                the contents of my til as they increase.
-                            </p>
-                        </div>
-                        <br />
-                        <h1 class="text-3xl font-am px-10">Today I Learnt</h1>
-                        <Dairy />
-                    </header>
+                            Monica Powell's
+                        </a>{" "}
+                        <a
+                            class="text"
+                            href="https://github.com/readme/guides/private-documentation"
+                            style={{ textDecorationLine: "underline" }}
+                        >
+                            writing on GitHub's Blog
+                        </a>
+                        . TIL is a way to summarise information learnt in few sentences
+                        which can be of great relivence when commited to on a long run. I
+                        hacked up this rust cli program which helps me add my til as a gist
+                        comment on GitHub. In the nearest future, I would like to create a
+                        search mechanism for this website which would help search through
+                        the contents of my til as they increase.</>
+                    }
+                    />
+                   <br /> 
+                <Dairy />
+
                 </body>
                 <Footer />
             </>

@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import Book from "./api"
 import { NextSeo } from "next-seo"
-import Footer from "../../lib/footer"
+import Footer from "../../components/footer"
+import Summary from "../../components/summary"
 
 export default class extends Component {
     render() {
@@ -70,19 +71,11 @@ export default class extends Component {
                             </div>
                         </div>
                     </nav>
-                    <header class="mx-auto max-w-3xl space-y-5">
-                        <h1 class="text-3xl font-am px-10" style={{ fontfamily: "ui-serif" }}>
-                            Books 📚
-                        </h1>
-                        <div
-                            class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
-                            data-theme="business"
-                        >
-                            <p
-                                class="first-line:uppercase first-line:tracking-widest
-    first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
-                            >
-                                In science fiction which was published around the 1920s, "It is
+                    <Summary
+                    title = "Books 📚"
+                    content= {
+                        <>
+                         In science fiction which was published around the 1920s, "It is
                                 always expected that future human beings would have enormous heads
                                 because they would have very big brains and they would be very wise.
                                 It didn't work that ways, what happened is the human race is
@@ -93,18 +86,15 @@ export default class extends Component {
                                 These are all the books i've currently read, this list is updated
                                 dynamically whenever I complete a new book. Kinda my virtual
                                 shelf...
-                            </p>
-                        </div>
-                    </header>
+                        </>
+                    }
+                    />
                     <br />
                     <center>
                         <Book />
                     </center>
-                    <br />
-                    <br />
-                    <br />
-                    <br /> <br />
-                    <br />
+                     <br />
+
                     <Footer />
                 </body>
             </>

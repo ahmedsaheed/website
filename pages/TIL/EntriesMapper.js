@@ -1,32 +1,11 @@
 import React, { Component } from "react"
 import DiarySession from "./EntriesComponent"
-import { useState, useRef, useEffect } from "react"
-import autoAnimate from "@formkit/auto-animate"
 import ReactMarkdown from "react-markdown"
 import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
-
-const Dropdown = ({ title, content }) => {
-    const [show, setShow] = useState(false)
-    const parent = useRef(null)
-
-    useEffect(() => {
-        parent.current && autoAnimate(parent.current)
-    }, [parent])
-
-    const reveal = () => setShow(!show)
-
-    return (
-        <div ref={parent}>
-            <p className="pad dropdown-label" onClick={reveal}>
-                {title}
-            </p>
-            {show && <div class="content">{content}</div>}
-        </div>
-    )
-}
+import Dropdown from "../../components/dropDownAnimation"
 
 const MainDiary = (props) => {
     if (!props) {

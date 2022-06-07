@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { NextSeo } from "next-seo"
-import Footer from "../lib/footer"
+import Footer from "../components/footer"
+import Summary from "../components/summary"
 
 export default class extends Component {
     render() {
@@ -69,19 +70,11 @@ export default class extends Component {
                             </div>
                         </div>
                     </nav>
-                    <header class="mx-auto max-w-3xl space-y-5">
-                        <h1 class="text-3xl font-am px-10" style={{ fontfamily: "ui-serif" }}>
-                            BACKYARD 🌼
-                        </h1>
-                        <div
-                            class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
-                            data-theme="business"
-                        >
-                            <p
-                                class="first-line:uppercase first-line:tracking-widest
-    first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
-                            >
-                                Throughout the world there are many different gardens that people
+                    <Summary
+                        title="Backyard 🌼"
+                        content = {
+                            <>
+                            Throughout the world there are many different gardens that people
                                 have designed. In a Japanese garden, every tree is perfectly pruned,
                                 without a leaf out of place. Nothing is planted without forethought
                                 as to the exact place appropriate to it.There are English gardens
@@ -90,9 +83,9 @@ export default class extends Component {
                                 true of all gardens. It is joint creation between man's intention to
                                 create a space of tranquility and nature's ability to comply. 💭🍄
                                 WELCOME TO MY GARDEN 🪵🧺
-                            </p>
-                        </div>
-                    </header>
+                            </>
+                        }
+                    />
                     <main class="m-10 px-10 space-y-20">
                         <section class="grid grid-cols-1 md:grid-cols-2 md:gap-28 xl:gap-56 space-y-28 md:space-y-0">
                             <div class="col-span-1 space-y-10">

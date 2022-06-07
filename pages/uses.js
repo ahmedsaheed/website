@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { NextSeo } from "next-seo"
-import Footer from "../lib/footer"
-
+import Footer from "../components/footer"
+import Summary from "../components/summary"
 export default class extends Component {
     render() {
         return (
@@ -71,24 +71,17 @@ export default class extends Component {
                             </div>
                         </div>
                     </nav>
-                    <header class="mx-auto max-w-3xl space-y-5">
-                        <h1 class="text-3xl font-am px-10" style={{ fontfamily: "ui-serif" }}>
-                            Tools 🛠️
-                        </h1>
-                        <div
-                            class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
-                            data-theme="business"
-                        >
-                            <p
-                                class="first-line:uppercase first-line:tracking-widest
-    first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
-                            >
-                                Indeed, the woes of Software Engineering are not due to lack of
+                    <Summary
+                    title = " Tools 🛠️"
+                    content = {
+                        <>
+                         Indeed, the woes of Software Engineering are not due to lack of
                                 tools, or proper management, but largely due to lack of sufficient
                                 technical competence.
-                            </p>
-                        </div>
-                    </header>
+                        </>
+                    }
+                    
+                    />
                     <br />
                     <br />
                     <br />

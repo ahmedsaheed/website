@@ -1,7 +1,8 @@
 import React, { Component, useEffect } from "react"
 import { NextSeo } from "next-seo"
-import { currentDayName } from "../lib/date"
-import { greeting } from "../lib/greetings"
+import { currentDayName } from "../components/date"
+import { greeting } from "../components/greetings"
+import Summary from "../components/summary"
 
 export default class extends Component {
     render() {
@@ -70,19 +71,11 @@ export default class extends Component {
                         </h2>
                     </div>
                     <div class="whiteSpace"></div>
-                    <header class="mx-auto max-w-3xl space-y-5">
-                        <h1 class="text-4xl font-am px-10" style={{ fontfamily: "ui-serif" }}>
-                            {" "}
-                        </h1>
-                        <div
-                            class="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
-                            data-theme="business"
-                        >
-                            <p
-                                class="first-line:uppercase first-line:tracking-widest
-                  first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:mr-3 first-letter:float-left"
-                            >
-                                This vestibule door opens onto my so fine and maybe unfine datasets
+                    <Summary 
+                    title = ''
+                    content = {
+                        <>
+                        This vestibule door opens onto my so fine and maybe unfine datasets
                                 of my brain. More like a library where i store valuable peice of
                                 computer related information.
                                 <br /> Currently, i am engaging in{" "}
@@ -111,9 +104,10 @@ export default class extends Component {
                                 </a>{" "}
                                 alongside puzzling human existence. Please feel free and navigate
                                 around, you're highly welcomed.
-                            </p>
-                        </div>
-                    </header>
+                        </>
+                    }
+                    />
+                    
                     <br />
                     <footer className="footer">
                         <div className="container">
