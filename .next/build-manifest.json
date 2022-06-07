@@ -15,11 +15,6 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/TIL": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/TIL.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,20 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/me": [
+    "/second-brain": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/me.js"
+      "static/chunks/pages/second-brain.js"
     ],
-    "/projects": [
+    "/second-brain/[slug]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/projects.js"
-    ],
-    "/uses": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/uses.js"
+      "static/chunks/pages/second-brain/[slug].js"
     ]
   },
   "ampFirstPages": []
