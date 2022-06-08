@@ -65,12 +65,12 @@ export default class extends Component {
 
                         <h2 className="tagline">
                             An upcoming software engineer & Family tech support since 7.
-                        </h2>
-                        <h2 className="tagline">
+                        <br/>
                             {greeting()} hope you're having a good {currentDayName()} ?
                         </h2>
                     </div>
-                    <div class="whiteSpace"></div>
+
+                    {/* <div class="whiteSpace"></div> */}
                     <Summary
                         title=""
                         content={
