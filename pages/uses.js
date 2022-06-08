@@ -91,7 +91,7 @@ export default class extends Component {
                             <br />
                             <ul>
                                 <li>
-                                     I have this box which contains almost everything i use, its{" "}
+                                    I have this box which contains almost everything i use, its{" "}
                                     <a
                                         class="text"
                                         style={{
@@ -105,7 +105,7 @@ export default class extends Component {
                                     .
                                 </li>
                                 <li>
-                                     I use the{" "}
+                                    I use the{" "}
                                     <a
                                         class="text iframe-link"
                                         style={{
@@ -128,7 +128,7 @@ export default class extends Component {
                                     on all my editors.
                                 </li>
                                 <li>
-                                     I'm mainly use{" "}
+                                    I'm mainly use{" "}
                                     <a
                                         class="text iframe-link"
                                         style={{
@@ -151,7 +151,7 @@ export default class extends Component {
                                     as my terminal.
                                 </li>
                                 <li>
-                                     I use the{" "}
+                                    I use the{" "}
                                     <a
                                         class="text iframe-link"
                                         style={{
@@ -174,7 +174,7 @@ export default class extends Component {
                                     for my terminal.
                                 </li>
                                 <li>
-                                     Lastly{" "}
+                                    Lastly{" "}
                                     <a
                                         class="text"
                                         style={{

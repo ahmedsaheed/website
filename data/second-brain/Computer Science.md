@@ -2,152 +2,152 @@
 
 [[astr-1101]]
 
-- [[Apollo Missions]] presentation
+-   [[Apollo Missions]] presentation
 
-- Goal --> humans on [[the Moon]]
+-   Goal --> humans on [[the Moon]]
 
-- JFK speech
+-   JFK speech
 
-- [[NASA]] went from fire/death --> boots on [[the Moon]] in 2 years
+-   [[NASA]] went from fire/death --> boots on [[the Moon]] in 2 years
 
-- Took 8 years to land on [[the Moon]]
+-   Took 8 years to land on [[the Moon]]
 
-- Missions
+-   Missions
 
-- Apollo 1
+-   Apollo 1
 
-- Flash fire in the launch capsule
+-   Flash fire in the launch capsule
 
-- All 3 [[astronaut]]s died
+-   All 3 [[astronaut]]s died
 
-- Almost shut down the Space Exploration Program
+-   Almost shut down the Space Exploration Program
 
-- Apollo 2 & 3
+-   Apollo 2 & 3
 
-- Cancelled
+-   Cancelled
 
-- Not useful enough for the cost
+-   Not useful enough for the cost
 
-- Became unmanned tests of the [[Saturn V]] [[rocket]]
+-   Became unmanned tests of the [[Saturn V]] [[rocket]]
 
-- Launched before Apollo 1
+-   Launched before Apollo 1
 
-- Apollo 5
+-   Apollo 5
 
-- Included Lunar Module
+-   Included Lunar Module
 
-- Apollo 6
+-   Apollo 6
 
-- Final unmanned [[Saturn V]] launch to verify safety
+-   Final unmanned [[Saturn V]] launch to verify safety
 
-- Apollo 7
+-   Apollo 7
 
-- First manned mission
+-   First manned mission
 
-- Significant amount of unused equipment
+-   Significant amount of unused equipment
 
-- Orbited lower [[Earth]]
+-   Orbited lower [[Earth]]
 
-- Windows would fog up a lot
+-   Windows would fog up a lot
 
-- Apollo 8
+-   Apollo 8
 
-- First manned mission to orbit [[the Moon]]
+-   First manned mission to orbit [[the Moon]]
 
-- First humans to ever see the far side of [[the Moon]]
+-   First humans to ever see the far side of [[the Moon]]
 
-- Apollo 9
+-   Apollo 9
 
-- Test to see if the lunar module could land on the moon
+-   Test to see if the lunar module could land on the moon
 
-- Took place in [[Earth]]'s orbit
+-   Took place in [[Earth]]'s orbit
 
-- Apollo 10
+-   Apollo 10
 
-- Dress rehearsal --> tested all elements of a moon landing while orbiting the moon
+-   Dress rehearsal --> tested all elements of a moon landing while orbiting the moon
 
-- Tested all components required for Apollo 11
+-   Tested all components required for Apollo 11
 
-- Apollo 11
+-   Apollo 11
 
-- First landing on [[the Moon]]
+-   First landing on [[the Moon]]
 
-- Big leap for [[NASA]] and the [[USA]]; the space race was won
+-   Big leap for [[NASA]] and the [[USA]]; the space race was won
 
-- Apollo 12
+-   Apollo 12
 
-- Second manned landing on [[the Moon]]
+-   Second manned landing on [[the Moon]]
 
-- Retrieved remains of Surveyor III
+-   Retrieved remains of Surveyor III
 
-- Apollo 13
+-   Apollo 13
 
-- Supposed to be another manned landing on [[the Moon]]
+-   Supposed to be another manned landing on [[the Moon]]
 
-- Oxygen tank exploded in space so they couldn't land
+-   Oxygen tank exploded in space so they couldn't land
 
-- [Great podcast detailing the mission](https://podcasts.apple.com/us/podcast/saving-apollo-13/id1506563333)
+-   [Great podcast detailing the mission](https://podcasts.apple.com/us/podcast/saving-apollo-13/id1506563333)
 
-- Apollo 14
+-   Apollo 14
 
-- Spent two days on the surface of [[the Moon]]
+-   Spent two days on the surface of [[the Moon]]
 
-- Landed in the lunar highlands
+-   Landed in the lunar highlands
 
-- Apollo 15
+-   Apollo 15
 
-- First three day stay on [[the Moon]]
+-   First three day stay on [[the Moon]]
 
-- First usage of Lunar Rover
+-   First usage of Lunar Rover
 
-- Apollo 16
+-   Apollo 16
 
-- Landed in the lunar highlands again
+-   Landed in the lunar highlands again
 
-- Picked up more scientific studies
+-   Picked up more scientific studies
 
-- Apollo 17
+-   Apollo 17
 
-- Last lunar mission
+-   Last lunar mission
 
-- Three days on [[the Moon]]
+-   Three days on [[the Moon]]
 
-- Arecibo Observatory & The Very Large Array
+-   Arecibo Observatory & The Very Large Array
 
-- VLA
+-   VLA
 
-- Constructed in 7 years
+-   Constructed in 7 years
 
-- [[1973]] - [[1980]]
+-   [[1973]] - [[1980]]
 
-- San Agustin in central New Mexico
+-   San Agustin in central New Mexico
 
-- 28 25m radio [[telescope]]s
+-   28 25m radio [[telescope]]s
 
-- Used to communicate with [[Voyager 2]] as it flew by [[Neptune]]
+-   Used to communicate with [[Voyager 2]] as it flew by [[Neptune]]
 
-- NRAO VLA Sky Survey
+-   NRAO VLA Sky Survey
 
-- Astronomical survey of Northern Hemisphere
+-   Astronomical survey of Northern Hemisphere
 
-- Everything north of -40˚
+-   Everything north of -40˚
 
-- Used by [[SETI]] to search for extra terrestrial life
+-   Used by [[SETI]] to search for extra terrestrial life
 
-- Arecibo Observatory
+-   Arecibo Observatory
 
-- Constructed in the [[1960]]s
+-   Constructed in the [[1960]]s
 
-- Used for searching for intelligent life
+-   Used for searching for intelligent life
 
-- [[SETI]] and [[METI]]
+-   [[SETI]] and [[METI]]
 
-- Are we alone in the [[Universe]]?
+-   Are we alone in the [[Universe]]?
 
-- Arecibo Message
+-   Arecibo Message
 
-- Sent in [[1974]]
+-   Sent in [[1974]]
 
-- Sent towards [[Messiar 13]]
+-   Sent towards [[Messiar 13]]
 
-- [Interactive physics simulations](https://ophysics.com/index.html)
+-   [Interactive physics simulations](https://ophysics.com/index.html)

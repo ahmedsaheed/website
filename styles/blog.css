@@ -107,8 +107,6 @@ a {
     text-decoration: underline;
 }
 
-
-
 /*
 Add the correct font weight in Edge and Safari.
 */
@@ -294,7 +292,7 @@ summary {
 Removes the default spacing and border for appropriate elements.
 */
 
- /* blockquote,
+/* blockquote,
 dl,
 dd,
 h1,
@@ -2123,7 +2121,7 @@ html {
     padding: 2px 8px;
     background-color: transparent;
     border: 1px solid hsla(var(--bc) / 0.2);
-} 
+}
 
 .prose code:after,
 .prose code:before {
@@ -2133,15 +2131,12 @@ html {
 .prose pre code {
     border-radius: 1px;
     padding: 0;
-
 }
-
 
 .prose :where(tbody tr, thead):not(:where([class~="not-prose"] *)) {
     border-bottom-color: hsl(var(--bc) / 20%);
-} */
-
-.sticky {
+}
+*/ .sticky {
     position: -webkit-sticky;
     position: sticky;
 }

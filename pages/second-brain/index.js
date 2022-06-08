@@ -9,7 +9,6 @@ import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 import Head from "next/head"
 
-
 const markdown = `
 ---
 

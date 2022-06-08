@@ -19,23 +19,23 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 <title>{brainEntry.slug} | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
-                integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
-                crossOrigin="anonymous"
-              />
-              <script
-                defer
-                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
-                integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
-                crossOrigin="anonymous"
-              ></script>
-              <script
-                defer
-                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
-                integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
-                crossOrigin="anonymous"
-              ></script>
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+                    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+                    crossOrigin="anonymous"
+                />
+                <script
+                    defer
+                    src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+                    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+                    crossOrigin="anonymous"
+                ></script>
+                <script
+                    defer
+                    src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+                    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+                    crossOrigin="anonymous"
+                ></script>
             </Head>
             <header className="pads mx-auto max-w-3xl space-y-5">
                 {/* <header>
@@ -50,11 +50,12 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 />
 
                 {!!brainEntry.backlinks.length && (
-                  <div
-                className="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
-                data-theme="business"
-            >                        <h1 className="pad text-2xl font-light text-am-white">Backlinks</h1>
-
+                    <div
+                        className="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
+                        data-theme="business"
+                    >
+                        {" "}
+                        <h1 className="pad text-2xl font-light text-am-white">Backlinks</h1>
                         <div className="flex flex-wrap ">
                             {brainEntry.backlinks.map((backlink) => (
                                 <Link

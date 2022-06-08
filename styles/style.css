@@ -155,13 +155,12 @@ div.social-network a {
     border-top: 0.0625rem solid var(--color-border);
     text-align: center;
     margin-left: 15px;
-    
 }
 
 footer p {
     text-align: center;
     margin-left: 15px;
-    margin: 0
+    margin: 0;
 }
 .back-titre h1 {
     font-size: 8vw;
@@ -339,7 +338,7 @@ image {
     padding-left: 1rem;
     margin: 0;
 }
-.pads{
+.pads {
     padding: 2rem;
 }
 
@@ -351,25 +350,22 @@ image {
 .text {
     font-family: "Hammersmith One";
     text-decoration: none;
-
 }
-.text-am-green-light{
+.text-am-green-light {
     text-decoration: none;
 }
-.false{
+.false {
     text-decoration: none;
 }
-.remove{
+.remove {
     text-decoration: none;
 }
 .text:hover {
     color: #ffc400;
-
 }
 .here {
     color: #ffc400;
     text-decoration: none;
-
 }
 .text2:hover {
     color: #ffc400;
@@ -377,17 +373,16 @@ image {
 }
 a:hover {
     color: #ffc400;
-    
 }
-a{
+a {
     text-decoration: underline;
 }
-.content-card{
+.content-card {
     text-decoration: none;
 }
-.text-sm{
+.text-sm {
     text-decoration: none;
 }
-.pad p{
+.pad p {
     margin: 0;
 }

@@ -22,7 +22,7 @@ export async function markdownToHtml(markdown: string) {
         .use(stringify)
         .use(highlight)
         .use(slug)
-        // 
+        //
         .process(markdown)
 
     return result.toString()

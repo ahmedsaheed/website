@@ -1,1 +1,12 @@
-{"c":["pages/second-brain/[slug]","webpack"],"r":["pages/index","pages/blah"],"m":["./component/date.js","./component/greetings.js","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fahmedsaheed%2FDesktop%2FDesktop%2Fsaheed.codes%2Fpages%2Findex.js&page=%2F!","./pages/index.js","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fahmedsaheed%2FDesktop%2FDesktop%2Fsaheed.codes%2Fpages%2Fblah.js&page=%2Fblah!","./pages/blah.js"]}
+{
+    "c": ["pages/second-brain/[slug]", "webpack"],
+    "r": ["pages/index", "pages/blah"],
+    "m": [
+        "./component/date.js",
+        "./component/greetings.js",
+        "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fahmedsaheed%2FDesktop%2FDesktop%2Fsaheed.codes%2Fpages%2Findex.js&page=%2F!",
+        "./pages/index.js",
+        "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fahmedsaheed%2FDesktop%2FDesktop%2Fsaheed.codes%2Fpages%2Fblah.js&page=%2Fblah!",
+        "./pages/blah.js"
+    ]
+}

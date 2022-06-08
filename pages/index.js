@@ -113,7 +113,10 @@ export default class extends Component {
                         <div className="container">
                             <div className=" footer-inner">
                                 <p className="footer-text">
-                                    © <a className="remove" href="https://github.com/ahmedsaheed">Ahmed Saheed 2022</a>
+                                    ©{" "}
+                                    <a className="remove" href="https://github.com/ahmedsaheed">
+                                        Ahmed Saheed 2022
+                                    </a>
                                 </p>
                             </div>
                         </div>
