@@ -134,7 +134,8 @@ footer {
 }
 
 h1 {
-    font-family: "Yomogi", "ui-serif";
+    font-family: "Hammersmith One", "ui-serif";
+    font-size: 2.5rem;
 }
 p {
     font-family: "Yomogi", "ui-serif";
@@ -154,11 +155,13 @@ div.social-network a {
     border-top: 0.0625rem solid var(--color-border);
     text-align: center;
     margin-left: 15px;
+    
 }
 
 footer p {
     text-align: center;
     margin-left: 15px;
+    margin: 0
 }
 .back-titre h1 {
     font-size: 8vw;
@@ -181,6 +184,7 @@ footer p {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
+    margin: 0;
 }
 
 @keyframes typing {
@@ -333,6 +337,7 @@ image {
 }
 .pad {
     padding-left: 1rem;
+    margin: 0;
 }
 .pads{
     padding: 2rem;
@@ -345,14 +350,44 @@ image {
 
 .text {
     font-family: "Hammersmith One";
-}
+    text-decoration: none;
 
+}
+.text-am-green-light{
+    text-decoration: none;
+}
+.false{
+    text-decoration: none;
+}
+.remove{
+    text-decoration: none;
+}
 .text:hover {
     color: #ffc400;
+
 }
 .here {
     color: #ffc400;
+    text-decoration: none;
+
 }
 .text2:hover {
     color: #ffc400;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffc400;
+    
+}
+a{
+    text-decoration: underline;
+}
+.content-card{
+    text-decoration: none;
+}
+.text-sm{
+    text-decoration: none;
+}
+.pad p{
+    margin: 0;
 }

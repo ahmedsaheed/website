@@ -38,11 +38,11 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
               ></script>
             </Head>
             <header className="pads mx-auto max-w-3xl space-y-5">
-                <header>
+                {/* <header>
                     <h1 className="text-3xl" title="A piece of my second brain">
                         🧠
                     </h1>
-                </header>
+                </header> */}
 
                 <article
                     className="prose mt-12"
@@ -50,17 +50,19 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 />
 
                 {!!brainEntry.backlinks.length && (
-                    <div className="prose rounded-lg border border-stone-800 text-stone-100 bg-opacity-20 bg-stone-800 p-8 mt-12">
-                        <h2 className="font-am text-2xl font-light text-am-white">Backlinks</h2>
+                  <div
+                className="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
+                data-theme="business"
+            >                        <h1 className="pad text-2xl font-light text-am-white">Backlinks</h1>
 
-                        <div className="flex flex-wrap justify-between">
+                        <div className="flex flex-wrap ">
                             {brainEntry.backlinks.map((backlink) => (
                                 <Link
                                     key={backlink}
                                     href="/second-brain/[slug]"
                                     as={`/second-brain/${encodeURI(backlink.toLowerCase())}`}
                                 >
-                                    <a className="m-2">{backlink}</a>
+                                    <a className="pad text">{backlink}</a>
                                 </Link>
                             ))}
                         </div>

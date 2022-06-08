@@ -91,7 +91,7 @@ export default class extends Component {
                             <br />
                             <ul>
                                 <li>
-                                    1. I have this box which contains almost everything i use, its{" "}
+                                     I have this box which contains almost everything i use, its{" "}
                                     <a
                                         class="text"
                                         style={{
@@ -105,7 +105,7 @@ export default class extends Component {
                                     .
                                 </li>
                                 <li>
-                                    2. I use the{" "}
+                                     I use the{" "}
                                     <a
                                         class="text iframe-link"
                                         style={{
@@ -128,7 +128,7 @@ export default class extends Component {
                                     on all my editors.
                                 </li>
                                 <li>
-                                    3. I'm mainly use{" "}
+                                     I'm mainly use{" "}
                                     <a
                                         class="text iframe-link"
                                         style={{
@@ -150,10 +150,8 @@ export default class extends Component {
                                     </a>{" "}
                                     as my terminal.
                                 </li>
-                            </ul>
-                            <ol class="list-decimal">
                                 <li>
-                                    3. I use the{" "}
+                                     I use the{" "}
                                     <a
                                         class="text iframe-link"
                                         style={{
@@ -175,10 +173,8 @@ export default class extends Component {
                                     </a>{" "}
                                     for my terminal.
                                 </li>
-                            </ol>
-                            <ol class="list-decimal">
                                 <li>
-                                    4. Lastly{" "}
+                                     Lastly{" "}
                                     <a
                                         class="text"
                                         style={{
@@ -191,7 +187,7 @@ export default class extends Component {
                                     </a>{" "}
                                     for my anything coding related.
                                 </li>
-                            </ol>
+                            </ul>
                         </section>
                     </article>
                     <br />

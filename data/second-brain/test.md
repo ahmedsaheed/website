@@ -74,6 +74,13 @@ git remote add upstream git@github.com:jackyzha0/quartz.git
 
 git fetch upstream
 
-git checkout -p upstream/hugo -- layouts .github Makefile assets/js assets/styles/base.scss assets/styles/darkmode.scss config.toml data
+git checkout -p upstream/hugo -- layouts
 
 ```
+
+
+Example:
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
+[[Computer Science]]

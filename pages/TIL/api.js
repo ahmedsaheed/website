@@ -34,7 +34,7 @@ class Dairy extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="xoxo">
                 <MainDiary entry={this.state.entry} />
             </div>
         )

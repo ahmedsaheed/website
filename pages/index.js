@@ -36,7 +36,7 @@ export default class extends Component {
                     <div className="header-area">
                         <header className="header">
                             <nav aria-label="primary" className="menu">
-                                <a href="/blah" className="menu-item">
+                                <a href="/blah" className="remove menu-item">
                                     <span className="text2 menu-item-inner">
                                         <br />
                                         BACKYARD 🌼
@@ -111,9 +111,9 @@ export default class extends Component {
                     <br />
                     <footer className="footer">
                         <div className="container">
-                            <div className="footer-inner">
+                            <div className=" footer-inner">
                                 <p className="footer-text">
-                                    © <a href="https://github.com/ahmedsaheed">Ahmed Saheed 2022</a>
+                                    © <a className="remove" href="https://github.com/ahmedsaheed">Ahmed Saheed 2022</a>
                                 </p>
                             </div>
                         </div>

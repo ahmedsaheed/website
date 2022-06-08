@@ -9,9 +9,9 @@ const Footer = () => {
                     data-theme="business"
                     style={{ fontfamily: "ui-serif" }}
                 >
-                    <a href="/">Made with ❤️ by Ahmed</a>
+                    <a class ="remove" href="/">Made with ❤️ by Ahmed</a>
                     <div class="space-x-4 flex items-center">
-                        <a class="false" href="/">
+                        <a class="remove false" href="/">
                             © Ahmed Saheed 2022
                         </a>
                     </div>
