@@ -306,9 +306,9 @@ figure,
 p,
 pre {
     margin: 0;
-} */
+}
 
-/*
+
 fieldset {
     margin: 0;
     padding: 0;
@@ -2136,7 +2136,7 @@ html {
 .prose :where(tbody tr, thead):not(:where([class~="not-prose"] *)) {
     border-bottom-color: hsl(var(--bc) / 20%);
 }
-*/ .sticky {
+.sticky {
     position: -webkit-sticky;
     position: sticky;
 }
