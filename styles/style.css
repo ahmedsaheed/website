@@ -397,3 +397,9 @@ a {
 }
 /* =============================END OF STYLE=========================*/
 
+.backlinks{
+    padding: 2px 8px;
+    background-color: transparent;
+    border: 1px solid #d4d4d4;
+    width: 80%;
+}
