@@ -1,6 +1,8 @@
 import { Feed } from "feed"
 import { Octokit } from "@octokit/core"
 import React, { Component } from "react"
+import { markdownToHtml } from "../lib/mdToHtml"
+
 
 const token = process.env.github_api
 const id = "a928b1fbcf1738da26ea5d7125e911cb"
@@ -43,13 +45,12 @@ export default class extends Component {
             },
         })
         response.data.forEach((post) => {
-            const data = <ReactMarkdown {...post.body} />
             feed.addItem({
                 title: post.body.substring(0, 45) + "...",
                 id: "https://saheed.codes/TIL",
                 link: "https://saheed.codes/TIL",
                 description: post.description,
-                content: post.body,
+                content : post.body,
                 author: [
                     {
                         name: "Ahmed Saheed",
