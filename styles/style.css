@@ -8,24 +8,30 @@
     --header-height: 3.5rem;
     --dairy: #333;
     --til-color: #e5e7eb;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png) repeat;
+
 }
 @media (prefers-color-scheme: dark) {
     :root {
         --color-default: #000;
-        --text-color: #e0e0e0;
+        --text-color: #000;
         --color-border: #e7e7e7;
         --header-height: 3.5rem;
         --dairy: #333;
-        --til-color: #212121;
+        --til-color: #e5e7eb;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png) repeat;
+
     }
 }
 [data-theme="dark"] {
     --color-default: #000;
-    --text-color: #e0e0e0;
+    --text-color: #000;
     --color-border: #e7e7e7;
     --header-height: 3.5rem;
     --dairy: #333;
-    --til-color: #212121;
+    --til-color: #e5e7eb;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png) repeat;
+
 }
 [data-theme="light"] {
     --color-default: #fff;
@@ -33,15 +39,18 @@
     --header-height: 3.5rem;
     --dairy: #333;
     --til-color: #e5e7eb;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png) repeat;
+
 }
 
 body {
-    background-color: var(--color-default);
     font-family: 100%/1.5 "Yomogi", system-ui, helvetica, sans-serif;
     color: var(--text-color);
     --header-height: 3.5rem;
     height: 100%;
     width: 99%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png) repeat;
+
 }
 
 .til {
@@ -101,14 +110,14 @@ footer {
 }
 
 .header {
-    background: var(--color-default);
+    background: transparent;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.0625rem solid var(--color-default);
+    border-bottom: 0.0625rem solid var(--color-border);
     transition: background 0.3s;
 }
 .header,
@@ -142,7 +151,7 @@ p {
     font-size: 1.2em;
 }
 div.social-network a {
-    background-color: var(--color-default);
+    background-color: transparent;
     border-radius: 100%;
     padding: 5px 6px 5px 6px;
     position: relative;
@@ -386,3 +395,5 @@ a {
 .pad p {
     margin: 0;
 }
+/* =============================END OF STYLE=========================*/
+
