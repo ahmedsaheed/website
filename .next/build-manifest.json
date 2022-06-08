@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/second-brain": [
+    "/blah": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/second-brain.js"
+      "static/chunks/pages/blah.js"
     ],
     "/second-brain/[slug]": [
       "static/chunks/webpack.js",

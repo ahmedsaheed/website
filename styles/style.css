@@ -334,6 +334,9 @@ image {
 .pad {
     padding-left: 1rem;
 }
+.pads{
+    padding: 2rem;
+}
 
 .text-3xl {
     font-size: 1.875rem;

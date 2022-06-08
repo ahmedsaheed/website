@@ -7,6 +7,8 @@ import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
+import Head from "next/head"
+
 
 const markdown = `
 ---
@@ -62,13 +64,13 @@ export default class extends Component {
                         description: "A place to document 'Today I Learnt'",
                     }}
                 />
-                <head>
+                <Head>
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link href="../styles/blog.css" rel="stylesheet" />
-                    <title>Moi 👨🏾‍🦲 | Ahmed Saheed</title>
+                    <title>2nd Brain | Ahmed Saheed</title>
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-                </head>
+                </Head>
                 <body>
                     <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
                         <div
@@ -133,7 +135,7 @@ export default class extends Component {
                     <br />
                     <br />
                     <br />
-                    <header class="mx-auto max-w-3xl space-y-5">
+                    <header class="pads mx-auto max-w-3xl space-y-5">
                         <ReactMarkdown
                             children={markdown}
                             remarkPlugins={[remarkMath, remarkGfm]}
