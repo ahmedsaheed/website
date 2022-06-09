@@ -4,6 +4,7 @@ import { currentDayName } from "../component/date"
 import { greeting } from "../component/greetings"
 import Summary from "../component/summary"
 
+const date = new Date()
 export default class extends Component {
     render() {
         return (
@@ -25,6 +26,10 @@ export default class extends Component {
                         rel="stylesheet"
                         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
                     ></link>
+                    <link
+                        href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap"
+                        rel="stylesheet"
+                    />
                 </head>
 
                 <body
@@ -63,7 +68,7 @@ export default class extends Component {
                             <h1 class="typing-demo">AHMED SAHEED</h1>
                         </div>
 
-                        <h2 className="tagline">
+                        <h2 className="font-mono tagline">
                             An upcoming software engineer & Family tech support since 7.
                         <br/>
                             {greeting()} hope you're having a good {currentDayName()} ?
@@ -104,7 +109,6 @@ export default class extends Component {
                                 </a>{" "}
                                 alongside puzzling human existence. Please feel free and navigate
                                 around, you're highly welcomed.
-                           
                             </>
                         }
                     />
