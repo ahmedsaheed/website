@@ -11,6 +11,7 @@
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px);
+    --quote: rgb(33,33,33);
 }
 html {
     width: 100%;
@@ -30,6 +31,7 @@ html {
         --dairy: #333;
         --til-color: rgb(33,33,33);
         --bi: radial-gradient(circle, #ccc 0.2px, rgb(21, 19, 19) 1px);
+        --quote: #e5e7eb;
     }
 }
 [data-theme="dark"] {
@@ -40,6 +42,7 @@ html {
     --dairy: #333;
     --til-color: rgb(33,33,33);
     --bi: radial-gradient(circle, #ccc 0.2px, rgb(21, 19, 19) 1px);
+    --quote: #e5e7eb;
 }
 [data-theme="light"] {
     --color-default: #fff;
@@ -48,6 +51,7 @@ html {
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px);
+    --quote: rgb(33,33,33);
 }
 
 html body {
@@ -130,6 +134,11 @@ footer {
     padding: 0 1rem;
     font-size: 1rem;
     font-weight: 500;
+}
+blockquote{
+    border-left: 4px solid var(--quote);
+    padding-left: 1em;
+
 }
 
 .menu,
@@ -392,48 +401,7 @@ a {
     margin: 0;
 }
 
-.rotate-2deg {
-    transform: rotate(-2deg);
-    transform-origin: bottom left;
-  }
-  
-  .rotate-2deg-r {
-    transform: rotate(2deg);
-    transform-origin: top right;
-  }
-  
-  .rotate-5deg {
-    transform: rotate(-5deg);
-    transform-origin: bottom left;
-  }
-  
-  .rotate-5deg-r {
-    transform: rotate(5deg);
-    transform-origin: top right;
-  }
-  
-  .rotate-10deg {
-    transform: rotate(-10deg);
-    transform-origin: bottom left;
-  }
-  
-  .rotate-10deg-r {
-    transform: rotate(10deg);
-    transform-origin: top right;
-  }
-  
-  .blink {
-    animation: blink-animation 1s steps(2, start) infinite;
-    -webkit-animation: blink-animation 1s steps(2, start) infinite;
-  }
-  
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
-  @-webkit-keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
+.backlinks{
+    border: 0.7px solid var(--color-border);
+    padding: 10px;
+}

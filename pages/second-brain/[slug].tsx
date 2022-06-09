@@ -38,12 +38,6 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 ></script>
             </Head>
             <header className="pads mx-auto max-w-3xl space-y-5">
-                {/* <header>
-                    <h1 className="text-3xl" title="A piece of my second brain">
-                        🧠
-                    </h1>
-                </header> */}
-
                 <article
                     className="prose mt-12"
                     dangerouslySetInnerHTML={{ __html: brainEntry.content }}
@@ -52,7 +46,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 {!!brainEntry.backlinks.length && (
                     <div className="backlinks">
                         {" "}
-                        <h1 className="pad text-3xl font-light text-am-white">Backlinks</h1>
+                        <h1 className=" text-3xl font-light text-am-white">Backlinks</h1>
                         <div className="flex flex-wrap ">
                             {brainEntry.backlinks.map((backlink) => (
                                 <Link
@@ -60,7 +54,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                                     href="/second-brain/[slug]"
                                     as={`/second-brain/${encodeURI(backlink.toLowerCase())}`}
                                 >
-                                    <a className="pad text">💫 {backlink}</a>
+                                    <a className=" text-sm pad text">🔗<span className="yy"> {backlink}</span></a>
                                 </Link>
                             ))}
                         </div>
