@@ -54,7 +54,9 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                                     href="/second-brain/[slug]"
                                     as={`/second-brain/${encodeURI(backlink.toLowerCase())}`}
                                 >
-                                    <a className=" text-sm pad text">🔗<span className="yy"> {backlink}</span></a>
+                                    <a className=" text-sm pad text">
+                                        🔗<span className="yy"> {backlink}</span>
+                                    </a>
                                 </Link>
                             ))}
                         </div>

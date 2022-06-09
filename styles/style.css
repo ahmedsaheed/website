@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Yomogi&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hammersmith%20One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
@@ -11,16 +10,18 @@
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px);
-    --quote: rgb(33,33,33);
+    --quote: rgb(33, 33, 33);
 }
 html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-  }
-  html *, html *:after, html *:before {
+}
+html *,
+html *:after,
+html *:before {
     box-sizing: inherit;
-  }
+}
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -29,7 +30,7 @@ html {
         --color-border: #e7e7e7;
         --header-height: 3.5rem;
         --dairy: #333;
-        --til-color: rgb(33,33,33);
+        --til-color: rgb(33, 33, 33);
         --bi: radial-gradient(circle, #ccc 0.2px, rgb(21, 19, 19) 1px);
         --quote: #e5e7eb;
     }
@@ -40,7 +41,7 @@ html {
     --color-border: #e7e7e7;
     --header-height: 3.5rem;
     --dairy: #333;
-    --til-color: rgb(33,33,33);
+    --til-color: rgb(33, 33, 33);
     --bi: radial-gradient(circle, #ccc 0.2px, rgb(21, 19, 19) 1px);
     --quote: #e5e7eb;
 }
@@ -51,7 +52,7 @@ html {
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px);
-    --quote: rgb(33,33,33);
+    --quote: rgb(33, 33, 33);
 }
 
 html body {
@@ -94,7 +95,7 @@ footer {
 }
 
 .tagline {
-    font-size: 2.0vw;
+    font-size: 2vw;
     font-weight: 300;
     max-width: 55ch;
     margin-left: auto;
@@ -135,10 +136,9 @@ footer {
     font-size: 1rem;
     font-weight: 500;
 }
-blockquote{
+blockquote {
     border-left: 4px solid var(--quote);
     padding-left: 1em;
-
 }
 
 .menu,
@@ -401,7 +401,7 @@ a {
     margin: 0;
 }
 
-.backlinks{
+.backlinks {
     border: 0.7px solid var(--color-border);
     padding: 10px;
 }

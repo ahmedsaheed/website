@@ -5,7 +5,6 @@ import Footer from "../../component/footer"
 import Summary from "../../component/summary"
 import Head from "next/head"
 
-
 export default class extends Component {
     render() {
         return (

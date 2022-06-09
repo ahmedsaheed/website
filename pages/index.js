@@ -70,7 +70,7 @@ export default class extends Component {
 
                         <h2 className="tagline">
                             An upcoming software engineer & Family tech support since 7.
-                        <br/>
+                            <br />
                             {greeting()} hope you're having a good {currentDayName()} ?
                         </h2>
                     </div>

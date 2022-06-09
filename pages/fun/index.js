@@ -6,7 +6,6 @@ import Footer from "../../component/footer"
 import Summary from "../../component/summary"
 import Head from "next/head"
 
-
 const Dropdown = ({ title, content }) => {
     const [show, setShow] = useState(false)
     const parent = useRef(null)
