@@ -1,6 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Yomogi&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hammersmith%20One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
 
 :root {
     --color-default: #fff;
@@ -27,7 +28,7 @@ html {
         --color-border: #e7e7e7;
         --header-height: 3.5rem;
         --dairy: #333;
-        --til-color: #e5e7eb;
+        --til-color: rgb(33,33,33);
         --bi: radial-gradient(circle, #ccc 0.2px, rgb(21, 19, 19) 1px);
     }
 }
@@ -37,7 +38,7 @@ html {
     --color-border: #e7e7e7;
     --header-height: 3.5rem;
     --dairy: #333;
-    --til-color: #e5e7eb;
+    --til-color: rgb(33,33,33);
     --bi: radial-gradient(circle, #ccc 0.2px, rgb(21, 19, 19) 1px);
 }
 [data-theme="light"] {
