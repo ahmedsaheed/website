@@ -68,7 +68,7 @@ export default class extends Component {
                             <h1 class="typing-demo">AHMED SAHEED</h1>
                         </div>
 
-                        <h2 className="font-mono tagline">
+                        <h2 className="tagline">
                             An upcoming software engineer & Family tech support since 7.
                         <br/>
                             {greeting()} hope you're having a good {currentDayName()} ?
