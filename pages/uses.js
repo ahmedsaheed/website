@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { NextSeo } from "next-seo"
 import Footer from "../component/footer"
 import Summary from "../component/summary"
+import Head from "next/head"
+
 export default class extends Component {
     render() {
         return (
@@ -16,7 +18,7 @@ export default class extends Component {
                         description: "Some of Ahmed's Saheed daily tools",
                     }}
                 />
-                <head>
+                <Head>
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link href="../styles/blog.css" rel="stylesheet" />
@@ -24,7 +26,7 @@ export default class extends Component {
                     <link href="../styles/hovers.css" rel="stylesheet" />
 
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-                </head>
+                </Head>
 
                 <body>
                     <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10">

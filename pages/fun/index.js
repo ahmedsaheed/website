@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import autoAnimate from "@formkit/auto-animate"
 import Footer from "../../component/footer"
 import Summary from "../../component/summary"
+import Head from "next/head"
 
 const Dropdown = ({ title, content }) => {
     const [show, setShow] = useState(false)
@@ -50,13 +51,13 @@ export default class extends Component {
                         description: "A place to document 'Today I Learnt'",
                     }}
                 />
-                <head>
+                <Head>
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link href="../styles/blog.css" rel="stylesheet" />
-                    <title>Moi 👨🏾‍🦲 | Ahmed Saheed</title>
+                    <title>Fun | Ahmed Saheed</title>
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-                </head>
+                </Head>
                 <body>
                     <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
                         <div

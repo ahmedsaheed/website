@@ -127,7 +127,7 @@ export default class extends Component {
                     />
                     <br />
                     <br />
-                   
+
                     <header class="pads mx-auto max-w-3xl space-y-5">
                         <ReactMarkdown
                             children={markdown}
