@@ -41,10 +41,10 @@ export default class extends Component {
                     <div className="header-area">
                         <header className="header">
                             <nav aria-label="primary" className="menu">
-                                <a href="/blah" className="remove menu-item">
+                                <a href="/second-brain" className="remove menu-item">
                                     <span className="text2 menu-item-inner">
                                         <br />
-                                        BACKYARD 🌼
+                                        Garden 🪴
                                     </span>
                                 </a>
                             </nav>

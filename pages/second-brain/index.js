@@ -11,55 +11,49 @@ import Head from "next/head"
 
 const markdown = `
 ---
-
-title: 🪴 Quartz 3.2
-
+## 🧠 Ahmed's Second Brain: Kinda A Personal Digital Garden 🪴
 ---
+ 
+This gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as my own knowledge grows and changes
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+1. This garden was inspired by [Jacky Zhao](https://jzhao.xyz/) and [Anthony Morris](https://anthonymorris.dev/)
 
-1. Extremely fast full-text search by pressing 
+2. The notion of digital gardening is to subtly create reexplorable links within your ideas.
 
-2. Customizable and hackable design based on Hugo
 
-3. Automatically generated backlinks, link previews, and local graph
+## Why keep a second brain isn't one enough?
 
-4. Built-in [[notes/CJK + Latex Support (测试) | CJK + Latex Support]]
+> 📚 [I would like you to see this as further reading](https://jzhao.xyz/posts/networked-thought/)
 
-5. Support for both Markdown Links and Wikilinks
+Obviously, one brain is not enough! My ideas are like winds, I feel them, sometimes grasp them, and sometime it just blows away.
+Man way reasoning and thinking are very difficult to understand, mine happens very disorderly and in a non linear manner which totally
+contradict the ways in which ideas and thought are organise in modern times (linearly). 
+The digital garden or second brain, approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
+## Do you want to keep a second brain?
 
-## Get Started
+I really urge you to keep a second brain as one isn't enough, and it's fun to nurture it and watch its growth. If you want to there are a few ways to do it below.
+- [Quartz 3.2](https://quartz.jzhao.xyz/)
 
-> 📚 [Setup your own digital garden using Quartz](notes/setup.md)
+- [Obsidian](https://obsidian.md/)
 
-Not convinced yet? Look at some [community digital gardens](notes/showcase.md) built with Quartz, or read about [why I made Quartz](notes/philosophy.md) to begin with.
+## Some routes around the garden
 
-## Content Lists
+- 🚧 [Stuff i've worked on and some i'm still tinkering](/projects)
 
-If you prefer browsing the contents of this site through a list instead of a graph, you can find content lists here too:
+- 📚 [Do you like books? Checkout my library ](/books)
 
-- [All Notes](/notes)
-
-- [Setup-related Notes](/tags/setup)
-
-## Troubleshooting
-
-- 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
-
-- 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
-
-- 👀 [Discord Community](https://discord.gg/cRFFHYye7t)[]()`
+- 👀 [See what i learnt today](/TIL)`
 export default class extends Component {
     render() {
         return (
             <>
                 <NextSeo
                     title="Ahmed Saheed's TIL"
-                    description="A place to document 'Today I Learnt'"
-                    canonical="https://saheed.codes/me"
+                    description="Ahmed Saheed's second brain'"
+                    canonical="https://saheed.codes/second-brain"
                     openGraph={{
-                        url: "https://saheed.codes/me",
-                        title: "Ahmed Saheed's TIL",
+                        url: "https://saheed.codes/second-brain",
+                        title: "Ahmed Saheed's second brain",
                         description: "A place to document 'Today I Learnt'",
                     }}
                 />
@@ -67,7 +61,7 @@ export default class extends Component {
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link href="../styles/blog.css" rel="stylesheet" />
-                    <title>2nd Brain | Ahmed Saheed</title>
+                    <title>Second Brain | Ahmed Saheed</title>
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 </Head>
                 <body>
@@ -96,7 +90,7 @@ export default class extends Component {
                                 <a class="false" href="/uses">
                                     tools
                                 </a>
-                                <a class="here false" href="#">
+                                <a class="false" href="/me">
                                     me
                                 </a>
                                 <a class="text false" href="/rss/feed.xml">
@@ -119,21 +113,21 @@ export default class extends Component {
                         title="Digital Garden"
                         content={
                             <>
-                                In science fiction which was published around the 1920s, "It is
-                                always expected that future human beings would have enormous heads
-                                because they would have very big brains and they would be very wise.
-                                It didn't work that ways, what happened is the human race is
-                                building a brain outside its body. That is to say an interlocking
-                                electronic network of telephonic, television, radionic communication
-                                which is rapidly intelocked with computers, so that you will within
-                                a few years be able to plug your brain into a computer".
+                                Throughout the world there are many different gardens that people
+                                have designed. In a Japanese garden, every tree is perfectly pruned,
+                                without a leaf out of place. Nothing is planted without forethought
+                                as to the exact place appropriate to it.There are English gardens
+                                that are famous for their roses and perfect lines of shrubbery. The
+                                number of garden types are too numerous to mention. One thing is
+                                true of all gardens. It is joint creation between man's intention to
+                                create a space of tranquility and nature's ability to comply. 💭🍄
+                                WELCOME TO MY GARDEN 🪵🧺
                             </>
                         }
                     />
                     <br />
                     <br />
-                    <br />
-                    <br />
+                   
                     <header class="pads mx-auto max-w-3xl space-y-5">
                         <ReactMarkdown
                             children={markdown}
