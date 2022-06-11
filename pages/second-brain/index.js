@@ -9,6 +9,7 @@ import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 import Head from "next/head"
 
+
 const markdown = `
 ---
 ## 🧠 Ahmed's Second Brain: Kinda A Personal Digital Garden 🪴
@@ -42,7 +43,11 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 
 - 📚 [Do you like books? Checkout my library ](/books)
 
-- 👀 [See what i learnt today](/TIL)`
+- 👀 [See what i learnt today](/TIL)
+
+- 🔍 You can also search for things in the garden just by typing ctrl+k
+
+`
 export default class extends Component {
     render() {
         return (

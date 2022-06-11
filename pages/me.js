@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component, useState, useEffect } from "react"
 import { NextSeo } from "next-seo"
 import Footer from "../component/footer"
 import Summary from "../component/summary"
@@ -35,25 +35,25 @@ export default class extends Component {
                                 AHMED
                             </a>
                             <div class="space-x-4 flex items-center hover:text-blue-600">
-                                <a class="false" href="/books">
+                                <a class="navs false" href="/books">
                                     books
                                 </a>
-                                <a class="false" href="/fun">
+                                <a class="navs false" href="/fun">
                                     algos
                                 </a>
-                                <a class="text-am-green-light" href="/projects">
+                                <a class="navs text-am-green-light" href="/projects">
                                     projects
                                 </a>
-                                <a class="false" href="/TIL">
+                                <a class="navs false" href="/TIL">
                                     til
                                 </a>
-                                <a class="false" href="/uses">
+                                <a class="navs false" href="/uses">
                                     tools
                                 </a>
-                                <a class="here false" href="#">
+                                <a class="navs here false" href="#">
                                     me
                                 </a>
-                                <a class="text false" href="/rss/feed.xml">
+                                <a class="navs text false" href="/rss/feed.xml">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -91,6 +91,9 @@ export default class extends Component {
                     <center class="text-3xl font-am px-10">
                         Some things are better left unseen!
                     </center>
+                    <center>
+                    </center>
+
                     <br />
                     <br />
                     <br />
