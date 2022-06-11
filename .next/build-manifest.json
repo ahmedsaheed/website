@@ -20,11 +20,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-    "/TIL": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/TIL.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -35,30 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/books": [
+    "/second-brain": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/books.js"
-    ],
-    "/fun": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/fun.js"
-    ],
-    "/me": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/me.js"
-    ],
-    "/projects": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/projects.js"
-    ],
-    "/uses": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/uses.js"
+      "static/chunks/pages/second-brain.js"
     ]
   },
   "ampFirstPages": []

@@ -122,7 +122,7 @@ export default class extends Component {
                                 <p className="footer-text">
                                     ©{" "}
                                     <a className="remove" href="https://github.com/ahmedsaheed">
-                                        Ahmed Saheed 2022
+                                        Ahmed Saheed {date.getFullYear()}
                                     </a>
                                 </p>
                             </div>

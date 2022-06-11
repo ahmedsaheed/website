@@ -1,6 +1,8 @@
 import { React } from "react"
 import SearchBar from "./search"
 import Head from "next/head"
+
+const date = new Date()
 const Footer = () => {
     return (
     
@@ -21,7 +23,7 @@ const Footer = () => {
                     </a>
                     <div class="space-x-4 flex items-center">
                         <a class="remove false" href="/">
-                            © Ahmed Saheed 2022
+                            © Ahmed Saheed {date.getFullYear()}
                         </a>
                     </div>
                 </div>
