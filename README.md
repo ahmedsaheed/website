@@ -26,11 +26,11 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 
 ## Some routes around the garden
 
-- 🚧 [Stuff i've worked on and some i'm still tinkering](/projects)
+- 🚧 [Stuff i've worked on and some i'm still tinkering](ahmedsaheed/projects)
 
-- 📚 [Do you like books? Checkout my library ](/books)
+- 📚 [Do you like books? Checkout my library ](ahmedsaheed/books)
 
-- 👀 [See what i learnt today](/TIL)
+- 👀 [See what i learnt today](ahmedsaheed/TIL)
 
 - 🔍 You can also search for things in the garden just by typing ctrl+k
 
