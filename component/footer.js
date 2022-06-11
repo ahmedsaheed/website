@@ -1,8 +1,16 @@
 import { React } from "react"
 import SearchBar from "./search"
+import Head from "next/head"
+
+const date = new Date()
 const Footer = () => {
     return (
-        <> <SearchBar />
+    
+        <> 
+        <Head>
+        <link rel="icon" type="image/png" href="/icon.png"/>
+        </Head>
+        <SearchBar />
         <footer>        
             <nav class="sticky top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
                 <div
@@ -15,7 +23,7 @@ const Footer = () => {
                     </a>
                     <div class="space-x-4 flex items-center">
                         <a class="remove false" href="/">
-                            © Ahmed Saheed 2022
+                            © Ahmed Saheed {date.getFullYear()}
                         </a>
                     </div>
                 </div>

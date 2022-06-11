@@ -79,6 +79,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
     const content = await markdownToHtml(brainEntry.content || "")
 
+
     return {
         props: {
             brainEntry: {
@@ -90,7 +91,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const brainEntries = getAllContent("second-brain", ["slug"]) as BrainEntry[]
+     const brainEntries = getAllContent("second-brain", ["slug"]) as BrainEntry[]
 
     return {
         paths: brainEntries.map(({ slug }) => {

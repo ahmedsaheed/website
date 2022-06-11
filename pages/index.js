@@ -3,6 +3,7 @@ import { NextSeo } from "next-seo"
 import { currentDayName } from "../component/date"
 import { greeting } from "../component/greetings"
 import Summary from "../component/summary"
+import Head from "next/head"
 
 const date = new Date()
 export default class extends Component {
@@ -19,7 +20,7 @@ export default class extends Component {
                         description: "Vestibule to my brain datasets",
                     }}
                 />
-                <head>
+                <Head>
                     <title class>Ahmed Saheed</title>
                     <link rel="stylesheet" href="./style.css" />
                     <link
@@ -30,7 +31,8 @@ export default class extends Component {
                         href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap"
                         rel="stylesheet"
                     />
-                </head>
+                    <link rel="icon" type="image/png" href="/icon.png"/>
+                </Head>
 
                 <body
                     id="page-top"
@@ -120,7 +122,7 @@ export default class extends Component {
                                 <p className="footer-text">
                                     ©{" "}
                                     <a className="remove" href="https://github.com/ahmedsaheed">
-                                        Ahmed Saheed 2022
+                                        Ahmed Saheed {date.getFullYear()}
                                     </a>
                                 </p>
                             </div>

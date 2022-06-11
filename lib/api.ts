@@ -99,3 +99,4 @@ export function getAllContent(type: string, fields: string[] = []) {
 
     return content as Content[]
 }
+
