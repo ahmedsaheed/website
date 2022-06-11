@@ -6,7 +6,7 @@ This gardens focus not on being a definite source of truth, but rather a source 
 
 1. This garden was inspired by [Jacky Zhao](https://jzhao.xyz/) and [Anthony Morris](https://anthonymorris.dev/)
 
-2. The notion of digital gardening is to subtly create reexplorable links within your ideas.
+2. The notion of digital gardening is to subtly, it create reexplorable links within your ideas.
 
 
 ## Why keep a second brain isn't one enough?
