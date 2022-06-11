@@ -2,93 +2,7 @@ import React, { Component, useState, useEffect } from "react"
 import { NextSeo } from "next-seo"
 import Footer from "../component/footer"
 import Summary from "../component/summary"
-import { Formik, Form, Field } from "formik"
-import { Index } from "flexsearch"
 
-const SearchBar = () => {
-    const data = {
-        1: { id: 1, title: "React" },
-        2: { id: 2, title: "React.js" },
-        3: { id: 3, title: "ReactJS" },
-        4: { id: 4, title: "Node" },
-        5: { id: 5, title: "Node.js" },
-        6: { id: 6, title: "NodeJS" },
-    }
-
-    const [index, setIndex] = useState(
-        new Index({
-            tokenize: "strict",
-            resolution: 9,
-            minlength: 3,
-            optimize: true,
-            fastupdate: true,
-            cache: 100,
-            context: {
-                depth: 1,
-                resolution: 3,
-                bidirectional: true,
-            },
-        }),
-    )
-    const [query, setQuery] = useState("")
-    const [show, setShow] = useState(true);
-    const [results, setResults] = useState([])
-
-    // const handleClick = event => {
-    //     setIsShown(current => !current);
-    //   };
-
-    useEffect(() => {
-        Object.values(data).forEach((item) => {
-            setIndex(index.add(item.id, item.title))
-        })
-    }, [])
-
-    useEffect(() => {
-        setResults(index.search(query))
-    }, [query])
-
-    return (
-        <div id="search-container" style={{display: show ? 'block' : 'none'}}>
-            <div id="search-space">
-                 <Formik
-                 autocomplete="off"
-                 id="search-bar"
-            initialValues={{ query: "" }}
-            onSubmit={(values, { setSubmitting }) => {
-              setQuery(values.query)
-              setSubmitting(false)
-            }}
-          >
-              <Form >
-              <Field class="pad input" name="query"
-              placeholder="Search for something..." 
-              autocomplete="off"
-              />
-               
-            </Form>
-            </Formik>
-                <div id="results-container">
-                   
-                        <h3>
-                        {results.map((result) => (
-                            <>
-                             <button class="result-card">
-                        <span class="search-highlight" key={result}>{data[result].title}</span>
-                        <p>
-                            <b>Making your own Quartz</b>
-                            Setting up Quartz require<span class="search-highlight">s</span> a basic
-                            understanding of git. If you are unfamiliar,
-                        </p>
-                        </button>
-                        </>
-                        ))}
-                        </h3>
-                </div>
-            </div>
-        </div>
-    )
-}
 export default class extends Component {
     render() {
         return (
@@ -121,25 +35,25 @@ export default class extends Component {
                                 AHMED
                             </a>
                             <div class="space-x-4 flex items-center hover:text-blue-600">
-                                <a class="false" href="/books">
+                                <a class="navs false" href="/books">
                                     books
                                 </a>
-                                <a class="false" href="/fun">
+                                <a class="navs false" href="/fun">
                                     algos
                                 </a>
-                                <a class="text-am-green-light" href="/projects">
+                                <a class="navs text-am-green-light" href="/projects">
                                     projects
                                 </a>
-                                <a class="false" href="/TIL">
+                                <a class="navs false" href="/TIL">
                                     til
                                 </a>
-                                <a class="false" href="/uses">
+                                <a class="navs false" href="/uses">
                                     tools
                                 </a>
-                                <a class="here false" href="#">
+                                <a class="navs here false" href="#">
                                     me
                                 </a>
-                                <a class="text false" href="/rss/feed.xml">
+                                <a class="navs text false" href="/rss/feed.xml">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -152,19 +66,6 @@ export default class extends Component {
                                         <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z" />
                                     </svg>
                                 </a>
-
-                                <button onClick={() => SearchBar.setShow((s) => !s)}>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        fill="currentColor"
-                                        class="bi bi-search"
-                                        viewBox="0 0 16 16"
-                                    >
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                    </svg>
-                                </button>
                             </div>
                         </div>
                     </nav>
@@ -191,9 +92,6 @@ export default class extends Component {
                         Some things are better left unseen!
                     </center>
                     <center>
-                        {/* <div className="search-container"> */}
-                        <SearchBar />
-                        {/* </div> */}
                     </center>
 
                     <br />

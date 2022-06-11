@@ -7,6 +7,7 @@ import { getContentBySlug, getAllContent } from "../../lib/api"
 import Layout from "../../component/layout"
 import Footer from "../../component/footer"
 
+
 import React from "react"
 
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
