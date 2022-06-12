@@ -47,6 +47,8 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 
 - 🔍 You can also search for things in the garden just by typing ctrl+k
 
+- 📝 [All of my brain garden flowers can be found here](/second-brain/entries)
+
 `
 export default class extends Component {
     render() {

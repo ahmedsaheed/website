@@ -27,7 +27,7 @@ function Layout(PageComponent: any) {
                             <a className="false" href="/uses">
                                 tools
                             </a>
-                            <a className="here false" href="#">
+                            <a className="false" href="#">
                                 me
                             </a>
                             <a className="text false" href="/rss/feed.xml">
