@@ -59,7 +59,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                                      <a className="aaa text-sm  text">
                                  
                                    
-                                    {backlink} 
+                                    {backlink.charAt(0).toUpperCase() +backlink.slice(1)} 
                                    
                                   </a>
                                 </Link>
