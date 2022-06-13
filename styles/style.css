@@ -404,7 +404,9 @@ a {
 .backlinks {
     border: 0.7px solid var(--color-border);
     padding: 10px;
+    border-radius: 10px;
 }
+
 
 /*********************************SEARCH STYLE FROM https://github.com/jackyzha0/quartz/blob/34b0353797a0d24c309139034918ad2060f504f5/assets/styles/base.scss#L402*********************************** */
 #search-container {
@@ -533,4 +535,21 @@ a {
 .xx {
     text-decoration: none;
 
+}
+.aaa{
+    text-decoration: underline;
+}
+
+.prose{
+    
+    max-width: fit-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    padding: 20px;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
