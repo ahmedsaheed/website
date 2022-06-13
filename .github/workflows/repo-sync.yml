@@ -13,7 +13,7 @@ jobs:
     - name: repo-sync
       uses: repo-sync/github-sync@v2
       with:
-        source_repo: ""
-        source_branch: ""
-        destination_branch: ""
+        source_repo: https://github.com/ahmedsaheed/saheed.codes.git
+        source_branch: main
+        destination_branch: main
         github_token: ${{ secrets.PAT }}
