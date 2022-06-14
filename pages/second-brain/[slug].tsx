@@ -7,7 +7,6 @@ import { getContentBySlug, getAllContent } from "../../lib/api"
 import Layout from "../../component/layout"
 import Footer from "../../component/footer"
 
-
 import React from "react"
 
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
@@ -17,7 +16,10 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="../styles/blog.css" rel="stylesheet" />
-                <title>{brainEntry.slug.charAt(0).toUpperCase()+brainEntry.slug.slice(1)} | Ahmed Saheed</title>
+                <title>
+                    {brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)} | Ahmed
+                    Saheed
+                </title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 <link
                     rel="stylesheet"
@@ -45,28 +47,25 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 />
 
                 {!!brainEntry.backlinks.length && (
-                    <div><br/>
-                        {" "}
+                    <div>
+                        <br />{" "}
                         <div className="prose rounded-lg border border-stone-800 text-stone-100 bg-opacity-20 bg-stone-800 p-8 mt-12">
-                        <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
-                        <div className="flex flex-wrap justify-between ">
-                            {brainEntry.backlinks.map((backlink) => (
-                                <Link
-                                    key={backlink}
-                                    href="/second-brain/[slug]"
-                                    as={`/second-brain/${encodeURI(backlink.toLowerCase())}`}
-                                >
-                                     <a className="aaa text-sm  text">
-                                 
-                                   
-                                    {backlink.charAt(0).toUpperCase() +backlink.slice(1)} 
-                                   
-                                  </a>
-                                </Link>
-                            ))}
-
+                            <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
+                            <div className="flex flex-wrap justify-between ">
+                                {brainEntry.backlinks.map((backlink) => (
+                                    <Link
+                                        key={backlink}
+                                        href="/second-brain/[slug]"
+                                        as={`/second-brain/${encodeURI(backlink.toLowerCase())}`}
+                                    >
+                                        <a className="aaa text-sm  text">
+                                            {backlink.charAt(0).toUpperCase() + backlink.slice(1)}
+                                        </a>
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
-                    </div></div>
+                    </div>
                 )}
             </header>
             <br></br>
@@ -84,7 +83,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
     const content = await markdownToHtml(brainEntry.content || "")
 
-
     return {
         props: {
             brainEntry: {
@@ -96,7 +94,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-     const brainEntries = getAllContent("second-brain", ["slug"]) as BrainEntry[]
+    const brainEntries = getAllContent("second-brain", ["slug"]) as BrainEntry[]
 
     return {
         paths: brainEntries.map(({ slug }) => {

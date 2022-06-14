@@ -12,6 +12,9 @@ function Layout(PageComponent: any) {
                             AHMED
                         </a>
                         <div className="space-x-4 flex items-center hover:text-blue-600">
+                            <a className="here false" href="#">
+                                garden
+                            </a>
                             <a className="false" href="/books">
                                 books
                             </a>
@@ -27,9 +30,7 @@ function Layout(PageComponent: any) {
                             <a className="false" href="/uses">
                                 tools
                             </a>
-                            <a className="false" href="#">
-                                me
-                            </a>
+
                             <a className="text false" href="/rss/feed.xml">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +47,6 @@ function Layout(PageComponent: any) {
                         </div>
                     </div>
                 </nav>
-
                 <main className="mt-12">
                     <PageComponent {...pageProps} />
                 </main>

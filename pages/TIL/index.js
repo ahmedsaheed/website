@@ -37,6 +37,9 @@ export default class extends Component {
                                 AHMED
                             </a>
                             <div class="space-x-4 flex items-center hover:text-blue-600">
+                                <a class="false" href="/second-brain">
+                                    garden
+                                </a>
                                 <a class="false" href="/books">
                                     books
                                 </a>
@@ -52,9 +55,7 @@ export default class extends Component {
                                 <a class="false" href="/uses">
                                     tools
                                 </a>
-                                <a class="false" href="../me">
-                                    me
-                                </a>
+
                                 <a class="text false" href="/rss/feed.xml">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

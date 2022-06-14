@@ -31,7 +31,7 @@ export default class extends Component {
                         href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap"
                         rel="stylesheet"
                     />
-                    <link rel="icon" type="image/png" href="/icon.png"/>
+                    <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
 
                 <body

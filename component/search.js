@@ -39,7 +39,7 @@ const SearchBar = () => {
     const detectKeydown = (e) => {
         if (e.key === "k" && (e.ctrlKey || e.metaKey)) {
             setIsShown(true)
-        }else if(e.key === "Escape"){
+        } else if (e.key === "Escape") {
             setIsShown(false)
         }
     }
@@ -54,7 +54,7 @@ const SearchBar = () => {
     }, [query])
 
     return (
-        <div id="search-container" style={{display: isShown ? "block" : "none" }}>
+        <div id="search-container" style={{ display: isShown ? "block" : "none" }}>
             <div id="search-space">
                 <Formik
                     autocomplete="off"

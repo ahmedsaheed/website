@@ -375,18 +375,18 @@ image {
     text-decoration: none;
 }
 .text:hover {
-    color: #ffc400;
+    color: plum;
 }
 .here {
-    color: #ffc400;
+    color: plum;
     text-decoration: none;
 }
 .text2:hover {
-    color: #ffc400;
+    color: plum;
     text-decoration: none;
 }
 a:hover {
-    color: #ffc400;
+    color: plum;
 }
 a {
     text-decoration: underline;
@@ -406,7 +406,6 @@ a {
     padding: 10px;
     border-radius: 10px;
 }
-
 
 /*********************************SEARCH STYLE FROM https://github.com/jackyzha0/quartz/blob/34b0353797a0d24c309139034918ad2060f504f5/assets/styles/base.scss#L402*********************************** */
 #search-container {
@@ -431,7 +430,7 @@ a {
 @media all and (max-width: 1200px) {
     #search-container > div {
         width: 90%;
-   }
+    }
 }
 #search-container > div > * {
     width: 100%;
@@ -469,7 +468,8 @@ a {
     background: var(--light);
     outline: none;
 }
-#search-container > div > #results-container .result-card:hover, #search-container > div > #results-container .result-card:focus {
+#search-container > div > #results-container .result-card:hover,
+#search-container > div > #results-container .result-card:focus {
     background: rgba(180, 180, 180, 0.15);
 }
 #search-container > div > #results-container .result-card:first-of-type {
@@ -481,35 +481,33 @@ a {
     border-bottom-right-radius: 5px;
     border-bottom: 1px solid var(--outlinegray);
 }
-#search-container > div > #results-container .result-card > h3, #search-container > div > #results-container .result-card > p {
+#search-container > div > #results-container .result-card > h3,
+#search-container > div > #results-container .result-card > p {
     margin: 0;
 }
-.input{
-   background-color:var(--til-color);
-   font-family: "Yomogi";
-   border-color: var(--til-color);
-   width: 100%;
-
+.input {
+    background-color: var(--til-color);
+    font-family: "Yomogi";
+    border-color: var(--til-color);
+    width: 100%;
 }
 
-.navs{
+.navs {
     font-size: 1.2vw;
 }
-.page-summary:hover{
+.page-summary:hover {
     color: white;
 }
-    
+
 .section-ul {
     list-style: none;
     padding-left: 0;
-    
 }
 .section-ul > li {
     border: 1px solid var(--til-color);
     border-radius: 5px;
     padding: 0 1em;
     margin-bottom: 1em;
-    
 }
 .section-ul > li h3 {
     opacity: 1;
@@ -528,28 +526,27 @@ a {
 /* .reduce h1,h2,h3,h4,h5,h6 {
     font-size: 1.0em;
 } */
-.reduce p{
+.reduce p {
     font-size: 0.8em;
 }
 
-.desc h1,h2{
+.desc h1,
+h2 {
     font-size: 1.2em;
     /* font-weight: normal; */
 }
-h2{
+h2 {
     font-size: 1.5em;
 }
 .xx {
     text-decoration: none;
-
 }
-.aaa{
+.aaa {
     text-decoration: underline;
     font-family: "Yomogi";
 }
 
-.prose{
-    
+.prose {
     max-width: fit-content;
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
