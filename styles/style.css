@@ -502,36 +502,43 @@ a {
 .section-ul {
     list-style: none;
     padding-left: 0;
+    
 }
 .section-ul > li {
     border: 1px solid var(--til-color);
     border-radius: 5px;
     padding: 0 1em;
     margin-bottom: 1em;
+    
 }
 .section-ul > li h3 {
     opacity: 1;
-    font-weight: 700;
     margin-bottom: 0em;
 }
 .section-ul > li .meta {
     opacity: 0.6;
 }
 .section h3 > a {
-    font-weight: 700;
     font-family: Inter;
     margin: 0;
 }
 .section p {
     margin-top: 0;
 }
-.reduce h1,h2,h3,h4,h5,h6 {
+/* .reduce h1,h2,h3,h4,h5,h6 {
     font-size: 1.0em;
-}
+} */
 .reduce p{
     font-size: 0.8em;
 }
 
+.desc h1,h2{
+    font-size: 1.2em;
+    /* font-weight: normal; */
+}
+h2{
+    font-size: 1.5em;
+}
 .xx {
     text-decoration: none;
 

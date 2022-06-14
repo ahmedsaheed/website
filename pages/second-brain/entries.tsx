@@ -80,7 +80,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                                 <br />
                                                 <p className="reduce">
                                                     {
-                                                        <ReactMarkdown
+                                                        <ReactMarkdown 
                                                             children={
                                                                 brainEntry.content?.substring(
                                                                     0,

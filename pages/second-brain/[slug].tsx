@@ -17,7 +17,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="../styles/blog.css" rel="stylesheet" />
-                <title>{brainEntry.slug} | Ahmed Saheed</title>
+                <title>{brainEntry.slug.charAt(0).toUpperCase()+brainEntry.slug.slice(1)} | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 <link
                     rel="stylesheet"
