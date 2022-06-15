@@ -11,7 +11,7 @@ import Head from "next/head"
 
 const markdown = `
 ---
-## 🧠 Ahmed's Second Brain: Kinda A Personal Digital Garden 🪴
+##  Ahmed's Second Brain: Kinda A Personal Digital Garden 
 ---
  
 This gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as my own knowledge grows and changes
@@ -23,7 +23,7 @@ This gardens focus not on being a definite source of truth, but rather a source 
 
 ## Why keep a second brain isn't one enough?
 
-> 📚 [I would like you to see this as further reading](https://jzhao.xyz/posts/networked-thought/)
+>  [I would like you to see this as further reading](https://jzhao.xyz/posts/networked-thought/)
 
 Obviously, one brain is not enough! My ideas are like winds, I feel them, sometimes grasp them, and sometime it just blows away.
 Man way reasoning and thinking are very difficult to understand, mine happens very disorderly and in a non linear manner which totally
@@ -38,13 +38,13 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 
 ## Some routes around the garden
 
-- 🚧 [Stuff i've worked on and some i'm still tinkering](/projects)
+- [Stuff i've worked on and some i'm still tinkering](/projects)
 
-- 📚 [Do you like books? Checkout my library ](/books)
+- [Do you like books? Checkout my library ](/books)
 
-- 👀 [See what i learnt today](/TIL)
+- [See what i learnt today](/TIL)
 
-- 📝 [All of my  garden seeds can be found here](/second-brain/entries)
+- [All of my  garden seeds can be found here](/second-brain/entries)
 
 
 - 🔍 You can  search for things in the garden just by typing ⌘ + k
@@ -129,8 +129,8 @@ export default class extends Component {
                                 that are famous for their roses and perfect lines of shrubbery. The
                                 number of garden types are too numerous to mention. One thing is
                                 true of all gardens. It is joint creation between man's intention to
-                                create a space of tranquility and nature's ability to comply. 💭🍄
-                                WELCOME TO MY GARDEN 🪵🧺
+                                create a space of tranquility and nature's ability to comply. 
+                                WELCOME TO MY GARDEN.
                             </>
                         }
                     />

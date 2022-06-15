@@ -2,10 +2,25 @@ import React, { Component, useEffect } from "react"
 import { NextSeo } from "next-seo"
 import { currentDayName } from "../component/date"
 import { greeting } from "../component/greetings"
-import Summary from "../component/summary"
 import Head from "next/head"
+import ReactMarkdown from "react-markdown"
+import remarkMath from "remark-math"
+import rehypeKatex from "rehype-katex"
+import remarkGfm from "remark-gfm"
+import Location from "../component/getLocation"
+
+
 
 const date = new Date()
+const markdown = `
+- [Second Brain](/second-brain)
+- [Today i learnt](/TIL)
+- [Projects ](/projects)
+- [Books](/books)
+- [Tools](/uses)
+- [Feed](/rss/feed.xml)
+
+`
 export default class extends Component {
     render() {
         return (
@@ -23,111 +38,51 @@ export default class extends Component {
                 <Head>
                     <title class>Ahmed Saheed</title>
                     <link rel="stylesheet" href="./style.css" />
-                    <link
-                        rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-                    ></link>
-                    <link
-                        href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap"
-                        rel="stylesheet"
-                    />
                     <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
 
-                <body
-                    id="page-top"
-                    data-spy="scroll"
-                    data-target=".navbar-fixed-top"
-                    data-offset="50"
-                >
-                    <div className="header-area">
-                        <header className="header">
-                            <nav aria-label="primary" className="menu">
-                                <a href="/second-brain" className="remove menu-item">
-                                    <span className="text2 menu-item-inner">
-                                        <br />
-                                        Garden 🪴
-                                    </span>
-                                </a>
-                            </nav>
-                            <nav>
-                                <div className="social-network">
-                                    <a href="https://github.com/ahmedsaheed" target="_blank">
-                                        <i className="text bi-github" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="https://twitter.com/helloahmed_" target="_blank">
-                                        <i className="text bi-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="/rss/feed.xml" target="_blank">
-                                        <i className="text bi bi-rss" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </nav>
-                        </header>
-                    </div>
-                    <div className="back-titre">
-                        <div className="wrapper">
-                            <h1 class="typing-demo">AHMED SAHEED</h1>
+                <body>
+                    <div className="spacer mx-auto max-w-3xl space-y-5">
+                        
+                        <div class="mx-auto max-w-2xl">
+                            <h2 class="third text-stone-100 font-hammersmith mb-4">Ahmed Saheed</h2>
+                            <p class="third text-stone-500">{greeting() + "\n Hope you're having a great " + currentDayName()}</p>
                         </div>
 
-                        <h2 className="tagline">
-                            An upcoming software engineer & Family tech support since 7.
-                            <br />
-                            {greeting()} hope you're having a good {currentDayName()} ?
-                        </h2>
-                    </div>
-
-                    {/* <div class="whiteSpace"></div> */}
-                    <Summary
-                        title=""
-                        content={
-                            <>
+                        <article>
+                            <p className="first">
+                                I assert you're a sailor of the web. You've come all the way from  <Location/> a very lovely place, you must be tired
+                                from your journey? By the way welcome to my personal digital garden
+                            </p>
+                            <p className="second">
+                                You finally made it to my space on the web – I’m Ahmed! I spend a
+                                lot of time building and tinkering things I find like.
+                                
+                            </p>
+                            <p className="third">
                                 This vestibule door opens onto my so fine and maybe unfine datasets
                                 of my brain. More like a library where i store valuable peice of
-                                computer related information.
-                                <br /> Currently, i am engaging in{" "}
-                                <a
-                                    class="text"
-                                    href="https://www.griffith.ie/"
-                                    style={{ textDecorationLine: "underline" }}
-                                >
-                                    college work
-                                </a>{" "}
-                                while doing some side projects and{" "}
-                                <a
-                                    class="text"
-                                    href="https://www.github.com/ahmedsaheed"
-                                    style={{ textDecorationLine: "underline" }}
-                                >
-                                    contributing to open source
-                                </a>{" "}
-                                . Also i am having a great time being lost in{" "}
-                                <a
-                                    class="text"
-                                    href="https://www.saheed.codes/books"
-                                    style={{ textDecorationLine: "underline" }}
-                                >
-                                    Tolstoy's Literature
-                                </a>{" "}
+                                computer related information. Currently, i am engaging in college
+                                work while doing some side projects and contributing to open source
+                                . Also i am having a great time being lost in Tolstoy's Literature
                                 alongside puzzling human existence. Please feel free and navigate
                                 around, you're highly welcomed.
-                            </>
-                        }
-                    />
+                            </p>
 
-                    <br />
-                    <footer className="footer">
-                        <div className="container">
-                            <div className=" footer-inner">
-                                <p className="footer-text">
-                                    ©{" "}
-                                    <a className="remove" href="https://github.com/ahmedsaheed">
-                                        Ahmed Saheed {date.getFullYear()}
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </footer>
+                            <p className="third">Find me on <a href="https://github.com/ahmedsaheed">GitHub</a> and <a href="https://twitter.com/helloahmed_">Twitter</a></p>
+
+
+                            <h2 class="third text-stone-100 font-hammersmith mb-4">Routes around the garden</h2>
+
+                            <ReactMarkdown className="third grey-text"
+                            children={markdown}
+                            remarkPlugins={[remarkMath, remarkGfm]}
+                            rehypePlugins={[rehypeKatex]}
+                        />
+
+                        <br></br>
+                        </article>
+                    </div>
                 </body>
             </>
         )
