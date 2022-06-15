@@ -52,8 +52,8 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             for their roses and perfect lines of shrubbery. The number of garden
                             types are too numerous to mention. One thing is true of all gardens. It
                             is joint creation between man's intention to create a space of
-                            tranquility and nature's ability to comply. 💭🍄 WELCOME TO MY GARDEN
-                            🪵🧺
+                            tranquility and nature's ability to comply.WELCOME TO MY GARDEN
+                 
                         </>
                     }
                 />
