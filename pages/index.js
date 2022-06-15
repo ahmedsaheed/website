@@ -46,13 +46,13 @@ export default class extends Component {
                         
                         <div class="mx-auto max-w-2xl">
                             <h2 class="third text-stone-100 font-hammersmith mb-4">Ahmed Saheed</h2>
-                            <p class="third text-stone-500">{greeting() + "\n Hope you're having a great " + currentDayName()}</p>
+                            <p class="text-stone-500">{greeting() + "\n Hope you're having a great " + currentDayName()}</p>
                         </div>
 
                         <article>
-                            <p className="first">
+                            <p class="second">
                                 I assert you're a sailor of the web. You've come all the way from  <Location/> a very lovely place, you must be tired
-                                from your journey ? By the way, welcome to my personal digital garden
+                                from your journey ? By the way, welcome to my digital garden.
                             </p>
                             <p className="second">
                                 You finally made it to my space on the web. I’m Ahmed! I spend a
@@ -69,7 +69,7 @@ export default class extends Component {
                                 around, you're highly welcomed.
                             </p>
 
-                            <p className="third">Find me on <a href="https://github.com/ahmedsaheed">GitHub</a> and <a href="https://twitter.com/helloahmed_">Twitter</a></p>
+                            <p className="third">Find me on <a href="https://github.com/ahmedsaheed">GitHub</a> and <a href="https://twitter.com/helloahmed_">Twitter</a>.</p>
 
 
                             <h2 class="third text-stone-100 font-hammersmith mb-4">Routes around the garden</h2>
