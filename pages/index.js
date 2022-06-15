@@ -52,10 +52,10 @@ export default class extends Component {
                         <article>
                             <p className="first">
                                 I assert you're a sailor of the web. You've come all the way from  <Location/> a very lovely place, you must be tired
-                                from your journey? By the way welcome to my personal digital garden
+                                from your journey ? By the way, welcome to my personal digital garden
                             </p>
                             <p className="second">
-                                You finally made it to my space on the web – I’m Ahmed! I spend a
+                                You finally made it to my space on the web. I’m Ahmed! I spend a
                                 lot of time building and tinkering things I find like.
                                 
                             </p>
