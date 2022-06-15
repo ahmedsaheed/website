@@ -229,38 +229,30 @@ footer p {
 
 @keyframes slow {
     from {
-        opacity: -20;
+        opacity: 0;
     }
     to {
         opacity: 1;
     }
 }
-.first{
-    -webkit-animation: slow 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: slow 2s; /* Firefox < 16 */
-    -ms-animation: slow 2s; /* Internet Explorer */
-    -o-animation: slow 2s; /* Opera < 12.1 */
-    animation: slow 3s;
-    display: block;
-}
+
 
 .second{
-    -webkit-animation: slower 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: slower 2s; /* Firefox < 16 */
-    -ms-animation: slower 2s; /* Internet Explorer */
-    -o-animation: slower 2s; /* Opera < 12.1 */
+    -webkit-animation: slow 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slow 3s; /* Firefox < 16 */
+    -ms-animation: slow 3s; /* Internet Explorer */
+    -o-animation: slow 3s; /* Opera < 12.1 */
     animation: slow 3s;
     display: block;
 }
 
 .third{
-    -webkit-animation: slower 7s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: slower 7s; /* Firefox < 16 */
-    -ms-animation: slower 7s; /* Internet Explorer */
-    -o-animation: slower 7s; /* Opera < 12.1 */
-    animation: slow 7s;
-    display: block;
+    animation: cssAnimation 0s 4s forwards;
+    visibility: hidden;
 }
+@keyframes cssAnimation {
+    to   { visibility: visible; }
+  }
 
 
 
