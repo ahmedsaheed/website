@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Yomogi&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hammersmith%20One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Spectral&display=swap");
 
 :root {
     --color-default: #fff;
@@ -22,6 +22,7 @@ html *:after,
 html *:before {
     box-sizing: inherit;
 }
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -56,7 +57,7 @@ html *:before {
 }
 
 html body {
-    font-family: 100%/1.5 "Yomogi", system-ui, helvetica, sans-serif;
+    font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
     color: var(--text-color);
     --header-height: 3.5rem;
     height: 100%;
@@ -75,7 +76,6 @@ p {
 }
 
 header,
-.tagline,
 main,
 footer {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -94,21 +94,7 @@ footer {
     }
 }
 
-.tagline {
-    font-size: 2vw;
-    font-weight: 300;
-    max-width: 55ch;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Hammersmith One";
-    text-align: center;
-}
 
-.cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .header {
     background: transparent;
@@ -126,15 +112,19 @@ footer {
     height: var(--header-height);
 }
 
+.spacer{
+    padding: 2rem ;
+}
 .menu-logo {
     font-weight: 700;
     font-size: 1.25rem;
 }
-.menu-item {
-    align-items: center;
-    padding: 0 1rem;
-    font-size: 1rem;
-    font-weight: 500;
+
+.grey-text {
+    color: rgb(120 113 108/1);
+}
+.grey-text  a{
+    text-decoration: none;
 }
 blockquote {
     border-left: 4px solid var(--quote);
@@ -152,16 +142,8 @@ h1 {
     font-size: 2.5rem;
 }
 p {
-    font-family: "Yomogi", "ui-serif";
+    font-family: "Spectral", "ui-serif";
     font-size: 1.2em;
-}
-div.social-network a {
-    background-color: transparent;
-    border-radius: 100%;
-    padding: 5px 6px 5px 6px;
-    position: relative;
-    top: 25px;
-    right: 25px;
 }
 
 .footer {
@@ -175,41 +157,6 @@ footer p {
     text-align: center;
     margin-left: 15px;
     margin: 0;
-}
-.back-titre h1 {
-    font-size: 8vw;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--text-color);
-    text-align: center;
-    padding-top: 0%;
-    text-transform: uppercase;
-    font-family: monospace;
-}
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.typing-demo {
-    width: 41ch;
-    animation: typing 3s steps(22), blink 0.2s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    margin: 0;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
 }
 
 .grid-container {
@@ -261,7 +208,7 @@ footer p {
     border-radius: inherit;
 }
 .content__inner {
-    font-family: "Yomogi", sans-serif;
+    font-family: "Spectral", sans-serif;
     display: none;
     background: #f9d877;
     border-radius: inherit;
@@ -292,6 +239,33 @@ footer p {
         opacity: 1;
     }
 }
+.first{
+    -webkit-animation: slow 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slow 2s; /* Firefox < 16 */
+    -ms-animation: slow 2s; /* Internet Explorer */
+    -o-animation: slow 2s; /* Opera < 12.1 */
+    animation: slow 3s;
+    display: block;
+}
+
+.second{
+    -webkit-animation: slower 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slower 2s; /* Firefox < 16 */
+    -ms-animation: slower 2s; /* Internet Explorer */
+    -o-animation: slower 2s; /* Opera < 12.1 */
+    animation: slow 3s;
+    display: block;
+}
+
+.third{
+    -webkit-animation: slower 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slower 2s; /* Firefox < 16 */
+    -ms-animation: slower 2s; /* Internet Explorer */
+    -o-animation: slower 2s; /* Opera < 12.1 */
+    animation: slow 7s;
+    display: block;
+}
+
 
 .items {
     display: flex;
@@ -335,12 +309,12 @@ text {
 
 .svg-text {
     fill: #d4d4d4;
-    font-family: "Yomogi";
+    font-family: "Spectral";
 }
 
 .svg-masked-text {
     fill: #d4d4d4;
-    font-family: "Yomogi";
+    font-family: "Spectral";
 }
 
 image {
@@ -406,7 +380,12 @@ a {
     padding: 10px;
     border-radius: 10px;
 }
-
+.page-summary:hover {
+    color: white;
+}
+.page-summary p{
+    font-family: "Yomogi";
+}
 /*********************************SEARCH STYLE FROM https://github.com/jackyzha0/quartz/blob/34b0353797a0d24c309139034918ad2060f504f5/assets/styles/base.scss#L402*********************************** */
 #search-container {
     position: fixed;
@@ -442,7 +421,7 @@ a {
 #search-container > div > input {
     box-sizing: border-box;
     padding: 0.5em 1em;
-    font-family: "Yomogi", sans-serif;
+    font-family: "Spectral", sans-serif;
     color: var(--text-color);
     font-size: 1.1em;
     border: 1px solid var(--outlinegray);
@@ -487,16 +466,13 @@ a {
 }
 .input {
     background-color: var(--til-color);
-    font-family: "Yomogi";
+    font-family: "Spectral";
     border-color: var(--til-color);
     width: 100%;
 }
 
 .navs {
     font-size: 1.2vw;
-}
-.page-summary:hover {
-    color: white;
 }
 
 .section-ul {
@@ -530,7 +506,7 @@ a {
     font-size: 0.8em;
 }
 
-.desc h1,
+.desc .reduce h1,
 h2 {
     font-size: 1.2em;
     /* font-weight: normal; */
@@ -543,7 +519,7 @@ h2 {
 }
 .aaa {
     text-decoration: underline;
-    font-family: "Yomogi";
+    font-family: "Spectral";
 }
 
 .prose {
