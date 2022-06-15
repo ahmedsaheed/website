@@ -12,6 +12,7 @@ import React from "react"
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
     return (
         <>
+        <body>
             <Head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -70,6 +71,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
             </header>
             <br></br>
             <Footer></Footer>
+            </body>
         </>
     )
 }
