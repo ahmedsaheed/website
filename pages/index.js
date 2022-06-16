@@ -8,6 +8,7 @@ import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import remarkGfm from "remark-gfm"
 import Location from "../component/getLocation"
+import Mode from "../component/theme"
 
 
 
@@ -42,9 +43,11 @@ export default class extends Component {
                 </Head>
 
                 <body>
+
                     <div className="spacer mx-auto max-w-3xl space-y-5">
                         
                         <div class="mx-auto max-w-2xl">
+                            <br></br>
                             <h2 class="third text-stone-100 font-hammersmith mb-4">Ahmed Saheed</h2>
                             <p class="text-stone-500">{greeting() + "\n Hope you're having a great " + currentDayName()}</p>
                         </div>
@@ -56,7 +59,7 @@ export default class extends Component {
                             </p>
                             <p className="second">
                                 You finally made it to my space on the web. I’m Ahmed! I spend a
-                                lot of time building and tinkering things I find like.
+                                lot of time building and tinkering with things I find lovely.
                                 
                             </p>
                             <p className="third">
@@ -64,7 +67,7 @@ export default class extends Component {
                                 of my brain. More like a library where i store valuable peice of
                                 computer related information. Currently, i am engaging in college
                                 work while doing some side projects and contributing to open source
-                                . Also i am having a great time being lost in Tolstoy's Literature
+                                . Also i am having a great time being lost in <a href="/second-brain/tolstoy">Tolstoy's</a> Literature
                                 alongside puzzling human existence. Please feel free and navigate
                                 around, you're highly welcomed.
                             </p>
@@ -81,9 +84,10 @@ export default class extends Component {
                         />
 
                         <br></br>
+                        <div class="third grey-text mt-10 mb-6 prose m-auto opacity-50 flex"><span class="text-sm"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style={{color: "inherit"}}>CC BY-NC-SA 4.0</a> 2021-{date.getFullYear()} © Ahmed Saheed</span><div class="flex-auto"></div></div>
                         </article>
                     </div>
-                </body>
+               </body>
             </>
         )
     }
