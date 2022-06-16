@@ -28,7 +28,7 @@
         "@formkit/auto-animate": "^1.0.0-beta.1",
         "@octokit/core": "^3.6.0",
         "axios": "^0.27.2",
-        "daisyui": "^2.15.0",
+        "daisyui": "^2.15.1",
         "feed": "^4.2.2",
         "flexsearch": "https://github.com/nextapps-de/flexsearch/tarball/0.7.0",
         "formik": "^2.2.9",
