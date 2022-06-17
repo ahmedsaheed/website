@@ -34,12 +34,21 @@ function mode() {
         }
     }
 
+    useEffect(() => {
+        document.addEventListener("keydown", detectKeydown, true)
+    }, [])
+    const detectKeydown = (e) => {
+        if (e.key === "x" && (e.ctrlKey || e.metaKey) || (e.key === "l" && (e.ctrlKey || e.metaKey) )) {
+            toggleDarkMode()
+        }
+    }
     return (
         <button onClick={toggleDarkMode}>
             {theme === "light" ? (
-                <MdOutlineDarkMode style={{ color: "black" }} />
+                <WiDaySunny style={{ color: "black" }} />
+                
             ) : (
-                <WiDaySunny style={{ color: "white" }} />
+                <MdOutlineDarkMode style={{ color: "white" }} />
             )}
         </button>
     )

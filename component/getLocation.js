@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
+import Link from "next/link"
+
 class Location extends Component {
     constructor(props) {
         super(props)
@@ -21,13 +23,18 @@ class Location extends Component {
             .catch((error) => {
                 console.log(error)
             })
+
     }
     componentDidMount() {
         this.getGeoInfo()
     }
+    
+   
+    
 
     render() {
-        return <>{this.state.countryName}</>
+        return <Link  target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/"  as={`https://en.wikipedia.org/wiki/${this.state.countryName}`}>{this.state.countryName}</Link>
+
     }
 }
 export default Location

@@ -49,7 +49,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
 
                     {!!brainEntry.backlinks.length && (
                         <div>
-                            <br />{" "}
+                            <br />{" "} <hr/>
                             <div className="prose rounded-lg border border-stone-800 text-stone-100 bg-opacity-20 bg-stone-800 p-8 mt-12">
                                 <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
                                 <div className="flex flex-wrap justify-between ">

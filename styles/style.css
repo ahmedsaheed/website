@@ -52,9 +52,27 @@ html *:before {
 }
 .moveRight {
     float: right;
-    padding-right: 20%;
-    /* font-size: 1em; */
-  
+    padding-right: 10%;  
+
+}
+hr {
+    overflow: visible;
+    padding-bottom: 18px;
+    margin: 5em auto;
+    border: none;
+    border-top: 1px solid var(--text-color);
+    color: var(--text-color);
+    text-align: center;
+    width: 40%;
+}
+hr:after {
+    content: "* * *";
+    display: inline-block;
+    margin: -1em 0 0.5em;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em;
+    background: var(--bi);
+    transform: translateY(-0.1em);
 }
 .name a {
 background-color:transparent
@@ -144,11 +162,12 @@ footer {
     font-size: 1.25rem;
 }
 
-.grey-text {
+/* .grey-text {
     color: rgb(120 113 108/1);
-}
+} */
 .grey-text a {
     text-decoration: none;
+    color: rgb(120 113 108/1);
 }
 blockquote {
     border-left: 4px solid var(--quote);
@@ -327,6 +346,7 @@ footer p {
 
 nav a{
     background-color: transparent;
+    color: rgb(228, 218, 218);
 }
 .text2:hover {
     color: plum;
@@ -336,16 +356,17 @@ a:hover {
     color: plum;
 }
 a {
-    text-decoration: underline;
     background-color: rgba(143,159,169,.15);
     padding: 0 0.1em;
     margin: auto -0.1em;
     border-radius: 3px;
     color: #426b69;
+    text-decoration: none;
 }
 .content-card {
     text-decoration: none;
     background-color: transparent;
+    color: var(--text-color);
 }
 .text-sm {
     text-decoration: none;
@@ -471,6 +492,12 @@ a {
 .section-ul > li .meta {
     opacity: 0.6;
 }
+.section-ul > li a {
+    color: var(--text-color)
+}
+.section-ul a :hover {
+    color: plum
+}
 .section h3 > a {
     font-family: Inter;
     margin: 0;
@@ -492,6 +519,7 @@ h2 {
 .xx {
     text-decoration: none;
 }
+
 .aaa {
     text-decoration: underline;
     font-family: "Spectral";

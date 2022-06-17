@@ -10,10 +10,12 @@ import remarkGfm from "remark-gfm"
 import Head from "next/head"
 
 const markdown = `
----
+
 ##  Ahmed's Second Brain: Kinda A Personal Digital Garden 
----
- 
+
+
+
+
 This gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as my own knowledge grows and changes
 
 1. This garden was inspired by [Jacky Zhao](https://jzhao.xyz/) and [Anthony Morris](https://anthonymorris.dev/)
@@ -46,6 +48,7 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 
 - [All of my  garden seeds can be found here](/second-brain/entries)
 
+- Use ⌘ + k to toggle within themes.
 
 - You can search for things in the garden just by typing ⌘ + k
 
