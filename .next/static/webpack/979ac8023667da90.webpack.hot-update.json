@@ -1,0 +1,12 @@
+{
+    "c": ["pages/index", "webpack"],
+    "r": ["node_modules_dark-mode-toggle-animation_lib_DarkModeToggle_js"],
+    "m": [
+        "./node_modules/next/dist/compiled/use-subscription/index.js",
+        "./node_modules/next/dist/shared/lib/dynamic.js",
+        "./node_modules/next/dist/shared/lib/loadable-context.js",
+        "./node_modules/next/dist/shared/lib/loadable.js",
+        "./node_modules/next/dynamic.js",
+        "./node_modules/dark-mode-toggle-animation/lib/DarkModeToggle.js"
+    ]
+}

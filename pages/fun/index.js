@@ -158,7 +158,6 @@ export default class extends Component {
                     <br />
                     <Footer />
                 </body>
-                
             </>
         )
     }

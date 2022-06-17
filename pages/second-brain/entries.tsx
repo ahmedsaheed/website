@@ -53,7 +53,6 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             types are too numerous to mention. One thing is true of all gardens. It
                             is joint creation between man's intention to create a space of
                             tranquility and nature's ability to comply.WELCOME TO MY GARDEN
-                 
                         </>
                     }
                 />
@@ -107,7 +106,6 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                 <br />
                 <Footer />
             </body>
-            
         </>
     )
 }

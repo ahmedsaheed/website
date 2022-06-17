@@ -1,0 +1,29 @@
+{
+    "c": ["pages/_app", "webpack"],
+    "r": ["pages/TIL"],
+    "m": [
+        "./component/dropDownAnimation.js",
+        "./node_modules/@formkit/auto-animate/index.mjs",
+        "./node_modules/@octokit/auth-token/dist-web/index.js",
+        "./node_modules/@octokit/core/dist-web/index.js",
+        "./node_modules/@octokit/endpoint/dist-web/index.js",
+        "./node_modules/@octokit/graphql/dist-web/index.js",
+        "./node_modules/@octokit/request-error/dist-web/index.js",
+        "./node_modules/@octokit/request/dist-web/index.js",
+        "./node_modules/before-after-hook/index.js",
+        "./node_modules/before-after-hook/lib/add.js",
+        "./node_modules/before-after-hook/lib/register.js",
+        "./node_modules/before-after-hook/lib/remove.js",
+        "./node_modules/deprecation/dist-web/index.js",
+        "./node_modules/is-plain-object/dist/is-plain-object.mjs",
+        "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fahmedsaheed%2FDesktop%2FDesktop%2Fsaheed.codes%2Fpages%2FTIL%2Findex.js&page=%2FTIL!",
+        "./node_modules/node-fetch/browser.js",
+        "./node_modules/once/once.js",
+        "./node_modules/universal-user-agent/dist-web/index.js",
+        "./node_modules/wrappy/wrappy.js",
+        "./pages/TIL/EntriesComponent.js",
+        "./pages/TIL/EntriesMapper.js",
+        "./pages/TIL/api.js",
+        "./pages/TIL/index.js"
+    ]
+}

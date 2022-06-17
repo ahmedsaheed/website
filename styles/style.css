@@ -22,8 +22,7 @@ html *:before {
     box-sizing: inherit;
 }
 
-
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --color-default: #000;
         --text-color: #fff;
@@ -33,10 +32,10 @@ html *:before {
         --bi: radial-gradient(circle, #fff 0.2px, rgb(29, 27, 27) 1px);
         --quote: #e5e7eb;
     }
-}
- [data-theme="dark"] {
-    --color-default:#000;
-    --text-color: #BBBBBB;
+}  */
+[data-theme="dark"] {
+    --color-default: #000;
+    --text-color: #bbbbbb;
     --color-border: #e7e7e7;
     --dairy: #333;
     --til-color: rgb(33, 33, 33);
@@ -51,8 +50,13 @@ html *:before {
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
     --quote: rgb(33, 33, 33);
 }
-
-/* #light{
+.moveRight {
+    float: right;
+    padding-right: 19%;
+    position: relative;
+    bottom: -3.7rem;
+}
+.light {
     --color-default: #f2e9e1;
     --text-color: #000;
     --dairy: #333;
@@ -60,22 +64,22 @@ html *:before {
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
     --quote: rgb(33, 33, 33);
 }
-#dark{
-    --color-default:#000;
-    --text-color: #BBBBBB;
+.dark {
+    --color-default: #000;
+    --text-color: #bbbbbb;
     --color-border: #e7e7e7;
     --dairy: #333;
     --til-color: rgb(33, 33, 33);
     --bi: radial-gradient(circle, #fff 0.2px, #000 1px);
     --quote: #e5e7eb;
-} */
+}
 
 html body {
     font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
     color: var(--text-color);
     height: 100%;
     width: 100%;
-    background-size:  32px 32px;
+    background-size: 32px 32px;
     background-image: var(--bi);
 }
 
@@ -107,8 +111,6 @@ footer {
     }
 }
 
-
-
 .header {
     background: transparent;
     top: 0;
@@ -125,8 +127,8 @@ footer {
     height: var(--header-height);
 }
 
-.spacer{
-    padding: 2rem ;
+.spacer {
+    padding: 2rem;
 }
 .menu-logo {
     font-weight: 700;
@@ -136,7 +138,7 @@ footer {
 .grey-text {
     color: rgb(120 113 108/1);
 }
-.grey-text  a{
+.grey-text a {
     text-decoration: none;
 }
 blockquote {
@@ -254,8 +256,7 @@ footer p {
     }
 }
 
-
-.second{
+.second {
     -webkit-animation: slow 3s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: slow 3s; /* Firefox < 16 */
     -ms-animation: slow 3s; /* Internet Explorer */
@@ -264,15 +265,15 @@ footer p {
     display: block;
 }
 
-.third{
+.third {
     animation: cssAnimation 0s 4s forwards;
     visibility: hidden;
 }
 @keyframes cssAnimation {
-    to   { visibility: visible; }
-  }
-
-
+    to {
+        visibility: visible;
+    }
+}
 
 .pad {
     padding-left: 1rem;
@@ -336,7 +337,7 @@ a {
 .page-summary:hover {
     color: white;
 }
-.page-summary p{
+.page-summary p {
     font-family: "Yomogi";
 }
 /*********************************SEARCH STYLE FROM https://github.com/jackyzha0/quartz/blob/34b0353797a0d24c309139034918ad2060f504f5/assets/styles/base.scss#L402*********************************** */
