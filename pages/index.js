@@ -16,7 +16,7 @@ const markdown = `
 - [Today i learnt](/TIL)
 - [Projects ](/projects)
 - [Books](/books)
-- [Tools](/uses)
+- [Uses](/uses)
 - [Feed](/rss/feed.xml)
 
 `
@@ -54,7 +54,7 @@ export default function Home() {
                             <Location /> a very lovely place, you must be tired from your journey ?
                             By the way, welcome to my digital garden.
                         </p>
-                        <p className="second">
+                        <p className="third">
                             You finally made it to my space on the web. I’m Ahmed! I spend a lot of
                             time building and tinkering with things I find lovely.
                         </p>
@@ -70,8 +70,8 @@ export default function Home() {
                         </p>
 
                         <p className="third">
-                            Find me on <a href="https://github.com/ahmedsaheed">GitHub</a> and{" "}
-                            <a href="https://twitter.com/helloahmed_">Twitter</a>.
+                            Find me on <a target="_blank" href="https://github.com/ahmedsaheed">GitHub</a> and{" "}
+                            <a target="_blank" href="https://twitter.com/helloahmed_">Twitter</a>.
                         </p>
 
                         <h2 class="third text-stone-100 font-hammersmith mb-4">

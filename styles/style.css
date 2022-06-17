@@ -4,7 +4,7 @@
 
 :root {
     --color-default: #f2e9e1;
-    --text-color: #000;
+    --text-color: #3a333d;
     --color-border: #e7e7e7;
     --dairy: #333;
     --til-color: #e5e7eb;
@@ -44,7 +44,7 @@ html *:before {
 }
 [data-theme="light"] {
     --color-default: #f2e9e1;
-    --text-color: #000;
+    --text-color: #3a333d;
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
@@ -56,6 +56,9 @@ html *:before {
     /* font-size: 1em; */
   
 }
+.name a {
+background-color:transparent
+}
 
 .zero{
 opacity: 0;
@@ -64,7 +67,7 @@ font-size: 0;
 }
 .light {
     --color-default: #f2e9e1;
-    --text-color: #000;
+    --text-color: #3a333d;
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
@@ -193,6 +196,9 @@ footer p {
     font-size: 10px;
     text-align: center;
 }
+.grey-text a{
+    background-color: transparent
+}
 
 .grid-container:hover {
     transform: scale(1.05, 1.05);
@@ -297,6 +303,7 @@ footer p {
 .text {
     font-family: "Hammersmith One";
     text-decoration: none;
+    background-color: none;
 }
 .text-am-green-light {
     text-decoration: none;
@@ -314,6 +321,12 @@ footer p {
 .here {
     color: plum;
     text-decoration: none;
+    background-color: none;
+
+}
+
+nav a{
+    background-color: transparent;
 }
 .text2:hover {
     color: plum;
@@ -324,9 +337,15 @@ a:hover {
 }
 a {
     text-decoration: underline;
+    background-color: rgba(143,159,169,.15);
+    padding: 0 0.1em;
+    margin: auto -0.1em;
+    border-radius: 3px;
+    color: #426b69;
 }
 .content-card {
     text-decoration: none;
+    background-color: transparent;
 }
 .text-sm {
     text-decoration: none;

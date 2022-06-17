@@ -97,7 +97,7 @@ export default class extends Component {
                                     <a
                                         class="text"
                                         style={{
-                                            fontStyle: "italic",
+                                           
                                             textDecorationLine: "underline",
                                         }}
                                         href="https://www.jetbrains.com/toolbox-app/"
@@ -111,7 +111,7 @@ export default class extends Component {
                                     <a
                                         class="text iframe-link"
                                         style={{
-                                            fontStyle: "italic",
+                                           
                                             textDecorationLine: "underline",
                                         }}
                                         href="https://draculatheme.com"
@@ -134,7 +134,7 @@ export default class extends Component {
                                     <a
                                         class="text iframe-link"
                                         style={{
-                                            fontStyle: "italic",
+                                           
                                             textDecorationLine: "underline",
                                         }}
                                         href="https://iterm2.com/"
@@ -157,7 +157,7 @@ export default class extends Component {
                                     <a
                                         class="text iframe-link"
                                         style={{
-                                            fontStyle: "italic",
+                                           
                                             textDecorationLine: "underline",
                                         }}
                                         href="https://yoncetheme.com/"
@@ -180,7 +180,7 @@ export default class extends Component {
                                     <a
                                         class="text"
                                         style={{
-                                            fontStyle: "italic",
+                                           
                                             textDecorationLine: "underline",
                                         }}
                                         href="https://code.visualstudio.com/"

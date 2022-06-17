@@ -79,13 +79,15 @@ export default class extends Component {
                                 A catalog of referenceable notes documented at least thrice a week.
                                 I first heard about til from{" "}
                                 <a
+                                    target="_blank"
                                     class="text"
-                                    href="https://github.com/M0nica"
+                                    href="https://aboutmonica.com/"
                                     style={{ textDecorationLine: "underline" }}
                                 >
                                     Monica Powell's
                                 </a>{" "}
                                 <a
+                                    target="_blank"
                                     class="text"
                                     href="https://github.com/readme/guides/private-documentation"
                                     style={{ textDecorationLine: "underline" }}
