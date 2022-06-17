@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="spacer mx-auto max-w-3xl space-y-5">
                     <div class="mx-auto max-w-2xl">
                         <br></br>
-                        <h2 class="third text-stone-100 font-hammersmith mb-4">Ahmed Saheed </h2>
+                        <h2 class="name third text-stone-100 font-hammersmith mb-4">Ahmed Saheed<a className="moveRight"><Theme/></a> </h2>
                         <p class="text-stone-500">
                             {greeting() + "\n Hope you're having a great " + currentDayName()}
                         </p>
@@ -91,13 +91,12 @@ export default function Home() {
                                 <a
                                     target="_blank"
                                     href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-                                    style={{ color: "inherit" }}
+                                    style={{ color: "inherit", borderBottom: "1px dotted" }}
                                 >
                                     CC BY-NC-SA 4.0
                                 </a>{" "}
                                 2021-{date.getFullYear()} © Ahmed Saheed
                             </span>
-                            <div class="flex-auto"></div>
                         </div>
                     </article>
                 </div>

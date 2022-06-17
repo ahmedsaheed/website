@@ -8,11 +8,12 @@ import Theme from "../component/theme"
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
-            <h2 className="third moveRight">
-                <Theme />
-            </h2>
+            
             <DefaultSeo {...SEO} />
             <Component {...pageProps} />
+            <a className="zero">
+                <Theme />
+            </a>
         </>
     )
 }

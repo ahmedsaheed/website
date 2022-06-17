@@ -12,7 +12,6 @@ import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 const readingTime = require('reading-time');
-
 import Head from "next/head"
 
 export type BrainEntry = {

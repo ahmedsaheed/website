@@ -2,8 +2,6 @@ import { createContext, useEffect } from "react"
 import { useLocalStorage } from "../hooks/useLocalStorage"
 import { WiDaySunny } from "react-icons/wi"
 import { MdOutlineDarkMode } from "react-icons/md"
-
-export const ThemeContext = createContext(null)
 function mode() {
     const [theme, setTheme] = useLocalStorage("theme", "light")
     useEffect(() => {

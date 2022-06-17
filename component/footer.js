@@ -11,7 +11,7 @@ const Footer = () => {
             </Head>
             <SearchBar />
             <footer>
-                <nav class="sticky top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
+                <nav class="sticky top-0 px-5 py-2.5 w-full z-10 font-am">
                     <div
                         class="bg-am-black text-am-white px-5 py-2.5 sw-full rounded-lg sm:flex justify-between"
                         data-theme="business"

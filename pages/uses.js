@@ -84,8 +84,7 @@ export default class extends Component {
                             </>
                         }
                     />
-                    <br />
-                    <br />
+                    
                     <br />
                     <br />{" "}
                     <article class="prose mx-auto max-w-3xl pb-10 px-10">
@@ -194,8 +193,7 @@ export default class extends Component {
                         </section>
                     </article>
                     <br />
-                    <br />
-                    <br />
+                   
                     <Footer />
                 </body>
             </>

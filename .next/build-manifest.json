@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/second-brain/entries": [
+    "/second-brain": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/second-brain/entries.js"
+      "static/chunks/pages/second-brain.js"
     ]
   },
   "ampFirstPages": []

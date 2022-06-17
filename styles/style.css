@@ -52,9 +52,15 @@ html *:before {
 }
 .moveRight {
     float: right;
-    padding-right: 19%;
-    position: relative;
-    bottom: -3.7rem;
+    padding-right: 20%;
+    /* font-size: 1em; */
+  
+}
+
+.zero{
+opacity: 0;
+font-size: 0;
+
 }
 .light {
     --color-default: #f2e9e1;
