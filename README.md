@@ -24,13 +24,3 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 -   [Quartz 3.2](https://quartz.jzhao.xyz/)
 
 -   [Obsidian](https://obsidian.md/)
-
-## Some routes around the garden
-
--   🚧 [Stuff i've worked on and some i'm still tinkering](https://www.saheed.codes/projects)
-
--   📚 [Do you like books? Checkout my library ](https://www.saheed.codes/books)
-
--   👀 [See what i learnt today](https://www.saheed.codes/TIL)
-
--   🔍 You can also search for things in the garden just by typing ctrl+k
