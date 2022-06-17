@@ -11,6 +11,7 @@ import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
+const readingTime = require('reading-time');
 
 import Head from "next/head"
 
@@ -72,11 +73,6 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                         <>
                                             <div className="desc">
                                                 <br />
-                                                <a className="xx m-2">
-                                                    {brainEntry.slug.charAt(0).toUpperCase() +
-                                                        brainEntry.slug.slice(1)}
-                                                </a>
-                                                <br />
                                                 <p className="reduce">
                                                     {
                                                         <ReactMarkdown
@@ -91,6 +87,19 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                                         />
                                                     }
                                                 </p>
+                                                <div className="flex flex-wrap  ">
+                                                <p>
+                                                    {readingTime(
+                                                        brainEntry.content
+                                                    ).words + " words | "} 
+                                                </p>
+                                                <p> {"| "}
+                                                {readingTime(
+                                                        brainEntry.content
+                                                    ).minutes < 1 ? 1 : readingTime(brainEntry.content).minutes.toString().substring(0,3) } min read
+
+                                                </p>
+                                                </div>
                                             </div>
                                         </>
                                     </a>
