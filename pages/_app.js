@@ -12,9 +12,9 @@ export default function MyApp({ Component, pageProps }) {
         <>
             <DefaultSeo {...SEO} />
             <Component {...pageProps} />
-            {/* <a className="zero">
+            <a className="zero">
                 <Theme />
-            </a> */}
+            </a>
         </>
     )
 }
