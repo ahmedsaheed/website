@@ -38,7 +38,10 @@ function mode() {
         document.addEventListener("keydown", detectKeydown, true)
     }, [])
     const detectKeydown = (e) => {
-        if (e.key === "x" && (e.ctrlKey || e.metaKey) || (e.key === "l" && (e.ctrlKey || e.metaKey) )) {
+        if (
+            (e.key === "x" && (e.ctrlKey || e.metaKey)) ||
+            (e.key === "l" && (e.ctrlKey || e.metaKey))
+        ) {
             toggleDarkMode()
         }
     }
@@ -46,7 +49,6 @@ function mode() {
         <button onClick={toggleDarkMode}>
             {theme === "light" ? (
                 <WiDaySunny style={{ color: "black" }} />
-                
             ) : (
                 <MdOutlineDarkMode style={{ color: "white" }} />
             )}

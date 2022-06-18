@@ -65,7 +65,7 @@ export default class extends Component {
                     openGraph={{
                         url: "https://saheed.codes/second-brain",
                         title: "Ahmed Saheed's second brain",
-                        description: "A place to document 'Today I Learnt'",
+                        description: "A place to document things i find interesting",
                     }}
                 />
                 <Head>

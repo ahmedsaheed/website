@@ -50,10 +50,10 @@ html *:before {
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
     --quote: rgb(33, 33, 33);
 }
+
 .moveRight {
     float: right;
-    padding-right: 10%;  
-
+    padding-right: 10%;
 }
 hr {
     overflow: visible;
@@ -75,13 +75,12 @@ hr:after {
     transform: translateY(-0.1em);
 }
 .name a {
-background-color:transparent
+    background-color: transparent;
 }
 
-.zero{
-opacity: 0;
-font-size: 0;
-
+.zero {
+    opacity: 0;
+    font-size: 0;
 }
 .light {
     --color-default: #f2e9e1;
@@ -215,8 +214,8 @@ footer p {
     font-size: 10px;
     text-align: center;
 }
-.grey-text a{
-    background-color: transparent
+.grey-text a {
+    background-color: transparent;
 }
 
 .grid-container:hover {
@@ -341,10 +340,9 @@ footer p {
     color: plum;
     text-decoration: none;
     background-color: none;
-
 }
 
-nav a{
+nav a {
     background-color: transparent;
     color: rgb(228, 218, 218);
 }
@@ -356,7 +354,7 @@ a:hover {
     color: plum;
 }
 a {
-    background-color: rgba(143,159,169,.15);
+    background-color: rgba(143, 159, 169, 0.15);
     padding: 0 0.1em;
     margin: auto -0.1em;
     border-radius: 3px;
@@ -493,10 +491,10 @@ a {
     opacity: 0.6;
 }
 .section-ul > li a {
-    color: var(--text-color)
+    color: var(--text-color);
 }
 .section-ul a :hover {
-    color: plum
+    color: plum;
 }
 .section h3 > a {
     font-family: Inter;
@@ -536,4 +534,13 @@ h2 {
 }
 .flex-wrap {
     flex-wrap: wrap;
+}
+.footnotes a {
+    background-color: transparent;
+    color: var(--text-color);
+
+    
+}
+sup a{
+    background-color: transparent;
 }

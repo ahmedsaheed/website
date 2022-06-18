@@ -107,7 +107,6 @@ export default class extends Component {
                     <Dairy />
                     <Footer />
                 </body>
-              
             </>
         )
     }

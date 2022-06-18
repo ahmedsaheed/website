@@ -2,16 +2,27 @@ import Head from "next/head"
 import { GetStaticProps, GetStaticPaths } from "next"
 import Link from "next/link"
 import { BrainEntry } from "../../lib/api"
-import { markdownToHtml } from "../../lib/mdToHtml"
+import markdownToHtml from "../../lib/mdToHtml"
 import { getContentBySlug, getAllContent } from "../../lib/api"
 import Layout from "../../component/layout"
 import Footer from "../../component/footer"
+import { NextSeo } from "next-seo"
 
 import React from "react"
 
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
     return (
         <>
+        <NextSeo
+                    title={brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)}
+                    description="Ahmed Saheed's second brain'"
+                    canonical={`https://saheed.codes/second-brain/${brainEntry.slug}`}
+                    openGraph={{
+                        url: "https://saheed.codes/second-brain",
+                        title: "Ahmed Saheed's second brain",
+                        description: "A place to document things i find interesting",
+                    }}
+                />
             <body>
                 <Head>
                     <meta charSet="UTF-8" />
@@ -43,13 +54,13 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 </Head>
                 <header className="pads mx-auto max-w-3xl space-y-5">
                     <article
-                        className="prose mt-12"
+                        className="prose"
                         dangerouslySetInnerHTML={{ __html: brainEntry.content }}
                     />
 
                     {!!brainEntry.backlinks.length && (
                         <div>
-                            <br />{" "} <hr/>
+                            <br /> <hr />
                             <div className="prose rounded-lg border border-stone-800 text-stone-100 bg-opacity-20 bg-stone-800 p-8 mt-12">
                                 <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
                                 <div className="flex flex-wrap justify-between ">

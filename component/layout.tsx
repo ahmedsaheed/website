@@ -47,7 +47,7 @@ function Layout(PageComponent: any) {
                         </div>
                     </div>
                 </nav>
-                <main className="mt-12">
+                <main>
                     <PageComponent {...pageProps} />
                 </main>
             </div>

@@ -7,11 +7,10 @@ import stringify from "rehype-stringify"
 import highlight from "rehype-highlight"
 import slug from "rehype-slug"
 import link from "rehype-autolink-headings"
-import s from "hastscript/svg"
 import rehypeRaw from "rehype-raw"
 import remarkGfm from "remark-gfm"
 
-export async function markdownToHtml(markdown: string) {
+export default async function markdownToHtml(markdown: string) {
     const result = await unified()
         .use(parse)
         .use(math)
@@ -22,7 +21,6 @@ export async function markdownToHtml(markdown: string) {
         .use(stringify)
         .use(highlight)
         .use(slug)
-        //
         .process(markdown)
 
     return result.toString()

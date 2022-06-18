@@ -42,7 +42,12 @@ export default function Home() {
                 <div className="spacer mx-auto max-w-3xl space-y-5">
                     <div class="mx-auto max-w-2xl">
                         <br></br>
-                        <h2 class="name third text-stone-100 font-hammersmith mb-4">Ahmed Saheed<a className="moveRight"><Theme/></a> </h2>
+                        <h2 class="name third text-stone-100 font-hammersmith mb-4">
+                            Ahmed Saheed
+                            <a className="moveRight">
+                                <Theme />
+                            </a>{" "}
+                        </h2>
                         <p class="text-stone-500">
                             {greeting() + "\n Hope you're having a great " + currentDayName()}
                         </p>
@@ -61,17 +66,27 @@ export default function Home() {
                         <p className="third">
                             This vestibule door opens onto my so fine and maybe unfine datasets of
                             my brain. More like a library where i store valuable peice of computer
-                            related information. Currently, i am engaged in <a target="_blank" href="https://griffith.ie">college</a> activities while
-                            doing some side projects and contributing to open source. Also i am
-                            having a great time being lost in{" "}
+                            related information. Currently, i am engaged in{" "}
+                            <a target="_blank" href="https://griffith.ie">
+                                college
+                            </a>{" "}
+                            activities while doing some side projects and contributing to open
+                            source. Also i am having a great time being lost in{" "}
                             <a href="/second-brain/tolstoy">Tolstoy's</a> Literature alongside
                             puzzling human existence. Please feel free and navigate around, you're
                             highly welcomed.
                         </p>
 
                         <p className="third">
-                            Find me on <a target="_blank" href="https://github.com/ahmedsaheed">GitHub</a> and{" "}
-                            <a target="_blank" href="https://twitter.com/helloahmed_">Twitter</a>.
+                            Find me on{" "}
+                            <a target="_blank" href="https://github.com/ahmedsaheed">
+                                GitHub
+                            </a>{" "}
+                            and{" "}
+                            <a target="_blank" href="https://twitter.com/helloahmed_">
+                                Twitter
+                            </a>
+                            .
                         </p>
 
                         <h2 class="third text-stone-100 font-hammersmith mb-4">

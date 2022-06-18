@@ -4,14 +4,14 @@ import { NextSeo } from "next-seo"
 import Layout from "../../component/layout"
 import Summary from "../../component/summary"
 import Footer from "../../component/footer"
-import { markdownToHtml } from "../../lib/mdToHtml"
+import markdownToHtml from "../../lib/mdToHtml"
 import { getContentBySlug, getAllContent } from "../../lib/api"
 import ReactMarkdown from "react-markdown"
 import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
-const readingTime = require('reading-time');
+const readingTime = require("reading-time")
 import Head from "next/head"
 
 export type BrainEntry = {
@@ -87,17 +87,20 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                                     }
                                                 </p>
                                                 <div className="flex flex-wrap  ">
-                                                <p>
-                                                    {readingTime(
-                                                        brainEntry.content
-                                                    ).words + " words | "} 
-                                                </p>
-                                                <p> {"| "}
-                                                {readingTime(
-                                                        brainEntry.content
-                                                    ).minutes < 1 ? 1 : readingTime(brainEntry.content).minutes.toString().substring(0,3) } min read
-
-                                                </p>
+                                                    <p>
+                                                        {readingTime(brainEntry.content).words +
+                                                            " words | "}
+                                                    </p>
+                                                    <p>
+                                                        {" "}
+                                                        {"| "}
+                                                        {readingTime(brainEntry.content).minutes < 1
+                                                            ? 1
+                                                            : readingTime(brainEntry.content)
+                                                                  .minutes.toString()
+                                                                  .substring(0, 3)}{" "}
+                                                        min read
+                                                    </p>
                                                 </div>
                                             </div>
                                         </>
