@@ -3,7 +3,6 @@ import "../styles/blog.css"
 import { DefaultSeo } from "next-seo"
 import SEO from "../next-seo.config"
 import Theme from "../component/theme"
-import hljs from "highlight.js"
 
 import "highlight.js/styles/atom-one-dark-reasonable.css"
 
@@ -13,9 +12,9 @@ export default function MyApp({ Component, pageProps }) {
         <>
             <DefaultSeo {...SEO} />
             <Component {...pageProps} />
-            <a className="zero">
+            {/* <a className="zero">
                 <Theme />
-            </a>
+            </a> */}
         </>
     )
 }

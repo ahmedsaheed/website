@@ -10,7 +10,7 @@ import link from "rehype-autolink-headings"
 import rehypeRaw from "rehype-raw"
 import remarkGfm from "remark-gfm"
 
-export default async function markdownToHtml(markdown: string) {
+export async function markdownToHtml(markdown: string) {
     const result = await unified()
         .use(parse)
         .use(math)

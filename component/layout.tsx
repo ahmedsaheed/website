@@ -3,7 +3,7 @@ function Layout(PageComponent: any) {
     const PageComponentWithLayout = ({ ...pageProps }) => {
         return (
             <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
-                <nav className="top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
+                <nav className="top-0 px-5 py-2.5 w-full z-10 font-am ">
                     <div
                         className="bg-am-black text-am-white px-5 py-2.5 w-full rounded-lg sm:flex justify-between"
                         data-theme="business"

@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react"
+import React from "react"
 import { NextSeo } from "next-seo"
 import { currentDayName } from "../component/date"
 import { greeting } from "../component/greetings"
@@ -45,7 +45,7 @@ export default function Home() {
                         <h2 class="name third text-stone-100 font-hammersmith mb-4">
                             Ahmed Saheed
                             <a className="moveRight">
-                                <Theme />
+                                {/* <Theme /> */}
                             </a>{" "}
                         </h2>
                         <p class="text-stone-500">
