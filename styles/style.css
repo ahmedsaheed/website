@@ -43,7 +43,6 @@ html *:before {
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
     --quote: #426b69;
     --name: var(--text-color);
-
 }
 
 .moveRight {
