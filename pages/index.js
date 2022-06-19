@@ -64,15 +64,15 @@ export default function Home() {
                             time building and tinkering with things I find lovely.
                         </p>
                         <p className="third">
-                            This vestibule door opens onto my so fine and maybe unfine datasets of
+                            This vestibule doors opens onto my fine and maybe unfine datasets of
                             my brain. More like a library where i store valuable peice of computer
-                            related information. Currently, i am engaged in{" "}
+                            related information and personal growth. Currently, i am engaged in{" "}
                             <a target="_blank" href="https://griffith.ie">
                                 college
                             </a>{" "}
-                            activities while doing some side projects and contributing to open
-                            source. Also i am having a great time being lost in{" "}
-                            <a href="/second-brain/tolstoy">Tolstoy's</a> Literature alongside
+                            activities alongside some side projects and contributing to open
+                            source. Also, i am having a great time being lost in{" "}
+                            <a href="/second-brain/tolstoy">Tolstoy's</a> Literature while 
                             puzzling human existence. Please feel free and navigate around, you're
                             highly welcomed.
                         </p>
@@ -89,7 +89,7 @@ export default function Home() {
                             .
                         </p>
 
-                        <h2 class="third text-stone-100 font-hammersmith mb-4">
+                        <h2 class="name third text-stone-100 font-hammersmith mb-4">
                             Routes around the garden
                         </h2>
 

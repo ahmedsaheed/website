@@ -9,12 +9,13 @@
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
-    --quote: rgb(33, 33, 33);
+    --quote: #426b69;
+    --name: var(--text-color);
 }
 html {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
+  
 }
 html *,
 html *:after,
@@ -22,17 +23,6 @@ html *:before {
     box-sizing: inherit;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --color-default: #000;
-        --text-color: #fff;
-        --color-border: #e7e7e7;
-        --dairy: #333;
-        --til-color: rgb(33, 33, 33);
-        --bi: radial-gradient(circle, #fff 0.2px, rgb(29, 27, 27) 1px);
-        --quote: #e5e7eb;
-    }
-}  */
 [data-theme="dark"] {
     --color-default: #000;
     --text-color: #bbbbbb;
@@ -41,6 +31,9 @@ html *:before {
     --til-color: rgb(33, 33, 33);
     --bi: radial-gradient(circle, #fff 0.2px, #000 1px);
     --quote: #e5e7eb;
+    --name:#fff;
+
+
 }
 [data-theme="light"] {
     --color-default: #f2e9e1;
@@ -48,7 +41,9 @@ html *:before {
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
-    --quote: rgb(33, 33, 33);
+    --quote: #426b69;
+    --name: var(--text-color);
+
 }
 
 .moveRight {
@@ -77,6 +72,16 @@ hr:after {
 .name a {
     background-color: transparent;
 }
+.name{
+    font-family: 'Hammersmith One', sans-serif;
+    color: var(--name);
+    font-size: 1.5em;
+}
+code{
+    background-color: rgba(158,167,179,0.4);
+    border-radius: 6px;
+    padding: 0.2em 0.4em;
+}
 
 .zero {
     opacity: 0;
@@ -88,7 +93,9 @@ hr:after {
     --dairy: #333;
     --til-color: #e5e7eb;
     --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
-    --quote: rgb(33, 33, 33);
+    --quote: #426b69;
+    --name: var(--text-color);
+
 }
 .dark {
     --color-default: #000;
@@ -98,6 +105,7 @@ hr:after {
     --til-color: rgb(33, 33, 33);
     --bi: radial-gradient(circle, #fff 0.2px, #000 1px);
     --quote: #e5e7eb;
+    --name: #fff;
 }
 
 html body {

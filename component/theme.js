@@ -9,7 +9,7 @@ function mode() {
     useEffect(() => {
       if (
         localStorage.theme === 'dark' ||
-        (!('theme' in localStorage))
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
       ) {
         document.getElementsByTagName('html')[0].classList.add('dark')
       } else {

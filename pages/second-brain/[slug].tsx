@@ -52,7 +52,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         crossOrigin="anonymous"
                     ></script>
                 </Head>
-                <header className="pads mx-auto max-w-3xl space-y-5">
+                <header className="mx-auto max-w-3xl space-y-5">
                     <article
                         className="prose"
                         dangerouslySetInnerHTML={{ __html: brainEntry.content }}

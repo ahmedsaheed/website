@@ -30,15 +30,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/second-brain/[slug]": [
+    "/books": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/second-brain/[slug].js"
+      "static/chunks/pages/books.js"
     ],
-    "/second-brain/entries": [
+    "/fun": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/second-brain/entries.js"
+      "static/chunks/pages/fun.js"
+    ],
+    "/second-brain": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/second-brain.js"
     ]
   },
   "ampFirstPages": []

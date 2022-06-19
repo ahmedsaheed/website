@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/second-brain/entries": "pages/second-brain/entries.js",
-  "/second-brain/[slug]": "pages/second-brain/[slug].js"
+  "/books": "pages/books.js",
+  "/fun": "pages/fun.js",
+  "/": "pages/index.js"
 }
