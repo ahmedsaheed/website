@@ -15,6 +15,11 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -25,20 +30,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/books": [
+    "/second-brain/[slug]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/books.js"
+      "static/chunks/pages/second-brain/[slug].js"
     ],
-    "/fun": [
+    "/uses": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/fun.js"
-    ],
-    "/second-brain": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/second-brain.js"
+      "static/chunks/pages/uses.js"
     ]
   },
   "ampFirstPages": []

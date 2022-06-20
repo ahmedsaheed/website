@@ -115,7 +115,6 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                 <br />
                 <br />
                 <br />
-                <Footer />
             </body>
         </>
     )

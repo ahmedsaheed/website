@@ -1,42 +1,60 @@
 import React from "react"
+import {date} from "../pages/index"
+import Theme from "./theme"
 function Layout(PageComponent: any) {
     const PageComponentWithLayout = ({ ...pageProps }) => {
         return (
-            <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
-                <nav className="top-0 px-5 py-2.5 w-full z-10 font-am ">
-                    <div
-                        className="bg-am-black text-am-white px-5 py-2.5 w-full rounded-lg sm:flex justify-between"
-                        data-theme="business"
-                    >
-                        <a className="text" href="/">
-                            AHMED
-                        </a>
-                        <div className="space-x-4 flex items-center hover:text-blue-600">
-                            <a className="here false" href="#">
-                                garden
-                            </a>
-                            <a className="false" href="/books">
-                                books
-                            </a>
-                            <a className="false" href="/fun">
+            <>
+            <nav className="nav">
+                <div className="spacer">
+                </div>
+                <div className="right">
+               
+                                <a className="here false" href="#">
+                                    garden
+                                </a>
+                                <a className="false" href="/books">
+                                    books
+                                </a>
+                                <a className="false" href="/fun">
                                 fun
-                            </a>
-                            <a className="text-am-green-light" href="/projects">
-                                projects
-                            </a>
-                            <a className="false" href="/TIL">
-                                til
-                            </a>
-                            <a className="false" href="/uses">
-                                tools
-                            </a>
-                        </div>
-                    </div>
+                                </a>
+                                <a className="text-am-green-light" href="/projects">
+                                    projects
+                                </a>
+                                <a className="false" href="/TIL">
+                                    til
+                                </a>
+                                <a className="false" href="/uses">
+                                    tools
+                                </a>
+                                <a className="pt-5">
+                <Theme />
+            </a>
+                </div>
                 </nav>
+            <div className="py-32 mx-auto max-w-2xl px-6 md:px-0"> 
                 <main>
                     <PageComponent {...pageProps} />
+                   
                 </main>
+                <div className="pt-10 grey-text cent ">
+                            <span className=" text-sm">
+                                <a
+                                    target="_blank"
+                                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                    style={{ color: "inherit", borderBottom: "1px dotted" }}
+                                >
+                                    CC BY-NC-SA 4.0
+                                </a>{" "}
+                                2021-{date.getFullYear()} © Ahmed Saheed
+                            </span>
+                        </div>
+             
+               
+       
             </div>
+            </>
         )
     }
 

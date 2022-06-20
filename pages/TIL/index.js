@@ -4,9 +4,10 @@ import { NextSeo } from "next-seo"
 import Footer from "../../component/footer"
 import Summary from "../../component/summary"
 import Head from "next/head"
+import Layout from "../../component/layout"
 
-export default class extends Component {
-    render() {
+function til() {
+
         return (
             <>
                 <NextSeo
@@ -26,38 +27,6 @@ export default class extends Component {
                     <title>TIL | Ahmed Saheed</title>
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 </Head>
-                <body>
-                    <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
-                        <div
-                            class="bg-am-black text-am-white px-5 py-2.5 w-full rounded-lg sm:flex justify-between"
-                            data-theme="business"
-                            style={{ fontfamily: "ui-serif" }}
-                        >
-                            <a class="text" href="/">
-                                AHMED
-                            </a>
-                            <div class="space-x-4 flex items-center hover:text-blue-600">
-                                <a class="false" href="/second-brain">
-                                    garden
-                                </a>
-                                <a class="false" href="/books">
-                                    books
-                                </a>
-                                <a class="false" href="/fun">
-                                fun
-                                </a>
-                                <a class="text-am-green-light" href="/projects">
-                                    projects
-                                </a>
-                                <a class=" here false" href="#">
-                                    til
-                                </a>
-                                <a class="false" href="/uses">
-                                    tools
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
                     <Summary
                         title="Daily Encyclopedia: Today I Learnt"
                         content={
@@ -91,9 +60,11 @@ export default class extends Component {
                     />
                     <br />
                     <Dairy />
-                    <Footer />
-                </body>
+  
+
             </>
         )
-    }
+
 }
+
+export default Layout(til)

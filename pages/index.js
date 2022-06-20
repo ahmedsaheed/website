@@ -10,7 +10,7 @@ import remarkGfm from "remark-gfm"
 import Location from "../component/getLocation"
 import Theme from "../component/theme"
 
-const date = new Date()
+export const date = new Date()
 const markdown = `
 - [Second Brain](/second-brain)
 - [Today i learnt](/TIL)

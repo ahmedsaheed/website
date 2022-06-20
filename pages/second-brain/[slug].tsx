@@ -84,7 +84,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     )}
                 </header>
                 <br></br>
-                <Footer></Footer>
+
             </body>
         </>
     )

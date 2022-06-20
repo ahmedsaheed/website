@@ -3,9 +3,10 @@ import { NextSeo } from "next-seo"
 import Footer from "../component/footer"
 import Summary from "../component/summary"
 import Head from "next/head"
+import Layout from "../component/layout"
 
-export default class extends Component {
-    render() {
+function uses() {
+
         return (
             <>
                 <NextSeo
@@ -28,38 +29,7 @@ export default class extends Component {
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 </Head>
 
-                <body>
-                    <nav class="top-0 px-5 py-2.5 w-full z-10 font-am mb-10">
-                        <div
-                            class="bg-am-black text-am-white px-5 py-2.5 w-full rounded-lg sm:flex justify-between"
-                            data-theme="business"
-                            style={{ fontfamily: "ui-serif" }}
-                        >
-                            <a class="text" href="/">
-                                AHMED
-                            </a>
-                            <div class="space-x-4 flex items-center hover:text-blue-600">
-                                <a class="false" href="/second-brain">
-                                    garden
-                                </a>
-                                <a class="text false" href="/books">
-                                    books
-                                </a>
-                                <a class="text false" href="/fun">
-                                fun
-                                </a>
-                                <a class="text" href="/projects">
-                                    projects
-                                </a>
-                                <a class="text false" href="/TIL">
-                                    til
-                                </a>
-                                <a class="here false" href="#">
-                                    tools
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
+               
                     <Summary
                         title=" Tools 🛠️"
                         content={
@@ -173,9 +143,10 @@ export default class extends Component {
                         </section>
                     </article>
                     <br />
-                    <Footer />
-                </body>
+
             </>
         )
-    }
+    
 }
+
+export default Layout(uses)
