@@ -1,7 +1,7 @@
 ---
 title: "Asymptotic Analysis"
 description: "growth of a runtime/rate of growth of an algorithm without worrying about different computers , compilers or implementation."
-date: "2022-06-02T00:00:00"
+date: "2022-06-20"
 ---
 
 

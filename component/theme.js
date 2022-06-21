@@ -4,35 +4,36 @@ import { WiDaySunny } from "react-icons/wi"
 import { MdOutlineDarkMode } from "react-icons/md"
 
 function mode() {
-    const [theme, setTheme] = useLocalStorage('theme', 'light')
+    const [theme, setTheme] = useLocalStorage("theme", "light")
 
     useEffect(() => {
-      if (
-        localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-      } else {
-        document.getElementsByTagName('html')[0].classList.remove('dark')
-      }
+        if (
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.getElementsByTagName("html")[0].classList.remove("dark")
+        } else {
+            document.getElementsByTagName("html")[0].classList.add("dark")
+        }
     }, [])
-  
+
     useEffect(() => {
-      if (theme == 'dark') {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-        localStorage.theme = 'dark'
-      } else {
-        document.getElementsByTagName('html')[0].classList.remove('dark')
-        localStorage.theme = 'light'
-      }
+        if (theme == "dark") {
+            document.getElementsByTagName("html")[0].classList.add("light")
+            localStorage.theme = "light"
+        } else {
+            document.getElementsByTagName("html")[0].classList.remove("light")
+            localStorage.theme = "dark"
+        }
     }, [theme])
-  
+
     const toggleDarkMode = () => {
-      if (theme == 'dark') {
-        setTheme('light')
-      } else {
-        setTheme('dark')
-      }
+        if (theme == "dark") {
+            setTheme("light")
+        } else {
+            setTheme("dark")
+        }
     }
 
     useEffect(() => {
@@ -49,9 +50,9 @@ function mode() {
     return (
         <button onClick={toggleDarkMode}>
             {theme === "light" ? (
-                <WiDaySunny style={{ color: "black" }} />
-            ) : (
                 <MdOutlineDarkMode style={{ color: "white" }} />
+            ) : (
+                <WiDaySunny style={{ color: "black" }} />
             )}
         </button>
     )

@@ -2,7 +2,7 @@ import { React } from "react"
 import { useState, useRef, useEffect } from "react"
 import autoAnimate from "@formkit/auto-animate"
 
-const Dropdown = ({ title, content }) => {
+const Dropdown = ({ date, title, content }) => {
     const [show, setShow] = useState(false)
     const parent = useRef(null)
 
@@ -14,7 +14,8 @@ const Dropdown = ({ title, content }) => {
 
     return (
         <div ref={parent}>
-            <p className="pad dropdown-label" onClick={reveal}>
+            <p className="ded pad dropdown-label" onClick={reveal}>
+                {date.replace(/(\r\n|\n|\r)/gm, "")}
                 {title}
             </p>
             {show && <div class="content">{content}</div>}

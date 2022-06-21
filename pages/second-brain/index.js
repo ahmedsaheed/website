@@ -56,60 +56,53 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 
 `
 function secondBrain() {
- 
-        return (
-            <>
-                <NextSeo
-                    title="Ahmed Saheed's TIL"
-                    description="Ahmed Saheed's second brain'"
-                    canonical="https://saheed.codes/second-brain"
-                    openGraph={{
-                        url: "https://saheed.codes/second-brain",
-                        title: "Ahmed Saheed's second brain",
-                        description: "A place to document things i find interesting",
-                    }}
+    return (
+        <>
+            <NextSeo
+                title="Ahmed Saheed's TIL"
+                description="Ahmed Saheed's second brain'"
+                canonical="https://saheed.codes/second-brain"
+                openGraph={{
+                    url: "https://saheed.codes/second-brain",
+                    title: "Ahmed Saheed's second brain",
+                    description: "A place to document things i find interesting",
+                }}
+            />
+            <Head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link href="../styles/blog.css" rel="stylesheet" />
+                <title>Second Brain | Ahmed Saheed</title>
+                <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+            </Head>
+
+            <Summary
+                title="Digital Garden"
+                content={
+                    <>
+                        Throughout the world there are many different gardens that people have
+                        designed. In a Japanese garden, every tree is perfectly pruned, without a
+                        leaf out of place. Nothing is planted without forethought as to the exact
+                        place appropriate to it.There are English gardens that are famous for their
+                        roses and perfect lines of shrubbery. The number of garden types are too
+                        numerous to mention. One thing is true of all gardens. It is joint creation
+                        between man's intention to create a space of tranquility and nature's
+                        ability to comply. WELCOME TO MY GARDEN.
+                    </>
+                }
+            />
+            <br />
+            <br />
+
+            <header class="pads mx-auto max-w-3xl space-y-5">
+                <ReactMarkdown
+                    children={markdown}
+                    remarkPlugins={[remarkMath, remarkGfm]}
+                    rehypePlugins={[rehypeKatex]}
                 />
-                <Head>
-                    <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link href="../styles/blog.css" rel="stylesheet" />
-                    <title>Second Brain | Ahmed Saheed</title>
-                    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-                </Head>
-               
-                   
-                    <Summary
-                        title="Digital Garden"
-                        content={
-                            <>
-                                Throughout the world there are many different gardens that people
-                                have designed. In a Japanese garden, every tree is perfectly pruned,
-                                without a leaf out of place. Nothing is planted without forethought
-                                as to the exact place appropriate to it.There are English gardens
-                                that are famous for their roses and perfect lines of shrubbery. The
-                                number of garden types are too numerous to mention. One thing is
-                                true of all gardens. It is joint creation between man's intention to
-                                create a space of tranquility and nature's ability to comply.
-                                WELCOME TO MY GARDEN.
-                            </>
-                        }
-                    />
-                    <br />
-                    <br />
-
-                    <header class="pads mx-auto max-w-3xl space-y-5">
-                        <ReactMarkdown
-                            children={markdown}
-                            remarkPlugins={[remarkMath, remarkGfm]}
-                            rehypePlugins={[rehypeKatex]}
-                        />
-                    </header>
-
-                    
-
-            </>
-        )
-    
+            </header>
+        </>
+    )
 }
 
 export default Layout(secondBrain)

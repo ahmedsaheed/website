@@ -6,6 +6,7 @@ import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 import Dropdown from "../../component/dropDownAnimation"
+import { format } from "date-fns"
 
 const MainDiary = (props) => {
     if (!props) {
@@ -21,14 +22,10 @@ const MainDiary = (props) => {
                             <header class="mx-auto max-w-3xl space-y-5">
                                 <div class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
                                     <Dropdown
+                                        date={format(new Date(entries.created_at), "MMM do, y")}
                                         title={
                                             <ReactMarkdown
-                                                children={
-                                                    entries.created_at?.substring(0, 10) +
-                                                    " " +
-                                                    entries.body.substring(0, 30) +
-                                                    "...."
-                                                }
+                                                children={entries.body.substring(0, 40) + "...."}
                                                 remarkPlugins={[remarkMath, remarkGfm]}
                                                 rehypePlugins={[rehypeKatex]}
                                             />
