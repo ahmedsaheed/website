@@ -3,8 +3,7 @@ import Link from "next/link"
 import { NextSeo } from "next-seo"
 import Layout from "../../component/layout"
 import Summary from "../../component/summary"
-import Footer from "../../component/footer"
-import {markdownToHtml} from "../../lib/mdToHtml"
+import { markdownToHtml } from "../../lib/mdToHtml"
 import { getContentBySlug, getAllContent } from "../../lib/api"
 import ReactMarkdown from "react-markdown"
 import remarkMath from "remark-math"
@@ -13,7 +12,7 @@ import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 const readingTime = require("reading-time")
 import Head from "next/head"
-import {BrainEntry} from "../../lib/api"
+import { BrainEntry } from "../../lib/api"
 
 function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
     return (
@@ -58,39 +57,47 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     <ul className="section-ul">
                         {brainEntries.map((brainEntry) => (
                             <li className="section-ul">
-                                
-                                        <>
-                                            <div className="desc">
-                                                
-                                                <h3>{brainEntry.title}</h3><br/>
-                                                <p>{brainEntry.description}</p>
-                                                <div className="flex flex-wrap  ">
-                                                    <p>
-                                                        {readingTime(brainEntry.content).words +
-                                                            " words | "}
-                                                    </p>
-                                                    <p>
-                                                        {" "}
-                                                        {"| "}
-                                                        {readingTime(brainEntry.content).minutes < 1
-                                                            ? 1
-                                                            : readingTime(brainEntry.content)
-                                                                  .minutes.toString()
-                                                                  .substring(0, 3)}{" "}
-                                                        min read
-                                                    </p>
-                                                  
-                                                </div>
-                                                <Link
-                                    key={brainEntry.slug}
-                                    href="/second-brain/[slug]"
-                                    as={`${brainEntry.slug.toLowerCase()}`}
-                                >
-                                    <a className="hover-underline-animation" style={{ backgroundColor: "transparent"}}>Read More</a></Link>
-                                            </div>
-                                        </>
-                       
-                                
+                                <>
+                                    <div className="desc">
+                                        <h3>{brainEntry.title}</h3>
+                                        <br />
+                                        <p>
+                                            {brainEntry.description.charAt(0).toUpperCase() +
+                                                brainEntry.description.slice(1)}
+                                        </p>
+                                        <div className="flex flex-wrap  ">
+                                            <p>
+                                                {readingTime(brainEntry.content).words +
+                                                    " words • "}
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                                {readingTime(brainEntry.content).minutes < 1
+                                                    ? 1
+                                                    : readingTime(brainEntry.content)
+                                                          .minutes.toString()
+                                                          .substring(0, 3)}
+                                                &nbsp; min read.
+                                            </p>
+                                        </div>
+                                        <br />
+                                        <Link
+                                            key={brainEntry.slug}
+                                            href="/second-brain/[slug]"
+                                            as={`${brainEntry.slug.toLowerCase()}`}
+                                        >
+                                            <a
+                                                className="hover-underline-animation"
+                                                style={{
+                                                    backgroundColor: "transparent",
+                                                    paddingBottom: "5px",
+                                                }}
+                                            >
+                                                Read More
+                                            </a>
+                                        </Link>
+                                    </div>
+                                </>
                             </li>
                         ))}
                     </ul>
@@ -106,7 +113,14 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const brainEntries = getAllContent("second-brain", ["slug", "content", "backlinks", "title", "description","date"])
+    const brainEntries = getAllContent("second-brain", [
+        "slug",
+        "content",
+        "backlinks",
+        "title",
+        "description",
+        "date",
+    ])
     return {
         props: {
             brainEntries,

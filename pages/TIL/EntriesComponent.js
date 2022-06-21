@@ -4,6 +4,7 @@ import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
+import { format } from "date-fns"
 
 const BookCard = (props) => {
     var dates = props.Date
@@ -21,7 +22,7 @@ const BookCard = (props) => {
             </head>
             <div class="content__inner" id="tab-1">
                 <div class="page">
-                    <p>DATE: {date}</p>
+                <p>DATE: {date}</p>
                     <br />
 
                     <ReactMarkdown

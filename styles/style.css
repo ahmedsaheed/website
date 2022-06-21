@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
 :root {
-    --color-default: #f2e9e1;
-    --text-color: #3a333d;
+    --color-default: #000;
+    --text-color: #bbbbbb;
     --color-border: #e7e7e7;
     --dairy: #333;
-    --til-color: #e5e7eb;
-    --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
-    --quote: #426b69;
-    --name: var(--text-color);
+    --bi: #000;
+    --name: #fff;
+    --a-color: #8f9ba8;
+    --p-color: #bbbbbb;
 }
 html {
     width: 100%;
     height: 100%;
-  
 }
 html *,
 html *:after,
@@ -20,26 +19,57 @@ html *:before {
     box-sizing: inherit;
 }
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
     --color-default: #000;
     --text-color: #bbbbbb;
     --color-border: #e7e7e7;
     --dairy: #333;
-    --til-color: rgb(33, 33, 33);
-    --bi: radial-gradient(circle, #fff 0.2px, #000 1px);
-    --quote: #e5e7eb;
+    --bi: #000;
     --name:#fff;
+    --a-color: #8f9ba8;
+    --p-color: #bbbbbb;
 
+    
 
 }
 [data-theme="light"] {
     --color-default: #f2e9e1;
     --text-color: #3a333d;
     --dairy: #333;
-    --til-color: #e5e7eb;
-    --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
-    --quote: #426b69;
+    --bi: #f2e9e1;
     --name: var(--text-color);
+    --a-color: #426b69;
+    --p-color: #3a333d;
+
+} */
+
+.light {
+    --color-default: #f2e9e1;
+    --text-color: #3a333d;
+    --dairy: #333;
+    --bi: #f2e9e1;
+    --a-color: #426b69;
+    --name: var(--text-color);
+    --p-color: #3a333d;
+}
+.dark {
+    --color-default: #000;
+    --text-color: #bbbbbb;
+    --color-border: #e7e7e7;
+    --dairy: #333;
+    --bi: #000;
+    --name: #fff;
+    --a-color: #8f9ba8;
+    --p-color: #bbbbbb;
+}
+
+html body {
+    font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
+    color: var(--text-color);
+    height: 100%;
+    width: 100%;
+    background: var(--bi);
+    transition: background 0.3s;
 }
 
 .moveRight {
@@ -68,63 +98,34 @@ hr:after {
 .name a {
     background-color: transparent;
 }
-.spacers{
+.spacers {
     padding: 2em;
 }
-.name{
-    font-family: 'Hammersmith One', sans-serif;
+.name {
+    font-family: "Stylish", sans-serif;
     color: var(--name);
     font-size: 1.5em;
 }
-code{
-    background-color: rgba(158,167,179,0.4);
+code {
+    background-color: rgba(143, 159, 169, 0.15);
     border-radius: 6px;
     padding: 0.2em 0.4em;
+    color: var(--a-color);
 }
 
 .zero {
     opacity: 0;
     font-size: 0;
 }
-.light {
-    --color-default: #f2e9e1;
-    --text-color: #3a333d;
-    --dairy: #333;
-    --til-color: #e5e7eb;
-    --bi: radial-gradient(circle, #ccc 1px, #f2e9e1 1px);
-    --quote: #426b69;
-    --name: var(--text-color);
 
-}
-.dark {
-    --color-default: #000;
-    --text-color: #bbbbbb;
-    --color-border: #e7e7e7;
-    --dairy: #333;
-    --til-color: rgb(33, 33, 33);
-    --bi: radial-gradient(circle, #fff 0.2px, #000 1px);
-    --quote: #e5e7eb;
-    --name: #fff;
-}
-
-html body {
-    font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
-    color: var(--text-color);
-    height: 100%;
-    width: 100%;
-    background-size: 32px 32px;
-    background-image: var(--bi);
-}
- .rmbg{
-    background-color: transparent;
-}
 .til {
-    background-color: var(--til-color);
+    background-color: #292a2c;
 }
 
 p {
     margin-bottom: 1.6rem;
     font-size: 1.125rem;
+    color: #bbbbbb;
 }
 
 header,
@@ -167,7 +168,7 @@ footer {
     color: rgb(120 113 108/1);
 }
 blockquote {
-    border-left: 4px solid var(--quote);
+    border-left: 4px solid var(--a-color);
     padding-left: 1em;
 }
 
@@ -178,25 +179,13 @@ blockquote {
 }
 
 h1 {
-    font-family: "Hammersmith One", "ui-serif";
+    font-family: "Stylish", "ui-serif";
     font-size: 2.5rem;
 }
 p {
     font-family: "Spectral", "ui-serif";
     font-size: 1.2em;
-}
-
-.footer {
-    padding: 2rem 0;
-    border-top: 0.0625rem solid var(--color-border);
-    text-align: center;
-    margin-left: 15px;
-}
-
-footer p {
-    text-align: center;
-    margin-left: 15px;
-    margin: 0;
+    color: var(--p-color);
 }
 
 .grid-container {
@@ -230,6 +219,13 @@ footer p {
     background-image: linear-gradient(#e4e4e4 1px, transparent 1px);
     background-size: 8% 8%, 2px 2px;
     color: var(--dairy);
+}
+
+#tab-1 p {
+    color: #000;
+}
+.page code {
+    background-color: transparent;
 }
 
 .content {
@@ -313,7 +309,7 @@ footer p {
 
 .text-3xl {
     font-size: 1.875rem;
-    font-family: "Hammersmith One";
+    font-family: "Stylish", sans-serif;
 }
 
 .text {
@@ -349,7 +345,7 @@ nav a {
     color: plum;
     text-decoration: none;
 }
-.cent{
+.cent {
     text-align: center;
     padding-top: 50px;
 }
@@ -361,7 +357,7 @@ a {
     padding: 0 0.1em;
     margin: auto -0.1em;
     border-radius: 3px;
-    color: #426b69;
+    color: var(--a-color);
     text-decoration: none;
 }
 .content-card {
@@ -386,6 +382,7 @@ a {
 }
 .page-summary p {
     font-family: "Yomogi";
+    color: #bbbbbb;
 }
 /*********************************SEARCH STYLE FROM https://github.com/jackyzha0/quartz/blob/34b0353797a0d24c309139034918ad2060f504f5/assets/styles/base.scss#L402*********************************** */
 #search-container {
@@ -472,8 +469,7 @@ a {
     width: 100%;
 }
 
-
-.nav{
+.nav {
     padding: 2rem;
     width: 100%;
     display: grid;
@@ -492,7 +488,6 @@ a {
         grid-template-columns: 1fr;
     }
 }
-    
 
 .section-ul {
     list-style: none;
@@ -507,6 +502,7 @@ a {
 .section-ul > li h3 {
     opacity: 1;
     margin-bottom: 0em;
+    font-family: "Stylish", sans-serif;
 }
 .section-ul > li .meta {
     opacity: 0.6;
@@ -521,19 +517,26 @@ a {
     font-family: Inter;
     margin: 0;
 }
-.section p {
-    margin-top: 0;
+.desc p {
+    margin-bottom: 0;
+    margin-top: 5px;
 }
+
 .reduce p {
     font-size: 0.8em;
+}
+.ded {
+    font-size: 1em;
 }
 
 .desc .reduce h1,
 h2 {
     font-size: 1.2em;
+    font-family: "Stylish", sans-serif;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.65em;
+    font-family: "Stylish", sans-serif;
 }
 .xx {
     text-decoration: none;
@@ -559,10 +562,8 @@ h2 {
 .footnotes a {
     background-color: transparent;
     color: var(--text-color);
-
-    
 }
-sup a{
+sup a {
     background-color: transparent;
 }
 
@@ -570,10 +571,10 @@ sup a{
     display: inline-block;
     position: relative;
     color: var(--text-color);
-  }
-  
-  .hover-underline-animation:after {
-    content: '';
+}
+
+.hover-underline-animation:after {
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -583,49 +584,29 @@ sup a{
     background-color: plum;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  .ascii {
-    margin-bottom: 0;
-    padding: 0;
-    white-space: pre;
-    font-weight: 700;
-    font-family: jetbrains mono;
-    
 }
-.banner{
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-}
-  
-  .hover-underline-animation:hover:after {
+
+.hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
-
+}
 
 .post-title {
     text-align: center;
     font-size: 30px;
     line-height: 1.4em;
     padding: 2em 0;
-  
-  }
-  .post-title h1 p{
+}
+.post-title h1 p {
     color: (--text-color);
     font-family: "Stylish";
-
-  }
-  .title{
+}
+.title {
     font-family: "Stylish";
+}
 
-  }
-
-  .post-date{
+.post-date {
     font-size: 16px;
     font-weight: 400;
     font-family: "Stylish";
-
-  }
+}

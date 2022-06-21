@@ -2,31 +2,28 @@ import Head from "next/head"
 import { GetStaticProps, GetStaticPaths } from "next"
 import Link from "next/link"
 import { BrainEntry } from "../../lib/api"
-import {markdownToHtml} from "../../lib/mdToHtml"
+import { markdownToHtml } from "../../lib/mdToHtml"
 import { getContentBySlug, getAllContent } from "../../lib/api"
 import Layout from "../../component/layout"
-import Footer from "../../component/footer"
 import { NextSeo } from "next-seo"
 const readingTime = require("reading-time")
-import { format } from 'date-fns'
-
-
+import { format } from "date-fns"
 
 import React from "react"
 
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
     return (
         <>
-        <NextSeo
-                    title={brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)}
-                    description="Ahmed Saheed's second brain'"
-                    canonical={`https://saheed.codes/second-brain/${brainEntry.slug}`}
-                    openGraph={{
-                        url: "https://saheed.codes/second-brain",
-                        title: "Ahmed Saheed's second brain",
-                        description: "A place to document things i find interesting",
-                    }}
-                />
+            <NextSeo
+                title={brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)}
+                description="Ahmed Saheed's second brain'"
+                canonical={`https://saheed.codes/second-brain/${brainEntry.slug}`}
+                openGraph={{
+                    url: "https://saheed.codes/second-brain",
+                    title: "Ahmed Saheed's second brain",
+                    description: "A place to document things i find interesting",
+                }}
+            />
             <body>
                 <Head>
                     <meta charSet="UTF-8" />
@@ -56,18 +53,20 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         crossOrigin="anonymous"
                     ></script>
                 </Head>
-               
+
                 <div className="post-title">
-    <h1 className="title">{brainEntry.title}</h1>
-    <p className="post-date">
-    {format(new Date(brainEntry.date), 'MMM do, y')} | {readingTime(brainEntry.content).minutes < 1
-                                                            ? 1
-                                                            : readingTime(brainEntry.content).minutes
-                                                                  .toString()
-                                                                  .substring(0, 3)}{" "} min read
-    </p>
-    </div>
-    <header className="mx-auto max-w-3xl space-y-5">
+                    <h1 className="title">{brainEntry.title}</h1>
+                    <p className="post-date">
+                        {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
+                        {readingTime(brainEntry.content).minutes < 1
+                            ? 1
+                            : readingTime(brainEntry.content)
+                                  .minutes.toString()
+                                  .substring(0, 3)}{" "}
+                        min read
+                    </p>
+                </div>
+                <header className="mx-auto max-w-3xl space-y-5">
                     <article
                         className="prose"
                         dangerouslySetInnerHTML={{ __html: brainEntry.content }}
@@ -99,7 +98,6 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     )}
                 </header>
                 <br></br>
-
             </body>
         </>
     )
@@ -112,7 +110,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         "backlinks",
         "title",
         "description",
-        "date"
+        "date",
     ])
 
     const content = await markdownToHtml(brainEntry.content || "")

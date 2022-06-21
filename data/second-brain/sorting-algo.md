@@ -1,7 +1,7 @@
 ---
 title: "Sorting Algorithms"
 description: "A sorting algorithm is an algorithm that puts elements of a list into an order"
-date: "2022-06-20T00:00:00"
+date: "2022-06-20"
 ---
 
 Sorting a list of data in ascending, descending, or any order can help both humans  and machine sort data efficiently and quickly, perhaps using an [[algorithm]]. The sorting algorithms works on data structures of different data types keeping consideration of [[Asymptotic-analysis]].

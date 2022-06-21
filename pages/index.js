@@ -34,7 +34,6 @@ export default function Home() {
             />
             <Head>
                 <title class>Ahmed Saheed</title>
-                <link rel="stylesheet" href="./style.css" />
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
             <body>
@@ -63,17 +62,17 @@ export default function Home() {
                             time building and tinkering with things I find lovely.
                         </p>
                         <p className="third">
-                            This vestibule doors opens onto my fine and maybe unfine datasets of
-                            my brain. More like a library where i store valuable peice of computer
+                            This vestibule doors opens onto my fine and maybe unfine datasets of my
+                            brain. More like a library where i store valuable peice of computer
                             related information and personal growth. Currently, i am engaged in{" "}
                             <a target="_blank" href="https://griffith.ie">
                                 college
                             </a>{" "}
-                            activities alongside some side projects and contributing to open
-                            source. Also, i am having a great time being lost in{" "}
-                            <a href="/second-brain/tolstoy">Tolstoy's</a> Literature while 
-                            puzzling human existence. Please feel free and navigate around, you're
-                            highly welcomed.
+                            activities alongside some side projects and contributing to open source.
+                            Also, i am having a great time being lost in{" "}
+                            <a href="/second-brain/tolstoy">Tolstoy's</a> Literature while puzzling
+                            human existence. Please feel free and navigate around, you're highly
+                            welcomed.
                         </p>
 
                         <p className="third">
