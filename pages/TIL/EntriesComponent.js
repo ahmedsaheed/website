@@ -8,6 +8,7 @@ import { format } from "date-fns"
 
 const BookCard = (props) => {
     var dates = props.Date
+    var date = dates?.substring(0, 10)
     return (
         <>
             {" "}
@@ -21,7 +22,7 @@ const BookCard = (props) => {
             </head>
             <div class="content__inner" id="tab-1">
                 <div class="page">
-                    <p>DATE: {format(new Date(props.Date), "MMM do, y")}</p>
+                <p>DATE: {date}</p>
                     <br />
 
                     <ReactMarkdown
