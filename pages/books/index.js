@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import Book from "./api"
 import { NextSeo } from "next-seo"
-import Footer from "../../component/footer"
 import Summary from "../../component/summary"
 import Head from "next/head"
 import Layout from "../../component/layout"

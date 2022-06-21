@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { NextSeo } from "next-seo"
-import Footer from "../../component/footer"
 import Summary from "../../component/summary"
 import ReactMarkdown from "react-markdown"
 import remarkMath from "remark-math"
