@@ -7,6 +7,10 @@ import { getContentBySlug, getAllContent } from "../../lib/api"
 import Layout from "../../component/layout"
 import Footer from "../../component/footer"
 import { NextSeo } from "next-seo"
+const readingTime = require("reading-time")
+import { format } from 'date-fns'
+
+
 
 import React from "react"
 
@@ -52,7 +56,18 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         crossOrigin="anonymous"
                     ></script>
                 </Head>
-                <header className="mx-auto max-w-3xl space-y-5">
+               
+                <div className="post-title">
+    <h1 className="title">{brainEntry.title}</h1>
+    <p className="post-date">
+    {format(new Date(brainEntry.date), 'MMM do, y')} | {readingTime(brainEntry.content).minutes < 1
+                                                            ? 1
+                                                            : readingTime(brainEntry.content).minutes
+                                                                  .toString()
+                                                                  .substring(0, 3)}{" "} min read
+    </p>
+    </div>
+    <header className="mx-auto max-w-3xl space-y-5">
                     <article
                         className="prose"
                         dangerouslySetInnerHTML={{ __html: brainEntry.content }}
@@ -95,6 +110,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         "slug",
         "content",
         "backlinks",
+        "title",
+        "description",
+        "date"
     ])
 
     const content = await markdownToHtml(brainEntry.content || "")

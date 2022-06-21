@@ -8,6 +8,9 @@ export type BrainEntry = {
     slug: string
     content: string
     backlinks: string[]
+    title: string
+    description: string
+    date: string
 }
 type Content = BrainEntry
 

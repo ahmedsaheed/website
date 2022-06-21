@@ -3,5 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/second-brain/entries": "pages/second-brain/entries.js",
-  "/": "pages/index.js"
+  "/second-brain/[slug]": "pages/second-brain/[slug].js"
 }

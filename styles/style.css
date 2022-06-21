@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Yomogi&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Hammersmith%20One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Spectral&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap');
 :root {
     --color-default: #f2e9e1;
     --text-color: #3a333d;
@@ -346,6 +343,7 @@ footer p {
 nav a {
     background-color: transparent;
     color: var(--text-color);
+    font-family: "Stylish", sans-serif;
 }
 .text2:hover {
     color: plum;
@@ -607,7 +605,27 @@ sup a{
     transform-origin: bottom left;
   }
 
-  pre {
-    font-size: .7rem;
-    margin: 0;
-}
+
+.post-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.4em;
+    padding: 2em 0;
+  
+  }
+  .post-title h1 p{
+    color: (--text-color);
+    font-family: "Stylish";
+
+  }
+  .title{
+    font-family: "Stylish";
+
+  }
+
+  .post-date{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Stylish";
+
+  }

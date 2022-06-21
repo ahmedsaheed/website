@@ -1,4 +1,8 @@
-# Theming In React
+---
+title: "Theming In React"
+description: "Theming isn't that tricky!"
+date: "2022-06-02T00:00:00"
+---
 
 Lately, the use of multiple themes on web and mobile applications has been has risen immersely. While developing my personal website, I struggled with this theming feature.
 
