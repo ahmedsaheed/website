@@ -18,7 +18,6 @@ const markdown = `
 - [Books](/books)
 - [Uses](/uses)
 - [Feed](/rss/feed.xml)
-
 `
 export default function Home() {
     return (
@@ -39,7 +38,7 @@ export default function Home() {
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
             <body>
-                <div className="spacer mx-auto max-w-3xl space-y-5">
+                <div className=" spacers mx-auto max-w-3xl space-y-5">
                     <div class="mx-auto max-w-2xl">
                         <br></br>
                         <h2 class="name third text-stone-100 font-hammersmith mb-4">

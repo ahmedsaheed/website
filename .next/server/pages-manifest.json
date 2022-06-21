@@ -2,5 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/second-brain/[slug]": "pages/second-brain/[slug].js"
+  "/second-brain/entries": "pages/second-brain/entries.js",
+  "/": "pages/index.js"
 }

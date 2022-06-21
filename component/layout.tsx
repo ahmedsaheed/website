@@ -7,28 +7,30 @@ function Layout(PageComponent: any) {
             <>
             <nav className="nav">
                 <div className="spacer">
+                {/* <a href="/" className="read hover-underline-animation link active"> ← Go Back</a> */}
+
                 </div>
                 <div className="right">
                
-                                <a className="here false" href="#">
+                                <a className="hover-underline-animation" href="#">
                                     garden
                                 </a>
-                                <a className="false" href="/books">
+                                <a className="hover-underline-animation" href="/books">
                                     books
                                 </a>
-                                <a className="false" href="/fun">
+                                <a className="hover-underline-animation" href="/fun">
                                 fun
                                 </a>
-                                <a className="text-am-green-light" href="/projects">
+                                <a className="hover-underline-animation" href="/projects">
                                     projects
                                 </a>
-                                <a className="false" href="/TIL">
+                                <a className="hover-underline-animation" href="/TIL">
                                     til
                                 </a>
-                                <a className="false" href="/uses">
+                                <a className="hover-underline-animation" href="/uses">
                                     tools
                                 </a>
-                                <a className="pt-5">
+                                <a className="">
                 <Theme />
             </a>
                 </div>

@@ -71,6 +71,9 @@ hr:after {
 .name a {
     background-color: transparent;
 }
+.spacers{
+    padding: 2em;
+}
 .name{
     font-family: 'Hammersmith One', sans-serif;
     color: var(--name);
@@ -115,7 +118,9 @@ html body {
     background-size: 32px 32px;
     background-image: var(--bi);
 }
-
+ .rmbg{
+    background-color: transparent;
+}
 .til {
     background-color: var(--til-color);
 }
@@ -561,4 +566,48 @@ h2 {
 }
 sup a{
     background-color: transparent;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--text-color);
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: plum;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .ascii {
+    margin-bottom: 0;
+    padding: 0;
+    white-space: pre;
+    font-weight: 700;
+    font-family: jetbrains mono;
+    
+}
+.banner{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  pre {
+    font-size: .7rem;
+    margin: 0;
 }
