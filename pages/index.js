@@ -54,22 +54,22 @@ export default function Home() {
                     <article>
                         <p class="second">
                             I assert you're a sailor of the web. You've come all the way from{" "}
-                            <Location /> a very lovely place, you must be tired from your journey ?
+                            <Location /> a very lovely place, what could the weather be like there ?
                             By the way, welcome to my digital garden.
                         </p>
                         <p className="third">
-                            You finally made it to my space on the web. I’m Ahmed! I spend a lot of
-                            time building and tinkering with things I find lovely.
+                            You finally made it to my tiny court yard on the web. I’m Ahmed! I enjoy
+                            building on the web, wandering the web and tinkering with things I find meaningful to me.
                         </p>
                         <p className="third">
                             This vestibule doors opens onto my fine and maybe unfine datasets of my
-                            brain. More like a library where i store valuable peice of computer
+                            brain. More like a library where i store valuable piece of computer
                             related information and personal growth. Currently, i am engaged in{" "}
                             <a target="_blank" href="https://griffith.ie">
                                 college
                             </a>{" "}
-                            activities alongside some side projects and contributing to open source.
-                            Also, i am having a great time being lost in{" "}
+                            activities alongside building projects and contributing to open source.
+                            Also, I am having a great time being lost in{" "}
                             <a href="/second-brain/tolstoy">Tolstoy's</a> Literature while puzzling
                             human existence. Please feel free and navigate around, you're highly
                             welcomed.

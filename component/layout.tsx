@@ -12,7 +12,9 @@ function Layout(PageComponent: any) {
                 </Head>
                 <nav className="nav">
                     <div className="spacer">
-                        {/* <a href="/" className="read hover-underline-animation link active"> ← Go Back</a> */}
+                    <a className="hover-underline-animation" href="/">
+                            cd ..
+                        </a>
                     </div>
                     <div className="right">
                         <a className="hover-underline-animation" href="/second-brain">

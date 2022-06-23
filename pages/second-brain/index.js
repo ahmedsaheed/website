@@ -39,20 +39,19 @@ I really urge you to keep a second brain as one isn't enough, and it's fun to nu
 - [Obsidian](https://obsidian.md/)
 
 ## Some routes around the garden
+- [I love to read, perhaps you too! Check out my digital library ](/books)
 
 - [Stuff i've worked on and some i'm still tinkering](/projects)
 
-- [Do you like books? Checkout my library ](/books)
-
 - [See what i learnt today](/TIL)
 
-- [All of my  garden seeds can be found here](/second-brain/entries)
+- [All of my  garden seeds/notes can be found here](/second-brain/entries)
 
-- Use ⌘ + d to toggle within themes.
+- Use ⌘ + L to toggle within themes.
 
 - You can search for things in the garden just by typing ⌘ + k
 
-
+Please feel free and navigate around, you're highly welcomed.
 `
 function secondBrain() {
     return (

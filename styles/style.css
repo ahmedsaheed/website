@@ -305,11 +305,7 @@ p {
       opacity: 1;
     }
   }
-@keyframes cssAnimation {
-    to {
-        visibility: visible;
-    }
-}
+
 
 .pad {
     padding-left: 1rem;
@@ -498,7 +494,11 @@ a {
 @media screen and (max-width: 768px) {
     .nav .right {
         grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
     }
+}
+.nav button svg{
+    margin-top: 0.5rem;
 }
 
 .section-ul {

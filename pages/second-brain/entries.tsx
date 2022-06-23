@@ -2,14 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next"
 import Link from "next/link"
 import { NextSeo } from "next-seo"
 import Layout from "../../component/layout"
-import Summary from "../../component/summary"
-import { markdownToHtml } from "../../lib/mdToHtml"
 import { getContentBySlug, getAllContent } from "../../lib/api"
-import ReactMarkdown from "react-markdown"
-import remarkMath from "remark-math"
-import rehypeKatex from "rehype-katex"
-import "katex/dist/katex.min.css"
-import remarkGfm from "remark-gfm"
 const readingTime = require("reading-time")
 import Head from "next/head"
 import { BrainEntry } from "../../lib/api"
@@ -35,21 +28,9 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
             <body>
-                <Summary
-                    title="Digital Garden Entries"
-                    content={
-                        <>
-                            Throughout the world there are many different gardens that people have
-                            designed. In a Japanese garden, every tree is perfectly pruned, without
-                            a leaf out of place. Nothing is planted without forethought as to the
-                            exact place appropriate to it.There are English gardens that are famous
-                            for their roses and perfect lines of shrubbery. The number of garden
-                            types are too numerous to mention. One thing is true of all gardens. It
-                            is joint creation between man's intention to create a space of
-                            tranquility and nature's ability to comply.WELCOME TO MY GARDEN
-                        </>
-                    }
-                />
+            <h1 className="mx-auto max-w-3xl space-y-5 text-3xl font-am px-10">
+                Digital Garden Entries
+            </h1>
                 <br />
                 <br />
 
