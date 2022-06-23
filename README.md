@@ -17,20 +17,3 @@ Man way reasoning and thinking are very difficult to understand, mine happens ve
 contradict the ways in which ideas and thought are organise in modern times (linearly).
 The digital garden or second brain, approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
 
-## Do you want to keep a second brain?
-
-I really urge you to keep a second brain as one isn't enough, and it's fun to nurture it and watch its growth. If you want to there are a few ways to do it below.
-
--   [Quartz 3.2](https://quartz.jzhao.xyz/)
-
--   [Obsidian](https://obsidian.md/)
-
-## Some routes around the garden
-
--   🚧 [Stuff i've worked on and some i'm still tinkering](https://www.saheed.codes/projects)
-
--   📚 [Do you like books? Checkout my library ](https://www.saheed.codes/books)
-
--   👀 [See what i learnt today](https://www.saheed.codes/TIL)
-
--   🔍 You can also search for things in the garden just by typing ctrl+k
