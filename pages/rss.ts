@@ -1,38 +1,24 @@
 import { Feed } from "feed"
-import { Octokit } from "@octokit/core"
 import React, { Component } from "react"
 import { markdownToHtml } from "../lib/mdToHtml"
+import { BrainEntry } from "../lib/api"
+import { getContentBySlug, getAllContent } from "../lib/api"
+import { GetStaticProps, GetStaticPaths } from "next"
+import Layout from "../component/layout"
+const fs = require('fs');
 
-const token = process.env.github_api
-const id = "a928b1fbcf1738da26ea5d7125e911cb"
-export default class extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            posts: [],
-        }
-    }
-    async componentDidMount() {
-        const octokit = new Octokit({
-            auth: token,
-        })
 
-        const response = await octokit.request("GET /gists/{gist_id}/comments", {
-            headers: {
-                accept: "application/vnd.github.v3+json",
-            },
-            gist_id: id,
-        })
+   function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }){
         const date = new Date()
         const feed = new Feed({
             title: "Saheed's TIL",
-            description: "Kinda my daily Encyclopedia",
+            description: "Ahmed Saheed's Encyclopedia | Second Brain",
             id: "https://saheed.codes/TIL",
             link: "https://saheed.codes/TIL",
             language: "en",
             copyright: `© Ahmed Saheed ${date.getFullYear()}`,
             updated: date,
-            generator: "Feed", // optional, default = 'Feed for Node.js'
+            generator: "Feed",
             feedLinks: {
                 json: "https://www.saheed.codes/til/",
                 atom: "https://www.saheed.codes/til/",
@@ -43,25 +29,25 @@ export default class extends Component {
                 link: "https://saheed.codes/TIL",
             },
         })
-        response.data.forEach((post) => {
+        brainEntries?.forEach( (post) => {
             feed.addItem({
-                title: post.body.substring(0, 45) + "...",
-                id: "https://saheed.codes/TIL",
-                link: "https://saheed.codes/TIL",
+                title: post.title,
+                id: `https://saheed.codes/${post.slug}`,
+                link: `https://saheed.codes/${post.slug}`,
                 description: post.description,
-                content: post.body,
-                author: [
+                content: post.content,
+                    author: [
                     {
                         name: "Ahmed Saheed",
                         email: "ahmedsaheed2@outlook.com",
                         link: "https://saheed.codes/TIL",
                     },
                 ],
-                date: new Date(post.created_at),
+                date: new Date(post.date),
             })
         })
 
-        feed.addCategory("Today I Learnt")
+        feed.addCategory("Second Brain")
 
         feed.addContributor({
             name: "Ahmed Saheed",
@@ -70,12 +56,28 @@ export default class extends Component {
         })
 
         console.log(feed.rss2())
-        //  fs.mkdirSync('./public/rss', { recursive: true });
-        //fs.writeFile('./public/rss/feed.xml', feed.rss2());
+        // fs.mkdir('./public/rss', { recursive: true });
+        // fs.writeFile('./public/rss/feed.xml', feed.rss2());
         // fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
         // fs.writeFileSync('./public/rss/feed.json', feed.json1());
+      return null;
     }
-    render() {
-        return <></>
+
+    export const getStaticProps: GetStaticProps = async () => {
+        const brainEntries = getAllContent("second-brain", [
+            "slug",
+            "content",
+            "backlinks",
+            "title",
+            "description",
+            "date",
+        ])
+
+        return {
+            props: {
+                brainEntries,
+            },
+        }
     }
-}
+    
+    export default getRssFeed;
