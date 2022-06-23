@@ -3,324 +3,484 @@
     <channel>
         <title>Saheed's TIL</title>
         <link>https://saheed.codes/TIL</link>
-        <description>Kinda my daily Encyclopedia</description>
-        <lastBuildDate>Wed, 08 Jun 2022 20:19:51 GMT</lastBuildDate>
+        <description>Ahmed Saheed's Encyclopedia | Second Brain</description>
+        <lastBuildDate>Thu, 23 Jun 2022 17:16:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed</generator>
         <language>en</language>
         <copyright>© Ahmed Saheed 2022</copyright>
-        <category>Today I Learnt</category>
+        <category>Second Brain</category>
         <item>
-            <title><![CDATA[**Test: Sum of Array Recursively**
+            <title><![CDATA[Asymptotic Analysis]]></title>
+            <link>https://saheed.codes/asymptotic</link>
+            <guid>https://saheed.codes/asymptotic</guid>
+            <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[growth of a runtime/rate of growth of an algorithm without worrying about different computers , compilers or implementation.]]></description>
+            <content:encoded><![CDATA[
 
-```java...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Sat, 21 May 2022 20:59:51 GMT</pubDate>
-            <content:encoded><![CDATA[**Test: Sum of Array Recursively**
+## Intro to Asymptotic Analysis
 
-```java
-class Test {
-    static int arr[] = { 1, 2, 3, 4, 5 };
- 
-    // Return sum of elements in A[0..N-1]
-    // using recursion.
-    static int findSum(int A[], int N)
-    {
-        if (N <= 0)
-            return 0;
-        return (findSum(A, N - 1) + A[N - 1]);
-    }
- 
-    // Driver method
-    public static void main(String[] args)
-    {
-        System.out.println(findSum(arr, arr.length));
-    }
-}
-```]]></content:encoded>
+Because the time taken to perform an algorithms differs due to input size, compilers, computer language & hardware, they are not efficiently calculated using methods like benchmarking or mere assumptions. **This is where asymptotic analysis comes in:**
+
+## Asymptotic Analysis
+
+During asymptotic analysis we do not really calculate time as said earlier, instead we calculate the amount of operations in the [algorithm](/second-brain/algorithm) because we expect performance “time” to be dependant on both **size of input** and machine power. ([Refer to khan material for better explanation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)).
+
+Formal Definition: It is a way of describing **growth of a runtime/rate of growth** of an algorithm without worrying about different computers , compilers or implementation.
+
+## Asymptotic Notations
+
+1.  BigO notation ⇒ Upper Bound
+2.  Omega ⇒ Lower Bound
+3.  Theta ⇒ Both upper and lower bound also called tight bound.
+
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/efd98f1c-f681-4c0f-bbca-8c3dd2b82edb/Screenshot_2022-02-21_at_10.21.17.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T200608Z&X-Amz-Expires=86400&X-Amz-Signature=4e6403792c8945d40594bf2b43e378afd0f0da719c15f09a465ce19ba1b9287e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-02-21%2520at%252010.21.17.png%22&x-id=GetObject)
+
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4d8ef66a-65ad-4616-8bb6-6f9bb7373654/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T200436Z&X-Amz-Expires=86400&X-Amz-Signature=0fda3ab455ad7c4750ac4ef530b1f0622fa13514b6692ac78b37b07339c91ae7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+
+---
+
+## Further Reading
+- [Big0 Cheat Sheet](https://www.bigocheatsheet.com/)
+- [MIT Asymptotic Analysis Recitation 2011](http://courses.csail.mit.edu/6.006/spring11/rec/rec01.pdf)
+- [More consise explanation of time complexities](https://medium.com/swlh/big-o-notation-and-time-space-complexity-1806936e6330#:~:text=O(nlogn)%20is%20known%20as,using%20O(logn)%20space.)]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
         <item>
-            <title><![CDATA[**Test: Permutate A String**
+            <title><![CDATA[Theming In React]]></title>
+            <link>https://saheed.codes/react-theming</link>
+            <guid>https://saheed.codes/react-theming</guid>
+            <pubDate>Wed, 01 Jun 2022 23:00:00 GMT</pubDate>
+            <description><![CDATA[Theming isn't that tricky!]]></description>
+            <content:encoded><![CDATA[
+Lately, the use of multiple themes on web and mobile applications has been has risen immersely. While developing my personal website, I struggled with this theming feature.
 
-```java
-publ...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Sun, 22 May 2022 00:36:30 GMT</pubDate>
-            <content:encoded><![CDATA[**Test: Permutate A String**
+I had several issues during implementation of the feature, that is why i have decided to write this brief note on react theming.
 
-```java
-public class Permutation
-{
-    public static void main(String[] args)
-    {
-        String str = "ABC";
-        int n = str.length();
-        Permutation permutation = new Permutation();
-        permutation.permute(str, 0, n-1);
-    }
- 
-    /**
-    * permutation function
-    * @param str string to calculate permutation for
-    * @param l starting index
-    * @param r end index
-    */
-    private void permute(String str, int l, int r)
-    {
-        if (l == r)
-            System.out.println(str);
-        else
-        {
-            for (int i = l; i <= r; i++)
-            {
-                str = swap(str,l,i);
-                permute(str, l+1, r);
-                str = swap(str,l,i);
-            }
-        }
-    }
- 
-    /**
-    * Swap Characters at position
-    * @param a string value
-    * @param i position 1
-    * @param j position 2
-    * @return swapped string
-    */
-    public String swap(String a, int i, int j)
-    {
-        char temp;
-        char[] charArray = a.toCharArray();
-        temp = charArray[i] ;
-        charArray[i] = charArray[j];
-        charArray[j] = temp;
-        return String.valueOf(charArray);
-    }
- 
-}
-```]]></content:encoded>
-            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
-        </item>
-        <item>
-            <title><![CDATA[**Testing the new mathematic support in markd...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Sun, 22 May 2022 01:34:33 GMT</pubDate>
-            <content:encoded><![CDATA[**Testing the new mathematic support in markdown**
+## prerequisite
 
-Example:
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+I assert you already have a react environment to work with, if not you can easily create one using:
 
-[More guides here](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)]]></content:encoded>
-            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
-        </item>
-        <item>
-            <title><![CDATA[**Testing the markdown table & Tasklist**
-
-...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Sun, 22 May 2022 13:51:25 GMT</pubDate>
-            <content:encoded><![CDATA[**Testing the markdown table & Tasklist**
-
-Example:
-
-| a | b  |  c |  d  |
-| - | :- | -: | :-: |
-
-## Tasklist
-
-* [ ] to do
-* [x] done]]></content:encoded>
-            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
-        </item>
-        <item>
-            <title><![CDATA[**Easy Palindrome Number**
-
-```java
-    pu...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Mon, 23 May 2022 20:53:24 GMT</pubDate>
-            <content:encoded><![CDATA[**Easy Palindrome Number**
-
-```java
-    public static boolean isPalindrome(int x) {
-        //convert given to string
-        String convertedInt  = Integer.toString(x);
-        //reverse the string
-        String reversed = "";
-        char a;
-        for(int i = 0; i < convertedInt.length(); i++){
-            a= convertedInt.charAt(i); 
-            reversed= a+reversed;
-        }
-        //make comparisom
-        return convertedInt.equals(reversed);
-    }
-```]]></content:encoded>
-            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
-        </item>
-        <item>
-            <title><![CDATA[**Had Microsoft Internship Interview Today.**...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Wed, 25 May 2022 13:22:28 GMT</pubDate>
-            <content:encoded><![CDATA[**Had Microsoft Internship Interview Today.**
-Total Question : 3
-Answered : 3
-
-1. **Largest Alphabetic Character**
-Given a string S, find the largest alphabetic character, whose both uppercase and lowercase character appear in string str. The uppercase character should be returned. If there is no such character, return NO.
-
-Solution: 
-```java
-public static String largestCharacter(String str)
-	{
-		boolean[] uppercase = new boolean[26];
-		boolean[] lowercase = new boolean[26];
-
-		char[] arr = str.toCharArray();
-
-		for (char c : arr) {
-
-			if (Character.isLowerCase(c))
-				lowercase[c-'a'] = true;
-
-			if (Character.isUpperCase(c))
-				uppercase[c-'A'] = true;
-		}
-
-		for (int i = 25; i >= 0; i--) {
-
-			if (uppercase[i] && lowercase[i])
-				return (char)(i + 'A') + "";
-		}
-
-		return "NO";
-	}
+```bash
+npx create-next-app@latest
 ```
 
-2. **Find N Unique Integers Sum up to Zero**
-Given an integer n, return any array containing n unique integers such that they add up to 0
+or
 
-```java
-public int[] sumZero(int n) {
-    int []arr = new int [n];
-    if(n == 1) arr[0] = 0;
-    for(int i = 0; i < n; i++){
-        if(n % 2 == 0 && i >= n/2){
-            arr[i] = -n/2 + (i + 1);
+```bash
+npx create-react-app my-app
+```
+
+## Implementing the theming
+
+For implementation of the theme, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
+
+We'd Also need our theme colors and element specified out in our stylesheet.
+
+And with all these, we're good to go!
+
+To begin, create a `hooks` folder in your root directory. Add a new javascript file in the directory like so `useLocalStorage.js`.
+
+Now in your `useLocalStorage.js` file lets add some code to allow SSR[^1] and SSG[^2] work decently.
+
+```js
+import { useState } from "react";
+
+export function useLocalStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = useState(() => {
+    if (typeof window === "undefined") {
+      return initialValue;
+    }
+    try {
+      // Get from local storage by key
+      const item = window.localStorage.getItem(key);
+      // Parse stored json or if none return initialValue
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      // If error also return initialValue
+      console.log(error);
+      return initialValue;
+    }
+  });
+  const setValue = (value) => {
+    try {
+      // Allow value to be a function so we have same API as useState
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
+      // Save state
+      setStoredValue(valueToStore);
+      // Save to local storage
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      }
+    } catch (error) {
+      // A more advanced implementation would handle the error case
+      console.log(error);
+    }
+  };
+  return [storedValue, setValue];
+}
+
+```
+
+On completion of the hook, we now need to implement a function which makes our theming work.
+
+Implementing this is very fair when done correctly.
+To get started let's create a component called `theme.js`. In our `theme.js` file lets implement this function
+
+```js
+import { createContext, useEffect } from "react"
+import { useLocalStorage } from "../hooks/useLocalStorage"
+import { WiDaySunny } from "react-icons/wi"
+import { MdOutlineDarkMode } from "react-icons/md"
+
+function mode() {
+    const [theme, setTheme] = useLocalStorage("theme", "light")
+
+    useEffect(() => {
+        if (
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.getElementsByTagName("html")[0].classList.add("dark")
+        } else {
+            document.getElementsByTagName("html")[0].classList.remove("dark")
         }
-        else{
-            arr[i] = -n/2 + i;
+    }, [])
+
+    useEffect(() => {
+        if (theme == "dark") {
+            document.getElementsByTagName("html")[0].classList.add("dark")
+
+            localStorage.theme = "dark"
+        } else {
+            document.getElementsByTagName("html")[0].classList.remove("dark")
+
+            localStorage.theme = "light"
+        }
+    }, [theme])
+
+    const toggleDarkMode = () => {
+        if (theme == "dark") {
+            setTheme("light")
+        } else {
+            setTheme("dark")
         }
     }
-    return arr;
+
+    useEffect(() => {
+        document.addEventListener("keydown", detectKeydown, true)
+    }, [])
+
+    const detectKeydown = (e) => {
+        if (
+            (e.key === "x" && (e.ctrlKey || e.metaKey)) ||
+            (e.key === "l" && (e.ctrlKey || e.metaKey))
+        ) {
+            toggleDarkMode()
+        }
+    }
+
+    return (
+        <button onClick={toggleDarkMode}>
+            {theme === "light" ? (
+                <WiDaySunny style={{ color: "black" }} />
+            ) : (
+                <MdOutlineDarkMode style={{ color: "white" }} />
+            )}
+        </button>
+    )
+}
+
+export default mode
+```
+
+Let's add a touch of fun, we could also switch between themes by using our keyboard buttons, but this obviously wouldn't work for mobile devices. To implement this we'd need to add an extra function in our `theme.js` file which would detect keys pressed.
+
+```js
+useEffect(() => {
+
+document.addEventListener("keydown", detectKeydown, true)
+
+}, [])
+
+const detectKeydown = (e) => {
+// on pressing ctlr + d or ctlr + l our theme would be switched.
+if (e.key === "d" && (e.ctrlKey || e.metaKey) || (e.key === "l" && (e.ctrlKey || e.metaKey) )) {
+
+toggleDarkMode()
+
 }
 ```
 
-3. ~~Can't remember the last question tho~~
+Finally, we'd do some bit of styling work on our css
+
+```css
+:root {
+    --text-color: #3a333d;
+    --background: #fff;
+}
+
+.light {
+    --text-color: #3a333d;
+    --background: #fff;
+}
+
+.dark {
+    --text-color: #bbbbbb;
+    --background: #000;
+}
+```
+
+And with all this set up, you should have a theme working fine on your react app.
+
+---
+
+[^1]:
+    [Server Side Rendering: A method of rendering pages which generates the HTML on the server for the all page but only **on the first load**](https://medium.com/jspoint/a-beginners-guide-to-react-server-side-rendering-ssr-bf3853841d55)
+
+    [^2]: [Static Site Generation a.k.a. SSG is pre-rendering your React app into HTML at build time.](https://dev.to/anshuman_bhardwaj/what-the-heck-is-ssg-static-site-generation-explained-with-nextjs-5cja).
 ]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
         <item>
-            <title><![CDATA[I'd successfully passed the online microsoft ...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Fri, 27 May 2022 21:16:15 GMT</pubDate>
-            <content:encoded><![CDATA[I'd successfully passed the online microsoft coding assessments, now i've been invited for an interview via teams and i found this documents online and just jumped on some the question 
-[<ins>Click here to see<ins>](https://github.com/CourtneyThurston/microsoft-internships/blob/master/README.md) 
+            <title><![CDATA[Sorting Algorithms]]></title>
+            <link>https://saheed.codes/sorting-algo</link>
+            <guid>https://saheed.codes/sorting-algo</guid>
+            <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A sorting algorithm is an algorithm that puts elements of a list into an order]]></description>
+            <content:encoded><![CDATA[
+Sorting a list of data in ascending, descending, or any order can help both humans  and machine sort data efficiently and quickly, perhaps using an [algorithm](/second-brain/algorithm). The sorting algorithms works on data structures of different data types keeping consideration of [Asymptotic-analysis](/second-brain/asymptotic-analysis).
 
 
-Problem: Given an array of 0's and 1's, move all of the 0's to the beginning of the array and all of the 1's to the end of the array.
-Solution:
+## Simple Sorting
+
+These algorithms are  useful in sorting through data of any type. i.e int, string, object etc. Although the run time of these algorithms are notoriously slow.
+
+1.  Bubble sort
+2.  Selection sort
+3.  Insertion sort
+
+### Bubble Sort
+
+It is the simplest of all sorting algorithms but very slow.(not advisable for large dataset).
+
+The rules of this algorithms are as follows.
+
+-   Compare only two indexes at a time starting at index the beginning
+-   If the LHS is greater than the RHS SWAP positions else do nothing
+-   Then, move one position to the right and repeat the previous step.
+-   At each stage of the iteration, the largest or greatest element must be on the extreme end of the RHS.
+-   Finally repeat all step.
+
 ```java
-  public static int[] bringZeroForwardOneBackward(int[] arr){
-   int count = 0;
-    for (int i : arr){
-      if(i == 0){
-        count++;
-      }
-    }  
 
-    Arrays.fill(arr,0,count,0);
-    Arrays.fill(arr,count+1,arr.length-1,1);
+  static void bubbleSort(int[] arr) {
+	int temp = 0;
+	for(int i=0; i < arr.length; i++){
+		for(int j=1; j < (arr.length - i); j++){
+		if(arr[j-1] > arr[j]){
+//swap elements
+			temp = arr[j-1];
+			arr[j-1] = arr[j];
+			arr[j] = temp;
+			} // if close
+		} // inner for loop close
+	} // outer for loop close
+} // end of method
 
-    System.out.println( Arrays.toString(arr));
-    System.out.println(arr.length);
-    return arr;
-    }
+//Time Complexity is mostly = 0(n^2)
+
+```
+
+> The only comparison done here is check if the LHS > RHS. and for each iteration n - 1 is always sorted (where n = length of the array).
+
+### Selection Sort:
+
+It’s a very basic and straight forward way of sorting here are the steps:
+
+1.Scan through the dataset, and locate the smallest date.
+
+1.  Store that smallest date for reference.
+2.  If the nothing smaller than what we currently have stored, swap our smallest date to the first index i.e index[0]
+3.  Now repeat the above process, this time start scanning from index[i]+1 (because index[i] is already sorted.(where i = currentIndex))
+4.  Reiterate the process till you get to the last data which MUST be the largest.
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f069ac77-d23d-4be8-b4d4-75c1b13803a1/Screenshot_2022-03-01_at_17.43.06.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T202515Z&X-Amz-Expires=86400&X-Amz-Signature=ba6a02b3f9fe06d2f5d3c7034dabbe946ac5153410dedcaea3c5037b4e6d767a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252017.43.06.png%22&x-id=GetObject)
+
+```java
+static void selectionSort(int f[]){
+	for(int i = 0; i < f.length; i = i + 1){  //iterate through the dataset
+		int currMin = i;     
+		 //storing our current Minimum
+		for(int j = i + 1; j < f.length; j = j + 1){ 
+			//repeating the iteration from index[i]+1
+			if(f[j] < f[currMin])
+					currMin = j;
+	}
+// swap f[currMin] with f[i]
+		int temp = f[i];     
+		//temporary variable to hold f[i]
+		f[i] = f[currMin];
+		f[currMin] = temp;
+	}
+}
+
+//Time Complexity for best & worst case is = 0(n^2)
+```
+
+
+### Insertion Sort
+
+This algorithm is a basic one. Here it’s very similar to sorting a pack of card by hand.
+
+1.  Iterate through the dataset starting at array[1] until array[array.lenght-1].
+2.  We’d compare the element at our current position (a.k.a KEY) to it’s predecessors(KEY - 1....).
+3.  If the element at current position KEY is smaller that the immediate predecessor, we’d continue the comparison to predecessors after Key immediate predecessor.
+4.  Now we’d all those predecessors greater than KEY by one position forward to create space for KEY
+5.  We’d insert key into its rightful space.
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/74345031-05e4-4563-8f69-3a9c9f8475c8/Screenshot_2022-03-01_at_18.43.40.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T203658Z&X-Amz-Expires=86400&X-Amz-Signature=1e084d5f08cc60116b6fbe0e7c4aff323f3622154283830b7e8daeff3f6f8f1a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252018.43.40.png%22&x-id=GetObject)
+
+```java
+static void insertionSort(int k[]){
+		int j = 1;    
+	while(j < k.length){   
+		int key = j;      
+	while(key > 0 && k[key] < k[key-1]){ 
+    int temp = k[key];  
+		k[key] = k[j-1];    
+		k[key-1] = temp;    
+		key = key - 1;     
+		}
+			j = j + 1;   
+	}
 }
 ```
 
-Question 2: What is the best data structure for a phone book with names and phone numbers? Code an example solution and explain.
-Answer: A map would be ideal because it's a key value pair data structure.
+
+### Divide & Conquer
+
+Divide and Conquer is an algorithmic paradigm. A typical Divide and Conquer algorithm solves a problem using following three steps.
+
+1.  **Divide**: Break the given problem into subproblems of same type.
+2.  **Conquer**: Recursively solve these subproblems
+3.  **Combine**: Appropriately combine the answers
+
+
+### Merge Sort:
+
+In merge sort the divide and conquer paradigm is implemented.
+
+Given: An array **S** to sort, using divide & conquer we’d go this way:
+
+1.  **Divide**: If s.length < 1 return s, because there’s nothing to be sorted. ELSE break the array into two such as S1 and S2, each containing about half of S elements. (i.e s1 has s.length/2 elements & s2 has the remaining s.length/2 elements)
+2.  **Conquer**: Here, we’d recursively sort both s1 and s2
+3.  **Combine**: Merge the sorted S1 and S2 together to form a sorted S.
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/346cf58d-cff1-43a6-b24e-6a5a496f535c/Screenshot_2022-03-01_at_19.05.01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T204209Z&X-Amz-Expires=86400&X-Amz-Signature=4b954e76472003542332bf536e2134eff9ba483da4adc3a628b67238dcf77314&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252019.05.01.png%22&x-id=GetObject)
 
 ```java
-public static class phoneBook{
-        private Map<Integer, String> map = new HashMap<>();
-        private String name;
-        private Integer ph;
-        public void addPhoneNumber(Integer ph, String name){
-            map.put(ph,name);
-        }
-        public Set getPhoneNumbers(){
-            return map.keySet();
-        }
-        public Object[] getNames(){
-            return map.values().toArray();
-        }
-
-
-    }
+static void merge(int f[], int lowerB, int mid, int upperB){
+		int i = lowerB;
+		int j = mid;
+	//use temp array to store merged sub-sequence
+	//create a temporary array of size
+	//t is initialised to store the index of temp[]
+		int temp[] = new int[upperB - lowerB];
+		int t = 0;   
+	
+	//while lowerBound < the middle and middle is also less than upper bound 
+	// if f[lowerBound] <= f[middle] 
+	//new array temp should copy all the elements in the lowerBound
+	while(i < mid && j < upperB){  
+		if(f[i] <= f[j]){            
+			temp[t] = f[i]; i++; t++;  
+		}
+		 //else, temp should copy all the elements in the upper bound
+		else{
+			temp[t] = f[j]; j++; t++;  
+	}
+}
+	//tag on remaining sequence
+	//while lowerBound is less that mid
+	//the temp array should copy all the elements in the lower bound
+	while(i < mid){               
+		temp[t] = f[i]; i++; t++;  
+	}
+	//while  the middle is less than the upper bound,
+	//the temp array should copy all elements from the upper bound
+	while(j < upperB){   
+		temp[t] = f[j]; j++; t++;  
+	}
+	//copy temp back to f
+		i = lowerB;
+		t = 0;
+		while(t < temp.length){
+		f[i] = temp[t];
+		i++; t++;
+	}
+}
 ```
 
-Question 3 : Remove duplicates in this list.
-
 
 ```java
-    public static ArrayList<Integer> 
-    removeDuplicateInAList(ArrayList<Integer> arr){
-      int i =0;
-      while(i<arr.size()){
-        for(int j = 1; j < arr.size(); j++){
-          if(arr.get(i) == arr.get(j)){
-            arr.remove(j);
-          }
-        }
-        i++;
-      }
-       return arr;
-    }
-```]]></content:encoded>
+static void mergeSort(int f[], int lowerB, int upperB){
+if(lowerB + 1 < upperB){
+    int mid = (lowerB + upperB)/2;
+    mergeSort(f, lowerB, mid);
+    mergeSort(f, mid, upperB);
+    merge(f, lowerB, mid, upperB);
+  }
+}
+
+//Time complexity is 0(nlogn)
+```
+
+
+---
+### Further Reading
+- [William Fuset's Sorting Algorithm Implementation](https://github.com/ahmedsaheed/Algorithms/tree/master/src/main/java/com/williamfiset/algorithms/sorting)]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
         <item>
-            <title><![CDATA[PHP session timeout
+            <title><![CDATA[Leo Tolstoy]]></title>
+            <link>https://saheed.codes/tolstoy</link>
+            <guid>https://saheed.codes/tolstoy</guid>
+            <pubDate>Mon, 23 May 2022 23:00:00 GMT</pubDate>
+            <description><![CDATA[Leo is more than an ordinary writer, he is more of a religious thinker, a moral crusader and an inspirational predecessor of pacific protesters like Mahatma Ghandi .]]></description>
+            <content:encoded><![CDATA[
+Leo Tolstoy is an emblematic figure in the history of a nation celebrated for its cultural achievements, one of the two or three contenders for the title of Russia's greatest writters.
+Since the beginning of the year 2022, I have found a profund and uplifting experience whilst reading the great work of art and literature written by Lev Nikolayevich Tolstoy popularly known as Leo Tostoy. I have been immersely impacted by his style of writing, the patterns of his thoughts, simplicity and subtleness in words.
 
-```php
-if (isset($_SE...]]></title>
-            <link>https://saheed.codes/TIL</link>
-            <guid>https://saheed.codes/TIL</guid>
-            <pubDate>Sun, 29 May 2022 14:13:15 GMT</pubDate>
-            <content:encoded><![CDATA[PHP session timeout
+To me, Leo is more than an ordinary writer, he is more of a religious thinker, a moral crusader and an inspirational predecessor of pacific protesters like [Mahatma Ghandi](/second-brain/mahatma%20ghandi) .
 
-```php
-if (isset($_SESSION['LAST_ACTIVITY']) 
-&& (time() - $_SESSION['LAST_ACTIVITY'] > 1800)) {
-    // last request was more than 30 minutes ago
-    session_unset(); // unset $_SESSION variable for the run-time 
-    session_destroy(); // destroy session data in storage
-}
-$_SESSION['LAST_ACTIVITY'] = time();
-```
+> Some of my favorite quotes from Leo
 
-[see more](https://stackoverflow.com/questions/520237/how-do-i-expire-a-php-session-after-30-minutes)]]></content:encoded>
+-   "Respect was invented to cover the empty place where love should be."
+
+-   "If you look for perfection, you'll never be content."
+
+-   "We lost because we told ourselves we lost."
+
+-   "Boredom: the desire for desires."
+
+## Search For Religious Truth And Moral Purity
+
+On completion of Leo's two masterpiece **Ana Karenina** and **War and Peace**, he spent eventless decades in his home where he became obsessed with a search for religious truth and moral purity, setting unattainable goals of righteousness for himself and his audience.
+
+Leo dominated his thinking until the moment of his death by writings of a Genevan philosopher and political thinker [Jean-Jacques Rousseau](https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau) who belived that human babies are born into natural state of goodness, only to be corrupted by education, inequality and immorality, a process which explains our lapses into bad behaviour.
+
+The wonder is that the best of Leo's published works travels in opposite direction compared to the ideas Rousseau. _War and Peace_ is nothing but an affirmation of life.
+
+Sadly, Leo died in 1910 at the age of 82, though the residue of his remarkable literature has long lived till this day which has now gained an unforgettable honor around the world
+
+> “Everyone thinks of changing the world, but no one thinks of changing himself.”
+]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
     </channel>
