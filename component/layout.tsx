@@ -2,6 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { date } from "../pages/index"
 import Theme from "./theme"
+import Link from "next/link"    
 import SearchBar from "./search"
 function Layout(PageComponent: any) {
     const PageComponentWithLayout = ({ ...pageProps }) => {
@@ -55,7 +56,7 @@ function Layout(PageComponent: any) {
                                 CC BY-NC-SA 4.0
                             </a>{" "}
                             2021-{date.getFullYear()} © Ahmed Saheed
-                        </span>
+               </span> 
                     </div>
                 </div>
             </>

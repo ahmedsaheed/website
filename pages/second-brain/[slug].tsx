@@ -18,10 +18,11 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 title={brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)}
                 description="Ahmed Saheed's second brain'"
                 canonical={`https://saheed.codes/second-brain/${brainEntry.slug}`}
+
                 openGraph={{
-                    url: "https://saheed.codes/second-brain",
-                    title: "Ahmed Saheed's second brain",
-                    description: "A place to document things i find interesting",
+                    url:`https://saheed.codes/second-brain/${brainEntry.slug}`,
+                    title: `${brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)} | Ahmed Saheed` ,
+                    description:`${brainEntry.content.substring(0, 100)+"..."}`,
                 }}
             />
             <body>
