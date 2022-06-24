@@ -25,11 +25,10 @@ function til() {
                 <title>TIL | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <Summary
-                title="Daily Encyclopedia: Today I Learnt"
-                content={
-                    <>
-                        A catalog of referenceable notes documented at least thrice a week. I first
+            <center><h1 class=" text-3xl font-bold">Ahmed's Daily Encyclopedia: Today I Learnt</h1></center> 
+                       <hr/>
+
+            <p className="pads mx-auto max-w-3xl space-y-5">A catalog of referenceable notes documented at least thrice a week. I first
                         heard about til from{" "}
                         <a
                             target="_blank"
@@ -50,11 +49,8 @@ function til() {
                         . TIL is a way to summarise information learnt in few sentences which can be
                         of great relivence when commited to on a long run. I hacked up this rust cli
                         program which helps me add my til as a gist comment on GitHub. In the
-                        nearest future, I would like to create a search mechanism for this website
-                        which would help search through the contents of my til as they increase.
-                    </>
-                }
-            />
+                        nearest future, I would like to create a search utility for this website
+                        which would help search through the contents of my til as they increase.</p> 
             <br />
             <Dairy />
         </>

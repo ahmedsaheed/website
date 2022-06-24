@@ -54,7 +54,7 @@ export default function Home() {
                     <article>
                         <p class="second">
                             I assert you're a sailor of the web. You've come all the way from{" "}
-                            <Location /> a very lovely place, what could the weather be like there ?
+                            <Location /> a very lovely place, what could the weather be like over there ?
                             By the way, welcome to my digital garden.
                         </p>
                         <p className="third">

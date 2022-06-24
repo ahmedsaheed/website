@@ -11,16 +11,25 @@ import Layout from "../../component/layout"
 
 const markdown = `
 
-##  Ahmed's Second Brain: Kinda A Personal Digital Garden 
 
-
-
+---
 
 This gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as my own knowledge grows and changes
 
-1. This garden was inspired by [Jacky Zhao](https://jzhao.xyz/) and [Anthony Morris](https://anthonymorris.dev/)
 
-2. The notion of digital gardening is to subtly create reexplorable links within your ideas.
+Throughout the world there are many different gardens that people have
+designed. In a Japanese garden, every tree is perfectly pruned, without a
+leaf out of place. Nothing is planted without forethought as to the exact
+place appropriate to it.There are English gardens that are famous for their
+roses and perfect lines of shrubbery. The number of garden types are too
+numerous to mention. One thing is true of all gardens. It is joint creation
+between man's intention to create a space of tranquility and nature's
+ability to comply.
+
+
+- This garden was inspired by [Jacky Zhao](https://jzhao.xyz/) and [Anthony Morris](https://anthonymorris.dev/)
+
+- The notion of digital gardening is to subtly create reexplorable links within your ideas.
 
 
 ## Why keep a second brain isn't one enough?
@@ -74,7 +83,7 @@ function secondBrain() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            <Summary
+            {/* <Summary
                 title="Digital Garden"
                 content={
                     <>
@@ -88,11 +97,9 @@ function secondBrain() {
                         ability to comply. WELCOME TO MY GARDEN.
                     </>
                 }
-            />
-            <br />
-            <br />
-
+            /> */}
             <header class="pads mx-auto max-w-3xl space-y-5">
+               <center><h1 class=" text-3xl font-bold">Ahmed's Second Brain: A Personal Digital Garden</h1></center> 
                 <ReactMarkdown
                     children={markdown}
                     remarkPlugins={[remarkMath, remarkGfm]}

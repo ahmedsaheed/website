@@ -67,13 +67,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                             href="/second-brain/[slug]"
                                             as={`${brainEntry.slug.toLowerCase()}`}
                                         >
-                                            <a
-                                                className="hover-underline-animation"
-                                                style={{
-                                                    backgroundColor: "transparent",
-                                                    paddingBottom: "5px",
-                                                }}
-                                            >
+                                            <a>
                                                 Read More
                                             </a>
                                         </Link>

@@ -6,7 +6,7 @@
     --dairy: #333;
     --bi: #000;
     --name: #fff;
-    --a-color: #8f9ba8;
+    --a-color:rgb(75, 189, 255);
     --p-color: #bbbbbb;
 }
 html {
@@ -59,7 +59,7 @@ html *:before {
     --dairy: #333;
     --bi: #000;
     --name: #fff;
-    --a-color: #8f9ba8;
+    --a-color: rgb(75, 189, 255);
     --p-color: #bbbbbb;
 }
 
@@ -101,6 +101,7 @@ hr:after {
 .spacers {
     padding: 2em;
 }
+
 .name {
     font-family: "Stylish", sans-serif;
     color: var(--name);
@@ -368,6 +369,7 @@ a {
     color: var(--a-color);
     text-decoration: none;
 }
+
 .content-card {
     text-decoration: none;
     background-color: transparent;
@@ -520,9 +522,9 @@ a {
     opacity: 0.6;
 }
 .section-ul > li a {
-    color: var(--text-color);
+    color: var(--a-color);
 }
-.section-ul a :hover {
+.section-ul > li a:hover {
     color: plum;
 }
 .section h3 > a {
