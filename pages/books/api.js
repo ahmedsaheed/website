@@ -16,7 +16,6 @@ class Book extends Component {
             )
             .query(null)
             .then((data) => {
-                console.log(data.body)
                 this.setState({ books: [...data.body.items] })
             })
     }

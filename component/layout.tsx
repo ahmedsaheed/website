@@ -43,7 +43,7 @@ function Layout(PageComponent: any) {
                 <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
                     <main>
                         <PageComponent {...pageProps} />
-                        <SearchBar />
+                        {/* <SearchBar /> */}
                     </main>
                     <div className="pt-10 grey-text cent ">
                         <span className=" text-sm">

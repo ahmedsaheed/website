@@ -54,7 +54,7 @@ const SearchBar = () => {
     }, [query])
 
     return (
-        <div id="search-container" style={{ display: isShown ? "block" : "none" }}>
+        <div id="search-container" style={{ opacity: isShown ? 1 : 0 }}>
             <div id="search-space">
                 <Formik
                     autocomplete="off"

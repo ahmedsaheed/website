@@ -3,6 +3,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage"
 import { WiDaySunny } from "react-icons/wi"
 import { MdOutlineDarkMode } from "react-icons/md"
 
+
 function mode() {
     const [theme, setTheme] = useLocalStorage("theme", "light")
 
@@ -21,10 +22,13 @@ function mode() {
     useEffect(() => {
         if (theme == "dark") {
             document.getElementsByTagName("html")[0].classList.add("light")
-            localStorage.theme = "light"
+            window.localStorage.theme = "light"
         } else {
             document.getElementsByTagName("html")[0].classList.remove("light")
-            localStorage.theme = "dark"
+            window.localStorage.theme = "dark"
+            // document.getElementsByTagName("html")[0].classList.add("light")
+
+           
         }
     }, [theme])
 

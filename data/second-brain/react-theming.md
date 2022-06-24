@@ -4,9 +4,9 @@ description: "Theming isn't that tricky!"
 date: "2022-06-02T00:00:00"
 ---
 
-Lately, the use of multiple themes on web and mobile applications has been has risen immersely. While developing my personal website, I struggled with this theming feature.
+Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature feature.
 
-I had several issues during implementation of the feature, that is why i have decided to write this brief note on react theming.
+Stating the above, i have decided to write this brief note on react theming.
 
 ## prerequisite
 
@@ -24,11 +24,11 @@ npx create-react-app my-app
 
 ## Implementing the theming
 
-For implementation of the theme, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
+Before we begin, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
 
 We'd Also need our theme colors and element specified out in our stylesheet.
 
-And with all these, we're good to go!
+And with all these basic stuff out, we're good to go!
 
 To begin, create a `hooks` folder in your root directory. Add a new javascript file in the directory like so `useLocalStorage.js`.
 
@@ -74,10 +74,10 @@ export function useLocalStorage(key, initialValue) {
 
 ```
 
-On completion of the hook, we now need to implement a function which makes our theming work.
+On completion of the hook, we'll need to implement a function which makes our theming work.
 
-Implementing this is very fair when done correctly.
-To get started let's create a component called `theme.js`. In our `theme.js` file lets implement this function
+Implementing this is fairly easy when done correctly.
+To get started let's create a component called `theme.js` in our component's folder. In our `theme.js` file lets implement this function
 
 ```js
 import { createContext, useEffect } from "react"
@@ -120,19 +120,6 @@ function mode() {
         }
     }
 
-    useEffect(() => {
-        document.addEventListener("keydown", detectKeydown, true)
-    }, [])
-
-    const detectKeydown = (e) => {
-        if (
-            (e.key === "x" && (e.ctrlKey || e.metaKey)) ||
-            (e.key === "l" && (e.ctrlKey || e.metaKey))
-        ) {
-            toggleDarkMode()
-        }
-    }
-
     return (
         <button onClick={toggleDarkMode}>
             {theme === "light" ? (
@@ -147,7 +134,7 @@ function mode() {
 export default mode
 ```
 
-Let's add a touch of fun, we could also switch between themes by using our keyboard buttons, but this obviously wouldn't work for mobile devices. To implement this we'd need to add an extra function in our `theme.js` file which would detect keys pressed.
+Let's add a touch of fun, we could also switch between themes by using our keyboard buttons by adding listeners, obviously this wouldn't work for mobile devices. To implement this we'd need to add an extra function in our `theme.js` file which would detect keys pressed.
 
 ```js
 useEffect(() => {
