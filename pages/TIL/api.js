@@ -23,11 +23,6 @@ class Dairy extends Component {
             },
             gist_id: id,
         })
-        console.log(response)
-        console.log(response.data)
-        // console.log(response.data);
-
-        // console.log(response.data.files.ahmed.content);
         console.log(response.data.body)
 
         this.setState({ entry: [...response.data] })
