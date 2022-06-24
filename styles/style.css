@@ -622,3 +622,6 @@ sup a {
     font-weight: 400;
     font-family: "Stylish";
 }
+.inline{
+    display: inline;
+}
