@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
 :root {
-    --color-default: #000;
-    --text-color: #bbbbbb;
-    --color-border: #e7e7e7;
+    --color-default: #f2e9e1;
+    --text-color: #3a333d;
     --dairy: #333;
-    --bi: #000;
-    --name: #fff;
-    --a-color:rgb(148, 200, 230);
-    --p-color: #bbbbbb;
+    --bi: #f2e9e1;
+    --a-color: #426b69;
+    --name: var(--text-color);
+    --p-color: #3a333d;
 }
 
 html *,
@@ -56,7 +55,7 @@ html *:before {
     --dairy: #333;
     --bi: #000;
     --name: #fff;
-    --a-color: rgb(148, 200, 230);
+    --a-color:rgb(148, 200, 230);
     --p-color: #bbbbbb;
 }
 

@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import Dairy from "./api"
 import { NextSeo } from "next-seo"
-import Summary from "../../component/summary"
 import Head from "next/head"
 import Layout from "../../component/layout"
 
@@ -25,10 +24,12 @@ function til() {
                 <title>TIL | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <center><h1 class=" text-3xl font-bold">Ahmed's Daily Encyclopedia: Today I Learnt</h1></center> 
+            <header class="pads mx-auto max-w-3xl space-y-5">
+
+            <center><h1 class=" text-3xl font-bold">Ahmed's Second Brain: A Personal Digital Garden</h1></center> 
                        <hr/>
 
-            <p className="pads mx-auto max-w-3xl space-y-5">A catalog of referenceable notes documented at least thrice a week. I first
+            <p className=" mx-auto max-w-3xl space-y-5">A catalog of referenceable notes documented at least thrice a week. I first
                         heard about til from{" "}
                         <a
                             target="_blank"
@@ -53,6 +54,7 @@ function til() {
                         which would help search through the contents of my til as they increase.</p> 
             <br />
             <Dairy />
+            </header>
         </>
     )
 }
