@@ -2,6 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { date } from "../pages/index"
 import Theme from "./theme"
+import { BiRss } from "react-icons/bi"
 import Link from "next/link"    
 import SearchBar from "./search"
 function Layout(PageComponent: any) {
@@ -36,9 +37,15 @@ function Layout(PageComponent: any) {
                         <a className="hover-underline-animation" href="/uses">
                             tools
                         </a>
+                        <a className="" href="/rss/feed.xml"  target="_blank">
+
+                            <BiRss />
+                        </a>
                         <a className="">
+
                             <Theme />
                         </a>
+
                     </div>
                 </nav>
                 <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
@@ -55,8 +62,9 @@ function Layout(PageComponent: any) {
                             >
                                 CC BY-NC-SA 4.0
                             </a>{" "}
-                            2021-{date.getFullYear()} © Ahmed Saheed
+                            2021-{date.getFullYear()} © Ahmed Saheed 
                </span> 
+                       
                     </div>
                 </div>
             </>

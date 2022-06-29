@@ -6,7 +6,7 @@
     --dairy: #333;
     --bi: #000;
     --name: #fff;
-    --a-color:rgb(75, 189, 255);
+    --a-color:rgb(148, 200, 230);
     --p-color: #bbbbbb;
 }
 
@@ -56,7 +56,7 @@ html *:before {
     --dairy: #333;
     --bi: #000;
     --name: #fff;
-    --a-color: rgb(75, 189, 255);
+    --a-color: rgb(148, 200, 230);
     --p-color: #bbbbbb;
 }
 
@@ -169,7 +169,9 @@ blockquote {
     border-left: 4px solid var(--a-color);
     padding-left: 1em;
 }
-
+BiRss{
+    color: var(--text-color);
+}
 .menu,
 .menu-item {
     display: flex;
