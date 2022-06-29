@@ -26,7 +26,7 @@ function til() {
             </Head>
             <header class="pads mx-auto max-w-3xl space-y-5">
 
-            <center><h1 class=" text-3xl font-bold">Ahmed's Second Brain: A Personal Digital Garden</h1></center> 
+            <center><h1 class=" text-3xl font-bold">Ahmed's Encyclopedia: Today I learnt</h1></center> 
                        <hr/>
 
             <p className=" mx-auto max-w-3xl space-y-5">A catalog of referenceable notes documented at least thrice a week. I first
