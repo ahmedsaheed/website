@@ -612,7 +612,7 @@ sup a {
     text-align: center;
     font-size: 30px;
     line-height: 1.4em;
-    padding: 2em 0;
+    padding: 2em 0 0;
 }
 .post-title h1 p {
     color: (--text-color);
