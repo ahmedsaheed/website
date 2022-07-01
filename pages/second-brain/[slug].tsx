@@ -74,11 +74,10 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     />
 
                     {!!brainEntry.backlinks.length && (
-                        <div>
-                            <br /> <hr />
-                            <div className="prose rounded-lg border border-stone-800 text-stone-100 bg-opacity-20 bg-stone-800 p-8 mt-12">
+                        <div> <hr />
+                            <div className="pads">
                                 <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
-                                <div className="flex flex-wrap justify-between ">
+                                <div className="">
                                     {brainEntry.backlinks.map((backlink) => (
                                         <Link
                                             key={backlink}
@@ -87,7 +86,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                                                 backlink.toLowerCase(),
                                             )}`}
                                         >
-                                            <a className="aaa text-sm  text">
+                                            <a className="backlinks text-sm text">
                                                 {backlink.charAt(0).toUpperCase() +
                                                     backlink.slice(1)}
                                             </a>

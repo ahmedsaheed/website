@@ -24,8 +24,6 @@ Formal Definition: It is a way of describing **growth of a runtime/rate of growt
 
 
 
----
-
 ## Further Reading
 - [High Level Illustration can be found here](/fun)
 - [Big0 Cheat Sheet](https://www.bigocheatsheet.com/)

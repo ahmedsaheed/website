@@ -380,15 +380,35 @@ a {
 }
 .text-sm {
     text-decoration: none;
+    font-family: "Stylish";
 }
 .pad p {
     margin: 0;
 }
 
+.project ol{
+    
+    padding: 0;
+    margin: 2em;
+
+}
+
 .backlinks {
-    border: 0.7px solid var(--color-border);
-    padding: 10px;
-    border-radius: 10px;
+    border: 0.7px solid var(--text-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: transparent;
+    margin: 0.5em;
+    padding: 0.25em 1em;
+    display: inline-block;
+
+    
+}
+.backlinks a{
+    text-decoration: none;
+}
+.movedrown{
+    margin-top: -2rem;
 }
 .page-summary:hover {
     color: white;

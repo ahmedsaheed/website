@@ -3,6 +3,79 @@ import { NextSeo } from "next-seo"
 import Summary from "../component/summary"
 import Head from "next/head"
 import Layout from "../component/layout"
+import ReactMarkdown from "react-markdown"
+import remarkMath from "remark-math"
+import rehypeKatex from "rehype-katex"
+import "katex/dist/katex.min.css"
+import remarkGfm from "remark-gfm"
+
+const markdown = `
+---
+## Table of Contents
+1. [Qurancli](#qurancli)
+2. [Donation Hub](#)
+3. [Boomerang](#)  
+4. [Second Brain](#)
+5. [Sassy Chatbot](#)
+6. [Library Box](#)
+7. [Personal Bot](#)
+
+
+Here is a collection of notable projects that I've worked on and or currently tinkering. Some turned out successfully, while others *meh*.
+
+## Qurancli -- 📖 quranCLI is simple tool to Read, Search and Recite the Quran from your terminal.
+[GitHub](https://github.com/ahmedsaheed/quranCLI), [Documentation](https://github.com/ahmedsaheed/quranCLI/blob/main/README.md)
+
+A minimal CLI application to read the Quran from the command line.
+I created this project as an exercise to implement and learn about command line applications development and multiple platform application packagers like homebrew and scoop.
+
+Built with: Java, [Picocli](https://picocli.info/), [AsciiTable](http://www.vandermeer.de/projects/skb/java/asciitable/), Ruby and [JReleaser](https://jreleaser.org/)
+
+
+## Donation Hub -- A bay which harbours a bunch of donation bodies.
+
+[GitHub](https://github.com/ahmedsaheed/Donation-Hub), [Demo](https://user-images.githubusercontent.com/87912847/160955953-a64c48c1-d718-4c77-835d-861720846bd8.mov)
+
+A smartphone application that lowers the language barrier which would allow users from different cultural and linguistic background understand and identify the clear outcome of the [sustainable developmental goals of UN](https://sdgs.un.org/) and also make a difference by donating to 30+ donation bodies via the same platform.
+This project was my first introduction to mobile development.
+
+Built with: Flutter, Firebase.
+
+## Boomerang -- A school project to solidify understanding of PHP and MySQL.
+
+[GitHub](https://github.com/ahmedsaheed/boomerang)
+
+A web application based on php and mysql which was used to rate student understanding on php and mysql.
+Learnt to use php dependencies manager like composer, the phpMyAdmin database management tool, regex, validation and sanitization.
+
+## Second Brain -- A place where i store ideas interwovenly
+
+[Site](https://www.saheed.codes/), [GitHub](https://github.com/ahmedsaheed/saheed.codes)
+
+The second brain approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
+
+Built with: React, Obsidian, Javascript, Tailwind, Typescript, NextJS, Vercel
+
+
+## Sassy Chatbot -- Reinventing Amazon Alexa with poor algorithm.
+[GitHub](https://github.com/ahmedsaheed/sassy-chitchatBot)
+
+A school project to demostrate understanding of speech recognition and natural language processing with focus on unit and integrated testing. This project was fun filled.
+Developed entity recognition and natural language processing algorithms using java from scratch.
+Made use of lovely libaries like Wit.ai and TTS. Also learnt to use the Amazon Alexa Skills Kit and IBM Watson.
+
+Built with: Java, JSP, [WitAI](https://wit.ai/), Javascript, GoogleTTS, GoogleSTT.
+
+## Libary Box -- A dynamic GitHub gist updater.
+
+[GitHub](https://github.com/ahmedsaheed/Library-box)
+
+Update a pinned github gist to contain latest reads & Current reading from Google Books for people without the GoodRead API key
+
+Built with: JavaScript, Docker.
+
+
+`
 
 function projects() {
     return (
@@ -26,83 +99,15 @@ function projects() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            <Summary
-                title="Projects 🚧"
-                content={
-                    <>
-                        The machine code of the genes is uncannily computer-like. Apart from
-                        differences in jargon, the pages of a molecular biology journal might be
-                        interchanged with those of a computer engineering journal.
-                    </>
-                }
-            />
-            <main class="mx-auto max-w-3xl space-y-10 p-10">
-                <a
-                    class="text content-card block"
-                    href="https://github.com/ahmedsaheed/Donation-Hub"
-                >
-                    <div class="flex justify-between items-center">
-                        <div class="text-lg font-medium mb-1 font-am" style={{ hover: "ui-serif" }}>
-                            Donation Hub
-                        </div>
-                        <div class="text-xs">Completed</div>
-                    </div>
-                    <div class="text-sm">An App which habours many donation bodies.</div>
-                </a>
-                <a class="text content-card block" href="https://github.com/ahmedsaheed/Boomarang">
-                    <div class="flex justify-between items-center">
-                        <div class="text-lg font-medium mb-1 font-am">Boomerang</div>
-                        <div class="text-xs">Completed</div>
-                    </div>
-                    <div class="text-sm">Child care webapp.</div>
-                </a>
-                <a
-                    class="text content-card block"
-                    href="https://github.com/ahmedsaheed/ahmed-saheed"
-                >
-                    <div class="flex justify-between items-center">
-                        <div class="text-lg font-medium mb-1 font-am">This Garden </div>
-                        <div class="text-xs">In Progress</div>
-                    </div>
-                    <div class="text-sm">Retouch on my personal webpage.</div>
-                </a>
-                <a class="text content-card block" href="https://github.com/ahmedsaheed/flutterOS">
-                    <div class="flex justify-between items-center">
-                        <div class="text-lg font-medium mb-1 font-am">Naija Jobs</div>
-                        <div class="text-xs">In Progress</div>
-                    </div>
-                    <div class="text-sm">Flutter app to help Nigerians find jobs</div>
-                </a>
-                <a class="text content-card block" href="https://github.com/ahmedsaheed/PersonlBot">
-                    <div class="flex justify-between items-center">
-                        <div class="text-lg font-medium mb-1 font-am">Personal Bot</div>
-                        <div class="text-xs">Completed</div>
-                    </div>
-                    <div class="text-sm">Easing task with selinuim.</div>
-                </a>
-                <a
-                    class="text content-card block"
-                    href="https://github.com/ahmedsaheed/sassy-chitchatBot"
-                >
-                    <div class="flex justify-between items-center">
-                        <div class="text-lg font-medium mb-1 font-am">Sassy Chatbot</div>
-                        <div class="text-xs">Completed</div>
-                    </div>
-                    <div class="text-sm">
-                        Best audio chatbot, just like alexa but with bad algorithms.
-                    </div>
-                </a>
-                <a
-                    class="text content-card block"
-                    href="https://github.com/ahmedsaheed/BloodTransfusionSystem"
-                >
-                    <div class="flex justify-between items-center">
-                        <div class="text-lg font-medium mb-1 font-am">Blood Transfusion System</div>
-                        <div class="text-xs">Completed</div>
-                    </div>
-                    <div class="text-sm">Ah nevermind!</div>
-                </a>
-            </main>
+            <header class="pads mx-auto max-w-3xl space-y-5">
+               <center><h1 class=" text-3xl font-bold">Ahmed's Projects: A Curation of  Personal Projects</h1></center>
+                <ReactMarkdown className="project"
+                    children={markdown}
+                    remarkPlugins={[remarkMath, remarkGfm]}
+                    rehypePlugins={[rehypeKatex]}
+                />
+            </header>
+           
         </>
     )
 }

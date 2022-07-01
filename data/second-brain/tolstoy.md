@@ -5,7 +5,7 @@ date: "2022-05-24T00:00:00"
 ---
 
 Leo Tolstoy is an emblematic figure in the history of a nation celebrated for its cultural achievements, one of the two or three contenders for the title of Russia's greatest writters.
-Since the beginning of the year 2022, I have found a profund and uplifting experience whilst reading the great work of art and literature written by Lev Nikolayevich Tolstoy popularly known as Leo Tostoy. I have been immersely impacted by his style of writing, the patterns of his thoughts, simplicity and subtleness in words.
+Since the beginning of the year 2022, I have found a profund and uplifting experience whilst reading the great work of art and literature written by Lev Nikolayevich Tolstoy popularly known as Leo Tostoy. I have been immersely impacted by his style of writing, the patterns of his thoughts, simplicity and subtleness in words.[[asymptotic]]
 
 To me, Leo is more than an ordinary writer, he is more of a religious thinker, a moral crusader and an inspirational predecessor of pacific protesters like [[Mahatma Ghandi]] .
 

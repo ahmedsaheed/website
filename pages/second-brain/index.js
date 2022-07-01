@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { NextSeo } from "next-seo"
-import Summary from "../../component/summary"
 import ReactMarkdown from "react-markdown"
 import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
@@ -83,21 +82,6 @@ function secondBrain() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            {/* <Summary
-                title="Digital Garden"
-                content={
-                    <>
-                        Throughout the world there are many different gardens that people have
-                        designed. In a Japanese garden, every tree is perfectly pruned, without a
-                        leaf out of place. Nothing is planted without forethought as to the exact
-                        place appropriate to it.There are English gardens that are famous for their
-                        roses and perfect lines of shrubbery. The number of garden types are too
-                        numerous to mention. One thing is true of all gardens. It is joint creation
-                        between man's intention to create a space of tranquility and nature's
-                        ability to comply. WELCOME TO MY GARDEN.
-                    </>
-                }
-            /> */}
             <header class="pads mx-auto max-w-3xl space-y-5">
                <center><h1 class=" text-3xl font-bold">Ahmed's Second Brain: A Personal Digital Garden</h1></center> 
                 <ReactMarkdown
