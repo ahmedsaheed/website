@@ -4,7 +4,7 @@ description: "Theming isn't that tricky!"
 date: "2022-06-02T00:00:00"
 ---
 
-Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature feature.[[asymptotic]]
+Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature feature.
 
 Stating the above, i have decided to write this brief note on react theming.
 
