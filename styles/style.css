@@ -405,6 +405,10 @@ a {
     .text-3xl {
         text-align: center;
     }
+    .vertical_dotted_line{
+        border: none;
+
+    }
 }
     
 
