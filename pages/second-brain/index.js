@@ -11,7 +11,7 @@ import Layout from "../../component/layout"
 const markdown = `
 
 
-This gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as my own knowledge grows and changes
+This gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as my own knowledge and ideas burgeons.
 
 
 Throughout the world there are many different gardens that people have
