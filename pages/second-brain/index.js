@@ -11,8 +11,6 @@ import Layout from "../../component/layout"
 const markdown = `
 
 
----
-
 This gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as my own knowledge grows and changes
 
 
@@ -82,8 +80,8 @@ function secondBrain() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            <header class="pads mx-auto max-w-3xl space-y-5">
-               <center><h1 class=" text-3xl font-bold">Ahmed's Second Brain: A Personal Digital Garden</h1></center> 
+            <header class="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
+       <h1 class="horizontal_dotted_line text-3xl font-bold">Ahmed's Second Brain: A Personal Digital Garden</h1>
                 <ReactMarkdown
                     children={markdown}
                     remarkPlugins={[remarkMath, remarkGfm]}

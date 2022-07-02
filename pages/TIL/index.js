@@ -24,26 +24,23 @@ function til() {
                 <title>TIL | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <header class="pads mx-auto max-w-3xl space-y-5">
+            <header class="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
 
-            <center><h1 class=" text-3xl font-bold">Ahmed's Encyclopedia: Today I learnt</h1></center> 
-                       <hr/>
+            <h1 class="horizontal_dotted_line text-3xl font-bold">Ahmed's Encyclopedia: Today I learnt</h1> 
 
             <p className=" mx-auto max-w-3xl space-y-5">A catalog of referenceable notes documented at least thrice a week. I first
                         heard about til from{" "}
                         <a
                             target="_blank"
-                            class="text"
+                           
                             href="https://aboutmonica.com/"
-                            style={{ textDecorationLine: "underline" }}
                         >
                             Monica Powell's
                         </a>{" "}
                         <a
                             target="_blank"
-                            class="text"
+                           
                             href="https://github.com/readme/guides/private-documentation"
-                            style={{ textDecorationLine: "underline" }}
                         >
                             writing on GitHub's Blog
                         </a>

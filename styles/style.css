@@ -15,30 +15,6 @@ html *:before {
     box-sizing: inherit;
 }
 
-/* [data-theme="dark"] {
-    --color-default: #000;
-    --text-color: #bbbbbb;
-    --color-border: #e7e7e7;
-    --dairy: #333;
-    --bi: #000;
-    --name:#fff;
-    --a-color: #8f9ba8;
-    --p-color: #bbbbbb;
-
-    
-
-}
-[data-theme="light"] {
-    --color-default: #f2e9e1;
-    --text-color: #3a333d;
-    --dairy: #333;
-    --bi: #f2e9e1;
-    --name: var(--text-color);
-    --a-color: #426b69;
-    --p-color: #3a333d;
-
-} */
-
 .light {
     --color-default: #f2e9e1;
     --text-color: #3a333d;
@@ -53,7 +29,7 @@ html *:before {
     --text-color: #bbbbbb;
     --color-border: #e7e7e7;
     --dairy: #333;
-    --bi: #000;
+    --bi: hsla(0, 0%, 9%, 1);
     --name: #fff;
     --a-color:rgb(148, 200, 230);
     --p-color: #bbbbbb;
@@ -128,11 +104,11 @@ p {
 header,
 main,
 footer {
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 3s; /* Firefox < 16 */
-    -ms-animation: fadein 3s; /* Internet Explorer */
-    -o-animation: fadein 3s; /* Opera < 12.1 */
-    animation: fadein 3s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -152,14 +128,46 @@ footer {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.0625rem solid var(--color-border);
     transition: background 0.3s;
+}
+.vertical_dotted_line
+{
+    border-left: 1px dotted var(--text-color)
+} 
+.rambles ul li{
+    list-style: none;
+    padding: 0;
+    align-items:right;
+}
+.rambles p{
+    font-size: 1rem;
+}
+.horizontal_dotted_line{
+    border-bottom: 1px dotted var(--text-color)
 }
 .header,
 .header-area {
     height: var(--header-height);
 }
 
+
+.c-lhitIg {
+    display: block;
+    width: calc(100% + 48px);
+    position: relative;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 0px -20px -20px -20px;
+    transition: background 150ms ease;
+    /* -webkit-tap-highlight-color: transparent; */
+    outline: 0;
+    background-color: transparent;
+}
+
+.c-lhitIg:hover {
+    /* background: #f2e9e1; */
+}
 .grey-text a {
     text-decoration: none;
     color: rgb(120 113 108/1);
@@ -180,6 +188,7 @@ BiRss{
 h1 {
     font-family: "Stylish", "ui-serif";
     font-size: 2.5rem;
+    color: var(--name);
 }
 p {
     font-family: "Spectral", "ui-serif";
@@ -392,6 +401,17 @@ a {
     margin: 2em;
 
 }
+@media (max-width: 768px) {
+    .text-3xl {
+        text-align: center;
+    }
+}
+    
+
+.project li a{
+    background-color: transparent;
+    color: var(--text-color);
+}
 
 .backlinks {
     border: 0.7px solid var(--text-color);
@@ -417,91 +437,6 @@ a {
     font-family: "Yomogi";
     color: #bbbbbb;
 }
-/*********************************SEARCH STYLE FROM https://github.com/jackyzha0/quartz/blob/34b0353797a0d24c309139034918ad2060f504f5/assets/styles/base.scss#L402*********************************** */
-#search-container {
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-    overflow: scroll;
-    display: none;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    /* color: #000; */
-}
-#search-container > div {
-    width: 50%;
-    margin-top: 15vh;
-    margin-left: auto;
-    margin-right: auto;
-}
-@media all and (max-width: 1200px) {
-    #search-container > div {
-        width: 90%;
-    }
-}
-#search-container > div > * {
-    width: 100%;
-    border-radius: 4px;
-    background: var(--til-color);
-    box-shadow: 0 14px 50px rgba(27, 33, 48, 0.12), 0 10px 30px rgba(27, 33, 48, 0.16);
-    margin-bottom: 2em;
-}
-#search-container > div > input {
-    box-sizing: border-box;
-    padding: 0.5em 1em;
-    font-family: "Spectral", sans-serif;
-    color: var(--text-color);
-    font-size: 1.1em;
-    border: 1px solid var(--outlinegray);
-    background: var(--til-color);
-}
-#search-container > div > input:focus {
-    outline: none;
-}
-#search-container > div > #results-container .result-card {
-    padding: 1em;
-    cursor: pointer;
-    transition: background 0.2s ease;
-    border: 1px solid var(--outlinegray);
-    border-bottom: none;
-    width: 100%;
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-    overflow: visible;
-    text-transform: none;
-    text-align: left;
-    background: var(--light);
-    outline: none;
-}
-#search-container > div > #results-container .result-card:hover,
-#search-container > div > #results-container .result-card:focus {
-    background: rgba(180, 180, 180, 0.15);
-}
-#search-container > div > #results-container .result-card:first-of-type {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-#search-container > div > #results-container .result-card:last-of-type {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom: 1px solid var(--outlinegray);
-}
-#search-container > div > #results-container .result-card > h3,
-#search-container > div > #results-container .result-card > p {
-    margin: 0;
-}
-.input {
-    background-color: var(--til-color);
-    font-family: "Spectral";
-    border-color: var(--til-color);
-    width: 100%;
-}
-
 .nav {
     padding: 2rem;
     width: 100%;
@@ -526,51 +461,6 @@ a {
     margin-top: 0.5rem;
 }
 
-.section-ul {
-    list-style: none;
-    padding-left: 0;
-}
-.section-ul > li {
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
-    padding: 0 1em;
-    margin-bottom: 1em;
-}
-.section-ul > li h3 {
-    opacity: 1;
-    margin-bottom: 0em;
-    font-family: "Stylish", sans-serif;
-}
-.section-ul > li .meta {
-    opacity: 0.6;
-}
-.section-ul > li a {
-    color: var(--a-color);
-}
-.section-ul > li a:hover {
-    color: plum;
-}
-.section h3 > a {
-    font-family: Inter;
-    margin: 0;
-}
-.desc p {
-    margin-bottom: 0;
-    margin-top: 5px;
-}
-
-.reduce p {
-    font-size: 0.8em;
-}
-.ded {
-    font-size: 1em;
-}
-
-.desc .reduce h1,
-h2 {
-    font-size: 1.2em;
-    font-family: "Stylish", sans-serif;
-}
 h2 {
     font-size: 1.65em;
     font-family: "Stylish", sans-serif;
@@ -629,10 +519,8 @@ sup a {
 }
 
 .post-title {
-    text-align: center;
     font-size: 30px;
     line-height: 1.4em;
-    padding: 2em 0 0;
 }
 .post-title h1 p {
     color: (--text-color);
@@ -641,12 +529,21 @@ sup a {
 .title {
     font-family: "Stylish";
 }
-
 .post-date {
     font-size: 16px;
     font-weight: 400;
     font-family: "Stylish";
+    padding-bottom: 10px;
 }
 .inline{
     display: inline;
 }
+@media screen and (max-width: 768px) {
+    .post-title {
+         text-align: center; 
+    }
+    .post-date{
+        text-align: center;
+    }
+}
+    

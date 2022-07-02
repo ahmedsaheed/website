@@ -55,9 +55,12 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     ></script>
                 </Head>
 
-                <div className="post-title">
-                    <h1 className="title">{brainEntry.title}</h1>
-                    <p className="post-date">
+                
+                
+                <header className=" vertical_dotted_line mx-auto max-w-3xl space-y-5">
+                <div className="pads" >
+                    <h1 className="post-title">{brainEntry.title}</h1>
+                    <p className=" horizontal_dotted_line post-date">
                         {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
                         {readingTime(brainEntry.content).minutes < 1
                             ? 1
@@ -67,7 +70,6 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         min read
                     </p>
                 </div>
-                <header className="mx-auto max-w-3xl space-y-5">
                     <article
                         className="prose"
                         dangerouslySetInnerHTML={{ __html: brainEntry.content }}

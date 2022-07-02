@@ -10,7 +10,6 @@ import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 
 const markdown = `
----
 ## Table of Contents
 1. [Qurancli](#qurancli)
 2. [Donation Hub](#)
@@ -74,7 +73,6 @@ Update a pinned github gist to contain latest reads & Current reading from Googl
 
 Built with: JavaScript, Docker.
 
-
 `
 
 function projects() {
@@ -99,8 +97,9 @@ function projects() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            <header class="pads mx-auto max-w-3xl space-y-5">
-               <center><h1 class=" text-3xl font-bold">Ahmed's Projects: A Curation of  Personal Projects</h1></center>
+            <header class="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
+
+               <h1 class="horizontal_dotted_line text-3xl font-bold">Ahmed's Projects: A Curation of  Personal Projects</h1>
                 <ReactMarkdown className="project"
                     children={markdown}
                     remarkPlugins={[remarkMath, remarkGfm]}

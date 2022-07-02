@@ -28,25 +28,22 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
             <body>
-            <h1 className="mx-auto max-w-3xl space-y-5 text-3xl font-am px-10">
-                Digital Garden Entries
-            </h1>
-                <br />
-                <br />
-
-                <header className="pads mx-auto max-w-3xl space-y-5">
-                    <ul className="section-ul">
-                        {brainEntries.map((brainEntry) => (
-                            <li className="section-ul">
-                                <>
-                                    <div className="desc">
-                                        <h3>{brainEntry.title}</h3>
-                                        <br />
+            <header className="rambles vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
+            <h1 className="horizontal_dotted_line text-3xl font-bold">Ahmed's Rambles: A collection of interwoven ideas</h1>
+                
+                                        {brainEntries.map((brainEntry) => (
+                                    <>
+                                    <Link   key={brainEntry.slug}
+                                            href="/second-brain/[slug]"
+                                            as={`${brainEntry.slug.toLowerCase()}`}
+                                            >
+                                    <a className="c-lhitIg">
+                                        <h3 style={{fontFamily: "stylish", fontSize: "bold"}}>{brainEntry.title}</h3>
                                         <p>
                                             {brainEntry.description.charAt(0).toUpperCase() +
                                                 brainEntry.description.slice(1)}
                                         </p>
-                                        <div className="flex flex-wrap  ">
+                                        <div className="horizontal_dotted_line flex flex-wrap  ">
                                             <p>
                                                 {readingTime(brainEntry.content).words +
                                                     " words • "}
@@ -60,28 +57,15 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                                           .substring(0, 3)}
                                                 &nbsp; min read.
                                             </p>
-                                        </div>
-                                        <br />
-                                        <Link
-                                            key={brainEntry.slug}
-                                            href="/second-brain/[slug]"
-                                            as={`${brainEntry.slug.toLowerCase()}`}
-                                        >
-                                            <a>
-                                                Read More
-                                            </a>
+                                        </div>    
+                                        </a>
                                         </Link>
-                                    </div>
                                 </>
-                            </li>
                         ))}
-                    </ul>
+        
                 </header>
 
-                <br />
-                <br />
-                <br />
-                <br />
+           
             </body>
         </>
     )
