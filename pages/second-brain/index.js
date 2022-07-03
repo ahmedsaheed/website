@@ -82,7 +82,7 @@ function secondBrain() {
 
             <header class="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
                 <h1 class="horizontal_dotted_line text-3xl font-bold">
-                    Ahmed's Second Brain: A Personal Digital Garden
+                    Ahmed's Second Brain: A Personal Digital Garden 🪴
                 </h1>
                 <ReactMarkdown
                     children={markdown}

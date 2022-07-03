@@ -53,28 +53,28 @@ export default function Home() {
 
                     <article>
                         <p class="second">
-                            You've come all the way from <Location /> a very lovely place, what
-                            could the weather be like over there? By the way, welcome to my digital
-                            garden.
+                            You've come all the way from{" "}
+                            <Location /> a very lovely place, what could the weather be like over there?
+                            By the way, welcome to my digital garden.
                         </p>
                         <p className="third">
-                            Finally, you made it to my tiny court yard on the web. I’m Ahmed! I
-                            enjoy building on the web, wandering the web and tinkering with things I
-                            find meaningful to me.
+                            Finally, you made it to my tiny court yard on the web. I’m Ahmed! I enjoy
+                            building on the web, wandering the web and tinkering with things I find meaningful to me.
                         </p>
                         <p className="third">
                             This vestibule doors opens onto my fine and maybe unfine datasets of my
                             brain. More like a library where i store valuable piece of computer
-                            related information and document my personal growth. Currently, i am
-                            engaged in{" "}
+                            related information and document my personal growth. Currently, i am engaged in{" "}
                             <a target="_blank" href="https://griffith.ie">
                                 college
                             </a>{" "}
-                            activities alongside building <a href="/projects">projects</a> and
-                            contributing to open source. Also, I am having a great time being lost
-                            in <a href="/second-brain/tolstoy">Tolstoy's</a> Literature while
-                            puzzling human existence. Please feel free and navigate around, you're
-                            warmly welcomed.
+                            activities alongside building <a  href="/projects">
+                                projects
+                            </a>{" "} and contributing to open source.
+                            Also, I am having a great time being lost in{" "}
+                            <a href="/second-brain/tolstoy">Tolstoy's</a> Literature while puzzling
+                            human existence. Please feel free and navigate around, you're warmly
+                            welcomed.
                         </p>
 
                         <p className="third">
