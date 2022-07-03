@@ -3,7 +3,6 @@ import { useLocalStorage } from "../hooks/useLocalStorage"
 import { WiDaySunny } from "react-icons/wi"
 import { MdOutlineDarkMode } from "react-icons/md"
 
-
 function mode() {
     const [theme, setTheme] = useLocalStorage("theme", "light")
 
@@ -27,8 +26,6 @@ function mode() {
             document.getElementsByTagName("html")[0].classList.remove("dark")
             window.localStorage.theme = "light"
             // document.getElementsByTagName("html")[0].classList.add("light")
-
-           
         }
     }, [theme])
 
@@ -54,11 +51,9 @@ function mode() {
     return (
         <button onClick={toggleDarkMode}>
             {theme === "light" ? (
-             <WiDaySunny style={{ color: "black" }} />
-
+                <WiDaySunny style={{ color: "black" }} />
             ) : (
                 <MdOutlineDarkMode style={{ color: "white" }} />
-
             )}
         </button>
     )

@@ -98,15 +98,16 @@ function projects() {
             </Head>
 
             <header class="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
-
-               <h1 class="horizontal_dotted_line text-3xl font-bold">Ahmed's Projects: A Curation of  Personal Projects</h1>
-                <ReactMarkdown className="project"
+                <h1 class="horizontal_dotted_line text-3xl font-bold">
+                    Ahmed's Projects: A Curation of Personal Projects
+                </h1>
+                <ReactMarkdown
+                    className="project"
                     children={markdown}
                     remarkPlugins={[remarkMath, remarkGfm]}
                     rehypePlugins={[rehypeKatex]}
                 />
             </header>
-           
         </>
     )
 }

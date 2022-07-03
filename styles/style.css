@@ -31,7 +31,7 @@ html *:before {
     --dairy: #333;
     --bi: hsla(0, 0%, 9%, 1);
     --name: #fff;
-    --a-color:rgb(148, 200, 230);
+    --a-color: rgb(148, 200, 230);
     --p-color: #bbbbbb;
 }
 
@@ -130,26 +130,24 @@ footer {
     justify-content: space-between;
     transition: background 0.3s;
 }
-.vertical_dotted_line
-{
-    border-left: 1px dotted var(--text-color)
-} 
-.rambles ul li{
+.vertical_dotted_line {
+    border-left: 1px dotted var(--text-color);
+}
+.rambles ul li {
     list-style: none;
     padding: 0;
-    align-items:right;
+    align-items: right;
 }
-.rambles p{
+.rambles p {
     font-size: 1rem;
 }
-.horizontal_dotted_line{
-    border-bottom: 1px dotted var(--text-color)
+.horizontal_dotted_line {
+    border-bottom: 1px dotted var(--text-color);
 }
 .header,
 .header-area {
     height: var(--header-height);
 }
-
 
 .c-lhitIg {
     display: block;
@@ -176,7 +174,7 @@ blockquote {
     border-left: 4px solid var(--a-color);
     padding-left: 1em;
 }
-BiRss{
+BiRss {
     color: var(--text-color);
 }
 .menu,
@@ -299,26 +297,26 @@ p {
 
 .third {
     animation-name: animateIn;
-  animation-duration:5s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
 }
 @keyframes animateIn {
     0% {
-      opacity: 0;
-      /* transform: scale(0.6) translateY(-8px); */
+        opacity: 0;
+        /* transform: scale(0.6) translateY(-8px); */
     }
-    
-    100% {
-      opacity: 1;
-    }
-  }
 
-  .third ul{
+    100% {
+        opacity: 1;
+    }
+}
+
+.third ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
 
 .pad {
     padding-left: 1rem;
@@ -395,24 +393,20 @@ a {
     margin: 0;
 }
 
-.project ol{
-    
+.project ol {
     padding: 0;
     margin: 2em;
-
 }
 @media (max-width: 768px) {
     .text-3xl {
         text-align: center;
     }
-    .vertical_dotted_line{
+    .vertical_dotted_line {
         border: none;
-
     }
 }
-    
 
-.project li a{
+.project li a {
     background-color: transparent;
     color: var(--text-color);
 }
@@ -425,13 +419,11 @@ a {
     margin: 0.5em;
     padding: 0.25em 1em;
     display: inline-block;
-
-    
 }
-.backlinks a{
+.backlinks a {
     text-decoration: none;
 }
-.movedrown{
+.movedrown {
     margin-top: -2rem;
 }
 .page-summary:hover {
@@ -461,7 +453,7 @@ a {
         grid-gap: 0.5rem;
     }
 }
-.nav button svg{
+.nav button svg {
     margin-top: 0.5rem;
 }
 
@@ -539,15 +531,14 @@ sup a {
     font-family: "Stylish";
     padding-bottom: 10px;
 }
-.inline{
+.inline {
     display: inline;
 }
 @media screen and (max-width: 768px) {
     .post-title {
-         text-align: center; 
+        text-align: center;
     }
-    .post-date{
+    .post-date {
         text-align: center;
     }
 }
-    

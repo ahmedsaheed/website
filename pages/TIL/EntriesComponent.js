@@ -22,7 +22,7 @@ const BookCard = (props) => {
             </head>
             <div class="content__inner" id="tab-1">
                 <div class="page">
-                <p>DATE: {date}</p>
+                    <p>DATE: {date}</p>
                     <br />
 
                     <ReactMarkdown

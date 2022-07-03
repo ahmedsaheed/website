@@ -7,8 +7,9 @@ const BookCard = (props) => {
             <h3 class="feature-title" />
             <h3>{props.title}</h3>
             <h3>{props.author}</h3>
-            <p>Rating: <BookRating rating={props.rating} /></p>
-            
+            <p>
+                Rating: <BookRating rating={props.rating} />
+            </p>
 
             <a href={props.url}>
                 <center>

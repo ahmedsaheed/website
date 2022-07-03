@@ -13,7 +13,7 @@ function Layout(PageComponent: any) {
                 </Head>
                 <nav className="nav">
                     <div className="spacer">
-                    <a className="hover-underline-animation" href="/">
+                        <a className="hover-underline-animation" href="/">
                             cd ..
                         </a>
                     </div>
@@ -36,15 +36,12 @@ function Layout(PageComponent: any) {
                         <a className="hover-underline-animation" href="/uses">
                             tools
                         </a>
-                        <a className="" href="/rss/feed.xml"  target="_blank">
-
+                        <a className="" href="/rss/feed.xml" target="_blank">
                             <BiRss />
                         </a>
                         <a className="">
-
                             <Theme />
                         </a>
-
                     </div>
                 </nav>
                 <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
@@ -65,7 +62,6 @@ function Layout(PageComponent: any) {
                         </span>
                         {/* <Footer /> */}
                     </div>
-                    
                 </div>
             </>
         )

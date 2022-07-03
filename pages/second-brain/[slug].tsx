@@ -18,11 +18,12 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 title={brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)}
                 description="Ahmed Saheed's second brain'"
                 canonical={`https://saheed.codes/second-brain/${brainEntry.slug}`}
-
                 openGraph={{
-                    url:`https://saheed.codes/second-brain/${brainEntry.slug}`,
-                    title: `${brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)} | Ahmed Saheed` ,
-                    description:`${brainEntry.content.substring(0, 100)+"..."}`,
+                    url: `https://saheed.codes/second-brain/${brainEntry.slug}`,
+                    title: `${
+                        brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)
+                    } | Ahmed Saheed`,
+                    description: `${brainEntry.content.substring(0, 100) + "..."}`,
                 }}
             />
             <body>
@@ -55,28 +56,28 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     ></script>
                 </Head>
 
-                
-                
                 <header className=" vertical_dotted_line mx-auto max-w-3xl space-y-5">
-                <div className="pads" >
-                    <h1 className="post-title">{brainEntry.title}</h1>
-                    <p className=" horizontal_dotted_line post-date">
-                        {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
-                        {readingTime(brainEntry.content).minutes < 1
-                            ? 1
-                            : readingTime(brainEntry.content)
-                                  .minutes.toString()
-                                  .substring(0, 3)}{" "}
-                        min read
-                    </p>
-                </div>
+                    <div className="pads">
+                        <h1 className="post-title">{brainEntry.title}</h1>
+                        <p className=" horizontal_dotted_line post-date">
+                            {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
+                            {readingTime(brainEntry.content).minutes < 1
+                                ? 1
+                                : readingTime(brainEntry.content)
+                                      .minutes.toString()
+                                      .substring(0, 3)}{" "}
+                            min read
+                        </p>
+                    </div>
                     <article
                         className="prose"
                         dangerouslySetInnerHTML={{ __html: brainEntry.content }}
                     />
 
                     {!!brainEntry.backlinks.length && (
-                        <div> <hr />
+                        <div>
+                            {" "}
+                            <hr />
                             <div className="pads">
                                 <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
                                 <div className="">

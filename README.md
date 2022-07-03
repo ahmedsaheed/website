@@ -16,4 +16,3 @@ Obviously, one brain is not enough! My ideas are like winds, I feel them, someti
 Man way reasoning and thinking are very difficult to understand, mine happens very disorderly and in a non linear manner which totally
 contradict the ways in which ideas and thought are organise in modern times (linearly).
 The digital garden or second brain, approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
-

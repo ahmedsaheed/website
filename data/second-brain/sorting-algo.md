@@ -4,12 +4,11 @@ description: "A sorting algorithm is an algorithm that puts elements of a list i
 date: "2022-06-20"
 ---
 
-Sorting a list of data in ascending, descending, or any order can help both humans  and machine sort data efficiently and quickly, perhaps using an [[algorithm]]. The sorting algorithms works on data structures of different data types keeping consideration of [[asymptotic]] analysis.
-
+Sorting a list of data in ascending, descending, or any order can help both humans and machine sort data efficiently and quickly, perhaps using an [[algorithm]]. The sorting algorithms works on data structures of different data types keeping consideration of [[asymptotic]] analysis.
 
 ## Simple Sorting
 
-These algorithms are  useful in sorting through data of any type. i.e int, string, object etc. Although the run time of these algorithms are notoriously slow.
+These algorithms are useful in sorting through data of any type. i.e int, string, object etc. Although the run time of these algorithms are notoriously slow.
 
 1.  Bubble sort
 2.  Selection sort
@@ -65,15 +64,15 @@ It’s a very basic and straight forward way of sorting here are the steps:
 ```java
 static void selectionSort(int f[]){
 	for(int i = 0; i < f.length; i = i + 1){  //iterate through the dataset
-		int currMin = i;     
+		int currMin = i;
 		 //storing our current Minimum
-		for(int j = i + 1; j < f.length; j = j + 1){ 
+		for(int j = i + 1; j < f.length; j = j + 1){
 			//repeating the iteration from index[i]+1
 			if(f[j] < f[currMin])
 					currMin = j;
 	}
 // swap f[currMin] with f[i]
-		int temp = f[i];     
+		int temp = f[i];
 		//temporary variable to hold f[i]
 		f[i] = f[currMin];
 		f[currMin] = temp;
@@ -82,7 +81,6 @@ static void selectionSort(int f[]){
 
 //Time Complexity for best & worst case is = 0(n^2)
 ```
-
 
 ### Insertion Sort
 
@@ -98,20 +96,19 @@ This algorithm is a basic one. Here it’s very similar to sorting a pack of car
 
 ```java
 static void insertionSort(int k[]){
-		int j = 1;    
-	while(j < k.length){   
-		int key = j;      
-	while(key > 0 && k[key] < k[key-1]){ 
-    int temp = k[key];  
-		k[key] = k[j-1];    
-		k[key-1] = temp;    
-		key = key - 1;     
+		int j = 1;
+	while(j < k.length){
+		int key = j;
+	while(key > 0 && k[key] < k[key-1]){
+    int temp = k[key];
+		k[key] = k[j-1];
+		k[key-1] = temp;
+		key = key - 1;
 		}
-			j = j + 1;   
+			j = j + 1;
 	}
 }
 ```
-
 
 ### Divide & Conquer
 
@@ -120,7 +117,6 @@ Divide and Conquer is an algorithmic paradigm. A typical Divide and Conquer algo
 1.  **Divide**: Break the given problem into subproblems of same type.
 2.  **Conquer**: Recursively solve these subproblems
 3.  **Combine**: Appropriately combine the answers
-
 
 ### Merge Sort:
 
@@ -142,30 +138,30 @@ static void merge(int f[], int lowerB, int mid, int upperB){
 	//create a temporary array of size
 	//t is initialised to store the index of temp[]
 		int temp[] = new int[upperB - lowerB];
-		int t = 0;   
-	
-	//while lowerBound < the middle and middle is also less than upper bound 
-	// if f[lowerBound] <= f[middle] 
+		int t = 0;
+
+	//while lowerBound < the middle and middle is also less than upper bound
+	// if f[lowerBound] <= f[middle]
 	//new array temp should copy all the elements in the lowerBound
-	while(i < mid && j < upperB){  
-		if(f[i] <= f[j]){            
-			temp[t] = f[i]; i++; t++;  
+	while(i < mid && j < upperB){
+		if(f[i] <= f[j]){
+			temp[t] = f[i]; i++; t++;
 		}
 		 //else, temp should copy all the elements in the upper bound
 		else{
-			temp[t] = f[j]; j++; t++;  
+			temp[t] = f[j]; j++; t++;
 	}
 }
 	//tag on remaining sequence
 	//while lowerBound is less that mid
 	//the temp array should copy all the elements in the lower bound
-	while(i < mid){               
-		temp[t] = f[i]; i++; t++;  
+	while(i < mid){
+		temp[t] = f[i]; i++; t++;
 	}
 	//while  the middle is less than the upper bound,
 	//the temp array should copy all elements from the upper bound
-	while(j < upperB){   
-		temp[t] = f[j]; j++; t++;  
+	while(j < upperB){
+		temp[t] = f[j]; j++; t++;
 	}
 	//copy temp back to f
 		i = lowerB;
@@ -176,7 +172,6 @@ static void merge(int f[], int lowerB, int mid, int upperB){
 	}
 }
 ```
-
 
 ```java
 static void mergeSort(int f[], int lowerB, int upperB){
@@ -191,7 +186,8 @@ if(lowerB + 1 < upperB){
 //Time complexity is 0(nlogn)
 ```
 
-
 ---
+
 ### Further Reading
-- [William Fuset's Sorting Algorithm Implementation](https://github.com/ahmedsaheed/Algorithms/tree/master/src/main/java/com/williamfiset/algorithms/sorting)
+
+-   [William Fuset's Sorting Algorithm Implementation](https://github.com/ahmedsaheed/Algorithms/tree/master/src/main/java/com/williamfiset/algorithms/sorting)
