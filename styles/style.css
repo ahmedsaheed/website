@@ -297,7 +297,7 @@ p {
 
 .third {
     animation-name: animateIn;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
 }
