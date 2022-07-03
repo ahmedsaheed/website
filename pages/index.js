@@ -40,28 +40,28 @@ export default function Home() {
                 <div className=" spacers mx-auto max-w-3xl space-y-5">
                     <div class="mx-auto max-w-2xl">
                         <br></br>
-                        <h2 class="name text-stone-100 font-hammersmith mb-4">
+                        <h2 class="name third text-stone-100 font-hammersmith mb-4">
                             Ahmed Saheed
                             <a className="moveRight">
                                 <Theme />
                             </a>{" "}
                         </h2>
-                        <p class="second text-stone-500">
+                        <p class="text-stone-500">
                             {greeting() + "\n Hope you're having a great " + currentDayName()}
                         </p>
                     </div>
 
                     <article>
-                        <p class="third">
+                        <p class="second">
                             You've come all the way from{" "}
                             <Location /> a very lovely place, what could the weather be like over there?
                             By the way, welcome to my digital garden.
                         </p>
-                        <p className="fourth">
+                        <p className="third">
                             Finally, you made it to my tiny court yard on the web. I’m Ahmed! I enjoy
                             building on the web, wandering the web and tinkering with things I find meaningful to me.
                         </p>
-                        <p className="fifth">
+                        <p className="third">
                             This vestibule doors opens onto my fine and maybe unfine datasets of my
                             brain. More like a library where i store valuable piece of computer
                             related information and document my personal growth. Currently, i am engaged in{" "}
@@ -77,7 +77,7 @@ export default function Home() {
                             welcomed.
                         </p>
 
-                        <p className="sixth">
+                        <p className="third">
                             Find me on{" "}
                             <a target="_blank" href="https://github.com/ahmedsaheed">
                                 GitHub
@@ -89,12 +89,12 @@ export default function Home() {
                             .
                         </p>
 
-                        <h2 class="name seventh text-stone-100 font-hammersmith mb-4">
+                        <h2 class="name third text-stone-100 font-hammersmith mb-4">
                             Routes around the garden
                         </h2>
 
                         <ReactMarkdown
-                            className="last grey-text"
+                            className="third grey-text"
                             children={markdown}
                             remarkPlugins={[remarkMath, remarkGfm]}
                             rehypePlugins={[rehypeKatex]}

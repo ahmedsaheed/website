@@ -268,11 +268,11 @@ p {
     display: none;
 }
 .iframe-link:hover iframe {
-    -webkit-animation: slow 500ms; /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation: slow 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: slow 2s; /* Firefox < 16 */
     -ms-animation: slow 2s; /* Internet Explorer */
     -o-animation: slow 2s; /* Opera < 12.1 */
-    animation: slow 500ms;
+    animation: slow 2s;
     display: block;
     /* opacity: 1; */
 }
@@ -287,52 +287,24 @@ p {
 }
 
 .second {
-    animation-name: animateIn;
-    animation-duration: 400ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
+    -webkit-animation: slow 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slow 3s; /* Firefox < 16 */
+    -ms-animation: slow 3s; /* Internet Explorer */
+    -o-animation: slow 3s; /* Opera < 12.1 */
+    animation: slow 3s;
+    display: block;
 }
 
 .third {
     animation-name: animateIn;
-    animation-duration: 500ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-.fourth{
-    animation-name: animateIn;
-    animation-duration: 600ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-.fifth{
-    animation-name: animateIn;
-    animation-duration: 650s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-.sixth{
-    animation-name: animateIn;
-    animation-duration: 800ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-.seventh{
-    animation-name: animateIn;
-    animation-duration: 900ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-.last{
-    animation-name: animateIn;
-    animation-duration: 1000ms;
+    animation-duration: 2s;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
 }
 @keyframes animateIn {
     0% {
         opacity: 0;
-        transform: translateY(10px);
+        /* transform: scale(0.6) translateY(-8px); */
     }
 
     100% {
