@@ -14,26 +14,26 @@ function mode() {
         ) {
             document.getElementsByTagName("html")[0].classList.remove("dark")
         } else {
-            document.getElementsByTagName("html")[0].classList.add("dark")
+            document.getElementsByTagName("html")[0].classList.add("light")
         }
     }, [])
 
     useEffect(() => {
         if (theme == "dark") {
-            document.getElementsByTagName("html")[0].classList.add("dark")
-            window.localStorage.theme = "light"
+            document.getElementsByTagName("html")[0].classList.add("light")
+            window.localStorage.theme = "dark"
         } else {
-            document.getElementsByTagName("html")[0].classList.remove("dark")
+            document.getElementsByTagName("html")[0].classList.remove("light")
             window.localStorage.theme = "light"
             // document.getElementsByTagName("html")[0].classList.add("light")
         }
     }, [theme])
 
     const toggleDarkMode = () => {
-        if (theme == "dark") {
-            setTheme("light")
-        } else {
+        if (theme == "light") {
             setTheme("dark")
+        } else {
+            setTheme("light")
         }
     }
 
@@ -51,9 +51,9 @@ function mode() {
     return (
         <button onClick={toggleDarkMode}>
             {theme === "light" ? (
-                <WiDaySunny style={{ color: "black" }} />
+                 <MdOutlineDarkMode style={{ color: "white" }} />
             ) : (
-                <MdOutlineDarkMode style={{ color: "white" }} />
+                <WiDaySunny style={{ color: "black" }} />
             )}
         </button>
     )

@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
 :root {
-    --color-default: #f2e9e1;
-    --text-color: #3a333d;
+    --color-default: #000;
+    --text-color: #bbbbbb;
+    --color-border: #e7e7e7;
     --dairy: #333;
-    --bi: #f2e9e1;
-    --a-color: #426b69;
-    --name: var(--text-color);
-    --p-color: #3a333d;
+    --bi: hsla(0, 0%, 9%, 1);
+    --name: #fff;
+    --a-color: #81E6D9;
+    --p-color: #bbbbbb;
 }
 
 html *,
@@ -31,7 +32,7 @@ html *:before {
     --dairy: #333;
     --bi: hsla(0, 0%, 9%, 1);
     --name: #fff;
-    --a-color: rgb(148, 200, 230);
+    --a-color: #81E6D9;
     --p-color: #bbbbbb;
 }
 
@@ -151,20 +152,21 @@ footer {
 
 .c-lhitIg {
     display: block;
-    width: calc(100% + 48px);
+    width: calc(100% + 40px);
+    height: calc(100% - 70px);
     position: relative;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 20px;
     margin: 0px -20px -20px -20px;
-    transition: background 150ms ease;
-    /* -webkit-tap-highlight-color: transparent; */
+    transition: background 500ms ease;
+    -webkit-tap-highlight-color: transparent;
     outline: 0;
     background-color: transparent;
 }
 
 .c-lhitIg:hover {
-    /* background: #f2e9e1; */
+    background: rgba(143, 159, 169, 0.15);;
 }
 .grey-text a {
     text-decoration: none;
@@ -181,6 +183,15 @@ BiRss {
 .menu-item {
     display: flex;
     height: 100%;
+}
+.grey-text a:hover{
+    background-color: rgba(143, 159, 169, 0.15);
+    /* padding: 0 0.1em; */
+    /* margin: auto -0.1em; */
+    border-radius: 3px;
+    border: 5px;
+    color: var(--a-color);
+    text-decoration: none;
 }
 
 h1 {
