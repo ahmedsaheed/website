@@ -4,7 +4,7 @@ description: "A wistful message from an old friend"
 date: "2022-07-08"
 ---
 
-_A small sweet magical poetry from a friend_
+*A sweet  poetry from a friend*
 
 Hello, its me, I've been wondering if after all these long months you'd like to chat, to go over everything? It's said that time heal but it ain't got so much healing. 
 
@@ -13,20 +13,20 @@ Hello, its me, I've been wondering if after all these long months you'd like to 
 
 **those yearnings**
 
-It was me or was it? <br>
-Giving you a lot if space, I got lost in mine. 
+Was it me or was it? <br>
+Giving you a lot of space<br>I got lost in mine. 
 
 Left like hail in summer<br>
 I couldn't keep up with the times.
 
-Yet i hear your voice again and again in my head.
+Yet i hear your voice repeatedly in my head.
 
 Shadows of you linger in my playlist. <br>
-Books you had read were my solace.
+[Books](/books) you had read were my solace.
 
-A lot busy yet still thought of you<br>
-I wallow in misery thinking about the old.<br>
-There sure were good times but better did happen.
+Densely busy, yet still thought of you<br>
+I wallow in misery reminisce about the past.<br>
+Those were surely good times but better did happen.
 
 ---
 
