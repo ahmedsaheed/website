@@ -15,13 +15,13 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
     return (
         <>
             <NextSeo
-                title={brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)}
+                title={brainEntry.title}
                 description="Ahmed Saheed's second brain'"
                 canonical={`https://saheed.codes/second-brain/${brainEntry.slug}`}
                 openGraph={{
                     url: `https://saheed.codes/second-brain/${brainEntry.slug}`,
                     title: `${
-                        brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)
+                        brainEntry.title
                     } | Ahmed Saheed`,
                     description: `${brainEntry.content.substring(0, 100) + "..."}`,
                 }}
@@ -32,7 +32,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link href="../styles/blog.css" rel="stylesheet" />
                     <title>
-                        {brainEntry.slug.charAt(0).toUpperCase() + brainEntry.slug.slice(1)} | Ahmed
+                        {brainEntry.title} | Ahmed
                         Saheed
                     </title>
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
