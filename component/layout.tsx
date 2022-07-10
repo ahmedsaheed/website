@@ -11,7 +11,9 @@ function Layout(PageComponent: any) {
                 <Head>
                     <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
-                <nav className="nav">
+                
+                <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
+                    <nav className="nav mx-auto max-w-3xl space-y-5">
                     <div className="spacer">
                         <a className="hover-underline-animation" href="/">
                             cd ..
@@ -44,7 +46,6 @@ function Layout(PageComponent: any) {
                         </a>
                     </div>
                 </nav>
-                <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
                     <main>
                         <PageComponent {...pageProps} />
                         {/* <SearchBar /> */}
