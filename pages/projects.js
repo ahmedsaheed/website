@@ -17,7 +17,7 @@ const markdown = `
 4. [Second Brain](#)
 5. [Sassy Chatbot](#)
 6. [Library Box](#)
-7. [Personal Bot](#)
+7. [Flight Stats](#)
 
 
 Here is a collection of notable projects that I've worked on and or currently tinkering. Some turned out successfully, while others *meh*.
@@ -72,6 +72,12 @@ Built with: Java, JSP, [WitAI](https://wit.ai/), Javascript, GoogleTTS, GoogleST
 Update a pinned github gist to contain latest reads & Current reading from Google Books for people without the GoodRead API key
 
 Built with: JavaScript, Docker.
+
+## Flight Stat -- Very simple flutter application for flight checkup. Developed to solidify my understanding of flutter state management, http request and geolocation mapping.
+
+[GitHub](https://github.com/ahmedsaheed/flightstat)
+
+Built with: Flutter, AviationStack API and Google Maps API
 
 `
 
