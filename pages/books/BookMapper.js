@@ -10,7 +10,7 @@ const BookList = (props) => {
             {props &&
                 props.books?.map((book, i) => {
                     return (
-                        <div class="grid-container">
+                        <div className="grid-container">
                             <BookCard
                                 key={i}
                                 image={book.volumeInfo.imageLinks.thumbnail}

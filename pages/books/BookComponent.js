@@ -3,8 +3,8 @@ import BookRating from "../../component/stars"
 
 const BookCard = (props) => {
     return (
-        <div class="grid-item">
-            <h3 class="feature-title" />
+        <div className="grid-item">
+            <h3 className="feature-title" />
             <h3>{props.title}</h3>
             <h3>{props.author}</h3>
             <p>

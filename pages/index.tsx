@@ -33,26 +33,27 @@ export default function Home() {
                 }}
             />
             <Head>
-                <title class>Ahmed Saheed</title>
+                <meta charSet="UTF-8" />
+                <title>Ahmed Saheed</title>
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
             <body>
                 <div className=" spacers mx-auto max-w-3xl space-y-5">
-                    <div class="mx-auto max-w-2xl">
+                    <div className="mx-auto max-w-2xl">
                         <br></br>
-                        <h2 class="name third text-stone-100 font-hammersmith mb-4">
+                        <h2 className="name third text-stone-100 font-hammersmith mb-4">
                             Ahmed Saheed
                             <a className="moveRight">
                                 <Theme />
                             </a>{" "}
                         </h2>
-                        <p class="text-stone-500">
+                        <p className="text-stone-500">
                             {greeting() + "\n Hope you're having a great " + currentDayName()}
                         </p>
                     </div>
 
                     <article>
-                        <p class="second">
+                        <p className="second">
                             You've come all the way from{" "}
                             <Location /> a very lovely place, what could the weather be like over there?
                             By the way, welcome to my digital garden.
@@ -89,7 +90,7 @@ export default function Home() {
                             .
                         </p>
 
-                        <h2 class="name third text-stone-100 font-hammersmith mb-4">
+                        <h2 className="name third text-stone-100 font-hammersmith mb-4">
                             Routes around the garden
                         </h2>
 
@@ -101,8 +102,8 @@ export default function Home() {
                         />
 
                         <br></br>
-                        <div class="third grey-text mt-10 mb-6 prose m-auto opacity-50 flex">
-                            <span class="text-sm">
+                        <div className="third grey-text mt-10 mb-6 prose m-auto opacity-50 flex">
+                            <span className="text-sm">
                                 <a
                                     target="_blank"
                                     href="https://creativecommons.org/licenses/by-nc-sa/4.0/"

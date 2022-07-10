@@ -4,7 +4,6 @@ import { markdownToHtml } from "../lib/mdToHtml"
 import { BrainEntry } from "../lib/api"
 import { getContentBySlug, getAllContent } from "../lib/api"
 import { GetStaticProps, GetStaticPaths } from "next"
-import Layout from "../component/layout"
 const fs = require("fs")
 
 function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {

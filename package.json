@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "dev": "next",
-        "lint": "next lint"
+        "lint": "next lint",
+        "build": "next build"
     },
     "repository": {
         "type": "git",

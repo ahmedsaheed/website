@@ -6,6 +6,7 @@ import Summary from "../../component/summary"
 import Head from "next/head"
 import Layout from "../../component/layout"
 
+//@ts-ignore
 const Dropdown = ({ title, content }) => {
     const [show, setShow] = useState(false)
     const parent = useRef(null)
@@ -22,16 +23,13 @@ const Dropdown = ({ title, content }) => {
                 {title}
             </p>
             {show && (
-                <center>
-                    <iframe
+                    <iframe style={{display: "block", marginLeft:"auto", marginRight:"auto", backgroundColor: "white" }} 
                         className=" fun dropdown-content"
                         width="90%"
                         height="992"
-                        frameborder="0"
-                        style={{ backgroundColor: "white" }}
+                        
                         src={content}
                     ></iframe>
-                </center>
             )}
         </div>
     )
@@ -51,7 +49,7 @@ function fun() {
                 }}
             />
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="../styles/blog.css" rel="stylesheet" />
                 <title>Fun | Ahmed Saheed</title>
@@ -74,8 +72,8 @@ function fun() {
                     }
                 />
                 <br />
-                <header class="mx-auto max-w-3xl space-y-5">
-                    <div class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                <header className="mx-auto max-w-3xl space-y-5">
+                    <div className="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
                         <Dropdown
                             title="1. Bubble Sort"
                             content="https://observablehq.com/embed/f4b54f268f34af5a?cells=viewof+codeblock%2Cintro%2Cdataset%2Cviewof+size%2Cviewof+b"
@@ -83,8 +81,8 @@ function fun() {
                     </div>
                 </header>
                 <br />
-                <header class="mx-auto max-w-3xl space-y-5">
-                    <div class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                <header className="mx-auto max-w-3xl space-y-5">
+                    <div className="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
                         <Dropdown
                             title="2. Selection Sort"
                             content="https://observablehq.com/embed/4423f3941d92eb5d?cells=intro%2Ccode%2Clastly%2Cgraph%2Cviewof+conf%2Cviewof+reset"
@@ -92,8 +90,8 @@ function fun() {
                     </div>
                 </header>
                 <br />
-                <header class="mx-auto max-w-3xl space-y-5">
-                    <div class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                <header className="mx-auto max-w-3xl space-y-5">
+                    <div className="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
                         <Dropdown
                             title="3. Insertion Sort"
                             content="https://observablehq.com/embed/2ba0d61c2112721f?cells=code%2Cintro%2Csub%2Cvisual%2Cviewof+size"
@@ -101,8 +99,8 @@ function fun() {
                     </div>
                 </header>
                 <br />
-                <header class="mx-auto max-w-3xl space-y-5">
-                    <div class="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                <header className="mx-auto max-w-3xl space-y-5">
+                    <div className="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
                         <Dropdown
                             title="4. Merge Sort"
                             content="https://observablehq.com/embed/9cfad59162ff2265?cells=code%2Cintro%2Csub%2Cvisual%2Cviewof+s%2Cviewof+b"

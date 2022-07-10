@@ -18,14 +18,14 @@ function til() {
                 }}
             />
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="../styles/blog.css" rel="stylesheet" />
                 <title>TIL | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <header class="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
-                <h1 class="horizontal_dotted_line text-3xl font-bold">
+            <header className="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
+                <h1 className="horizontal_dotted_line text-3xl font-bold">
                     Ahmed's Encyclopedia: Today I learnt
                 </h1>
 

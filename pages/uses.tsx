@@ -18,9 +18,8 @@ function uses() {
                 }}
             />
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link href="../styles/blog.css" rel="stylesheet" />
                 <title>Tools 🛠️ | Ahmed Saheed</title>
                 <link href="../styles/hovers.css" rel="stylesheet" />
 
@@ -38,15 +37,15 @@ function uses() {
             />
             <br />
             <br />{" "}
-            <article class="prose mx-auto max-w-3xl pb-10 px-10">
+            <article className="prose mx-auto max-w-3xl pb-10 px-10">
                 <section>
-                    <h2 class="text-4xl font-am px-10">Editor & Terminal</h2>
+                    <h2 className="text-4xl font-am px-10">Editor & Terminal</h2>
                     <br />
                     <ul>
                         <li>
                             I have this box which contains almost everything i use, its{" "}
                             <a
-                                class="text"
+                                className="text"
                                 style={{
                                     textDecorationLine: "underline",
                                 }}
@@ -59,7 +58,7 @@ function uses() {
                         <li>
                             I use the{" "}
                             <a
-                                class="text iframe-link"
+                                className="text iframe-link"
                                 style={{
                                     textDecorationLine: "underline",
                                 }}
@@ -81,7 +80,7 @@ function uses() {
                         <li>
                             I'm mainly use{" "}
                             <a
-                                class="text iframe-link"
+                                className="text iframe-link"
                                 style={{
                                     textDecorationLine: "underline",
                                 }}
@@ -103,7 +102,7 @@ function uses() {
                         <li>
                             I use the{" "}
                             <a
-                                class="text iframe-link"
+                                className="text iframe-link"
                                 style={{
                                     textDecorationLine: "underline",
                                 }}
@@ -125,7 +124,7 @@ function uses() {
                         <li>
                             Lastly{" "}
                             <a
-                                class="text"
+                                className="text"
                                 style={{
                                     textDecorationLine: "underline",
                                 }}

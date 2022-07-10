@@ -73,9 +73,11 @@ Update a pinned github gist to contain latest reads & Current reading from Googl
 
 Built with: JavaScript, Docker.
 
-## Flight Stat -- Very simple flutter application for flight checkup. Developed to solidify my understanding of flutter state management, http request and geolocation mapping.
-
+## Flight Stat 
 [GitHub](https://github.com/ahmedsaheed/flightstat)
+
+Very simple flutter application for flight checkup. Developed to solidify my understanding of flutter state management, http request and geolocation mapping.
+
 
 Built with: Flutter, AviationStack API and Google Maps API
 
@@ -95,7 +97,7 @@ function projects() {
                 }}
             />
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="../styles/blog.css" rel="stylesheet" />
                 <title>Projects 🚧 | Ahmed Saheed</title>
@@ -103,8 +105,8 @@ function projects() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            <header class="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
-                <h1 class="horizontal_dotted_line text-3xl font-bold">
+            <header className="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
+                <h1 className="horizontal_dotted_line text-3xl font-bold">
                     Ahmed's Projects: A Curation of Personal Projects
                 </h1>
                 <ReactMarkdown
