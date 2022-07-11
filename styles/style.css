@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
 :root {
-    --color-default: #000;
-    --text-color: #bbbbbb;
-    --color-border: #e7e7e7;
-    --dairy: #333;
-    --bi: hsla(0, 0%, 9%, 1);
-    --name: #fff;
-    --a-color: #81E6D9;
-    --p-color: #bbbbbb;
-}
-
-html *,
-html *:after,
-html *:before {
-    box-sizing: inherit;
-}
-
-.light {
     --color-default: #f2e9e1;
     --text-color: #3a333d;
     --dairy: #333;
@@ -25,7 +8,25 @@ html *:before {
     --name: var(--text-color);
     --p-color: #3a333d;
 }
-.dark {
+
+html *,
+html *:after,
+html *:before {
+    box-sizing: inherit;
+}
+.cd{
+    margin-top:20px;
+}
+[data-theme='light'] {
+    --color-default: #f2e9e1;
+    --text-color: #3a333d;
+    --dairy: #333;
+    --bi: #f2e9e1;
+    --a-color: #426b69;
+    --name: var(--text-color);
+    --p-color: #3a333d;
+}
+[data-theme='dark']{
     --color-default: #000;
     --text-color: #bbbbbb;
     --color-border: #e7e7e7;
@@ -35,11 +36,13 @@ html *:before {
     --a-color: #81E6D9;
     --p-color: #bbbbbb;
 }
-
+h3{
+    font-family: "Stylish";
+}
 html body {
     font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
     color: var(--text-color);
-    min-height: 100%;
+    height: 100%;
     width: 100%;
     background: var(--bi);
     transition: background 0.3s;
@@ -73,6 +76,7 @@ hr:after {
 }
 .spacers {
     padding: 2em;
+
 }
 
 .name {
