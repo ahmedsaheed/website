@@ -20,7 +20,7 @@ function books() {
                 }}
             />
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 <title>Books 📚 | Ahmed Saheed</title>
@@ -42,9 +42,9 @@ function books() {
                 }
             />
             <br />
-            <center>
-                <Book />
-            </center>
+          
+                <Book/>
+           
             <br />
         </>
     )

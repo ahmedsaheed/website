@@ -15,6 +15,6 @@
         "resolveJsonModule": true,
         "isolatedModules": true
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "component/theme.js"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "component/theme.js", "pages/books/api.js"],
     "exclude": ["node_modules"]
 }
