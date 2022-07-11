@@ -1,7 +1,7 @@
-import { React } from "react"
+import React from "react"
 import BookRating from "../../component/stars"
 
-const BookCard = (props) => {
+const BookCard = (props : any) => {
     return (
         <div className="grid-item">
             <h3 className="feature-title" />
@@ -12,9 +12,7 @@ const BookCard = (props) => {
             </p>
 
             <a href={props.url}>
-                <center>
-                    <img src={props.image} alt="Books" />
-                </center>
+                    <img style={{display: "block", marginLeft: "auto", marginRight:"auto"}} src={props.image} alt="Books" />
             </a>
         </div>
     )

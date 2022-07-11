@@ -3,7 +3,7 @@ import request from "superagent"
 import BookList from "./BookMapper"
 
 class Book extends Component {
-    constructor(props) {
+    constructor(props ) {
         super(props)
         this.state = {
             books: [],
@@ -22,7 +22,7 @@ class Book extends Component {
 
     render() {
         return (
-            <div>
+            <div className="mx-auto max-w-3xl space-y-5">
                 <BookList books={this.state.books} />
             </div>
         )

@@ -1,14 +1,13 @@
 import React, { Component } from "react"
 import BookCard from "./BookComponent"
-
-const BookList = (props) => {
+const BookList = (props: any) => {
     if (!props) {
         return null
     }
     return (
         <div>
             {props &&
-                props.books?.map((book, i) => {
+                props.books?.map((book: any, i:any) => {
                     return (
                         <div className="grid-container">
                             <BookCard
