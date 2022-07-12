@@ -36,7 +36,7 @@ function Layout(PageComponent: any) {
                             til
                         </a>
                         <a className="hover-underline-animation" href="/uses">
-                            tools
+                            uses
                         </a>
                         <a className="" href="/rss/feed.xml" target="_blank">
                             <BiRss />
@@ -48,7 +48,6 @@ function Layout(PageComponent: any) {
                 </nav>
                     <main>
                         <PageComponent {...pageProps} />
-                        {/* <SearchBar /> */}
                     </main>
                     <div className="pt-10 grey-text cent ">
                         <span className=" text-sm">
