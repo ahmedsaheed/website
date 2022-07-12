@@ -12,8 +12,7 @@
 html *,
 html *:after,
 html *:before {
-    box-sizing: inherit;
-    min-height: 100%;
+    /* box-sizing: inherit; */
 }
 
 [data-theme='light'] {
@@ -47,7 +46,7 @@ html body {
     transition: background 0.3s;
 }
 .cd{
-    margin-top:20px;
+    margin-top:24px;
 }
 
 .moveRight {
