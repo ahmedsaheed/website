@@ -44,6 +44,8 @@ html body {
     width: 100%;
     background: var(--bi);
     transition: background 0.3s;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .cd{
     margin-top:24px;
