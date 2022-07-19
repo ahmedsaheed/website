@@ -3,22 +3,10 @@ import { NextSeo } from "next-seo"
 import { currentDayName } from "../component/date"
 import { greeting } from "../component/greetings"
 import Head from "next/head"
-import ReactMarkdown from "react-markdown"
-import remarkMath from "remark-math"
-import rehypeKatex from "rehype-katex"
-import remarkGfm from "remark-gfm"
 import Location from "../component/getLocation"
 import Theme from "../component/theme"
 
 export const date = new Date()
-const markdown = `
-- [Second Brain](/second-brain)
-- [Today i learnt](/TIL)
-- [Projects ](/projects)
-- [Books](/books)
-- [Uses](/uses)
-- [Feed](/rss/feed.xml)
-`
 export default function Home() {
     return (
         <>
@@ -52,6 +40,16 @@ export default function Home() {
                         </p>
                     </div>
 
+                    <p>
+
+                                                <h3>
+                                                <a href="/second-brain"> Digital garden</a> •{" "}
+                                                    <a href="/second-brain/entries">Rambles</a> •{" "}
+                                                    <a href="/books"> Books</a> • {" "}
+                                                    <a href="/TIL"> TIL</a> 
+                                                </h3>
+                                                </p>
+
                     <article>
                         <p className="second">
                             You've come all the way from{" "}
@@ -78,7 +76,7 @@ export default function Home() {
                             welcomed.
                         </p>
 
-                        <p className="third">
+                        <h3 className="third">
                             Find me on{" "}
                             <a target="_blank" href="https://github.com/ahmedsaheed">
                                 GitHub
@@ -88,32 +86,21 @@ export default function Home() {
                                 Twitter
                             </a>
                             .
-                        </p>
+                        </h3>
 
-                        <h2 className="name third text-stone-100 font-hammersmith mb-4">
-                            Routes around the garden
-                        </h2>
-
-                        <ReactMarkdown
-                            className="third grey-text"
-                            children={markdown}
-                            remarkPlugins={[remarkMath, remarkGfm]}
-                            rehypePlugins={[rehypeKatex]}
-                        />
-
-                        <br></br>
-                        <div className="third grey-text mt-10 mb-6 prose m-auto opacity-50 flex">
-                            <span className="text-sm">
-                                <a
-                                    target="_blank"
-                                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-                                    style={{ color: "inherit", borderBottom: "1px dotted" }}
-                                >
-                                    CC BY-NC-SA 4.0
-                                </a>{" "}
-                                2021-{date.getFullYear()} © Ahmed Saheed
-                            </span>
-                        </div>
+                        <div className="pt-10 grey-text cent ">
+                        <span className=" text-sm">
+                        CC {" "}
+                            <a
+                                target="_blank"
+                                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                style={{ color: "inherit", borderBottom: "1px dotted" }}
+                            >
+                                BY-NC-SA 4.0
+                            </a>{" "}
+                            2021-{date.getFullYear()} © Ahmed Saheed
+                        </span>
+                    </div>
                     </article>
                 </div>
             </body>
