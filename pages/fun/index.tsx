@@ -23,13 +23,18 @@ const Dropdown = ({ title, content }) => {
                 {title}
             </p>
             {show && (
-                    <iframe style={{display: "block", marginLeft:"auto", marginRight:"auto", backgroundColor: "white" }} 
-                        className=" fun dropdown-content"
-                        width="90%"
-                        height="992"
-                        
-                        src={content}
-                    ></iframe>
+                <iframe
+                    style={{
+                        display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        backgroundColor: "white",
+                    }}
+                    className=" fun dropdown-content"
+                    width="90%"
+                    height="992"
+                    src={content}
+                ></iframe>
             )}
         </div>
     )

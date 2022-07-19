@@ -11,41 +11,41 @@ function Layout(PageComponent: any) {
                 <Head>
                     <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
-                
+
                 <div className="">
                     <nav className="nav mx-auto max-w-3xl space-y-5">
-                    <div className="">
-                        <a className="cd hover-underline-animation" href="/">
-                            cd ..
-                        </a>
-                    </div>
-                    <div className="right">
-                        <a className="hover-underline-animation" href="/second-brain">
-                            garden
-                        </a>
-                        <a className="hover-underline-animation" href="/books">
-                            books
-                        </a>
-                        <a className="hover-underline-animation" href="/fun">
-                            fun
-                        </a>
-                        <a className="hover-underline-animation" href="/projects">
-                            projects
-                        </a>
-                        <a className="hover-underline-animation" href="/TIL">
-                            til
-                        </a>
-                        <a className="hover-underline-animation" href="/uses">
-                            uses
-                        </a>
-                        <a className="" href="/rss/feed.xml" target="_blank">
-                            <BiRss />
-                        </a>
-                        <a className="">
-                            <Theme />
-                        </a>
-                    </div>
-                </nav>
+                        <div className="">
+                            <a className="cd hover-underline-animation" href="/">
+                                cd ..
+                            </a>
+                        </div>
+                        <div className="right">
+                            <a className="hover-underline-animation" href="/second-brain">
+                                garden
+                            </a>
+                            <a className="hover-underline-animation" href="/books">
+                                books
+                            </a>
+                            <a className="hover-underline-animation" href="/fun">
+                                fun
+                            </a>
+                            <a className="hover-underline-animation" href="/projects">
+                                projects
+                            </a>
+                            <a className="hover-underline-animation" href="/TIL">
+                                til
+                            </a>
+                            <a className="hover-underline-animation" href="/uses">
+                                uses
+                            </a>
+                            <a className="" href="/rss/feed.xml" target="_blank">
+                                <BiRss />
+                            </a>
+                            <a className="">
+                                <Theme />
+                            </a>
+                        </div>
+                    </nav>
                     <main>
                         <PageComponent {...pageProps} />
                     </main>

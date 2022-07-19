@@ -7,7 +7,7 @@ const BookList = (props: any) => {
     return (
         <div>
             {props &&
-                props.books?.map((book: any, i:any) => {
+                props.books?.map((book: any, i: any) => {
                     return (
                         <div className="grid-container">
                             <BookCard

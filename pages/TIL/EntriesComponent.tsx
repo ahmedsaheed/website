@@ -10,7 +10,6 @@ const BookCard = (props: any) => {
     var date = dates?.substring(0, 10)
     return (
         <>
-            
             <div className="content__inner" id="tab-1">
                 <div className="page">
                     <p>DATE: {date}</p>

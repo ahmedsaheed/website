@@ -42,10 +42,10 @@ function til() {
                         writing on GitHub's Blog
                     </a>
                     . TIL is a way to summarise information learnt in few sentences which can be of
-                    great relivence when commited to on a long run. I hacked up a cli
-                    application which helps me add my til as a gist comment on GitHub. In the nearest
-                    future, I would like to create a search utility for this website which would
-                    help search through the contents of my til as they increase.
+                    great relivence when commited to on a long run. I hacked up a cli application
+                    which helps me add my til as a gist comment on GitHub. In the nearest future, I
+                    would like to create a search utility for this website which would help search
+                    through the contents of my til as they increase.
                 </p>
                 <br />
                 <Dairy />

@@ -15,7 +15,7 @@ const MainDiary = (props: any) => {
     return (
         <div>
             {props &&
-            //@ts-ignore
+                //@ts-ignore
                 props.entry?.map((entries, i) => {
                     return (
                         <>

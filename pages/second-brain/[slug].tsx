@@ -20,9 +20,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 canonical={`https://saheed.codes/second-brain/${brainEntry.slug}`}
                 openGraph={{
                     url: `https://saheed.codes/second-brain/${brainEntry.slug}`,
-                    title: `${
-                        brainEntry.title
-                    } | Ahmed Saheed`,
+                    title: `${brainEntry.title} | Ahmed Saheed`,
                     description: `${brainEntry.content.substring(0, 100) + "..."}`,
                 }}
             />
@@ -31,10 +29,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     <meta charSet="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <link href="../styles/blog.css" rel="stylesheet" />
-                    <title>
-                        {brainEntry.title} | Ahmed
-                        Saheed
-                    </title>
+                    <title>{brainEntry.title} | Ahmed Saheed</title>
                     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                     <link
                         rel="stylesheet"

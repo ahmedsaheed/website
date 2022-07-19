@@ -10,7 +10,6 @@ Stating the above, i have decided to write this brief note on react theming.
 
 There are many ways to implement theming in react, but I have decided to explain two only.
 
-
 ## prerequisite
 
 I assert you already have a react environment to work with, if not you can easily create one using:
@@ -27,9 +26,7 @@ npx create-react-app my-app
 
 ## Implementing the theming.
 
-
 ### First Approaching - using the [next theme libary](https://github.com/pacocoursey/next-themes)
-
 
 You'd need to add the libary to your project:
 
@@ -42,14 +39,14 @@ $ yarn add next-themes
 In your `pages/_app.js` file, you'd need to add the following line:
 
 ```js
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from "next-themes"
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ThemeProvider>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
+    return (
+        <ThemeProvider>
+            <Component {...pageProps} />
+        </ThemeProvider>
+    )
 }
 
 export default MyApp
@@ -59,14 +56,14 @@ Then implement your style
 
 ```css
 :root {
-  /* Your default theme */
-  --background: white;
-  --foreground: black;
+    /* Your default theme */
+    --background: white;
+    --foreground: black;
 }
 
-[data-theme='dark'] {
-  --background: black;
-  --foreground: white;
+[data-theme="dark"] {
+    --background: black;
+    --foreground: white;
 }
 ```
 
@@ -76,40 +73,35 @@ Lastly, create a theme button component in your `components/theme-button.js` fil
 import { createContext, useEffect } from "react"
 import { WiDaySunny } from "react-icons/wi"
 import { MdOutlineDarkMode } from "react-icons/md"
-import { useTheme } from 'next-themes'
+import { useTheme } from "next-themes"
 
 const mode = () => {
     const { theme, setTheme } = useTheme()
-        const toggleDarkMode = () => {
+    const toggleDarkMode = () => {
         if (theme == "light") {
             setTheme("dark")
         } else {
             setTheme("light")
         }
     }
-  
+
     return (
-      <div>
-        <button onClick={toggleDarkMode}>
-        {theme === "light" ? (
-             <WiDaySunny style={{ color: "black" }} />
-               
-            ) : (
-                <MdOutlineDarkMode style={{ color: "white" }} />
-            )}
-        </button>
-      </div>
-      
+        <div>
+            <button onClick={toggleDarkMode}>
+                {theme === "light" ? (
+                    <WiDaySunny style={{ color: "black" }} />
+                ) : (
+                    <MdOutlineDarkMode style={{ color: "white" }} />
+                )}
+            </button>
+        </div>
     )
-  }
+}
 
 export default mode
 ```
 
-
 ### Second Approach - Implement the theming yourself.
-
-
 
 Before we begin, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
 

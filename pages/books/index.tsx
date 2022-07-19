@@ -42,9 +42,7 @@ function books() {
                 }
             />
             <br />
-          
-                <Book/>
-           
+            <Book />
             <br />
         </>
     )

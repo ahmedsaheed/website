@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap");
 :root {
-    --color-default: #F5F2E9;
+    --color-default: #f5f2e9;
     --text-color: #3a333d;
     --dairy: #333;
     --bi: #f2e9e1;
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #3a333d;
-    --italics: 'Newsreader'
+    --italics: "Newsreader";
 }
 
 html *,
@@ -17,28 +17,28 @@ html *:before {
     /* box-sizing: inherit; */
 }
 
-[data-theme='light'] {
-    --color-default: #F5F2E9;
+[data-theme="light"] {
+    --color-default: #f5f2e9;
     --text-color: #3a333d;
     --dairy: #333;
     --bi: #f2e9e1;
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #3a333d;
-    --italics: 'Newsreader'
+    --italics: "Newsreader";
 }
-[data-theme='dark']{
+[data-theme="dark"] {
     --color-default: #000;
     --text-color: #bbbbbb;
     --color-border: #e7e7e7;
     --dairy: #333;
     --bi: hsla(0, 0%, 9%, 1);
     --name: #fff;
-    --a-color: #81E6D9;
+    --a-color: #81e6d9;
     --p-color: #bbbbbb;
-    --italics: 'Newsreader'
+    --italics: "Newsreader";
 }
-h3{
+h3 {
     font-family: "Stylish";
 }
 html body {
@@ -51,8 +51,8 @@ html body {
     background-attachment: fixed;
     background-size: cover;
 }
-.cd{
-    margin-top:24px;
+.cd {
+    margin-top: 24px;
 }
 
 .moveRight {
@@ -83,10 +83,9 @@ hr:after {
 }
 .spacers {
     padding: 2em;
-
 }
-em{
-    font: 600 italic calc(1em + 1px) /normal var(--italics);
+em {
+    font: 600 italic calc(1em + 1px) / normal var(--italics);
 }
 
 .name {
@@ -185,12 +184,12 @@ footer {
 }
 
 .c-lhitIg:hover {
-    background: rgba(143, 159, 169, 0.15);;
+    background: rgba(143, 159, 169, 0.15);
 }
 .grey-text a {
     text-decoration: none;
     color: rgb(120 113 108/1);
-    font-family:'Spectral' ;
+    font-family: "Spectral";
     background-color: transparent;
 }
 blockquote {
@@ -205,7 +204,7 @@ BiRss {
     display: flex;
     height: 100%;
 }
-.grey-text a:hover{
+.grey-text a:hover {
     background-color: rgba(143, 159, 169, 0.15);
     /* padding: 0 0.1em; */
     /* margin: auto -0.1em; */
@@ -479,8 +478,6 @@ a {
     display: flex;
     gap: 1.2rem;
     margin-left: 1.2rem;
-
-
 }
 @media screen and (max-width: 768px) {
     .nav .right {
