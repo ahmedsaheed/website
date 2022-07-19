@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
 :root {
-    --color-default: #f2e9e1;
+    --color-default: #F5F2E9;
     --text-color: #3a333d;
     --dairy: #333;
     --bi: #f2e9e1;
-    --a-color: #426b69;
+    --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #3a333d;
+    --italics: 'Newsreader'
 }
 
 html *,
@@ -16,13 +18,14 @@ html *:before {
 }
 
 [data-theme='light'] {
-    --color-default: #f2e9e1;
+    --color-default: #F5F2E9;
     --text-color: #3a333d;
     --dairy: #333;
     --bi: #f2e9e1;
-    --a-color: #426b69;
+    --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #3a333d;
+    --italics: 'Newsreader'
 }
 [data-theme='dark']{
     --color-default: #000;
@@ -33,6 +36,7 @@ html *:before {
     --name: #fff;
     --a-color: #81E6D9;
     --p-color: #bbbbbb;
+    --italics: 'Newsreader'
 }
 h3{
     font-family: "Stylish";
@@ -81,11 +85,14 @@ hr:after {
     padding: 2em;
 
 }
+em{
+    font: 600 italic calc(1em + 1px) /normal var(--italics);
+}
 
 .name {
     font-family: "Stylish", sans-serif;
     color: var(--name);
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 code {
     background-color: rgba(143, 159, 169, 0.15);
@@ -105,7 +112,7 @@ code {
 
 p {
     margin-bottom: 1.6rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #bbbbbb;
 }
 
@@ -152,6 +159,11 @@ footer {
 .horizontal_dotted_line {
     border-bottom: 1px dotted var(--text-color);
 }
+.horizontal_line {
+    content: " ";
+    display: block;
+    border-bottom: 0.5px solid var(--text-color);
+}
 .header,
 .header-area {
     height: var(--header-height);
@@ -178,10 +190,12 @@ footer {
 .grey-text a {
     text-decoration: none;
     color: rgb(120 113 108/1);
+    font-family:'Spectral' ;
+    background-color: transparent;
 }
 blockquote {
-    border-left: 4px solid var(--a-color);
-    padding-left: 1em;
+    border-left: 2.8px solid var(--a-color);
+    padding-left: 0.7em;
 }
 BiRss {
     color: var(--text-color);
@@ -208,8 +222,8 @@ h1 {
 }
 p {
     font-family: "Spectral", "ui-serif";
-    font-size: 1.2em;
     color: var(--p-color);
+    line-height: 1.5em;
 }
 
 .grid-container {
@@ -224,9 +238,6 @@ p {
     padding: 20px;
     font-size: 10px;
     text-align: center;
-}
-.grey-text a {
-    background-color: transparent;
 }
 
 .grid-container:hover {
@@ -461,14 +472,19 @@ a {
 }
 
 .nav .right {
-    display: grid;
+    /* display: grid;
     grid-gap: 1.2rem;
-    grid-auto-flow: column;
+    grid-auto-flow: column; */
+    flex-direction: row;
+    display: flex;
+    gap: 1.2rem;
+    margin-left: 1.2rem;
+
+
 }
 @media screen and (max-width: 768px) {
     .nav .right {
-        grid-template-columns: 1fr;
-        grid-gap: 0.5rem;
+        gap: 0.5rem;
     }
 }
 .nav button svg {

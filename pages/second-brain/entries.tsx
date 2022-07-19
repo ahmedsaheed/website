@@ -48,7 +48,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                         {brainEntry.description.charAt(0).toUpperCase() +
                                             brainEntry.description.slice(1)}
                                     </p>
-                                    <div className="horizontal_dotted_line flex flex-wrap  ">
+                                    <div className="horizontal_line flex flex-wrap  ">
                                         <p>{readingTime(brainEntry.content).words + " words • "}</p>
                                         <p>
                                             &nbsp;

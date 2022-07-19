@@ -31,10 +31,15 @@ ability to comply.
 
 ## Why keep a second brain isn't one enough?
 
->  [I would like you to see this as further reading](https://jzhao.xyz/posts/networked-thought/)
+In a digital garden there is joined personal experience and professional activities,
+studies under way and studies planned. A second brain would enhance the process of gathering together what you are doing intellectually and what you are experiencing as a person.
+Here you will not be afraid to use your experience and relate it directly to various work in progress.
+By serving as a check on repetitious work. It also encourages you to capture ‘fringe-thoughts’: various ideas which may be byproducts of everyday life, snatches of conversation overheard in the street, or, for that matter, dreams. Once noted, these may lead to more systematic thinking, as well as lend intellectual relevance to more directed experience.
 
-Obviously, one brain is not enough! My ideas are like winds, I feel them, sometimes grasp them, and sometime it just blows away.
-Man way reasoning and thinking are very difficult to understand, mine happens very disorderly and in a non linear manner which totally
+>  [I would like you to see this as further reading](http://www.aaronsw.com/weblog/about)
+
+Obviously, one brain is not enough! 
+Mode of reasoning and thinking are very difficult to understand, mine happens very disorderly and in a non linear manner which totally
 contradict the ways in which ideas and thought are organise in modern times (linearly). 
 The digital garden or second brain, approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
 ## Do you want to keep a second brain?

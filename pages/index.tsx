@@ -48,7 +48,7 @@ export default function Home() {
                             </a>{" "}
                         </h2>
                         <p className="text-stone-500">
-                            {greeting() + "\n Hope you're having a great " + currentDayName()}
+                            <em>{greeting()}</em> Hope you're having a great {currentDayName()}
                         </p>
                     </div>
 
