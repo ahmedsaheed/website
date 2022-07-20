@@ -68,7 +68,7 @@ function secondBrain() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            <header className="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
+            <header className=" pads mx-auto max-w-3xl space-y-5">
                 <h1 className="horizontal_dotted_line text-3xl font-bold">
                     Ahmed's Second Brain: A Personal Digital Garden 🪴
                 </h1>
@@ -78,6 +78,7 @@ function secondBrain() {
                     rehypePlugins={[rehypeKatex]}
                 />
             </header>
+            <br></br>
         </>
     )
 }
