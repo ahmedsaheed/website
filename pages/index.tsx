@@ -49,16 +49,302 @@ export default function Home() {
                     </p>
 
                     <article>
-                        <p className="second">
-                            You've come all the way from <Location /> a very lovely place, what
-                            could the weather be like over there? By the way, welcome to my digital
-                            garden.
-                        </p>
+                    
                         <p className="third">
-                            Finally, you made it to my tiny court yard on the web. I’m Ahmed! I
-                            enjoy building on the web, wandering the web and tinkering with things I
+                            Finally, you made it to my tiny court yard on the web, I see you've come 
+                            all the way from <Location />. I’m Ahmed by name! I enjoy building on the web, wandering the web and tinkering with things I
                             find meaningful to me.
                         </p>
+                        <section className="scrollport">
+                            <div>
+                                <div style={{ padding: "12px" }}>
+                                    <h3>Thoughts</h3>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="/second-brain/react-theming"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    Themes in NextJs
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                            Theming isn't that tricky.
+                                        </span>
+                                    </div>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="/second-brain/cities-ambition"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    Cities
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                            A Ponder on Paul Graham's essay
+                                        </span>
+                                    </div>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="/second-brain"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    My Thoughts
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                            Collection of intertwined ideas
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div style={{ padding: "12px" }}>
+                                    <h3>Projects</h3>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="https://github.com/ahmedsaheed/qurancli"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    QuranCli
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                            Minimal cli app to read, search the quran
+                                        </span>
+                                    </div>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="https://github.com/ahmedsaheed/Donation-Hub"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    Donation-Hub
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                            A habour of donation bodies to aid SDG.
+                                        </span>
+                                    </div>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="/projects"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    All Projects
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                            Collections of project I've tinkered with.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div style={{ padding: "12px" }}>
+                                    <h3>Books</h3>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="https://www.goodreads.com/book/show/26238021-into-the-wild"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    Into the wild
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                        My favourite. A sad story at heart.
+                                        </span>
+                                    </div>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="https://www.goodreads.com/book/show/6149.Beloved"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    Beloved
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                        Suspense comes from the layers of trauma and grief
+                                        </span>
+                                    </div>
+                                    <div style={{ minHeight: "84px" }}>
+                                        <div>
+                                            <span basics-text="">
+                                                <a
+                                                    basics-variant="text"
+                                                    basics-link=""
+                                                    href="/books"
+                                                    rel="noopener"
+                                                    target="_blank"
+                                                >
+                                                    My Libary
+                                                </a>
+                                            </span>
+                                            <span
+                                                basics-variant="inline"
+                                                aria-hidden="true"
+                                                basics-spacer=""
+                                            ></span>
+                                            <span
+                                                craft-icon=""
+                                                data-icon="arrow-up-right"
+                                                style={{ width: "16px", height: "16px" }}
+                                                role="img"
+                                                aria-label="arrow-up-right icon"
+                                            ></span>
+                                        </div>
+                                        <span basics-color="dim" basics-text="">
+                                            A digital libary of books I've read
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
                         <p className="third">
                             This vestibule doors opens onto my fine and maybe unfine datasets of my
                             brain. More like a library where i store valuable piece of computer
