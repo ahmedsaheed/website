@@ -171,14 +171,7 @@ footer {
 .vertical_dotted_line {
     border-left: 1px dotted var(--text-color);
 }
-.rambles ul li {
-    list-style: none;
-    padding: 0;
-    align-items: right;
-}
-.rambles p {
-    font-size: 1rem;
-}
+
 .horizontal_dotted_line {
     border-bottom: 1px dotted var(--text-color);
 }
@@ -194,13 +187,12 @@ footer {
 
 .c-lhitIg {
     display: block;
-    width: calc(100% + 40px);
-    height: calc(100% - 70px);
+    height: calc(100% - 90px);
     position: relative;
     border-radius: 10px;
     cursor: pointer;
-    padding: 20px;
-    margin: 0px -20px -20px -20px;
+    padding: 10px;
+    /* margin: 0px -10px -10px -10px; */
     transition: background 500ms ease;
     -webkit-tap-highlight-color: transparent;
     outline: 0;

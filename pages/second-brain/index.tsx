@@ -24,7 +24,7 @@ between man's intention to create a space of tranquility and nature's
 ability to comply.
 
 
-- This garden was inspired by [Jacky Zhao](https://jzhao.xyz/) and [Anthony Morris](https://anthonymorris.dev/)
+- This garden was inspired by [Aaron Swartz](http://www.aaronsw.com/) and [Jacky Zhao](https://jzhao.xyz/) 
 
 - The notion of digital gardening is to subtly create reexplorable links within your ideas.
 
@@ -42,25 +42,9 @@ Obviously, one brain is not enough!
 Mode of reasoning and thinking are very difficult to understand, mine happens very disorderly and in a non linear manner which totally
 contradict the ways in which ideas and thought are organise in modern times (linearly). 
 The digital garden or second brain, approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
-## Do you want to keep a second brain?
 
-I really urge you to keep a second brain as one isn't enough, and it's fun to nurture it and watch its growth. If you want to there are a few ways to do it below.
-- [Quartz 3.2](https://quartz.jzhao.xyz/)
+> [All of my entries and thought](/second-brain/entries)
 
-- [Obsidian](https://obsidian.md/)
-
-## Some routes around the garden
-- [I love to read, perhaps you too! Check out my digital library ](/books)
-
-- [Stuff i've worked on and some i'm still tinkering](/projects)
-
-- [See what i learnt today](/TIL)
-
-- [All of my  garden seeds/notes can be found here](/second-brain/entries)
-
-- Use ⌘ + L to toggle within themes.
-
-- You can search for things in the garden just by typing ⌘ + k
 
 Please feel free and navigate around, you're highly welcomed.
 `

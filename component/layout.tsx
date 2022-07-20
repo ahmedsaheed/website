@@ -35,9 +35,6 @@ function Layout(PageComponent: any) {
                             <a className="hover-underline-animation" href="/TIL">
                                 til
                             </a>
-                            <a className="hover-underline-animation" href="/uses">
-                                uses
-                            </a>
                             <a className="" href="/rss/feed.xml" target="_blank">
                                 <BiRss />
                             </a>

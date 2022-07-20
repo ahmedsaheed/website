@@ -6,6 +6,8 @@ import { getContentBySlug, getAllContent } from "../../lib/api"
 const readingTime = require("reading-time")
 import Head from "next/head"
 import { BrainEntry } from "../../lib/api"
+import { format } from "date-fns"
+
 
 function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
     return (
@@ -27,46 +29,45 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                 <title>Second Brain | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <body>
-                <header className="rambles vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
-                    <h1 className="horizontal_dotted_line text-3xl font-bold">
-                        Ahmed's Rambles: A collection of interwoven ideas
-                    </h1>
+            
+                <header className="pads mx-auto max-w-3xl space-y-5">
+                <h1 className="text-3xl font-am horizontal_line ">Entries</h1>
 
-                    {brainEntries.map((brainEntry) => (
+                
+
+                {brainEntries.map((brainEntry) => (
                         <>
                             <Link
                                 key={brainEntry.slug}
                                 href="/second-brain/[slug]"
                                 as={`${brainEntry.slug.toLowerCase()}`}
                             >
-                                <a className="c-lhitIg">
-                                    <h3 style={{ fontFamily: "stylish", fontSize: "bold" }}>
+                                <a className="horizontal_line px-10 c-lhitIg">
+                                    <p style={{ fontFamily: "stylish", fontSize: "bold" }}>
                                         {brainEntry.title}
-                                    </h3>
-                                    <p>
-                                        {brainEntry.description.charAt(0).toUpperCase() +
-                                            brainEntry.description.slice(1)}
+
+                                    <span>
+                                    <em style={{float: "right"}}>
+                                    {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
+                                    </em>
+                                    </span>
                                     </p>
-                                    <div className="horizontal_line flex flex-wrap  ">
-                                        <p>{readingTime(brainEntry.content).words + " words • "}</p>
-                                        <p>
-                                            &nbsp;
-                                            {readingTime(brainEntry.content).minutes < 1
-                                                ? 1
-                                                : readingTime(brainEntry.content)
-                                                      .minutes.toString()
-                                                      .substring(0, 3)}
-                                            &nbsp; min read.
-                                        </p>
-                                    </div>
+                                    
+                                    
+                                    
                                 </a>
                             </Link>
                         </>
                     ))}
+
+          
+
+                    
+                    
                 </header>
-            </body>
+                <br></br><br></br><br></br>
         </>
+        
     )
 }
 
