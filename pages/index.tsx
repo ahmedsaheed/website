@@ -5,6 +5,7 @@ import { greeting } from "../component/greetings"
 import Head from "next/head"
 import Location from "../component/getLocation"
 import Theme from "../component/theme"
+import { BsArrowUpRight } from "react-icons/bs"
 
 export const date = new Date()
 export default function Home() {
@@ -40,13 +41,6 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <p>
-                        <h3>
-                            <a href="/second-brain"> Digital garden</a> •{" "}
-                            <a href="/second-brain/entries">Rambles</a> •{" "}
-                            <a href="/books"> Books</a> • <a href="/TIL"> TIL</a>
-                        </h3>
-                    </p>
 
                     <article>
                     
@@ -55,7 +49,7 @@ export default function Home() {
                             all the way from <Location />. I’m Ahmed by name! I enjoy building on the web, wandering the web and tinkering with things I
                             find meaningful to me.
                         </p>
-                        <section className="scrollport">
+                        <section className="third scrollport">
                             <div>
                                 <div style={{ padding: "12px" }}>
                                     <h3>Thoughts</h3>
@@ -126,17 +120,15 @@ export default function Home() {
                                                     basics-variant="text"
                                                     basics-link=""
                                                     href="/second-brain"
-                                                    rel="noopener"
-                                                    target="_blank"
+                                                    
+                                                    
                                                 >
-                                                    My Thoughts
+                                                    My Thoughts <BsArrowUpRight style={{color: "var(--text-color)", display: "inline"}}/>
+
                                                 </a>
+
                                             </span>
-                                            <span
-                                                basics-variant="inline"
-                                                aria-hidden="true"
-                                                basics-spacer=""
-                                            ></span>
+                                            
                                             <span
                                                 craft-icon=""
                                                 data-icon="arrow-up-right"
@@ -225,7 +217,7 @@ export default function Home() {
                                                     rel="noopener"
                                                     target="_blank"
                                                 >
-                                                    All Projects
+                                                    All Projects <BsArrowUpRight style={{color: "var(--text-color)", display: "inline"}}/>
                                                 </a>
                                             </span>
                                             <span
@@ -308,7 +300,7 @@ export default function Home() {
                                             ></span>
                                         </div>
                                         <span basics-color="dim" basics-text="">
-                                        Suspense comes from the layers of trauma and grief
+                                        Suspense from layers of trauma and grief
                                         </span>
                                     </div>
                                     <div style={{ minHeight: "84px" }}>
@@ -321,7 +313,7 @@ export default function Home() {
                                                     rel="noopener"
                                                     target="_blank"
                                                 >
-                                                    My Libary
+                                                    My Libary <BsArrowUpRight style={{color: "var(--text-color)", display: "inline"}}/>
                                                 </a>
                                             </span>
                                             <span

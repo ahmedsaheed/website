@@ -10,15 +10,6 @@ import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 
 const markdown = `
-## Table of Contents
-1. [Qurancli](#qurancli)
-2. [Donation Hub](#)
-3. [Boomerang](#)  
-4. [Second Brain](#)
-5. [Sassy Chatbot](#)
-6. [Library Box](#)
-7. [Flight Stats](#)
-
 
 Here is a collection of notable projects that I've worked on and or currently tinkering. Some turned out successfully, while others *meh*.
 
@@ -100,7 +91,7 @@ function projects() {
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="../styles/blog.css" rel="stylesheet" />
-                <title>Projects 🚧 | Ahmed Saheed</title>
+                <title>Projects | Ahmed Saheed</title>
                 <link href="../styles/hovers.css" rel="stylesheet" />
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>

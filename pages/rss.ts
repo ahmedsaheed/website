@@ -9,17 +9,17 @@ const fs = require("fs")
 function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
     const date = new Date()
     const feed = new Feed({
-        title: "Saheed's TIL",
+        title: "Saheed's Second Brain",
         description: "Ahmed Saheed's Encyclopedia | Second Brain",
-        id: "https://saheed.codes/TIL",
-        link: "https://saheed.codes/TIL",
+        id: "https://saheed.codes/",
+        link: "https://saheed.codes/",
         language: "en",
         copyright: `© Ahmed Saheed ${date.getFullYear()}`,
         updated: date,
         generator: "Feed",
         feedLinks: {
-            json: "https://www.saheed.codes/til/",
-            atom: "https://www.saheed.codes/til/",
+            json: "https://www.saheed.codes/",
+            atom: "https://www.saheed.codes/",
         },
         author: {
             name: "Ahmed Saheed",
@@ -30,15 +30,15 @@ function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
     brainEntries?.forEach((post) => {
         feed.addItem({
             title: post.title,
-            id: `https://saheed.codes/${post.slug}`,
-            link: `https://saheed.codes/${post.slug}`,
+            id: `https://saheed.codes/second-brain/${post.slug}`,
+            link: `https://saheed.codes/second-brain/${post.slug}`,
             description: post.description,
             content: post.content,
             author: [
                 {
                     name: "Ahmed Saheed",
                     email: "ahmedsaheed2@outlook.com",
-                    link: "https://saheed.codes/TIL",
+                    link: "https://saheed.codes/",
                 },
             ],
             date: new Date(post.date),
@@ -53,7 +53,7 @@ function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
         link: "https://saheed.codes/til",
     })
 
-    //console.log(feed.rss2())
+    console.log(feed.rss2())
     // fs.mkdir('./public/rss', { recursive: true });
     // fs.writeFile('./public/rss/feed.xml', feed.rss2());
     // fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
