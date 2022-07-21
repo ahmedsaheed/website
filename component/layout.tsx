@@ -12,13 +12,14 @@ function Layout(PageComponent: any) {
                     <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
 
-                <div className="">
+                <div>
                     <nav className="nav mx-auto max-w-3xl space-y-5">
-                        <div className="">
+                        <div>
                             <a className="cd hover-underline-animation" href="/">
                                 cd ..
                             </a>
                         </div>
+                        <div className="space"></div>
                         <div className="right">
                             <a className="hover-underline-animation" href="/second-brain">
                                 garden
@@ -35,10 +36,10 @@ function Layout(PageComponent: any) {
                             <a className="hover-underline-animation" href="/TIL">
                                 til
                             </a>
-                            <a className="" href="/rss/feed.xml" target="_blank">
+                            <a className="navButton" href="/rss/feed.xml" target="_blank">
                                 <BiRss />
                             </a>
-                            <a className="">
+                            <a className="navButton">
                                 <Theme />
                             </a>
                         </div>
