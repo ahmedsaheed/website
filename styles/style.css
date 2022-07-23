@@ -17,7 +17,7 @@
 html *,
 html *:after,
 html *:before {
-    /* box-sizing: inherit; */
+    box-sizing: inherit; 
 }
 
 [data-theme="light"] {
