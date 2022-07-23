@@ -492,12 +492,13 @@ a {
     grid-auto-flow: column; */
     flex-direction: row;
     display: flex;
-    gap: 1.2rem;
-    margin-left: 1.2rem;
+    gap: 1rem;
+    margin-left: 1rem;
 }
 @media screen and (max-width: 768px) {
     .nav .right {
         gap: 0.5rem;
+        margin-left: 0.4rem
     }
 }
 .nav button svg {
