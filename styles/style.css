@@ -135,7 +135,7 @@ code {
 p {
     margin-bottom: 1.6rem;
     font-size: 1rem;
-    color: #bbbbbb;
+    color: var(--text-color);
 }
 
 header,
@@ -579,4 +579,7 @@ sup a {
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.ded{
+    color: #bbbbbb;
 }
