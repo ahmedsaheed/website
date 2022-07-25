@@ -17,9 +17,9 @@ const mode = () => {
         <div>
             <button onClick={toggleDarkMode}>
                 {theme === "light" ? (
-                    <WiDaySunny style={{ color: "black" }} />
+                    <WiDaySunny style={{ color: "var(--text-color)" }} />
                 ) : (
-                    <MdOutlineDarkMode style={{ color: "white" }} />
+                    <MdOutlineDarkMode style={{ color: "var(--text-color)" }} />
                 )}
             </button>
         </div>
