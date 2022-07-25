@@ -19,7 +19,7 @@ const Dropdown = ({ title, content }) => {
 
     return (
         <div ref={parent}>
-            <p className="pad dropdown-label" onClick={reveal}>
+            <p className="pad ded dropdown-label" onClick={reveal}>
                 {title}
             </p>
             {show && (
