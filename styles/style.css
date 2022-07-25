@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap");
 @import "https://unpkg.com/open-props";
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root {
     --color-default: #f5f2e9;
@@ -45,7 +45,7 @@ h3 {
     font-family: "Stylish";
 }
 html body {
-    font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
+    font-family: 100%/1.5 "Lato", system-ui, helvetica, sans-serif;
     color: var(--text-color);
     min-height: 100%;
     width: 100%;
@@ -80,7 +80,7 @@ html body {
   }
 
   .scrollport span {
-    font-family: "Spectral" ;
+    font-family: "Lato", sans-serif ;
   }
   
 hr {
@@ -205,7 +205,7 @@ footer {
 .grey-text a {
     text-decoration: none;
     color: rgb(120 113 108/1);
-    font-family: "Spectral";
+    font-family: "Lato", sans-serif;
     background-color: transparent;
 }
 blockquote {
@@ -236,7 +236,7 @@ h1 {
     color: var(--name);
 }
 p {
-    font-family: "Spectral", "ui-serif";
+    font-family: "Lato", sans-serif;
     color: var(--p-color);
     line-height: 1.5em;
 }
@@ -298,7 +298,7 @@ p {
     border-radius: inherit;
 }
 .content__inner {
-    font-family: "Spectral", sans-serif;
+    font-family: "Lato", sans-serif;
     display: none;
     background: #f9d877;
     border-radius: inherit;
@@ -515,7 +515,7 @@ h2 {
 
 .aaa {
     text-decoration: underline;
-    font-family: "Spectral";
+    font-family: "Lato";
 }
 
 .prose {
