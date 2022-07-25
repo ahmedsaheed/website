@@ -236,7 +236,7 @@ h1 {
 }
 p {
     font-family: "Spectral", sans-serif;
-    color: var(--p-color);
+    color: var(--text-color);
     line-height: 1.5em;
 }
 
