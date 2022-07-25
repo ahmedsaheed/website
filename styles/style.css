@@ -26,7 +26,7 @@ html *:before {
     --bi: #f2e9e1;
     --a-color: #284b63;
     --name: var(--text-color);
-    --p-color: #3a333d;
+    --p-color: #bbbbbb;
     --italics: "Newsreader";
 }
 [data-theme="dark"] {
