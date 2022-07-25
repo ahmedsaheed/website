@@ -17,7 +17,7 @@ This gardens focus not on being a definite source of truth, but rather a source 
 Throughout the world there are many different gardens that people have
 designed. In a Japanese garden, every tree is perfectly pruned, without a
 leaf out of place. Nothing is planted without forethought as to the exact
-place appropriate to it.There are English gardens that are famous for their
+place appropriate to it. There are English gardens that are famous for their
 roses and perfect lines of shrubbery. The number of garden types are too
 numerous to mention. One thing is true of all gardens. It is joint creation
 between man's intention to create a space of tranquility and nature's
