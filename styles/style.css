@@ -469,12 +469,9 @@ a {
 .movedrown {
     margin-top: -2rem;
 }
-.page-summary:hover {
-    color: white;
-}
+
 .page-summary p {
     font-family: "Stylish", sans-serif;
-    color: #bbbbbb;
 }
 .nav {
     padding: 2rem;
