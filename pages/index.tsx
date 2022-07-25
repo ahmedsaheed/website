@@ -60,8 +60,7 @@ export default function Home() {
                                                     basics-variant="text"
                                                     basics-link=""
                                                     href="/second-brain/react-theming"
-                                                    rel="noopener"
-                                                    target="_blank"
+                                        
                                                 >
                                                     Themes in NextJs
                                                 </a>
@@ -90,8 +89,7 @@ export default function Home() {
                                                     basics-variant="text"
                                                     basics-link=""
                                                     href="/second-brain/cities-ambition"
-                                                    rel="noopener"
-                                                    target="_blank"
+                                            
                                                 >
                                                     Cities
                                                 </a>
@@ -214,8 +212,7 @@ export default function Home() {
                                                     basics-variant="text"
                                                     basics-link=""
                                                     href="/projects"
-                                                    rel="noopener"
-                                                    target="_blank"
+                                                   
                                                 >
                                                     All Projects <BsArrowUpRight style={{color: "var(--text-color)", display: "inline"}}/>
                                                 </a>
@@ -310,8 +307,7 @@ export default function Home() {
                                                     basics-variant="text"
                                                     basics-link=""
                                                     href="/books"
-                                                    rel="noopener"
-                                                    target="_blank"
+                                                 
                                                 >
                                                     My Libary <BsArrowUpRight style={{color: "var(--text-color)", display: "inline"}}/>
                                                 </a>
