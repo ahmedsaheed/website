@@ -48,7 +48,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
 
                                     <span>
                                     <span style={{float: "right"}}>
-                                    {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
+                                    {format(new Date(brainEntry.date), "MMM do, y")} 
                                     </span>
                                     </span>
                                     </p>
