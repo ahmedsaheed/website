@@ -578,11 +578,3 @@ sup a {
 .inline {
     display: inline;
 }
-@media screen and (max-width: 768px) {
-    .post-title {
-        text-align: center;
-    }
-    .post-date {
-        text-align: center;
-    }
-}
