@@ -117,7 +117,7 @@ export default function Home() {
                                                 <a
                                                     basics-variant="text"
                                                     basics-link=""
-                                                    href="/second-brain"
+                                                    href="/second-brain/entries"
                                                     
                                                     
                                                 >
