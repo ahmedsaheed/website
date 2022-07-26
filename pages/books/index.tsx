@@ -42,7 +42,7 @@ function books() {
                 }
             />
             <br />
-            <Book />
+            <Book className="bookpad" />
             <br />
         </>
     )
