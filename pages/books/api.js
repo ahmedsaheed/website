@@ -22,7 +22,7 @@ class Book extends Component {
 
     render() {
         return (
-            <div className="mx-auto max-w-3xl space-y-5">
+            <div className="bookpad mx-auto max-w-3xl space-y-5">
                 <BookList books={this.state.books} />
             </div>
         )
