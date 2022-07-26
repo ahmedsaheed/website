@@ -249,7 +249,7 @@ p {
 .grid-item {
     border: 1px solid var(--text-color);
     border-style: dotted;
-    padding: 20px;
+    padding: 10px;
     font-size: 10px;
     text-align: center;
 }
