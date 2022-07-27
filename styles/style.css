@@ -476,7 +476,7 @@ a {
 .nav {
     padding: 2rem;
     width: 100%;
-    display: inline-grid;;
+    display: grid;
     grid-template-columns: auto max-content;
     box-sizing: border-box;
     color: var(--text-color);
@@ -485,6 +485,7 @@ a {
 .nav .right {
     flex-direction: row;
     display: flex;
+    float: right;
 }
 .Navspace{
     flex: auto
