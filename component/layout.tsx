@@ -18,7 +18,9 @@ function Layout(PageComponent: any) {
                             <a className="cd hover-underline-animation" href="/">
                                 cd ..
                             </a>
+                            <div className="Navspace"></div>
                         </div>
+                      
                         <div className="right">
                             <a className="hover-underline-animation" href="/second-brain">
                                 garden

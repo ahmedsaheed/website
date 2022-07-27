@@ -486,6 +486,9 @@ a {
     flex-direction: row;
     display: flex;
 }
+.Navspace{
+    flex: auto
+}
 
 .nav .right a{
     margin-left: 1.2rem;
