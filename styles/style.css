@@ -485,11 +485,13 @@ a {
 .nav .right {
     flex-direction: row;
     display: flex;
-    gap: 1rem;
-    margin-left: 1rem;
+}
+
+.nav .right a{
+    margin-left: 1.2rem;
 }
 @media screen and (max-width: 768px) {
-    .nav .right {
+    .nav .right a {
         gap: 0.5rem;
         margin-left: 0.4rem
     }
