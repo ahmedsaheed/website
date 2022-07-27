@@ -476,7 +476,7 @@ a {
 .nav {
     padding: 2rem;
     width: 100%;
-    display: grid;
+    display: inline-grid;;
     grid-template-columns: auto max-content;
     box-sizing: border-box;
     color: var(--text-color);
