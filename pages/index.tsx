@@ -37,7 +37,7 @@ export default function Home() {
                             </a>{" "}
                         </h2>
                         <p className="text-stone-500">
-                            <em>{greeting()}</em> Hope you're having a great {currentDayName()}
+                            <em style={{fontSize: "16px"}}>{greeting()}</em> Hope you're having a great {currentDayName()}
                         </p>
                     </div>
 
