@@ -15,13 +15,13 @@ const mode = () => {
 
     return (
         <div>
-            <button onClick={toggleDarkMode}>
+            <a onClick={toggleDarkMode}>
                 {theme === "light" ? (
                     <WiDaySunny style={{ color: "var(--text-color)" }} />
                 ) : (
                     <MdOutlineDarkMode style={{ color: "var(--text-color)" }} />
                 )}
-            </button>
+            </a>
         </div>
     )
 }
