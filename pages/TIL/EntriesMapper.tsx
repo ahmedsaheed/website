@@ -7,10 +7,11 @@ import "katex/dist/katex.min.css"
 import remarkGfm from "remark-gfm"
 import Dropdown from "../../component/dropDownAnimation"
 import { format } from "date-fns"
+import Loader from "../../component/loader"
 
 const MainDiary = (props: any) => {
     if (!props) {
-        return null
+        return (<Loader/>)
     }
     return (
         <div>

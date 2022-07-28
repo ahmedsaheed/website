@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import BookCard from "./BookComponent"
+import Loader from "../../component/loader"
 const BookList = (props: any) => {
     if (!props) {
-        return null
+        return (<Loader/>)
     }
     return (
         <div>
