@@ -308,36 +308,10 @@ p {
     font-size: 1.4vw;
 }
 
-.iframe-link iframe {
-    display: none;
-}
-.iframe-link:hover iframe {
-    -webkit-animation: slow 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: slow 2s; /* Firefox < 16 */
-    -ms-animation: slow 2s; /* Internet Explorer */
-    -o-animation: slow 2s; /* Opera < 12.1 */
-    animation: slow 2s;
-    display: block;
-    /* opacity: 1; */
-}
 
-@keyframes slow {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-.second {
-    -webkit-animation: slow 3s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: slow 3s; /* Firefox < 16 */
-    -ms-animation: slow 3s; /* Internet Explorer */
-    -o-animation: slow 3s; /* Opera < 12.1 */
-    animation: slow 3s;
-    display: block;
-}
+
+
 
 .third {
     animation-name: animateIn;
@@ -615,7 +589,7 @@ sup a {
 .project hr{
     padding: 0.5px;
 }
-/*
+
 .spinner {
     margin: 100px auto 0;
     width: 70px;
@@ -655,4 +629,4 @@ sup a {
       -webkit-transform: scale(1.0);
       transform: scale(1.0);
     }
-  }*/
+  }
