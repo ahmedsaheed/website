@@ -32,7 +32,7 @@ export default function Home() {
                         <br></br>
                         <h2 className="name third text-stone-100 font-hammersmith mb-4">
                             Ahmed Saheed
-                            <a className="moveRight">
+                            <a className="moveRight" style={{display: "inline"}}>
                                 <Theme />
                             </a>{" "}
                         </h2>
