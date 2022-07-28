@@ -31,7 +31,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
             </Head>
             
                 <header className="pads mx-auto max-w-3xl space-y-5">
-                <h1 className="text-3xl font-am horizontal_line ">Entries</h1>
+                <h1 className="text-3xl font-am px-10 "></h1>
 
                 
 
@@ -65,7 +65,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     
                     
                 </header>
-                <br></br><br></br><br></br>
+                <br></br><br></br>
         </>
         
     )

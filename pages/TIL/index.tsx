@@ -26,7 +26,7 @@ function til() {
             </Head>
             <header className="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
                 <h1 className="horizontal_dotted_line text-3xl font-bold">
-                    Ahmed's Encyclopedia: Today I learnt
+                   Today I learnt
                 </h1>
 
                 <p className=" mx-auto max-w-3xl space-y-5">

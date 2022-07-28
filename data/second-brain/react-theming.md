@@ -4,9 +4,9 @@ description: "Theming isn't that tricky!"
 date: "2022-06-02T00:00:00"
 ---
 
-Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature feature.
+Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature.
 
-Stating the above, i have decided to write this brief note on react theming.
+I have decided to write this brief note on next js and react theming.
 
 There are many ways to implement theming in react, but I have decided to explain two only.
 

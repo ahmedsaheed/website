@@ -9,7 +9,7 @@
     --bi: #f2e9e1;
     --a-color: #284b63;
     --name: var(--text-color);
-    --p-color: #3a333d;
+    --p-color: #bbbbbb;
     --italics: "Newsreader";
 }
 
@@ -436,14 +436,7 @@ a {
     margin: 0;
 }
 
-.project ol {
-    padding: 0;
-    margin: 2em;
-}
 @media (max-width: 768px) {
-    .text-3xl {
-        text-align: center;
-    }
     .vertical_dotted_line {
         border: none;
     }
@@ -595,4 +588,29 @@ sup a {
 }
 .bookpad{
     padding: 1rem;
+}
+
+.project h2{
+    display: block;
+    font-size: 1.35em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-weight: bold;
+
+}
+
+.project p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    display: inline-block;
+
+}
+
+.project img{
+    display: inline-block;
+    margin: 5px;
+}
+.project hr{
+    padding: 0.5px;
 }

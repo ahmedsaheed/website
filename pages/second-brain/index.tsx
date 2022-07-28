@@ -69,8 +69,8 @@ function secondBrain() {
             </Head>
 
             <header className=" pads mx-auto max-w-3xl space-y-5">
-                <h1 className="horizontal_dotted_line text-3xl font-bold">
-                    Ahmed's Second Brain: A Personal Digital Garden 🪴
+                <h1 className="horizontal_dotted_line text-3xl font-bold" style={{textAlign: "left"}}>
+                    A Personal Digital Garden
                 </h1>
                 <ReactMarkdown
                     children={markdown}

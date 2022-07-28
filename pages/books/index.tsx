@@ -26,7 +26,7 @@ function books() {
                 <title>Books 📚 | Ahmed Saheed</title>
             </Head>
             <Summary
-                title="Books 📚"
+                title="Books" 
                 content={
                     <>
                         In science fiction which was published around the 1920s, "It is always
