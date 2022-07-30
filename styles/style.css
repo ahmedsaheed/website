@@ -54,7 +54,7 @@ html body {
     background-size: cover;
 }
 .cd {
-    margin-top: 38px;
+    margin-top: 23px;
 }
 
 .moveRight {
@@ -172,9 +172,7 @@ footer {
     border-left: 1px dotted var(--text-color);
 }
 
-.horizontal_dotted_line {
-    border-bottom: 1px dotted var(--text-color);
-}
+
 .horizontal_line {
     content: " ";
     display: block;
