@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&family=Yomogi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap");
 @import "https://unpkg.com/open-props";
 
@@ -68,12 +68,10 @@ html body {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    /* padding-top: 1rem; */
-    padding-bottom: 1rem;
   }
   
   .scrollport > div {
-    width: 192px;
+    width: 188px;
     height:350px;
     background-color: transparent;
     aspect-ratio: var(--ratio-square);
@@ -115,7 +113,7 @@ em {
 .name {
     font-family: "Stylish", sans-serif;
     color: var(--name);
-    font-size: 1.8em;
+
 }
 code {
     background-color: rgba(143, 159, 169, 0.15);
