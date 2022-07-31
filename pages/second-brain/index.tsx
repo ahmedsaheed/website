@@ -54,7 +54,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             <Link
                                 key={brainEntry.slug}
                                 href="/second-brain/[slug]"
-                                as={`${brainEntry.slug.toLowerCase()}`}
+                                as={`/second-brain/${brainEntry.slug.toLowerCase()}`}
                             >
                                 <a className="horizontal_line px-10 c-lhitIg">
                                     <p style={{ fontFamily: "stylish", fontSize: "bold" }}>

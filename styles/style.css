@@ -529,12 +529,9 @@ sup a {
 }
 
 .post-title {
-    font-size: 30px;
-    line-height: 1.4em;
-}
-.post-title h1 p {
-    color: (--text-color);
-    font-family: "Stylish";
+    font-size: 25px;
+    color: var(--name);
+    font-family: "Hammersmith One";
 }
 .title {
     font-family: "Stylish";

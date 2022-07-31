@@ -53,8 +53,8 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
 
                 <header>
                     <div className=" mx-auto max-w-3xl px-10 ">
-                        <h1 className="post-title">{brainEntry.title}</h1>
-                        <p className=" horizontal_dotted_line post-date">
+                        <h2 className="post-title">{brainEntry.title}</h2>
+                        <p className="post-date">
                             {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
                             {readingTime(brainEntry.content).minutes < 1
                                 ? 1
@@ -73,7 +73,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         <div className="mx-auto max-w-3xl p-10">
                             {" "}
                             <hr />
-                            <div className="pads">
+                            <div className="">
                                 <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
                                 <div className="">
                                     {brainEntry.backlinks.map((backlink) => (
