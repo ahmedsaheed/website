@@ -52,7 +52,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 </Head>
 
                 <header>
-                    <div className=" mx-auto max-w-3xl p-10 ">
+                    <div className=" mx-auto max-w-3xl px-10 ">
                         <h1 className="post-title">{brainEntry.title}</h1>
                         <p className=" horizontal_dotted_line post-date">
                             {format(new Date(brainEntry.date), "MMM do, y")} |{" "}

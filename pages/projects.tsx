@@ -141,7 +141,7 @@ function projects() {
             QuranCLI
           </h3>
 
-          <em className="font-fanwood italic text-lg">live</em>
+          <em className="font-fanwood italic ">live</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
@@ -153,7 +153,7 @@ function projects() {
           My Neovim!
           </h3>
 
-          <em className="font-fanwood italic text-lg">live</em>
+          <em className="font-fanwood italic ">live</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
@@ -165,7 +165,7 @@ function projects() {
           My Second Brain
           </h3>
 
-          <em className="font-fanwood italic text-lg">live</em>
+          <em className="font-fanwood italic ">live</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
@@ -182,7 +182,7 @@ function projects() {
           Donation Hub
           </h3>
 
-          <em className="font-fanwood italic text-lg">dead</em>
+          <em className="font-fanwood italic ">dead</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
@@ -194,7 +194,7 @@ function projects() {
           Sassy Chatbot
           </h3>
 
-          <em className="font-fanwood italic text-lg">dead</em>
+          <em className="font-fanwood italic ">dead</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
@@ -205,7 +205,7 @@ function projects() {
           Boomerang
           </h3>
 
-          <em className="font-fanwood italic text-lg">dead</em>
+          <em className="font-fanwood italic ">dead</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
@@ -223,7 +223,7 @@ function projects() {
           Libary Box
           </h3>
 
-          <em className="font-fanwood italic text-lg">wip</em>
+          <em className="font-fanwood italic ">wip</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
@@ -235,7 +235,7 @@ function projects() {
           Flight Stat
           </h3>
 
-          <em className="font-fanwood italic text-lg">wip</em>
+          <em className="font-fanwood italic ">wip</em>
         </div>
 
         <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">

@@ -209,6 +209,9 @@ footer {
 blockquote {
     border-left: 2.8px solid var(--a-color);
     padding-left: 0.7em;
+
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 BiRss {
     color: var(--text-color);
@@ -632,4 +635,8 @@ sup a {
     content: "";
     display: block;
     border-bottom: 1px solid var(--text-color);
+}
+li, ul{
+    font-family: "Spectral";
+    list-style: circle;
 }
