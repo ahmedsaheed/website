@@ -628,3 +628,9 @@ sup a {
       transform: scale(1.0);
     }
   }
+
+  .liner:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--text-color);
+}

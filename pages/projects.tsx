@@ -118,16 +118,137 @@ function projects() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
 
-            <header className="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
-                <h1 className="horizontal_dotted_line text-3xl font-bold " style={{textAlign: "left"}}>
-                    A Curation of Personal Projects
-                </h1>
-                <ReactMarkdown
-                    className="project"
-                    children={markdown}
-                    remarkPlugins={[remarkMath, remarkGfm]}
-                    rehypePlugins={[rehypeKatex]}
-                />
+            <header className=" mx-auto max-w-3xl space-y-5">
+            <Summary
+                title="Projects" 
+                content={
+                    <>
+                        In science fiction which was published around the 1920s, "It is always
+                        expected that future human beings would have enormous heads because they
+                        would have very big brains and they would be very wise. It didn't work that
+                        ways, what happened is the human race is building a brain outside its body.
+                        That is to say an interlocking electronic network of telephonic, television,
+                        radionic communication which is rapidly intelocked with computers, so that
+                        you will within a few years be able to plug your brain into a computer".{" "}
+                        <br /> These are all the books i've currently read, this list is updated
+                        dynamically whenever I complete a new book. Kinda my virtual shelf...
+                        
+                    </>
+                }
+            />
+
+            <section className= "px-10 bookpad">
+            <p className=" liner " style={{fontSize: "14px"}}> Here are some tangible onces </p>
+            <div className="space-y-8">
+            <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+            QuranCLI
+          </h3>
+
+          <em className="font-fanwood italic text-lg">live</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        A command line app to Read, Search and Recite the Quran from your terminal.
+        </div>
+
+        <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+          My Neovim!
+          </h3>
+
+          <em className="font-fanwood italic text-lg">live</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        A Zen like neovim configuration
+        </div>
+
+        <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+          My Second Brain
+          </h3>
+
+          <em className="font-fanwood italic text-lg">live</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        A place where i store ideas in an interwoven manner.
+        </div>
+          </div>
+
+            </section>
+            <section className= "px-10 bookpad">
+            <p className=" liner " style={{fontSize: "14px"}}> It once meant alot </p>
+            <div className="space-y-8">
+            <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+          Donation Hub
+          </h3>
+
+          <em className="font-fanwood italic text-lg">dead</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        A bay which harbours a bunch of donation bodies.
+        </div>
+
+        <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+          Sassy Chatbot
+          </h3>
+
+          <em className="font-fanwood italic text-lg">dead</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        Reinventing Amazon Alexa with poor algorithms.
+        </div>
+        <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+          Boomerang
+          </h3>
+
+          <em className="font-fanwood italic text-lg">dead</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        A daycare service where kids keep returining
+        </div>
+
+        
+          </div>
+            </section>
+            <section className= "px-10 bookpad">
+            <p className=" liner " style={{fontSize: "14px"}}> Those quick hack due to boredom </p>
+            <div className="space-y-8">
+            <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+          Libary Box
+          </h3>
+
+          <em className="font-fanwood italic text-lg">wip</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        Let them know whats on your shelf
+        </div>
+
+        <div className="flex justify-between items-center">
+          <h3 style={{fontFamily: "14px"}}className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300">
+          Flight Stat
+          </h3>
+
+          <em className="font-fanwood italic text-lg">wip</em>
+        </div>
+
+        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
+        Where's my flight?
+        </div>
+
+          </div>
+            </section>
+                
             </header>
         </>
     )
