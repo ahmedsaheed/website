@@ -3,6 +3,7 @@ import Dairy from "./api"
 import { NextSeo } from "next-seo"
 import Head from "next/head"
 import Layout from "../../component/layout"
+import Summary from "../../component/summary"
 
 function til() {
     return (
@@ -24,13 +25,12 @@ function til() {
                 <title>TIL | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <header className="vertical_dotted_line pads mx-auto max-w-3xl space-y-5">
-                <h1 className="horizontal_dotted_line text-3xl font-bold">
-                   Today I learnt
-                </h1>
-
-                <p className=" mx-auto max-w-3xl space-y-5">
-                    A catalog of referenceable notes documented at least thrice a week. I initially
+            <header className="mx-auto max-w-3xl space-y-5">
+            <Summary
+                title="Today I Learnt" 
+                content={
+                    <>
+                        A catalog of referenceable notes documented at least thrice a week. I initially
                     heard about TIL from{" "}
                     <a target="_blank" href="https://aboutmonica.com/">
                         Monica Powell's
@@ -46,7 +46,12 @@ function til() {
                     which helps me add my til as a gist comment on GitHub. In the nearest future, I
                     would like to create a search utility for this website which would help search
                     through the contents of my til as they increase.
-                </p>
+                
+                        
+                    </>
+                }
+            />
+
                 <br />
                 <Dairy />
             </header>

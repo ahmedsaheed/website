@@ -166,16 +166,7 @@ footer {
     justify-content: space-between;
     transition: background 0.3s;
 }
-.vertical_dotted_line {
-    border-left: 1px dotted var(--text-color);
-}
 
-
-.horizontal_line {
-    content: " ";
-    display: block;
-    border-bottom: 0.5px solid var(--text-color);
-}
 .header,
 .header-area {
     height: var(--header-height);
