@@ -51,8 +51,8 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     ></script>
                 </Head>
 
-                <header className=" vertical_dotted_line mx-auto max-w-3xl space-y-5">
-                    <div className="padds">
+                <header>
+                    <div className=" mx-auto max-w-3xl p-10 ">
                         <h1 className="post-title">{brainEntry.title}</h1>
                         <p className=" horizontal_dotted_line post-date">
                             {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
@@ -65,12 +65,12 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         </p>
                     </div>
                     <article
-                        className="prose"
+                        className="prose mx-auto max-w-3xl p-10"
                         dangerouslySetInnerHTML={{ __html: brainEntry.content }}
                     />
 
                     {!!brainEntry.backlinks.length && (
-                        <div>
+                        <div className="mx-auto max-w-3xl p-10">
                             {" "}
                             <hr />
                             <div className="pads">

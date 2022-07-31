@@ -12,7 +12,7 @@ function Layout(PageComponent: any) {
                     <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
 
-                <div className="">
+                <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
                     <nav className="nav mx-auto max-w-3xl space-y-5">
                         <div className="">
                             <a className="cd hover-underline-animation" href="/">
@@ -45,7 +45,7 @@ function Layout(PageComponent: any) {
                             </a>
                         </div>
                     </nav>
-                    <main>
+                    <main className="mt-12">
                         <PageComponent {...pageProps} />
                     </main>
                     <div className="pt-10 grey-text cent ">
