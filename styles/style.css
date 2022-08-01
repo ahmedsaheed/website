@@ -305,12 +305,6 @@ p {
     background-color: none;
 }
 
-
-
-/* .text:hover {
-    color: plum;
-} */
-
 nav a {
     background-color: transparent;
     color: var(--text-color);
