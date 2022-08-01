@@ -61,7 +61,9 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                                 : readingTime(brainEntry.content)
                                       .minutes.toString()
                                       .substring(0, 3)}{" "}
-                            min read
+                            min read |{" "} <Link href={`https://github.com/ahmedsaheed/saheed.codes/tree/main/data/second-brain/${encodeURI(
+                                                brainEntry.slug,
+                                            )}.md`}>Edit Page</Link>
                         </p>
                     </div>
                     <article
