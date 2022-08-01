@@ -78,7 +78,10 @@ function fun() {
                 />
                 <br />
                 <header className="mx-auto max-w-3xl space-y-5">
-                    <div style={{ backgroundColor: "#292a2c"}} className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                    <div
+                        style={{ backgroundColor: "#292a2c" }}
+                        className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+                    >
                         <Dropdown
                             title="1. Bubble Sort"
                             content="https://observablehq.com/embed/f4b54f268f34af5a?cells=viewof+codeblock%2Cintro%2Cdataset%2Cviewof+size%2Cviewof+b"
@@ -87,7 +90,10 @@ function fun() {
                 </header>
                 <br />
                 <header className="mx-auto max-w-3xl space-y-5">
-                    <div style={{ backgroundColor: "#292a2c"}}  className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                    <div
+                        style={{ backgroundColor: "#292a2c" }}
+                        className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+                    >
                         <Dropdown
                             title="2. Selection Sort"
                             content="https://observablehq.com/embed/4423f3941d92eb5d?cells=intro%2Ccode%2Clastly%2Cgraph%2Cviewof+conf%2Cviewof+reset"
@@ -95,8 +101,11 @@ function fun() {
                     </div>
                 </header>
                 <br />
-                <header  className="mx-auto max-w-3xl space-y-5">
-                    <div style={{ backgroundColor: "#292a2c"}}  className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                <header className="mx-auto max-w-3xl space-y-5">
+                    <div
+                        style={{ backgroundColor: "#292a2c" }}
+                        className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+                    >
                         <Dropdown
                             title="3. Insertion Sort"
                             content="https://observablehq.com/embed/2ba0d61c2112721f?cells=code%2Cintro%2Csub%2Cvisual%2Cviewof+size"
@@ -104,15 +113,18 @@ function fun() {
                     </div>
                 </header>
                 <br />
-                <header  className="mx-auto max-w-3xl space-y-5">
-                    <div style={{ backgroundColor: "#292a2c"}} className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                <header className="mx-auto max-w-3xl space-y-5">
+                    <div
+                        style={{ backgroundColor: "#292a2c" }}
+                        className=" page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+                    >
                         <Dropdown
                             title="4. Merge Sort"
                             content="https://observablehq.com/embed/9cfad59162ff2265?cells=code%2Cintro%2Csub%2Cvisual%2Cviewof+s%2Cviewof+b"
                         />
                     </div>
                 </header>
-                <br /> <br /> 
+                <br /> <br />
             </body>
         </>
     )

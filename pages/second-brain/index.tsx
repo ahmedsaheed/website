@@ -9,7 +9,6 @@ import { BrainEntry } from "../../lib/api"
 import { format } from "date-fns"
 import Summary from "../../component/summary"
 
-
 function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
     return (
         <>
@@ -30,26 +29,29 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                 <title>Second Brain | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            
-                <header className="mx-auto max-w-3xl space-y-5">
+
+            <header className="mx-auto max-w-3xl space-y-5">
                 <Summary
-                title="The Garden" 
-                content={
-                    <>
-                        In a digital garden there is joined personal experience and professional activities,
-                        studies under way and studies planned. A second brain would enhance the process of gathering together what you are doing intellectually and what you are experiencing as a person.
-                        Here you will not be afraid to use your experience and relate it directly to various work in progress.
-                        By serving as a check on repetitious work. It also encourages you to capture ‘fringe-thoughts’: various ideas which may be byproducts of everyday life, snatches of conversation overheard in the street, or, for that matter, dreams. Once noted, these may lead to more systematic thinking, as well as lend intellectual relevance to more directed experience.
-
-                        
-                    </>
-                }
-            />
-
-                
+                    title="The Garden"
+                    content={
+                        <>
+                            In a digital garden there is joined personal experience and professional
+                            activities, studies under way and studies planned. A second brain would
+                            enhance the process of gathering together what you are doing
+                            intellectually and what you are experiencing as a person. Here you will
+                            not be afraid to use your experience and relate it directly to various
+                            work in progress. By serving as a check on repetitious work. It also
+                            encourages you to capture ‘fringe-thoughts’: various ideas which may be
+                            byproducts of everyday life, snatches of conversation overheard in the
+                            street, or, for that matter, dreams. Once noted, these may lead to more
+                            systematic thinking, as well as lend intellectual relevance to more
+                            directed experience.
+                        </>
+                    }
+                />
 
                 {brainEntries.map((brainEntry) => (
-                        <>
+                    <>
                         <div className="px-10">
                             <Link
                                 key={brainEntry.slug}
@@ -60,28 +62,21 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                     <p style={{ fontFamily: "stylish", fontSize: "bold" }}>
                                         {brainEntry.title}
 
-                                    <span>
-                                    <span style={{float: "right"}}>
-                                    {format(new Date(brainEntry.date), "MMM do, y")} 
-                                    </span>
-                                    </span>
+                                        <span>
+                                            <span style={{ float: "right" }}>
+                                                {format(new Date(brainEntry.date), "MMM do, y")}
+                                            </span>
+                                        </span>
                                     </p>
-                                    
-                                    
-                                    
                                 </a>
-                            </Link></div>
-                        </>
-                    ))}
-
-          
-
-                    
-                    
-                </header>
-                <br></br><br></br>
+                            </Link>
+                        </div>
+                    </>
+                ))}
+            </header>
+            <br></br>
+            <br></br>
         </>
-        
     )
 }
 

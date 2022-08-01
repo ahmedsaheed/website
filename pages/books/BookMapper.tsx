@@ -3,7 +3,7 @@ import BookCard from "./BookComponent"
 import Loader from "../../component/loader"
 const BookList = (props: any) => {
     if (!props) {
-        return (<Loader/>)
+        return <Loader />
     }
     return (
         <div>
