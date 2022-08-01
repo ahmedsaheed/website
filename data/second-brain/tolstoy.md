@@ -16,13 +16,11 @@ On completion of Leo's two masterpiece **Ana Karenina** and **War and Peace**, h
 
 Leo dominated his thinking until the moment of his death by writings of a Genevan philosopher and political thinker [Jean-Jacques Rousseau](https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau) who belived that human babies are born into natural state of goodness, only to be corrupted by education, inequality and immorality, a process which explains our lapses into bad behaviour.
 
-The wonder is that the best of Leo's published works travels in opposite direction compared to the ideas Rousseau. _War and Peace_ is nothing but an affirmation of life.
+The wonder is that the best of Leo's published works travels in opposite direction compared to the ideas Rousseau. War and Peace is nothing but an affirmation of life.
 
 Sadly, Leo died in 1910 at the age of 82, though the residue of his remarkable literature has long lived till this day which has now gained an unforgettable honor around the world
 
 > “Everyone thinks of changing the world, but no one thinks of changing himself.”
-
-
 
 >  “Respect was invented to cover the empty place where love should be.”
 
