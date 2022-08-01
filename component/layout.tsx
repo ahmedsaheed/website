@@ -37,7 +37,7 @@ function Layout(PageComponent: any) {
                             <a className="hover-underline-animation" href="/TIL">
                                 til
                             </a>
-                            <a className="" href="/rss/feed.xml" target="_blank">
+                            <a style={{color: "var(--text-color)"}} className="" href="/rss/feed.xml" target="_blank">
                                 <BiRss />
                             </a>
                             <a className="">

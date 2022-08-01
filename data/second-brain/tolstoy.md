@@ -9,17 +9,8 @@ Since the beginning of the year 2022, I have found a profund and uplifting exper
 
 To me, Leo is more than an ordinary writer, he is more of a religious thinker, a moral crusader and an inspirational predecessor of pacific protesters like [[Mahatma Ghandi]] .
 
-> Some of my favorite quotes from Leo
 
--   "Respect was invented to cover the empty place where love should be."
-
--   "If you look for perfection, you'll never be content."
-
--   "We lost because we told ourselves we lost."
-
--   "Boredom: the desire for desires."
-
-## Search For Religious Truth And Moral Purity
+### Search For Religious Truth And Moral Purity
 
 On completion of Leo's two masterpiece **Ana Karenina** and **War and Peace**, he spent eventless decades in his home where he became obsessed with a search for religious truth and moral purity, setting unattainable goals of righteousness for himself and his audience.
 
@@ -30,3 +21,13 @@ The wonder is that the best of Leo's published works travels in opposite directi
 Sadly, Leo died in 1910 at the age of 82, though the residue of his remarkable literature has long lived till this day which has now gained an unforgettable honor around the world
 
 > “Everyone thinks of changing the world, but no one thinks of changing himself.”
+
+
+
+>  “Respect was invented to cover the empty place where love should be.”
+
+>  “If you look for perfection, you'll never be content.”
+
+>   “We lost because we told ourselves we lost.”
+
+>   “Boredom: the desire for desires.”

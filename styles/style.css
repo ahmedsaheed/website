@@ -6,7 +6,7 @@
     --color-default: #f5f2e9;
     --text-color: #3a333d;
     --dairy: #333;
-    --bi: #f2e9e1;
+    --bi: hsl(0 0% 99.0%);
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #bbbbbb;
@@ -23,7 +23,7 @@ html *:before {
     --color-default: #f5f2e9;
     --text-color: #3a333d;
     --dairy: #333;
-    --bi: #f2e9e1;
+    --bi: hsl(0 0% 99.0%);;
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #bbbbbb;
@@ -40,9 +40,7 @@ html *:before {
     --p-color: #bbbbbb;
     --italics: "Newsreader";
 }
-h3 {
-    font-family: "Stylish";
-}
+
 html body {
     font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
     color: var(--text-color);
@@ -52,6 +50,9 @@ html body {
     transition: background 0.3s;
     background-attachment: fixed;
     background-size: cover;
+}
+h3 {
+    font-family: "Stylish";
 }
 .cd {
     margin-top: 23px;
@@ -100,9 +101,7 @@ hr:after {
     background: var(--bi);
     transform: translateY(-0.1em);
 }
-.name a {
-    background-color: transparent;
-}
+
 .spacers {
     padding: 2em;
 }
@@ -122,20 +121,6 @@ code {
     color: var(--a-color);
 }
 
-.zero {
-    opacity: 0;
-    font-size: 0;
-}
-
-.til {
-    background-color: #292a2c;
-}
-
-p {
-    margin-bottom: 1.6rem;
-    font-size: 1rem;
-    color: var(--text-color);
-}
 
 header,
 main,
@@ -167,10 +152,6 @@ footer {
     transition: background 0.3s;
 }
 
-.header,
-.header-area {
-    height: var(--header-height);
-}
 .horizontal_line {
     content: " ";
     display: block;
@@ -184,7 +165,6 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;
-    /* margin: 0px -10px -10px -10px; */
     transition: background 500ms ease;
     -webkit-tap-highlight-color: transparent;
     outline: 0;
@@ -194,36 +174,20 @@ footer {
 .c-lhitIg:hover {
     background: rgba(143, 159, 169, 0.15);
 }
-.grey-text a {
-    text-decoration: none;
-    color: rgb(120 113 108/1);
-    font-family: "Spectral", sans-serif;
-    background-color: transparent;
-}
+
 blockquote {
     border-left: 2.8px solid var(--a-color);
     padding-left: 0.7em;
-
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-BiRss {
-    color: var(--text-color);
-}
+
 .menu,
 .menu-item {
     display: flex;
     height: 100%;
 }
-.grey-text a:hover {
-    background-color: rgba(143, 159, 169, 0.15);
-    /* padding: 0 0.1em; */
-    /* margin: auto -0.1em; */
-    border-radius: 3px;
-    border: 5px;
-    color: var(--a-color);
-    text-decoration: none;
-}
+
 
 h1 {
     font-family: "Stylish", "ui-serif";
@@ -271,6 +235,7 @@ p {
 }
 .page code {
     background-color: transparent;
+    color: black;
 }
 
 .content {
@@ -303,11 +268,6 @@ p {
     font-size: 1.4vw;
 }
 
-
-
-
-
-
 .third {
     animation-name: animateIn;
     animation-duration: 2s;
@@ -325,11 +285,6 @@ p {
     }
 }
 
-.third ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
 .pad {
     padding-left: 1rem;
@@ -349,24 +304,12 @@ p {
     text-decoration: none;
     background-color: none;
 }
-.text-am-green-light {
-    text-decoration: none;
-}
 
-.false {
-    text-decoration: none;
-}
-.remove {
-    text-decoration: none;
-}
-.text:hover {
+
+
+/* .text:hover {
     color: plum;
-}
-.here {
-    color: plum;
-    text-decoration: none;
-    background-color: none;
-}
+} */
 
 nav a {
     background-color: transparent;
@@ -404,17 +347,6 @@ a {
 }
 .pad p {
     margin: 0;
-}
-
-@media (max-width: 768px) {
-    .vertical_dotted_line {
-        border: none;
-    }
-}
-
-.project li a {
-    background-color: transparent;
-    color: var(--text-color);
 }
 
 .backlinks {
@@ -471,14 +403,6 @@ h2 {
     font-size: 1.65em;
     font-family: "Stylish", sans-serif;
 }
-.xx {
-    text-decoration: none;
-}
-
-.aaa {
-    text-decoration: underline;
-    font-family: "Spectral";
-}
 
 .prose {
     max-width: fit-content;
@@ -495,9 +419,6 @@ h2 {
 .footnotes a {
     background-color: transparent;
     color: var(--text-color);
-}
-sup a {
-    background-color: transparent;
 }
 
 .hover-underline-animation {
@@ -554,31 +475,6 @@ sup a {
 }
 .bookpad{
     padding: 1rem;
-}
-
-.project h2{
-    display: block;
-    font-size: 1.35em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-weight: bold;
-
-}
-
-.project p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    display: inline-block;
-
-}
-
-.project img{
-    display: inline-block;
-    margin: 5px;
-}
-.project hr{
-    padding: 0.5px;
 }
 
 .spinner {

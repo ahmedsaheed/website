@@ -10,7 +10,7 @@ I have decided to write this brief note on next js and react theming.
 
 There are many ways to implement theming in react, but I have decided to explain two only.
 
-## prerequisite
+### prerequisite
 
 I assert you already have a react environment to work with, if not you can easily create one using:
 
@@ -24,9 +24,9 @@ or
 npx create-react-app my-app
 ```
 
-## Implementing the theming.
+### Implementing the theming.
 
-### First Approaching - using the [next theme libary](https://github.com/pacocoursey/next-themes)
+First Approaching - using the [next theme libary](https://github.com/pacocoursey/next-themes)
 
 You'd need to add the libary to your project:
 
@@ -101,7 +101,7 @@ const mode = () => {
 export default mode
 ```
 
-### Second Approach - Implement the theming yourself.
+Second Approach - Implement the theming yourself.
 
 Before we begin, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
 

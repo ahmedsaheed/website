@@ -22,7 +22,7 @@ const MainDiary = (props: any) => {
                         <>
                             {" "}
                             <header className="mx-auto max-w-3xl space-y-5">
-                                <div className="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
+                                <div style={{ backgroundColor: "#292a2c"}} className="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 ">
                                     <Dropdown
                                         date={format(new Date(entries.created_at), "MMM do, y")}
                                         title={

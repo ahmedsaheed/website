@@ -4,7 +4,7 @@ description: "An essay by Paul Graham which i am obliged keep"
 date: "2022-07-09"
 ---
 
-## An essay by Paul Graham which i am obliged keep
+### An essay by Paul Graham which i am obliged keep
 
 Great cities attract ambitious people. You can sense it when you walk around one. In a hundred subtle ways, the city sends you a message: you could do more; you should try harder.
 
