@@ -36,7 +36,7 @@ html *:before {
     --dairy: #333;
     --bi: hsla(0, 0%, 9%, 1);
     --name: #fff;
-    --a-color: #81e6d9;
+    --a-color: #819fb3 !important;
     --p-color: #bbbbbb;
     --italics: "Newsreader";
 }
