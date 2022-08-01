@@ -18,4 +18,7 @@ date: "2022-08-01T00:00:00"
 
 > But there are some men for whom the unattanable has a special attraction. Usually they are not experts: their ambition and fantasies are strong enough to brush aside the doubt which more cautious men might have. Determination and faith are their strongest weapons. At best such men are regarded as eccentric; at worst, mad ...
 - Walt Unsworth 
+
+> The more impropable the situation and the greater the demand on a man, the more sweetly his blood flows later in release from all the tension. The possiblity of danger serves merely to sharpen his awareness and control. And perphas this is rationale to all risky activities: You delibrately raise the ante of effort and concentration in order, as its were, to clear your mind of all trivialities.
+- A. Alvarez
  
