@@ -34,7 +34,7 @@
         "flexsearch": "https://github.com/nextapps-de/flexsearch/tarball/0.7.0",
         "formik": "^2.2.9",
         "gray-matter": "^4.0.3",
-        "highlight.js": "^11.5.1",
+        "highlight.js": "^11.6.0",
         "next": "^12.2.3",
         "next-seo": "^5.4.0",
         "next-themes": "^0.2.0",
