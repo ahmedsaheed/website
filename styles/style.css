@@ -67,7 +67,7 @@ h3 {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: flex-start;
   }
   
