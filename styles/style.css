@@ -67,7 +67,7 @@ h3 {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: flex-start;
   }
   
@@ -82,6 +82,11 @@ h3 {
     font-family: "Spectral", sans-serif ;
   }
   
+  @media (max-width: 768px) {
+    .scrollport > div {
+      width: 210px;
+    }
+  }
 hr {
 
     border: none;
