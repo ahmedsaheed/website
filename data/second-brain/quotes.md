@@ -21,4 +21,6 @@ date: "2022-08-01T00:00:00"
 
 > The more impropable the situation and the greater the demand on a man, the more sweetly his blood flows later in release from all the tension. The possiblity of danger serves merely to sharpen his awareness and control. And perphas this is rationale to all risky activities: You delibrately raise the ante of effort and concentration in order, as its were, to clear your mind of all trivialities.
 - A. Alvarez
- 
+
+ >It is a fundamental law of nature that to evolve one has to push one’s limits, which is painful, in order to gain strength—whether it’s in the form of lifting weights, facing problems head-on, or in any other way. Nature gave us pain as a messaging device to tell us that we are approaching, or that we have exceeded, our limits in some way. At the same time, nature made the process of getting stronger require us to push our limits. Gaining strength is the adaptation process of the body and the mind to encountering one’s limits, which is painful. In other words, both pain and strength typically result from encountering one’s barriers. When we encounter pain, we are at an important juncture in our decision-making process
+- Ray Dalio
