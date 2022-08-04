@@ -5,7 +5,7 @@ import Head from "next/head"
 import Layout from "../component/layout"
 import "katex/dist/katex.min.css"
 
-const markdown = `
+{ /* const markdown = `
 
 Here is a collection of notable projects that I've worked on and or currently tinkering.
 
@@ -91,7 +91,7 @@ Very simple flutter application for flight checkup. Developed to solidify my und
 Built with: ![](https://api.iconify.design/material-symbols:flutter.svg?color=%23888888)Flutter ![](https://api.iconify.design/mdi:google-maps.svg?color=%23888888)Google Maps and API AviationStack API
 
 `
-
+*/}
 function projects() {
     return (
         <>
