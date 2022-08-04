@@ -50,7 +50,8 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     }
                 />
 
-                {brainEntries.map((brainEntry) => (
+{brainEntries.sort((a, b) => new Date(b.date).getTime() -  new Date(a.date).getTime()).map((brainEntry: BrainEntry) => (
+                // {brainEntries.map((brainEntry) => (
                     <>
                         <div className="px-10">
                             <Link
@@ -72,7 +73,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             </Link>
                         </div>
                     </>
-                ))}
+                )).sort()}
             </header>
             <br></br>
             <br></br>
