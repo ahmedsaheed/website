@@ -11,8 +11,8 @@ const BookCard = (props: any) => {
                     alt="Books"
                 />
             </a>
-            <h3 style={{fontFamily: "Stylish"}}>{props.title}</h3>
-            <BookRating rating={props.rating} />
+            {/* <strong className="break-all" style={{fontFamily: "Stylish", fontSize: "1.5em"}}>{props.title}</strong>
+            */}<p><BookRating rating={props.rating} /></p>
             <h3>{props.author}</h3>
 
               
