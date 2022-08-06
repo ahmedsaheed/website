@@ -9,7 +9,7 @@ date: "2022-08-05"
 
 This letter goes from my current self to my future self. I am currently writing from a dining table after having a hot bowl of noodles while listening to a chakra meditation sound. You might someday be reading this at a different place, in a different time doing absoluetly something else. 
 
-I haven't writing such a letter like this throughout my existence, but i'd try to make it organic as possible. 
+I haven't written such a letter like this throughout my existence, but i'd try to make it organic as possible. 
 
 ![](https://i.pinimg.com/originals/58/aa/64/58aa641cfe646b0c17972ccc5c312989.jpg)
 
