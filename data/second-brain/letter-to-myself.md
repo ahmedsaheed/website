@@ -73,6 +73,8 @@ With a leap of fate, he believed in you and sent you 3,198 miles away from home 
 
 ### 2021 Starting Anew
 
+![](https://i.pinimg.com/originals/b9/09/6c/b9096cf99af608099092505cefd2dd96.jpg)
+
 I ended up in Europe, unbelievable! i took awhile to to clearly grasp the message ([[cities-ambition]]) of this new society. I felt a bit overwhelmed at first about the protrayed solemnity of my new setlement, it felt absolutely contrary to what i was used to.
 
 Time passed, I'd started a new school, settled in nicely and remained alone, not out of choice but out of fear for having wrong friends again and going down the old route i'd just miraculously escaped.
