@@ -85,7 +85,7 @@ Time passed, I'd started a new school, settled in nicely and remained alone, not
 Lectures at school initially felt like a conundrum. I had decided to take Computer Science which deep down i'm very capable of handling. I felt very defeated by the workload but never let go. I struggled and couragously passed my first exam in europe.
 
 ### 2022
-Away from the madding crowd, living a silent life in the age of noise, you'd fellen in love with [books](/books) and [programming](https://github.com/ahmedsaheed) also mountaineering but haven't had a chance to climb on yet. 
+Away from the madding crowd, living a silent life in the age of noise, i've fellen in love with [books](/books) and [programming](https://github.com/ahmedsaheed) also mountaineering but haven't had a chance to climb on yet. 
 
 I've grown alot also learnt a reasonable amount of stuff.  I turned 19yo few months ago! I really wonder how time passes bye so fast. This transformation in my life over a couple of years has left me perplexed. I have acquired a more broaden and enlightened view of myself and the larger society. 
 
