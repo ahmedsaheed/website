@@ -36,7 +36,7 @@ Graduation had come to an end, all of your collegues and friends had moved on an
 
 But your ill habits remained and needed to be sustained. You took forcefully from your parent purse. You felt this wasn't anything wrong besides it's for your parent! This continued till they couldn't take it any longer and became enraged by your attitude, your appearance and your way of life as a whole. You lacked  sense of remourse and empathy due to your emotional numbness caused by this sickness.
 
-Now you hadn't heard from any university yet and you felt stuck in a chasm between your current illusion and reality. You became self aware but couldn't help it. But your parents where still willing to help. They lamented though but never left your side, they always wanted the best. You ended up in a mental facility.
+Now you hadn't heard from any university yet and you felt stuck in a chasm between your current illusion and reality. You became self aware but couldn't help it.  Your parents where still willing to help. They lamented though but never left your side, they always wanted the best. You ended up in a mental facility.
 
 You had settled in quite nicely in this new place, feeling serene and a stong sense of calm being far away from the hustle and bustle of the outer world. The inhabitants had shown you love, kindness and affection irrespective of some random arguements from time to time. Some were quite educated, others lay men but the majority was soldiers.
 
