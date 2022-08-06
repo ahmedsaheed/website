@@ -11,9 +11,12 @@ This letter goes from my current self to my future self. I am currently writing 
 
 I haven't writing such a letter like this throughout my existence, but i'd try to make it organic as possible. 
 
+![](https://i.pinimg.com/originals/58/aa/64/58aa641cfe646b0c17972ccc5c312989.jpg)
+
+
 ---
 
-To begin,  i'd need to rewind a bit to my last days of secondary school. I think this letter would be absolutely incomplete without that flashback. 
+To begin,  i'd need to rewind a bit to your last days of secondary school. I think this letter would be absolutely incomplete without that flashback. 
 
 ### Early 2019
 
@@ -75,7 +78,7 @@ With a leap of fate, he believed in you and sent you 3,198 miles away from home 
 
 ![](https://i.pinimg.com/originals/b9/09/6c/b9096cf99af608099092505cefd2dd96.jpg)
 
-I ended up in Europe, unbelievable! i took awhile to to clearly grasp the message ([[cities-ambition]]) of this new society. I felt a bit overwhelmed at first about the protrayed solemnity of my new setlement, it felt absolutely contrary to what i was used to.
+I ended up in Europe, unbelievable! i took awhile to to clearly grasp the message ([[cities-ambition]]) of this new society. I felt a bit overwhelmed at first about the protrayed solemnity of my new settlement, it felt absolutely contrary to what i was used to.
 
 Time passed, I'd started a new school, settled in nicely and remained alone, not out of choice but out of fear for having wrong friends again and going down the old route i'd just miraculously escaped.
 
