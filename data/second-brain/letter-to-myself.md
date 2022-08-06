@@ -87,7 +87,7 @@ Lectures at school initially felt like a conundrum. I had decided to take Comput
 ### 2022
 Away from the madding crowd, living a silent life in the age of noise, i've fellen in love with [books](/books) and [programming](https://github.com/ahmedsaheed) also mountaineering but haven't had a chance to climb on yet. 
 
-I've grown alot also learnt a reasonable amount of stuff.  I turned 19yo few months ago! I really wonder how time passes bye so fast. This transformation in my life over a couple of years has left me perplexed. I have acquired a more broaden and enlightened view of myself and the larger society. 
+I've grown alot also learnt a reasonable amount of stuff.  I turned 19yo few months ago! I really wonder how time passes bye so fast. The transformation in my life over a couple of years has left me perplexed. I have acquired a more broaden and enlightened view of myself and the larger society. 
 
 Enough time has been spent pondering on my true self. i.e who i am now and who i want to really be. I have found the subtleness in self love and societal good. I have also outlined some noticable flaws to be worked on. Most of these are easier said than done, but deep down it's for nobody except oneself. 
 
