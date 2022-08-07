@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import { NextSeo } from "next-seo"
-import Summary from "../component/summary"
+import Summary from "../../component/summary"
 import Head from "next/head"
-import Layout from "../component/layout"
+import Layout from "../../component/layout"
 import "katex/dist/katex.min.css"
 
 { /* const markdown = `

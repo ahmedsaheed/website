@@ -12,7 +12,14 @@ export type BrainEntry = {
     description: string
     date: string
 }
-type Content = BrainEntry
+
+export type Project = {
+    slug: string
+    content: string
+    title: string
+    date: string
+}
+type Content = BrainEntry | Project
 
 const getContentDirectory = (type: string) => join(process.cwd(), `data/${type}`)
 
