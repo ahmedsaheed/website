@@ -10,9 +10,9 @@ const readingTime = require("reading-time")
 import { format } from "date-fns"
 
 import React from "react"
-import {initPreviews} from "link-summoner"
+// import {initPreviews} from "link-summoner"
 
-initPreviews()
+// initPreviews()
 
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
     return (

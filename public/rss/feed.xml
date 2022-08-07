@@ -4,7 +4,7 @@
         <title>Saheed's Second Brain</title>
         <link>https://saheed.codes/</link>
         <description>Ahmed Saheed's Encyclopedia | Second Brain</description>
-        <lastBuildDate>Wed, 20 Jul 2022 19:27:35 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Aug 2022 10:26:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed</generator>
         <language>en</language>
@@ -17,27 +17,26 @@
             <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[growth of a runtime/rate of growth of an algorithm without worrying about different computers , compilers or implementation.]]></description>
             <content:encoded><![CDATA[
-## Intro to Asymptotic Analysis
-
 Because the time taken to perform an algorithms differs due to input size, compilers, computer language & hardware, they are not efficiently calculated using methods like benchmarking or mere assumptions. **This is where asymptotic analysis comes in:**
-
-## Asymptotic Analysis
 
 During asymptotic analysis we do not really calculate time as said earlier, instead we calculate the amount of operations in the [algorithm](/second-brain/algorithm) because we expect performance “time” to be dependant on both **size of input** and machine power. ([Refer to khan material for better explanation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)).
 
 Formal Definition: It is a way of describing **growth of a runtime/rate of growth** of an algorithm without worrying about different computers , compilers or implementation.
 
-## Asymptotic Notations
+### Asymptotic Notations
 
 1.  BigO notation ⇒ Upper Bound
+
 2.  Omega ⇒ Lower Bound
+
 3.  Theta ⇒ Both upper and lower bound also called tight bound.
 
-## Further Reading
+### Further Reading
 
--   [High Level Illustration can be found here](/fun)
 -   [Big0 Cheat Sheet](https://www.bigocheatsheet.com/)
+
 -   [MIT Asymptotic Analysis Recitation 2011](http://courses.csail.mit.edu/6.006/spring11/rec/rec01.pdf)
+
 -   [More consise explanation of time complexities](<https://medium.com/swlh/big-o-notation-and-time-space-complexity-1806936e6330#:~:text=O(nlogn)%20is%20known%20as,using%20O(logn)%20space.>)
 ]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
@@ -49,7 +48,7 @@ Formal Definition: It is a way of describing **growth of a runtime/rate of growt
             <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[An essay by Paul Graham which i am obliged keep]]></description>
             <content:encoded><![CDATA[
-## An essay by Paul Graham which i am obliged keep
+### An essay by Paul Graham which i am obliged keep
 
 Great cities attract ambitious people. You can sense it when you walk around one. In a hundred subtle ways, the city sends you a message: you could do more; you should try harder.
 
@@ -65,7 +64,7 @@ That's not quite the same message New York sends. Power matters in New York too 
 
 How much does it matter what message a city sends? Empirically, the answer seems to be: a lot. You might think that if you had enough strength of mind to do great things, you'd be able to transcend your environment. Where you live should make at most a couple percent difference. But if you look at the historical evidence, it seems to matter more than that. Most people who did great things were clumped together in a few places where that sort of thing was done at the time.
 
-You can see how powerful cities are from [this essay](http://www.paulgraham.com/taste.html): the case of the Milanese Leonardo. Practically every fifteenth century Italian painter you've heard of was from Florence, even though Milan was just as big. People in Florence weren't genetically different, so you have to assume there was someone born in Milan with as much natural ability as Leonardo. What happened to him?
+You can see how powerful cities are from the case of the Milanese Leonardo. Practically every fifteenth century Italian painter you've heard of was from Florence, even though Milan was just as big. People in Florence weren't genetically different, so you have to assume there was someone born in Milan with as much natural ability as Leonardo. What happened to him?
 
 If even someone with the same natural ability as Leonardo couldn't beat the force of environment, do you suppose you can?
 
@@ -162,19 +161,176 @@ Some people know at 16 what sort of work they're going to do, but in most ambiti
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
         <item>
+            <title><![CDATA[Letter to my future self]]></title>
+            <link>https://saheed.codes/second-brain/letter-to-myself</link>
+            <guid>https://saheed.codes/second-brain/letter-to-myself</guid>
+            <pubDate>Fri, 05 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A ponder on my past, present and future]]></description>
+            <content:encoded><![CDATA[
+
+### Hi Saheed,
+
+This letter goes from my current self to my future self. I am currently writing from a dining table after having a hot bowl of noodles while listening to a chakra meditation sound. You might someday be reading this at a different place, in a different time doing absoluetly something else. 
+
+I haven't written such a letter like this throughout my existence, but i'd try to make it organic as possible. 
+
+![](https://i.pinimg.com/originals/58/aa/64/58aa641cfe646b0c17972ccc5c312989.jpg)
+
+
+---
+
+To begin,  i'd need to rewind a bit to your last days of secondary school. I think this letter would be absolutely incomplete without that flashback. 
+
+### Early 2019
+
+At that point your life felt abysmal and lacked meaning, You had just gotten into SS3 the final point of the Nigerian Secondary Education system. This was one of the most memorable moments of your life. You were quite young then  perphaps 15 or 16yo, getting ready for college and  embedding into your brain your then assumed imagination of a college student. At that age you hadn't understood anything about your thought process, You only did whatever you felt would please your peers irrespective of your parent words which were considered a burden. You lived in a very delusional and detestable bubble called life. Things really went fast! You eventually encircled yourself with a very wrong set of individuals which you looked up to and called your friends.
+
+Time went by, and things got worst. You'd started using drugs, forgotten the nostalgic childhood dream of becoming an astronaut. Your imagination of being in a space suit, wandering the moon and being the like of  Dr. Ben Carson had suddenly been swallowed by this darkness within your inner self. What had really happended? Can you recall? 
+
+This irrational way of life lasted a while and your parent started questioning. They became quite worried, the darkeness was visible around your dads conjunctiva. What and where have i done wrong were questions he asked himself. He felt terribly sad and you knew it. But you were to busy apeasing your so called friends!
+
+---
+
+### Late 2019
+
+You'd finally graduated and a magnanimous graduation party was thrown for you, It wasn't necessary, but it was done none the less at the expense of your parent. Your grades wasn't excellent neither was it up to expectations but your parents still accepted it. 
+
+Graduation had come to an end, all of your collegues and friends had moved on and splitted all around the country. You remained home waiting to be admitted into a university. Your parent ran helter-skelter to make sure you'd gotten accepted in your desired university, all to no avail. 
+
+But your ill habits remained and needed to be sustained. You took forcefully from your parent purse. You felt this wasn't anything wrong besides it's for your parent! This continued till they couldn't take it any longer and became enraged by your attitude, your appearance and your way of life as a whole. You lacked  sense of remourse and empathy due to your emotional numbness caused by this sickness.
+
+Now you hadn't heard from any university yet and you felt stuck in a chasm between your current illusion and reality. You became self aware but couldn't help it.  Your parents where still willing to help. They lamented though but never left your side, they always wanted the best. You ended up in a mental facility.
+
+You had settled in quite nicely in this new place, feeling serene and a stong sense of calm being far away from the hustle and bustle of the outer world. The inhabitants had shown you love, kindness and affection irrespective of some random arguements from time to time. Some were quite educated, others lay men but the majority was soldiers.
+
+You'd been clean for a while now, spending time reading books like [the road less travelled](https://www.goodreads.com/book/show/347852.The_Road_Less_Traveled) and [Abnormal Psychology](https://www.goodreads.com/book/show/773020.Abnormal_Psychology), playing card game, table tennis and experimenting with psycho therapy.
+
+You'd made friends with some really smart fellows like Dr Abdul-Salam, Dr Chineye , Uche the American college [dean enlisted](https://en.wikipedia.org/wiki/Dean%27s_list) dropout who i was greatly influenced by and the Civil Engineering graduate from University of Lagos.
+
+---
+
+### Early & Mid 2020
+
+You had been allowed to leave this facility because you had to resume college at University of Lagos. Prior to resumption you'd been warned about relapse by both your therapist and your parents, your dad in particular. You'd also promised not to let them down.
+
+Weeks went by as a freshman in college, you were doing great, not until you met some of your old peers from secondary school and decided to let yourself and loved once abashed and conscience-stricken.
+
+This relapse was beyond your belief and far-fetched. It left you emotionally distorted. Those old darkness started creeping their way back into your life and this time eating deep into your endocardium. Your actions were outside your cognitive comprehension. It sucked and you knew it ! You felt like a swineherd returning to a pigsty immediately after taking hot shower.
+
+
+---
+
+
+
+### Late 2020
+You'd become intolerable by your parent and your actions became notable and detesteble by the society around.
+
+You decided to leave, perhaps it felt unbearable after what happend the afternoon you departed home. You weren't ready to feel any sort of remorse, instead you sought fault in your loved once and your upbringing. Delaying gratification and shying away from your reality. You were realistically disgusting and highly loathed!
+
+You left, perphaps dad got back from work asking where you were or he was called that same moment of you departure, who knows. I wonder how he spent that night. Perphas so pained, he layed awake all night wiping the tears that rolled down his cheeks. 
+
+You'd decided to trade your comfort, satiety, education and most importantly your loved ones for an absolutely nonworthy cause. You accepted your own self made lies!
+
+None the less he still came looking for you. He loved you down to earth! He saw something positively distinct and clearcut about you. 
+
+With a leap of fate, he believed in you and sent you 3,198 miles away from home for enquire quality education and pursue a better life. He begged not to be disappointed. 
+
+---
+
+### 2021 Starting Anew
+
+![](https://i.pinimg.com/originals/b9/09/6c/b9096cf99af608099092505cefd2dd96.jpg)
+
+I ended up in Europe, unbelievable! i took awhile to to clearly grasp the message ([cities-ambition](/second-brain/cities-ambition)) of this new society. I felt a bit overwhelmed at first about the protrayed solemnity of my new settlement, it felt absolutely contrary to what i was used to.
+
+Time passed, I'd started a new school, settled in nicely and remained alone, not out of choice but out of fear for having wrong friends again and going down the old route i'd just miraculously escaped.
+
+Lectures at school initially felt like a conundrum. I had decided to take Computer Science which deep down i'm very capable of handling. I felt very defeated by the workload but never let go. I struggled and couragously passed my first exam in europe.
+
+### 2022
+
+
+
+
+Away from the madding crowd, living a silent life in the age of noise, i've fellen in love with [books](/books) and [programming](https://github.com/ahmedsaheed) also mountaineering but haven't had a chance to climb on yet. 
+
+I've grown alot also learnt a reasonable amount of stuff.  I turned 19yo few months ago! I really wonder how time passes bye so fast. The transformation in my life over a couple of years has left me perplexed. I have acquired a more broaden and enlightened view of myself and the larger society. 
+
+Enough time has been spent pondering on my true self. i.e who i am now and who i want to really be. I have found the subtleness in self love and societal good. I have also outlined some noticable flaws to be worked on. Most of these are easier said than done, but deep down it's for nobody except oneself. 
+
+> I currently see myself as a sailor and my body as a ship. This ship sails on an ocean consisting of all sort of things. My job as a sailor is to protect this ship from sinking at all cost. Making it sacred and safe from danger.
+
+I would keep writing to you more often in absolute honesty. 
+I hope you're doing exceptionally well whenever you read this.
+
+Yours truthfully, 
+Ahmed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content:encoded>
+            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
+        </item>
+        <item>
+            <title><![CDATA[Quotes]]></title>
+            <link>https://saheed.codes/second-brain/quotes</link>
+            <guid>https://saheed.codes/second-brain/quotes</guid>
+            <pubDate>Sun, 31 Jul 2022 23:00:00 GMT</pubDate>
+            <description><![CDATA[Some quote to live by]]></description>
+            <content:encoded><![CDATA[
+### Some quote to live by
+
+> I am persuaded that normal human beings are biologically built for an activity that is aimed towards a goal and that idleness, or aimless work gives rise to suffering and to entropy
+ - Primo Levi
+ 
+ 
+ > We took risks, we knew we took them; things have come against us, and therefore we have no cause to complain, but bow to the will of providence, determined still to do our best to the last
+  - Robert Falcon Scott
+
+> The one great advantage which inexperience confers on an amateur is that he is not bogged down by the tradition or precedence. To him, all things appears simple and he chooses straightforward solutions to the problem he faces. Often, of cause, it defeats the sucess his seeking, and sometimes it has tragic results, but the man himself doesn't know this when he sets out on his adventure
+- Walt Unsworth 
+
+> But there are some men for whom the unattanable has a special attraction. Usually they are not experts: their ambition and fantasies are strong enough to brush aside the doubt which more cautious men might have. Determination and faith are their strongest weapons. At best such men are regarded as eccentric; at worst, mad ...
+- Walt Unsworth 
+
+> The more impropable the situation and the greater the demand on a man, the more sweetly his blood flows later in release from all the tension. The possiblity of danger serves merely to sharpen his awareness and control. And perphas this is rationale to all risky activities: You delibrately raise the ante of effort and concentration in order, as its were, to clear your mind of all trivialities.
+- A. Alvarez
+
+ >It is a fundamental law of nature that to evolve one has to push one’s limits, which is painful, in order to gain strength—whether it’s in the form of lifting weights, facing problems head-on, or in any other way. Nature gave us pain as a messaging device to tell us that we are approaching, or that we have exceeded, our limits in some way. At the same time, nature made the process of getting stronger require us to push our limits. Gaining strength is the adaptation process of the body and the mind to encountering one’s limits, which is painful. In other words, both pain and strength typically result from encountering one’s barriers. When we encounter pain, we are at an important juncture in our decision-making process
+- Ray Dalio]]></content:encoded>
+            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
+        </item>
+        <item>
             <title><![CDATA[Theming In React]]></title>
             <link>https://saheed.codes/second-brain/react-theming</link>
             <guid>https://saheed.codes/second-brain/react-theming</guid>
             <pubDate>Wed, 01 Jun 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[Theming isn't that tricky!]]></description>
             <content:encoded><![CDATA[
-Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature feature.
+Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature.
 
-Stating the above, i have decided to write this brief note on react theming.
+I have decided to write this brief note on next js and react theming.
 
 There are many ways to implement theming in react, but I have decided to explain two only.
 
-## prerequisite
+### prerequisite
 
 I assert you already have a react environment to work with, if not you can easily create one using:
 
@@ -188,9 +344,9 @@ or
 npx create-react-app my-app
 ```
 
-## Implementing the theming.
+### Implementing the theming.
 
-### First Approaching - using the [next theme libary](https://github.com/pacocoursey/next-themes)
+First Approaching - using the [next theme libary](https://github.com/pacocoursey/next-themes)
 
 You'd need to add the libary to your project:
 
@@ -265,7 +421,7 @@ const mode = () => {
 export default mode
 ```
 
-### Second Approach - Implement the theming yourself.
+Second Approach - Implement the theming yourself.
 
 Before we begin, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
 
@@ -430,9 +586,9 @@ And with all this set up, you should have a theme working fine on your react app
             <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[A sorting algorithm is an algorithm that puts elements of a list into an order]]></description>
             <content:encoded><![CDATA[
-Sorting a list of data in ascending, descending, or any order can help both humans and machine sort data efficiently and quickly, perhaps using an [algorithm](/second-brain/algorithm). The sorting algorithms works on data structures of different data types keeping consideration of [asymptotic](/second-brain/asymptotic) analysis.
+Sorting a list of data in ascending, descending, or any order can help both humans and machine sort data efficiently and quickly, perhaps using an algorithm. The sorting algorithms works on data structures of different data types keeping consideration of [asymptotic](/second-brain/asymptotic) analysis.
 
-## Simple Sorting
+### Simple Sorting
 
 These algorithms are useful in sorting through data of any type. i.e int, string, object etc. Although the run time of these algorithms are notoriously slow.
 
@@ -630,30 +786,28 @@ if(lowerB + 1 < upperB){
 Leo Tolstoy is an emblematic figure in the history of a nation celebrated for its cultural achievements, one of the two or three contenders for the title of Russia's greatest writters.
 Since the beginning of the year 2022, I have found a profund and uplifting experience whilst reading the great work of art and literature written by Lev Nikolayevich Tolstoy popularly known as Leo Tostoy. I have been immersely impacted by his style of writing, the patterns of his thoughts, simplicity and subtleness in words.
 
-To me, Leo is more than an ordinary writer, he is more of a religious thinker, a moral crusader and an inspirational predecessor of pacific protesters like [Mahatma Ghandi](/second-brain/mahatma%20ghandi) .
+To me, Leo is more than an ordinary writer, he is more of a religious thinker, a moral crusader and an inspirational predecessor of pacific protesters like [Mahatma Ghandi](https://en.wikipedia.org/wiki/Mahatma_Gandhi) .
 
-> Some of my favorite quotes from Leo
 
--   "Respect was invented to cover the empty place where love should be."
-
--   "If you look for perfection, you'll never be content."
-
--   "We lost because we told ourselves we lost."
-
--   "Boredom: the desire for desires."
-
-## Search For Religious Truth And Moral Purity
+### Search For Religious Truth And Moral Purity
 
 On completion of Leo's two masterpiece **Ana Karenina** and **War and Peace**, he spent eventless decades in his home where he became obsessed with a search for religious truth and moral purity, setting unattainable goals of righteousness for himself and his audience.
 
 Leo dominated his thinking until the moment of his death by writings of a Genevan philosopher and political thinker [Jean-Jacques Rousseau](https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau) who belived that human babies are born into natural state of goodness, only to be corrupted by education, inequality and immorality, a process which explains our lapses into bad behaviour.
 
-The wonder is that the best of Leo's published works travels in opposite direction compared to the ideas Rousseau. _War and Peace_ is nothing but an affirmation of life.
+The wonder is that the best of Leo's published works travels in opposite direction compared to the ideas Rousseau. War and Peace is nothing but an affirmation of life.
 
 Sadly, Leo died in 1910 at the age of 82, though the residue of his remarkable literature has long lived till this day which has now gained an unforgettable honor around the world
 
 > “Everyone thinks of changing the world, but no one thinks of changing himself.”
-]]></content:encoded>
+
+>  “Respect was invented to cover the empty place where love should be.”
+
+>  “If you look for perfection, you'll never be content.”
+
+>   “We lost because we told ourselves we lost.”
+
+>   “Boredom: the desire for desires.”]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
     </channel>
