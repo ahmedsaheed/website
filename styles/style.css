@@ -528,3 +528,9 @@ li, ul{
     font-family: "Spectral";
     list-style: circle;
 }
+@media screen and (max-width: 768px) {
+    .link-with-preview::after{
+        display: none;
+    }
+}
+    
