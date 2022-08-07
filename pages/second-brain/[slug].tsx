@@ -10,16 +10,6 @@ const readingTime = require("reading-time")
 import { format } from "date-fns"
 
 import React from "react"
-import {initPreviews, defaultRenderers, iframeRenderer} from "link-summoner"
-
-if (typeof window !== "undefined") {
-    initPreviews({
-        renderers: [
-            iframeRenderer(/saheed\.codes/),
-            ...defaultRenderers, 
-        ]
-      })
-}
 
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
     return (

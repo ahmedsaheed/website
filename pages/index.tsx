@@ -6,17 +6,6 @@ import Head from "next/head"
 import Location from "../component/getLocation"
 import Theme from "../component/theme"
 import { BsArrowUpRight } from "react-icons/bs"
-import {initPreviews, defaultRenderers, iframeRenderer} from "link-summoner"
-
-if (typeof window !== "undefined") {
-    initPreviews({
-        renderers: [
-            iframeRenderer(/saheed\.codes/),
-            ...defaultRenderers, 
-        ]
-      })
-}
-
 export const date = new Date()
 export default function Home() {
     return (
