@@ -47,7 +47,7 @@ export default function Home() {
                     <article>
                         <p className="third">
                             Finally, you made it to my tiny court yard on the web, I see you've come
-                            all the way from <Location />. Recently, I'm working on <a target="_blank" rel="noopener" href="http://github.com/ahmedsaheed/AlgoAI"> AlgoAI </a>, an algorithms codegen to convert english into algorithms.  I enjoy building on
+                            all the way from <Location />. Recently, I'm working on <a target="_blank" rel="noopener" href="https://algo-ai.vercel.app/"> AlgoAI </a>, an algorithms codegen to convert english into algorithms.  I enjoy building on
                             the web, wandering the web and tinkering with things I find meaningful
                             to me.
                         </p>
