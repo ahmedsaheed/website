@@ -50,6 +50,7 @@ html body {
     transition: background 0.3s;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-font-smoothing: antialiased;
 }
 h3 {
     font-family: "Stylish";
