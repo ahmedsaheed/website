@@ -26,7 +26,7 @@ export default function Home() {
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
             <body>
-                <div className=" spacers mx-auto max-w-3xl space-y-5">
+                <div className="spacers mx-auto max-w-3xl space-y-5">
                     <div className="mx-auto max-w-2xl">
                         <br></br>
                         <h2 className="name third text-stone-100 font-hammersmith mb-4">
@@ -51,7 +51,7 @@ export default function Home() {
                         </p>
                         <section className="third scrollport">
                             <div>
-                                <div style={{ padding: "12px" }}>
+                                <div style={{ padding: "" }}>
                                     <h3>Thoughts</h3>
                                     <div style={{ minHeight: "84px" }}>
                                         <div>

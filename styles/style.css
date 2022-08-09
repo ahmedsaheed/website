@@ -73,7 +73,7 @@ h3 {
   }
   
   .scrollport > div {
-    width: 188px;
+    width: 182px;
     height:350px;
     background-color: transparent;
     aspect-ratio: var(--ratio-square);
@@ -82,6 +82,14 @@ h3 {
   .scrollport span {
     font-family: "Spectral", sans-serif ;
   }
+
+  @media screen and (max-width: 768px) {
+    .scrollport  {
+        -webkit-mask-image: linear-gradient(to right,transparent 0,#000 0px,#000 calc(100% - 20%),transparent 100%);
+    }
+  }
+    
+
   
 hr {
 
