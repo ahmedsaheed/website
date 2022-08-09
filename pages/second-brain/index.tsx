@@ -37,8 +37,8 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                         <>
                             In a digital garden there is joined personal experience and professional
                             activities, studies under way and studies planned. A second brain would
-                            enhance the process of gathering together what you are doing
-                            intellectually and what you are experiencing as a person. Here you will
+                            enhance the process of gathering together what one is doing
+                            intellectually and what one is experiencing as a person. Here you will
                             not be afraid to use your experience and relate it directly to various
                             work in progress. By serving as a check on repetitious work. It also
                             encourages you to capture ‘fringe-thoughts’: various ideas which may be
