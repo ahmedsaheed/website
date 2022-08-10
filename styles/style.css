@@ -89,10 +89,10 @@ h3 {
     }
   }
 
-  @media screen and (min-width: 667px) {
+  @media screen and (min-width: 414px) {
     
     .scrollport > div {
-        width: 250px;
+        width: 500px;
         height:350px;
     }
   }
