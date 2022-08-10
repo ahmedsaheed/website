@@ -88,6 +88,14 @@ h3 {
         -webkit-mask-image: linear-gradient(to right,transparent 0,#000 0px,#000 calc(100% - 20%),transparent 100%);
     }
   }
+
+  @media screen and (min-width: 667px) {
+    
+    .scrollport > div {
+        width: 250px;
+        height:350px;
+    }
+  }
     
 
   
