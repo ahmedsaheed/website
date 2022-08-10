@@ -51,7 +51,7 @@ export default function Home() {
                         </p>
                         <section className="third scrollport">
                             <div>
-                                <div style={{ padding: "" }}>
+                                <div>
                                     <h3>Thoughts</h3>
                                     <div style={{ minHeight: "84px" }}>
                                         <div>
