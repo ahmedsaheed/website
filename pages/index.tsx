@@ -51,7 +51,7 @@ export default function Home() {
                         </p>
                         <section className="third scrollport">
                             <div>
-                                <div>
+                                <div style={{ paddingTop: "12px" }}>
                                     <h3>Thoughts</h3>
                                     <div style={{ minHeight: "84px" }}>
                                         <div>
@@ -59,9 +59,9 @@ export default function Home() {
                                                 <a
                                                     basics-variant="text"
                                                     basics-link=""
-                                                    href="/second-brain/react-theming"
+                                                    href="/second-brain/javari"
                                                 >
-                                                    Themes in NextJs
+                                                    Javari
                                                 </a>
                                             </span>
                                             <span
@@ -78,7 +78,7 @@ export default function Home() {
                                             ></span>
                                         </div>
                                         <span basics-color="dim" basics-text="">
-                                            Theming isn't that tricky.
+                                            A poetic narrative of modern day christ
                                         </span>
                                     </div>
                                     <div style={{ minHeight: "84px" }}>

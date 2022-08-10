@@ -30,8 +30,8 @@ So, there she was now, seventeen and alone.
 
 But this lil' boy that grew in her stomach made her feel strong  
 The angels paid her a visit one night and let it be known  
-This was God's child, woman behold the miracle.  
-She shed tears 'cause she never believed in a spiritual  
+This was God's child, woman behold this miracle.  
+She shed tears because she never believed in the spiritual  
 But her heart was pure and she was good  
 For eighteen years she raised him on Section 8 in the cold embrace of the hood. 
 Did the best as she could, the boy was named Javari  
@@ -49,9 +49,9 @@ That troubles her soul, the day she lets it go, she'll find peace
 She broke down admitting her stepfather had touched her for years  
 She kept it secret for fear of her mother's grief  
 Now the bitterness she feels for that nigga is at a peak  
-And her lack of self-esteem is the reason that she would sleep with anybody
+And her lack of self-esteem is the reason that she would sleep with anybody and not think twice,
 
-And not think twice, Javari spoke calmly  
+Javari spoke calmly  
 Instructing her to forgive her stepfather  
 Though he was wrong he was sick  
 Afflicted by evil, but the power to switch  
@@ -96,12 +96,12 @@ The neighborhood was stressing
 The son of God murdered and carried away on stretcher by the oppressor.
 
 Three days later, the coroner pulled the table  
-And what happened next is like somethin' you see on cable or hear in a fable
+And what happened next is like something you see on cable or hear in a fable
 
 He was suddenly able to open his eyes, look at him rise, the coroner was surprised  
 Without a word Javari walked out, went straight to the hood  
 The people couldn't believe it, they froze right where they stood
 
-As he walked by, God flowin' from every inch of his frame  
-He said "Hear me out my niggas, let me be your proof, my father is real  
-And through love, homie, peace can be found I died for you, so that one day you would be able to see you a child of God, just like me"
+As he walked by, God flowing from every inch of his frame  
+He said 
+>"Hear me out my niggas, let me be your proof, my father is real and through love, homie, peace can be found. I died for you, so that one day you would be able to see you a child of God, just like me"
