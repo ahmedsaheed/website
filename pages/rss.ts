@@ -53,7 +53,7 @@ function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
         link: "https://saheed.codes/til",
     })
 
-    console.log(feed.rss2())
+    //console.log(feed.rss2())
     // fs.mkdir('./public/rss', { recursive: true });
     // fs.writeFile('./public/rss/feed.xml', feed.rss2());
     // fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
