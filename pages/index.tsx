@@ -25,7 +25,6 @@ export default function Home() {
                 <title>Ahmed Saheed</title>
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
-            <body>
                 <div className="spacers mx-auto max-w-3xl space-y-5">
                     <div className="mx-auto max-w-2xl">
                         <br></br>
@@ -423,7 +422,6 @@ export default function Home() {
                         </div>
                     </article>
                 </div>
-            </body>
         </>
     )
 }

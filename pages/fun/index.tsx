@@ -60,7 +60,6 @@ function fun() {
                 <title>Fun | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <body>
                 <Summary
                     title="Algorithms"
                     content={
@@ -125,7 +124,6 @@ function fun() {
                     </div>
                 </header>
                 <br /> <br />
-            </body>
         </>
     )
 }
