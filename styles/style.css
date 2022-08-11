@@ -11,6 +11,7 @@
     --name: var(--text-color);
     --p-color: #bbbbbb;
     --italics: "Newsreader";
+    --search-color: #E7E5E0;
 }
 
 html *,
@@ -28,6 +29,7 @@ html *:before {
     --name: var(--text-color);
     --p-color: #bbbbbb;
     --italics: "Newsreader";
+    --search-color: #E7E5E0;
 }
 [data-theme="dark"] {
     --color-default: #000;
@@ -39,6 +41,7 @@ html *:before {
     --a-color: #819fb3 !important;
     --p-color: #bbbbbb;
     --italics: "Newsreader";
+    --search-color:#33312f !important
 }
 
 html body {
@@ -399,9 +402,9 @@ a {
         margin-left: 0.4rem
     }
 }
-.nav button svg {
+/* .nav button svg {
     margin-top: 0.5rem;
-}
+} */
 
 h2 {
     font-size: 1.65em;
@@ -549,4 +552,29 @@ li, ul{
     
 img{
     animation: cool-fadein 1s;
+}
+
+.search-icon{
+    background-color: var(--search-color);
+    border-radius: 4px;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.search-icon p{
+    display: inline;
+    padding: 0 1.5em 0 2em;
+}
+.search-icon svg{
+    cursor: pointer;
+    width: 18px;
+    min-width: 18px;
+    margin: 0 0.5em;
+}
+.themeButton{
+    font-size: 1.5em;
+    padding-top: 0.2rem;
 }

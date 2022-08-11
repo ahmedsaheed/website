@@ -1,6 +1,9 @@
 import "react-cmdk/dist/cmdk.css";
 import CommandPalette, { filterItems, getItemIndex } from "react-cmdk";
 import { useState } from "react";
+import Theme from "./theme"
+import {SearchButton} from "./searchButton"
+
 
 const Example = () => {
   const [page, setPage] = useState<"root" | "projects">("root");
@@ -11,7 +14,7 @@ const Example = () => {
   const filteredItems = filterItems(
     [
       {
-        heading: "Home",
+        heading: "Route",
         id: "home",
         items: [
           {
@@ -21,37 +24,55 @@ const Example = () => {
             href: "/",
           },
           {
-            id: "settings",
-            children: "Settings",
-            icon: "CogIcon",
-            href: "#",
+            id: "books",
+            children: "Books",
+            icon: "BookOpenIcon",
+            href: "/books",
+          },
+          {
+            id: "writing",
+            children: "Writings",
+            icon: "DocumentTextIcon",
+            href: "/second-brain",
+          },
+          {
+            id: "til",
+            children: "Today I Learnt",
+            icon: "CollectionIcon",
+            href: "/TIL",
           },
           {
             id: "projects",
             children: "Projects",
             icon: "CollectionIcon",
-            closeOnSelect: false,
-            onClick: () => {
-              setPage("projects");
-            },
+            href: "/projects",
           },
+          // {
+          //   id: "saas",
+          //   children: "sasa",
+          //   icon: "CollectionIcon",
+          //   closeOnSelect: false,
+          //   onClick: () => {
+          //     <Theme/>;
+          //   },
+          // },
         ],
       },
       {
-        heading: "Other",
+        heading: "Connect",
         id: "advanced",
         items: [
           {
-            id: "developer-settings",
-            children: "Developer settings",
+            id: "github",
+            children: "Github",
             icon: "CodeIcon",
-            href: "#",
+            href: "https://github.com/ahmedsaheed",
           },
           {
-            id: "privacy-policy",
-            children: "Privacy policy",
-            icon: "SupportIcon",
-            href: "#",
+            id: "rss",
+            children: "RSS",
+            icon: "RssIcon",
+            href: "/rss/feed.xml",
           },
           {
             id: "log-out",
@@ -70,8 +91,7 @@ const Example = () => {
   return (
     <div>
       <button onClick={() => setClick(true)}>
-
-cmdk
+        <SearchButton />
 </button>
 
 {click && (

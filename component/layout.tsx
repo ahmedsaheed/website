@@ -25,25 +25,7 @@ function Layout(PageComponent: any) {
                       
                         <div className="right">
                         <Example/>
-                            <a className="hover-underline-animation" href="/second-brain">
-                                garden
-                            </a>
-                            <a className="hover-underline-animation" href="/books">
-                                books
-                            </a>
-                            <a className="hover-underline-animation" href="/fun">
-                                fun
-                            </a>
-                            <a className="hover-underline-animation" href="/projects">
-                                projects
-                            </a>
-                            <a className="hover-underline-animation" href="/TIL">
-                                til
-                            </a>
-                            <a style={{color: "var(--text-color)"}} className="" href="/rss/feed.xml" target="_blank">
-                                <BiRss />
-                            </a>
-                            <a className="">
+                            <a className="themeButton">
                                 <Theme />
                             </a>
                         </div>
