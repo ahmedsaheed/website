@@ -3,7 +3,7 @@ import Head from "next/head"
 import { date } from "../pages/index"
 import Theme from "./theme"
 import { BiRss } from "react-icons/bi"
-import Example from "./test"
+import Example from "./searchBar"
 import {useState} from 'react';
 
 function Layout(PageComponent: any) {

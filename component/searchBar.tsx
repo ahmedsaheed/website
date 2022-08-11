@@ -74,14 +74,14 @@ const Example = () => {
             icon: "RssIcon",
             href: "/rss/feed.xml",
           },
-          {
-            id: "log-out",
-            children: "Log out",
-            icon: "LogoutIcon",
-            onClick: () => {
-              alert("Logging out...");
-            },
-          },
+          // {
+          //   id: "log-out",
+          //   children: "Log out",
+          //   icon: "LogoutIcon",
+          //   onClick: () => {
+          //     alert("Logging out...");
+          //   },
+          // },
         ],
       },
     ],
