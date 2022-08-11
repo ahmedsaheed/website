@@ -24,7 +24,6 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     description: `${brainEntry.content.substring(0, 100) + "..."}`,
                 }}
             />
-            <body>
                 <Head>
                     <meta charSet="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -98,7 +97,6 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     )}
                 </header>
                 <br></br>
-            </body>
         </>
     )
 }

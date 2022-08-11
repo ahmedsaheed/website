@@ -1,9 +1,11 @@
-import React from "react"
+import React  from "react"
 import Head from "next/head"
 import { date } from "../pages/index"
 import Theme from "./theme"
 import { BiRss } from "react-icons/bi"
-import SearchBar from "./search"
+import Example from "./searchBar"
+import {useState} from 'react';
+
 function Layout(PageComponent: any) {
     const PageComponentWithLayout = ({ ...pageProps }) => {
         return (
@@ -22,25 +24,8 @@ function Layout(PageComponent: any) {
                         </div>
                       
                         <div className="right">
-                            <a className="hover-underline-animation" href="/second-brain">
-                                garden
-                            </a>
-                            <a className="hover-underline-animation" href="/books">
-                                books
-                            </a>
-                            <a className="hover-underline-animation" href="/fun">
-                                fun
-                            </a>
-                            <a className="hover-underline-animation" href="/projects">
-                                projects
-                            </a>
-                            <a className="hover-underline-animation" href="/TIL">
-                                til
-                            </a>
-                            <a style={{color: "var(--text-color)"}} className="" href="/rss/feed.xml" target="_blank">
-                                <BiRss />
-                            </a>
-                            <a className="">
+                        <Example/>
+                            <a className="themeButton">
                                 <Theme />
                             </a>
                         </div>
