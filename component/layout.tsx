@@ -1,9 +1,11 @@
-import React from "react"
+import React  from "react"
 import Head from "next/head"
 import { date } from "../pages/index"
 import Theme from "./theme"
 import { BiRss } from "react-icons/bi"
-import SearchBar from "./search"
+import Example from "./test"
+import {useState} from 'react';
+
 function Layout(PageComponent: any) {
     const PageComponentWithLayout = ({ ...pageProps }) => {
         return (
@@ -22,6 +24,7 @@ function Layout(PageComponent: any) {
                         </div>
                       
                         <div className="right">
+                        <Example/>
                             <a className="hover-underline-animation" href="/second-brain">
                                 garden
                             </a>

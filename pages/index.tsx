@@ -29,7 +29,7 @@ export default function Home() {
                     <div className="mx-auto max-w-2xl">
                         <br></br>
                         <h2 className="name third text-stone-100 font-hammersmith mb-4">
-                            Ahmed Saheed
+                            Ahmed Saheed 
                             <a
                                 className="moveRight"
                                 style={{ display: "inline", backgroundColor: "transparent" }}
