@@ -3,7 +3,7 @@ import Head from "next/head"
 import { date } from "../pages/index"
 import Theme from "./theme"
 import { BiRss } from "react-icons/bi"
-import Example from "./searchBar"
+import SearchArea from "./searchBar"
 import {useState} from 'react';
 
 function Layout(PageComponent: any) {
@@ -24,7 +24,7 @@ function Layout(PageComponent: any) {
                         </div>
                       
                         <div className="right">
-                        <Example/>
+                        <SearchArea/>
                             <a className="themeButton">
                                 <Theme />
                             </a>
