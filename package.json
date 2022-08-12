@@ -29,7 +29,7 @@
         "@formkit/auto-animate": "^1.0.0-beta.1",
         "@octokit/core": "^3.6.0",
         "axios": "^0.27.2",
-        "date-fns": "^2.28.0",
+        "date-fns": "^2.29.1",
         "feed": "^4.2.2",
         "flexsearch": "https://github.com/nextapps-de/flexsearch/tarball/0.7.0",
         "formik": "^2.2.9",
