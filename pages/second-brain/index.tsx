@@ -35,8 +35,8 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     title="The Garden"
                     content={
                         <>
-                            In a digital garden there is joined personal experience and professional
-                            activities, studies under way and studies planned. A second brain would
+                            In a digital garden there is a combination of personal experience and professional
+                            activities, studies under way and studies planned. A second brain or digital garden would
                             enhance the process of gathering together what one is doing
                             intellectually and what one is experiencing as a person. Here you will
                             not be afraid to use your experience and relate it directly to various
@@ -45,7 +45,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             byproducts of everyday life, snatches of conversation overheard in the
                             street, or, for that matter, dreams. Once noted, these may lead to more
                             systematic thinking, as well as lend intellectual relevance to more
-                            directed experience.
+                            directed experience. <br/><a href="http://www.aaronsw.com/weblog/about?curius=1978" target="_blank">--aaronsw</a>
                         </>
                     }
                 />
