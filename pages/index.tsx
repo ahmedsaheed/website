@@ -35,7 +35,7 @@ export default function Home() {
                                 className="moveRight"
                                 style={{ paddingTop: "0.3rem" }}
                             >
-                                <SearchArea />
+                                <SearchArea/>
                             </div>{" "}
                         </h2>
                         <p className="text-stone-500">

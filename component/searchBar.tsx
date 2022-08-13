@@ -70,6 +70,20 @@ const SearchArea = () => {
         ],
       },
       {
+        heading: "General",
+        id: "general",
+        items: [
+          {
+            id: "theme",
+            children: theme == "light" ? "Dark Mode" : "Light Mode",
+            icon: theme === "dark" ? "LightBulbIcon" : "MoonIcon",
+            onClick: () => {toggleDarkMode()},
+          },
+
+        ],
+
+      },
+      {
         heading: "Connect",
         id: "advanced",
         items: [
@@ -80,17 +94,25 @@ const SearchArea = () => {
             href: "https://github.com/ahmedsaheed",
           },
           {
+            id: "curious",
+            children: "Curios",
+            icon: () => <CuriosIcon/>,
+            href: "https://curius.app/ahmed-saheed",
+          },
+          
+          {
             id: "rss",
             children: "RSS",
             icon: "RssIcon",
             href: "/rss/feed.xml",
           },
           {
-            id: "log-out",
-            children: theme == "light" ? "Dark Mode" : "Light Mode",
-            icon: theme === "dark" ? "LightBulbIcon" : "MoonIcon",
-            onClick: () => {toggleDarkMode()},
+            id: "Email",
+            children: "Email",
+            icon: "InboxIcon",
+            href: "mailto:ahmedsaheed2@outlook.com"
           },
+          
         ],
       },
     ],
@@ -168,6 +190,12 @@ const GithubIcon: React.FC<{}> = () => {
       </svg>
     )
   
+  }
+
+  const CuriosIcon: React.FC<{}> = () => {
+    return(
+      <svg   style={{ display: "inline" }} width="16" height="16" viewBox="0 0 126 123" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="25.2" y="22.05" width="100.8" height="100.8" rx="20" fill="#FEE533"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M80.8 8H20C13.3726 8 8 13.3726 8 20V80.8C8 87.4274 13.3726 92.8 20 92.8H80.8C87.4274 92.8 92.8 87.4274 92.8 80.8V20C92.8 13.3726 87.4274 8 80.8 8ZM20 0C8.95431 0 0 8.9543 0 20V80.8C0 91.8457 8.9543 100.8 20 100.8H80.8C91.8457 100.8 100.8 91.8457 100.8 80.8V20C100.8 8.95431 91.8457 0 80.8 0H20Z" fill="black"></path></svg>
+    )
   }
       
     

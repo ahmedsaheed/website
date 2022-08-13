@@ -72,9 +72,17 @@ h3 {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     align-items: flex-start;
-  }
+   
+}
+@media screen and (max-width: 768px) {
+    .scrollport {
+        gap: 2rem;
+    }
+}
+    
+
   
   .scrollport > div {
     width: 182px;
