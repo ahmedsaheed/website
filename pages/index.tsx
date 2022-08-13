@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="spacers mx-auto max-w-3xl space-y-5">
                     <div className="mx-auto max-w-2xl">
                         <br></br>
-                        <h2 className="name third text-stone-100 font-hammersmith mb-4">
+                        <h2 className="name third text-stone-100 font-hammersmith mb-4" style={{paddingBottom: "10px"}}>
                             Ahmed Saheed 
                             <div
                                 className="moveRight"
@@ -38,10 +38,10 @@ export default function Home() {
                                 <SearchArea/>
                             </div>{" "}
                         </h2>
-                        <p className="text-stone-500">
+                        {/* <p className="text-stone-500">
                             <em style={{ fontSize: "16px" }}>{greeting()}</em> Hope you're having a
                             great {currentDayName()}
-                        </p>
+                        </p> */}
                     </div>
 
                     <article>
@@ -410,6 +410,7 @@ export default function Home() {
 
                         <div className="pt-10 grey-text cent ">
                             <span className=" text-sm">
+                            {greeting()}<br/>
                                 CC{" "}
                                 <a
                                     target="_blank"
