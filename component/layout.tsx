@@ -25,6 +25,7 @@ function Layout(PageComponent: any) {
                       
                         <div className="right">
                         <SearchArea/>
+
                         </div>
                     </nav>
                     <main className="mt-12">
