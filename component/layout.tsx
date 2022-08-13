@@ -25,9 +25,6 @@ function Layout(PageComponent: any) {
                       
                         <div className="right">
                         <SearchArea/>
-                            <a className="themeButton">
-                                <Theme />
-                            </a>
                         </div>
                     </nav>
                     <main className="mt-12">

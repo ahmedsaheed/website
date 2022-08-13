@@ -64,7 +64,8 @@ h3 {
 
 .moveRight {
     float: right;
-    padding-right: 10%;
+    /* padding-right: 10%; */
+    font-size: 16px;
    
 }
 .scrollport {
@@ -402,9 +403,6 @@ a {
         margin-left: 0.4rem
     }
 }
-/* .nav button svg {
-    margin-top: 0.5rem;
-} */
 
 h2 {
     font-size: 1.65em;

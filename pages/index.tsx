@@ -4,8 +4,9 @@ import { currentDayName } from "../component/date"
 import { greeting } from "../component/greetings"
 import Head from "next/head"
 import Location from "../component/getLocation"
-import Theme from "../component/theme"
 import { BsArrowUpRight } from "react-icons/bs"
+import SearchArea from "../component/searchBar"
+
 export const date = new Date()
 export default function Home() {
     return (
@@ -30,12 +31,12 @@ export default function Home() {
                         <br></br>
                         <h2 className="name third text-stone-100 font-hammersmith mb-4">
                             Ahmed Saheed 
-                            <a
+                            <div
                                 className="moveRight"
-                                style={{ display: "inline", backgroundColor: "transparent" }}
+                                style={{ paddingTop: "0.3rem" }}
                             >
-                                <Theme />
-                            </a>{" "}
+                                <SearchArea />
+                            </div>{" "}
                         </h2>
                         <p className="text-stone-500">
                             <em style={{ fontSize: "16px" }}>{greeting()}</em> Hope you're having a

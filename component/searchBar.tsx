@@ -4,6 +4,8 @@ import { useState } from "react";
 import Theme from "./theme"
 import {SearchButton} from "./searchButton"
 import React from "react";
+import { useTheme } from "next-themes"
+
 
 
 const SearchArea = () => {
@@ -11,6 +13,14 @@ const SearchArea = () => {
   const [open, setOpen] = useState<boolean>(true);
   const [search, setSearch] = useState("");
   const [click, setClick] = useState<boolean>(false);
+  const { theme, setTheme } = useTheme()
+  const toggleDarkMode = () => {
+      if (theme == "light") {
+          setTheme("dark")
+      } else {
+          setTheme("light")
+      }
+  }
 
   const filteredItems = filterItems(
     [
@@ -66,8 +76,6 @@ const SearchArea = () => {
           {
             id: "github",
             children: "Github",
-            //assign a react component to the icon property
-            // icon: () => <img src="/github.svg" alt="github" />,
             icon:() =>  <GithubIcon/>,
             href: "https://github.com/ahmedsaheed",
           },
@@ -77,14 +85,12 @@ const SearchArea = () => {
             icon: "RssIcon",
             href: "/rss/feed.xml",
           },
-          // {
-          //   id: "log-out",
-          //   children: "Log out",
-          //   icon: "LogoutIcon",
-          //   onClick: () => {
-          //     alert("Logging out...");
-          //   },
-          // },
+          {
+            id: "log-out",
+            children: theme == "light" ? "Dark Mode" : "Light Mode",
+            icon: theme === "dark" ? "LightBulbIcon" : "MoonIcon",
+            onClick: () => {toggleDarkMode()},
+          },
         ],
       },
     ],
