@@ -29,19 +29,16 @@ export default function Home() {
                 <div className="spacers mx-auto max-w-3xl space-y-5">
                     <div className="mx-auto max-w-2xl">
                         <br></br>
-                        <h2 className="name third " style={{paddingBottom: "10px", paddingTop: "10px"}}>
-                            Saheed here! 
+                        <p className="name third " style={{paddingBottom: "10px", paddingTop: "15px", fontSize: "24px"}}>
+                            Ahmed here! 
                             <div
                                 className="moveRight"
                                 style={{ paddingTop: "0.3rem", display: "none" }}
                             >
                                 <SearchArea/>
                             </div>{" "} 
-                        </h2>
-                        {/* <p className="text-stone-500">
-                            <em style={{ fontSize: "16px" }}>{greeting()}</em> Hope you're having a
-                            great {currentDayName()}
-                        </p> */}
+                        </p>
+
                     </div>
 
                     <article>
@@ -52,7 +49,7 @@ export default function Home() {
                         <section className="third scrollport">
                             <div>
                                 <div style={{ paddingTop: "12px" }}>
-                                    <h3>Thoughts</h3>
+                                    <p>Thoughts</p>
                                     <div style={{ minHeight: "84px" }}>
                                         <div>
                                             <span basics-text="">
@@ -144,7 +141,7 @@ export default function Home() {
 
                             <div>
                                 <div style={{ padding: "12px" }}>
-                                    <h3>Projects</h3>
+                                    <p>Projects</p>
                                     <div style={{ minHeight: "84px" }}>
                                         <div>
                                             <span basics-text="">
@@ -244,7 +241,7 @@ export default function Home() {
 
                             <div>
                                 <div style={{ padding: "12px" }}>
-                                    <h3>Books</h3>
+                                    <p>Books</p>
                                     <div style={{ minHeight: "84px" }}>
                                         <div>
                                             <span basics-text="">
@@ -359,7 +356,7 @@ export default function Home() {
                         </p>
                         
                         <p className="third" style={{ fontFamily: "Spectral" }}>
-                            Find me on{" "}
+                            <br/>
                             <a target="_blank" href="https://github.com/ahmedsaheed">
                                 GitHub
                             </a>
@@ -422,6 +419,7 @@ export default function Home() {
                                 2021-{date.getFullYear()} © Ahmed Saheed
                             </span>
                         </div>
+                        <br/>
                     </article>
                 </div>
         </>

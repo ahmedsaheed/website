@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap");
 @import "https://unpkg.com/open-props";
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Newsreader:ital,opsz@1,6..72&family=Source+Sans+Pro:wght@200&family=Spectral:wght@200&family=Stylish&display=swap');
 html *,
 html *:after,
 html *:before {
@@ -12,7 +8,7 @@ html *:before {
 
 :root {
     --color-default: #f5f2e9;
-    --text-color: #3a333d;
+    --text-color: #1d1b1d;
     --dairy: #333;
     --bi: #fff;
     --a-color: #284b63;
@@ -81,7 +77,10 @@ h3 {
     }
 }
     
-
+.scrollport p{
+    font-family:'EB Garamond', sans-serif;
+    font-size: 1.2em
+}
   
   .scrollport > div {
     width: 182px;
@@ -91,7 +90,8 @@ h3 {
   }
 
   .scrollport span {
-    font-family: "Spectral", sans-serif ;
+    font-family: 'Spectral' , sans-serif ;
+    color: var(--text-color);
   }
 
   @media screen and (max-width: 768px) {
