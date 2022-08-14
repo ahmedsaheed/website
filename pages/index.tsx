@@ -29,14 +29,14 @@ export default function Home() {
                 <div className="spacers mx-auto max-w-3xl space-y-5">
                     <div className="mx-auto max-w-2xl">
                         <br></br>
-                        <h2 className="name third text-stone-100 font-hammersmith mb-4" style={{paddingBottom: "10px"}}>
-                            Ahmed Saheed 
+                        <h2 className="name third " style={{paddingBottom: "10px", paddingTop: "10px"}}>
+                            Saheed here! 
                             <div
                                 className="moveRight"
-                                style={{ paddingTop: "0.3rem" }}
+                                style={{ paddingTop: "0.3rem", display: "none" }}
                             >
                                 <SearchArea/>
-                            </div>{" "}
+                            </div>{" "} 
                         </h2>
                         {/* <p className="text-stone-500">
                             <em style={{ fontSize: "16px" }}>{greeting()}</em> Hope you're having a
@@ -341,7 +341,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> 
 
                         <p className="third">
                             This vestibule doors opens onto the intertwined datasets of my
@@ -357,7 +357,7 @@ export default function Home() {
                             puzzling human existence. Please feel free and navigate around, you're
                             warmly welcomed.
                         </p>
-
+                        
                         <p className="third" style={{ fontFamily: "Spectral" }}>
                             Find me on{" "}
                             <a target="_blank" href="https://github.com/ahmedsaheed">

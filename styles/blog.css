@@ -32,7 +32,7 @@
 */
 
 html {
-    line-height: 1.5;
+    /* line-height: 1.5; */
     /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
@@ -356,11 +356,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
 }
 
-:root,
-[data-theme] {
-    background-color: hsla(var(--b1) / var(--tw-bg-opacity, 1));
-    color: hsla(var(--bc) / var(--tw-text-opacity, 1));
-}
 
 html {
     -webkit-tap-highlight-color: transparent;

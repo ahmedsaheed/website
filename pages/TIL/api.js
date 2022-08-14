@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { Octokit } from "@octokit/core"
 import MainDiary from "./EntriesMapper"
+import Loader from "../../component/loader"
+import entry from "."
 
 const token = process.env.github_api
 const id = "a928b1fbcf1738da26ea5d7125e911cb"
@@ -30,7 +32,7 @@ class Dairy extends Component {
     render() {
         return (
             <div className="xoxo">
-                <MainDiary entry={this.state.entry} />
+               {entry.lenght < 1 ? <Loader/> : <MainDiary entry={this.state.entry} /> } 
             </div>
         )
     }

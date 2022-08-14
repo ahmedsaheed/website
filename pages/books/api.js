@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import request from "superagent"
+import books from "."
 import BookList from "./BookMapper"
+import Loader from "../../component/loader"
 
 class Book extends Component {
     constructor(props) {
@@ -23,7 +25,7 @@ class Book extends Component {
     render() {
         return (
             <div className="bookpad mx-auto max-w-3xl space-y-5">
-                <BookList books={this.state.books} />
+                {books.length < 1 ?  <Loader/>:   <BookList books={this.state.books} />} 
             </div>
         )
     }

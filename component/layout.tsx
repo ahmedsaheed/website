@@ -17,9 +17,9 @@ function Layout(PageComponent: any) {
                 <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
                     <nav className="nav mx-auto max-w-3xl space-y-5" style={{paddingBottom: "10px"}}>
                         <div className="">
-                            <a className="cd hover-underline-animation" href="/">
+                            {/* <a className="cd hover-underline-animation" href="/">
                                 cd ..
-                            </a>
+                            </a> */}
                             <div className="Navspace"></div>
                         </div>
                       

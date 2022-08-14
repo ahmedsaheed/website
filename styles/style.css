@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Spectral&family=Stylish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap");
 @import "https://unpkg.com/open-props";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+
+html *,
+html *:after,
+html *:before {
+    box-sizing: inherit; 
+}
 
 :root {
     --color-default: #f5f2e9;
@@ -12,12 +20,6 @@
     --p-color: #bbbbbb;
     --italics: "Newsreader";
     --search-color: #E7E5E0;
-}
-
-html *,
-html *:after,
-html *:before {
-    box-sizing: inherit; 
 }
 
 [data-theme="light"] {
@@ -47,12 +49,10 @@ html *:before {
 html body {
     font-family: 100%/1.5 "Spectral", system-ui, helvetica, sans-serif;
     color: var(--text-color);
-    min-height: 100%;
-    width: 100%;
+    width: 100vw;
+    min-height: 100vh;
     background: var(--bi);
     transition: background 0.3s;
-    background-attachment: fixed;
-    background-size: cover;
     -webkit-font-smoothing: antialiased;
 }
 h3 {
@@ -64,7 +64,6 @@ h3 {
 
 .moveRight {
     float: right;
-    /* padding-right: 10%; */
     font-size: 16px;
    
 }
@@ -123,16 +122,23 @@ hr:after {
     transform: translateY(-0.1em);
     z-index: -999;
 }
-
 .spacers {
-    padding: 2em;
+    padding-top: 2em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .spacers {
+        padding: 2em;
+        padding-top: 0;
+    }
 }
 em {
     font: 600 italic calc(1em + 1px) / normal var(--italics);
 }
 
 .name {
-    font-family: "Stylish", sans-serif;
+    font-family: 'EB Garamond', serif;
     color: var(--name);
 
 }
@@ -229,8 +235,6 @@ p {
 }
 
 .grid-item {
-    /* border: 1px solid var(--text-color);
-    border-style: dotted; */
     padding: 10px;
     font-size: 10px;
     text-align: center;
@@ -318,7 +322,7 @@ p {
 
 .text-3xl {
     font-size: 1.875rem;
-    font-family: "Stylish", sans-serif;
+    font-family: 'EB Garamond', serif;
 }
 
 .text {
@@ -327,15 +331,6 @@ p {
     background-color: none;
 }
 
-nav a {
-    background-color: transparent;
-    color: var(--text-color);
-    font-family: "Stylish", sans-serif;
-}
-.text2:hover {
-    color: plum;
-    text-decoration: none;
-}
 .cent {
     text-align: center;
     padding-top: 50px;
@@ -434,34 +429,10 @@ h2 {
     color: var(--text-color);
 }
 
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: var(--text-color);
-}
-
-.hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: plum;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
 .post-title {
     font-size: 25px;
     color: var(--name);
-    font-family: "Hammersmith One";
+    font-family: 'EB Garamond', serif;
 }
 .title {
     font-family: "Stylish";

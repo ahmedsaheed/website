@@ -1,9 +1,11 @@
 import "react-cmdk/dist/cmdk.css";
 import CommandPalette, { filterItems, getItemIndex } from "react-cmdk";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {SearchButton} from "./searchButton"
 import React from "react";
 import { useTheme } from "next-themes"
+import Location from "../component/getLocation"
+
 
 
 
@@ -20,6 +22,20 @@ const SearchArea = () => {
           setTheme("light")
       }
   }
+
+  useEffect(() => {
+    document.addEventListener("keydown", detectKeydown, true)
+  }, [])
+
+function detectKeydown(e: KeyboardEvent) {
+  if (e.metaKey && e.key === "k") {
+    e.preventDefault();
+    e.stopPropagation();
+    setClick(!click);
+  } else if (e.key === "Escape") {
+    setClick(false)
+  }
+}
 
   const filteredItems = filterItems(
     [
@@ -57,15 +73,6 @@ const SearchArea = () => {
             icon: "CollectionIcon",
             href: "/projects",
           },
-          // {
-          //   id: "saas",
-          //   children: "sasa",
-          //   icon: "CollectionIcon",
-          //   closeOnSelect: false,
-          //   onClick: () => {
-          //     <Theme/>;
-          //   },
-          // },
         ],
       },
       {
