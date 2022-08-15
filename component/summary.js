@@ -3,7 +3,7 @@ import React from "react"
 const Summary = ({ title, content }) => {
     return (
         <header className="mx-auto max-w-3xl space-y-5">
-            <h1 className="text-3xl font-am px-10">{title}</h1>
+            <p style={{fontSize: "24px"}} className="name font-am px-10">{title}</p>
             <div
                 className="page-summary bg-am-black text-am-white mx-2 md:mx-0 p-10 rounded-lg prose max-w-full"
             >
