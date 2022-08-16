@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Dairy from "./api"
+import Dairy from "./Api"
 import { NextSeo } from "next-seo"
 import Head from "next/head"
 import Layout from "../../component/layout"

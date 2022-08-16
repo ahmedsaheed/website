@@ -20,7 +20,7 @@
         "**/*.ts",
         "**/*.tsx",
         "component/theme.js",
-        "pages/books/api.js",
+        "pages/books/api.txs",
         "component/summary.js"
     ],
     "exclude": ["node_modules"]

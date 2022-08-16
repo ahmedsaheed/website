@@ -3,9 +3,10 @@ import { NextSeo } from "next-seo"
 import { currentDayName } from "../component/date"
 import { greeting } from "../component/greetings"
 import Head from "next/head"
-import Location from "../component/getLocation"
 import { BsArrowUpRight } from "react-icons/bs"
 import SearchArea from "../component/searchBar"
+import Location from "../component/getLocation"
+
 
 export const date = new Date()
 export default function Home() {

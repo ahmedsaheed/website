@@ -1,9 +1,10 @@
 import React, { Component } from "react"
-import Book from "./api"
 import { NextSeo } from "next-seo"
 import Summary from "../../component/summary"
 import Head from "next/head"
 import Layout from "../../component/layout"
+import Books from "./Api"
+
 
 function books() {
     return (
@@ -43,7 +44,10 @@ function books() {
                 }
             />
             <br />
-            <Book className="bookpad" />
+           
+             <Books />
+           
+
             <br />
         </>
     )

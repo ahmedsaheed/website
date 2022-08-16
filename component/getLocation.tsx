@@ -3,14 +3,12 @@ import axios from "axios"
 import Link from "next/link"
 
 class Location extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
+    state = {
             countryName: "",
             countryCode: "",
         }
-    }
-    getGeoInfo = () => {
+    
+     getGeoInfo = () => {
         axios
             .get("https://ipapi.co/json/")
             .then((response) => {

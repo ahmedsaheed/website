@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import {SearchButton} from "./searchButton"
 import React from "react";
 import { useTheme } from "next-themes"
-import Location from "../component/getLocation"
 
 
 
