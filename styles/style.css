@@ -193,6 +193,7 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;
+    border-bottom: 1px solid var(--text-color);
     transition: background 500ms ease;
     -webkit-tap-highlight-color: transparent;
     outline: 0;
