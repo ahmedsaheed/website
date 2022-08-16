@@ -1,9 +1,10 @@
 import "react-cmdk/dist/cmdk.css";
 import CommandPalette, { filterItems, getItemIndex } from "react-cmdk";
 import { useEffect, useState } from "react";
-import {SearchButton} from "./searchButton"
 import React from "react";
 import { useTheme } from "next-themes"
+import {SearchButton} from "./searchButton"
+
 
 
 

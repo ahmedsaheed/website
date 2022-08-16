@@ -36,7 +36,7 @@ export default function Home() {
 
                     </div>
                     <article>
-                    <h1 style={{fontSize: "36px"}}>Crafting & Learning delightful web experiences and user interfaces</h1>
+                    <h1 className="third"style={{fontSize: "36px"}}>Crafting & Learning delightful web experiences and user interfaces</h1>
                     <p className="third">
                             Finally, you made it to my tiny court yard on the web, I see you've come
                             all the way from <Location />. Currently, I'm working on <a target="_blank" rel="noopener" href="https://algo-ai.vercel.app/"> AlgoAI </a>, an algorithms codegen that convert english into algorithms. Also, i enjoy experimenting with proven thoughts frameworks alondsige pondering on human psychology.
