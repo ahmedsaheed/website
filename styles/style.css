@@ -10,7 +10,7 @@ html *:before {
     --color-default: #f5f2e9;
     --text-color: #1d1b1d;
     --dairy: #333;
-    --bi: #fff;
+    --bi: #f3f2f3;
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #bbbbbb;
@@ -22,7 +22,7 @@ html *:before {
     --color-default: #f5f2e9;
     --text-color: #3a333d;
     --dairy: #333;
-    --bi: #fff;
+    --bi: #f3f2f3;
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #bbbbbb;
