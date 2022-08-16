@@ -558,3 +558,13 @@ img{
 .truncate{
     font-family: "Spectral";
 }
+
+.page p pre code{
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: "Stylish";
+}
+
+.page code{
+    font-family: "Stylish";
+}
