@@ -27,7 +27,7 @@ function til() {
             </Head>
             <header className="mx-auto max-w-3xl space-y-5">
                 <Summary
-                    title="Today I Learnt"
+                    title=""
                     content={
                         <>
                             A catalog of referenceable notes documented at least thrice a week. I
@@ -58,4 +58,4 @@ function til() {
     )
 }
 
-export default Layout(til)
+export default Layout(til, "TIL")

@@ -123,6 +123,7 @@ em {
     color: var(--name);
 
 }
+
 code {
     background-color: rgba(143, 159, 169, 0.15);
     border-radius: 6px;
@@ -363,11 +364,15 @@ a {
     box-sizing: border-box;
     color: var(--text-color);
 }
+.nav .name{
+    padding-left: 1rem;
+}
 
 .nav .right {
     flex-direction: row;
     display: flex;
     float: right;
+    padding-top: 5px
 }
 .Navspace{
     flex: auto

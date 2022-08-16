@@ -6,7 +6,7 @@ import SearchArea from "./searchBar"
 import {useState} from 'react';
 import { greeting } from "./greetings"
 
-function Layout(PageComponent: any) {
+function Layout(PageComponent: any, title: string) {
     const PageComponentWithLayout = ({ ...pageProps }) => {
         return (
             <>
@@ -17,6 +17,7 @@ function Layout(PageComponent: any) {
                 <div className="spacers py-32 mx-auto max-w-2xl px-6 md:px-0">
                     <nav className="nav mx-auto max-w-3xl space-y-5" style={{paddingBottom: "10px"}}>
                         <div className="">
+                        <p className="name" style={{fontSize: "24px"}}>{title}</p>  
                             <div className="Navspace"></div>
                         </div>
                       

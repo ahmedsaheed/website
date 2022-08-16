@@ -32,7 +32,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
 
             <header className="mx-auto max-w-3xl space-y-5">
                 <Summary
-                    title="The Garden"
+                    title=""
                     content={
                         <>
                             In a digital garden there is a combination of personal experience and professional
@@ -96,4 +96,4 @@ export const getStaticProps: GetStaticProps = async () => {
     }
 }
 
-export default Layout(SecondBrain)
+export default Layout(SecondBrain, "The Garden")

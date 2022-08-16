@@ -116,7 +116,7 @@ function projects() {
 
             <header className=" mx-auto max-w-3xl space-y-5">
                 <Summary
-                    title="Projects"
+                    title=""
                     content={
                         <>
                             I am persuaded that normal human beings are biologically built for an
@@ -273,4 +273,4 @@ function projects() {
     )
 }
 
-export default Layout(projects)
+export default Layout(projects, "Projects")

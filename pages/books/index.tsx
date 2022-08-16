@@ -27,7 +27,7 @@ function books() {
                 <title>Books | Ahmed Saheed</title>
             </Head>
             <Summary
-                title="Books"
+                title=""
                 content={
                     <>
                         In science fiction which was published around the 1920s, "It is always
@@ -52,4 +52,4 @@ function books() {
         </>
     )
 }
-export default Layout(books)
+export default Layout(books, "Library")
