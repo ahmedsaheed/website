@@ -14,12 +14,9 @@ function Layout(PageComponent: any) {
                     <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
 
-                <div className="py-32 mx-auto max-w-2xl px-6 md:px-0">
+                <div className="spacers py-32 mx-auto max-w-2xl px-6 md:px-0">
                     <nav className="nav mx-auto max-w-3xl space-y-5" style={{paddingBottom: "10px"}}>
                         <div className="">
-                            {/* <a className="cd hover-underline-animation" href="/">
-                                cd ..
-                            </a> */}
                             <div className="Navspace"></div>
                         </div>
                       

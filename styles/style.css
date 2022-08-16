@@ -63,43 +63,6 @@ h3 {
     font-size: 16px;
    
 }
-.scrollport {
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    display: flex;
-    gap: 5rem;
-    align-items: flex-start;
-   
-}
-@media screen and (max-width: 768px) {
-    .scrollport {
-        gap: 2rem;
-    }
-}
-    
-.scrollport p{
-    font-family:'EB Garamond', sans-serif;
-    font-size: 1.2em
-}
-  
-  .scrollport > div {
-    width: 182px;
-    height:350px;
-    background-color: transparent;
-    aspect-ratio: var(--ratio-square);
-  }
-
-  .scrollport span {
-    font-family: 'Spectral' , sans-serif ;
-    color: var(--text-color);
-  }
-
-  @media screen and (max-width: 768px) {
-    .scrollport  {
-        -webkit-mask-image: linear-gradient(to right,transparent 0,#000 0px,#000 calc(100% - 20%),transparent 100%);
-    }
-  }
-
   
 hr {
 
@@ -129,8 +92,12 @@ hr:after {
 
 @media screen and (max-width: 768px) {
     .spacers {
-        padding: 2em;
         padding-top: 6vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gapps {
+        padding: 2em;
     }
 }
 @media screen and (max-width: 768px) {
@@ -338,12 +305,6 @@ p {
 .text-3xl {
     font-size: 1.875rem;
     font-family: 'EB Garamond', serif;
-}
-
-.text {
-    font-family: "Hammersmith One";
-    text-decoration: none;
-    background-color: none;
 }
 
 .cent {
@@ -554,6 +515,9 @@ img{
     align-items: center;
     cursor: pointer;
     
+}
+.search-icon:hover{
+    transform: scale(1.01, 1.01);
 }
 
 .search-icon p{
