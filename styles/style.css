@@ -31,12 +31,12 @@ html *:before {
 }
 [data-theme="dark"] {
     --color-default: #000;
-    --text-color: #bbbbbb;
+    --text-color: #d4d4d4;
     --color-border: #e7e7e7;
     --dairy: #333;
     --bi: hsla(0, 0%, 9%, 1);
     --name: #fff;
-    --a-color: #819fb3 !important;
+    --a-color: #eab308 !important;
     --p-color: #bbbbbb;
     --italics: "Newsreader";
     --search-color:#33312f !important
@@ -123,16 +123,30 @@ hr:after {
     z-index: -999;
 }
 .spacers {
-    padding-top: 2em;
+    padding-top: 20vh;
 }
 
 
 @media screen and (max-width: 768px) {
     .spacers {
         padding: 2em;
-        padding-top: 0;
+        padding-top: 6vh;
     }
 }
+@media screen and (max-width: 768px) {
+    .hide {
+       display: none;
+    }
+    .unhide{
+        padding-top: 2vh ;
+    }
+}
+
+.unhide{
+    background-color: transparent
+}
+    
+
 em {
     font: 600 italic calc(1em + 1px) / normal var(--italics);
 }
