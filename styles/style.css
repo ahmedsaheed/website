@@ -126,6 +126,7 @@ em {
 
 }
 
+
 code {
     background-color: rgba(143, 159, 169, 0.15);
     border-radius: 6px;
@@ -203,7 +204,7 @@ blockquote {
 
 
 h1 {
-    font-family: "Stylish", "ui-serif";
+    font-family: "ui-serif";
     font-size: 2.5rem;
     color: var(--name);
 }
@@ -478,7 +479,9 @@ h2 {
     color: #bbbbbb;
 }
 .bookpad{
-    padding: 1rem;
+    margin: auto;
+    margin-left: 1px;
+
 }
 
 .spinner {
