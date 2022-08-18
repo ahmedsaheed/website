@@ -15,6 +15,7 @@ html *:before {
     --p-color: #bbbbbb;
     --italics: "Newsreader";
     --search-color: #E7E5E0;
+    --samp: #858585;
 }
 
 [data-theme="light"] {
@@ -27,6 +28,7 @@ html *:before {
     --p-color: #bbbbbb;
     --italics: "Newsreader";
     --search-color: #E7E5E0;
+    --samp: #858585;
 }
 [data-theme="dark"] {
     --color-default: #000;
@@ -38,7 +40,8 @@ html *:before {
     --a-color: #eab308 !important;
     --p-color: #bbbbbb;
     --italics: "Newsreader";
-    --search-color:#33312f !important
+    --search-color:#33312f !important;
+    --samp: #7e7e7e;
 }
 
 html body {
@@ -352,6 +355,43 @@ a {
     margin-top: -2rem;
 }
 
+samp a{
+    background-color: transparent;
+    color: var(--samp);
+}
+samp a:hover {
+    color: var(--text-color);
+}
+samp{
+    color: var(--samp);
+}
+@media (max-width: 768px){
+    .marquee {
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0;
+        height: 16px;
+        display: block;
+    }
+
+    samp{
+    display: inline-block;
+    text-indent: 0;
+    overflow: hidden;
+        animation: marquee 15s linear infinite;
+        will-change: transform;
+        text-indent: 0;
+
+
+    }
+}
+  @keyframes marquee {
+    0% { transform: translate(100%, 0); -webkit-transform: translateX(100%); }
+    100% { transform: translate(-100%, 0); -webkit-transform: translateX(-100%); }
+}
+
 .page-summary p {
     font-family: "Stylish", sans-serif;
 }
@@ -528,6 +568,7 @@ img{
     display: inline;
     padding: 0 1.5em 0 2em;
 }
+
 .search-icon svg{
     cursor: pointer;
     width: 18px;

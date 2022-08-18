@@ -6,6 +6,7 @@ import Head from "next/head"
 import { BsArrowUpRight } from "react-icons/bs"
 import SearchArea from "../component/searchBar"
 import Location from "../component/getLocation"
+import Clock from "react-live-clock"
 
 
 export const date = new Date()
@@ -56,12 +57,18 @@ export default function Home() {
                             warmly welcomed.
                         </p>
 
+                            <div className="marquee">                     
+                            <samp className="Third"> <Clock
+                                    format={'HH:mm:ss'}
+                                    ticking={true}
+                                    timezone={'Europe/Dublin'} /> • Dublin, Ireland • Last visted from <Location/> • </samp>
+
+                            </div>
+
                         <div style={{paddingTop: "2vh" }}>
                         <p className="third" style={{ display: "inline", fontFamily: "Spectral"}}>
                         <div className="moveRight">
-                                <SearchArea/>
-
-                      
+                                <SearchArea/>                      
                             </div>{" "} 
                             
                             <a className="hide" target="_blank" href="https://github.com/ahmedsaheed">

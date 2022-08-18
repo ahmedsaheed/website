@@ -5,7 +5,8 @@ import Link from "next/link"
 class Location extends Component {
     state = {
             countryName: "",
-            countryCode: "",
+            countryCity: "",
+            flag: "",
         }
     
      getGeoInfo = () => {
@@ -15,7 +16,7 @@ class Location extends Component {
                 let data = response.data
                 this.setState({
                     countryName: data.country_name,
-                    countryCode: data.country_calling_code,
+                    countryCity: data.city,
                 })
             })
             .catch((error) => {
@@ -34,7 +35,7 @@ class Location extends Component {
                 href="https://en.wikipedia.org/wiki/"
                 as={`https://en.wikipedia.org/wiki/${this.state.countryName}`}
             >
-                {this.state.countryName}
+                {`${this.state.countryCity}, ${this.state.countryName}`}
             </Link>
         )
     }
