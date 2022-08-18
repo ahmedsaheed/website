@@ -4,13 +4,24 @@ import Summary from "../../component/summary"
 import Head from "next/head"
 import Layout from "../../component/layout"
 import "katex/dist/katex.min.css"
-
-{ /* const markdown = `
-
-Here is a collection of notable projects that I've worked on and or currently tinkering.
+import ReactMarkdown from 'react-markdown'
 
 
-## Qurancli -- 📖 quranCLI is simple tool to Read, Search and Recite the Quran from your terminal.
+
+ const markdown = `
+
+ ---
+
+## Algo-AI -- Convert plain english into algorithms. 
+![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
+[Code](https://github.com/ahmedsaheed/AlgoAI)  ![](https://api.iconify.design/iconoir:internet.svg?color=%23888888)[Site](https://algo-ai.vercel.app/) 
+
+A web application that uses gpt3 code generation to generate algorithms from plain english.
+
+Built with: ![](https://api.iconify.design/mdi:react.svg?color=%23888888)React ![](https://api.iconify.design/mdi:tailwind.svg?color=%23888888)Tailwind ![](https://api.iconify.design/logos:nextjs.svg?color=%23888888)NextJS ![](https://api.iconify.design/ion:logo-vercel.svg?color=%23888888)Vercel
+
+
+## Qurancli -- A simple tool to Read, Search and Recite the Quran from your terminal.
 ![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
 [Code](https://github.com/ahmedsaheed/quranCLI)   ![alt text](https://api.iconify.design/et:documents.svg?color=%23888888) [Documentation](https://github.com/ahmedsaheed/quranCLI/blob/main/README.md)
 
@@ -91,7 +102,6 @@ Very simple flutter application for flight checkup. Developed to solidify my und
 Built with: ![](https://api.iconify.design/material-symbols:flutter.svg?color=%23888888)Flutter ![](https://api.iconify.design/mdi:google-maps.svg?color=%23888888)Google Maps and API AviationStack API
 
 `
-*/}
 function projects() {
     return (
         <>
@@ -122,152 +132,15 @@ function projects() {
                             I am persuaded that normal human beings are biologically built for an
                             activity that is aimed towards a goal and that idleness, or aimless work
                             gives rise to suffering and to entropy.
-                            <br/>Here's a curation of projects i've worked on.
+                            Here's a curation of projects i've worked on.
                         </>
                     }
                 />
 
-                <section className="px-10 bookpad">
-                    <p className=" liner " style={{ fontSize: "14px" }}>
-                        {" "}
-                        Here are some tangible onces{" "}
-                    </p>
-                    <div className="space-y-8">
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                QuranCLI
-                            </h3>
 
-                            <em className="font-fanwood italic ">live</em>
-                        </div>
+            <ReactMarkdown className="mx-auto projects pads" children={markdown} />
 
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            A command line app to Read, Search and Recite the Quran from your
-                            terminal.
-                        </div>
-
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                My Neovim!
-                            </h3>
-
-                            <em className="font-fanwood italic ">live</em>
-                        </div>
-
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            A Zen like neovim configuration
-                        </div>
-
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                My Second Brain
-                            </h3>
-
-                            <em className="font-fanwood italic ">live</em>
-                        </div>
-
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            A place where i store ideas in an interwoven manner.
-                        </div>
-                    </div>
-                </section>
-                <section className="px-10 bookpad">
-                    <p className=" liner " style={{ fontSize: "14px" }}>
-                        {" "}
-                        It once meant alot{" "}
-                    </p>
-                    <div className="space-y-8">
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                Donation Hub
-                            </h3>
-
-                            <em className="font-fanwood italic ">dead</em>
-                        </div>
-
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            A bay which harbours a bunch of donation bodies.
-                        </div>
-
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                Sassy Chatbot
-                            </h3>
-
-                            <em className="font-fanwood italic ">dead</em>
-                        </div>
-
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            Reinventing Amazon Alexa with poor algorithms.
-                        </div>
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                Boomerang
-                            </h3>
-
-                            <em className="font-fanwood italic ">dead</em>
-                        </div>
-
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            A daycare service where kids keep returining
-                        </div>
-                    </div>
-                </section>
-                <section className="px-10 bookpad">
-                    <p className=" liner " style={{ fontSize: "14px" }}>
-                        {" "}
-                        Those quick hack due to boredom{" "}
-                    </p>
-                    <div className="space-y-8">
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                Libary Box
-                            </h3>
-
-                            <em className="font-fanwood italic ">wip</em>
-                        </div>
-
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            Let them know whats on your shelf
-                        </div>
-
-                        <div className="flex justify-between items-center">
-                            <h3
-                                style={{ fontFamily: "14px" }}
-                                className="text-lg font-medium mb-1 text-stone-100 group-hover:text-stone-400 transition-colors duration-300"
-                            >
-                                Flight Stat
-                            </h3>
-
-                            <em className="font-fanwood italic ">wip</em>
-                        </div>
-
-                        <div className="text-sm text-stone-400 group-hover:text-stone-500 transition-colors duration-300">
-                            Where's my flight?
-                        </div>
-                    </div>
-                </section>
+            
             </header>
         </>
     )

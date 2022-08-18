@@ -430,7 +430,7 @@ samp{
 
 h2 {
     font-size: 1.65em;
-    font-family: "Stylish", sans-serif;
+    font-family: ui-serif
 }
 
 .prose {
@@ -450,10 +450,20 @@ h2 {
     color: var(--text-color);
 }
 
+.projects img{
+    display: inline;
+    margin-left: 2px;
+}
+.projects hr:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--text-color);
+}
+
 .post-title {
     font-size: 25px;
     color: var(--name);
-    font-family: 'EB Garamond', serif;
+    font-family: ui-serif;
 }
 .title {
     font-family: "Stylish";

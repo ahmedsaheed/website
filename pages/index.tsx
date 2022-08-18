@@ -97,8 +97,8 @@ export default function Home() {
                             </a>
                              {" "}
                             <a className="hide"  target="_blank" href="https://twitter.com/helloahmed_">
-                                Twitter
-                            </a>{" "}
+                                Twitter{""}{" "}
+                            </a>
                             <a className="unhide"  target="_blank" href="https://twitter.com/helloahmed_">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -120,11 +120,16 @@ export default function Home() {
                             •
                             </a>
                              {" "}
+                            <a className="hide"  target="_blank" href="/rss/feed.xml">Feed {" "} {" "}
+                            </a>{" "}{" "}{" "}
+                            <a className="unhide"  target="_blank" href="/rss/feed.xml"><svg style={{ display: "inline" }} width="32" height="16" viewBox="0 0 24 24"><path fill="#888888" d="M5 21q-.825 0-1.413-.587Q3 19.825 3 19q0-.825.587-1.413Q4.175 17 5 17q.825 0 1.412.587Q7 18.175 7 19q0 .825-.588 1.413Q5.825 21 5 21Zm12 0q0-2.9-1.1-5.438q-1.1-2.537-3.012-4.45Q10.975 9.2 8.438 8.1Q5.9 7 3 7V4q3.525 0 6.625 1.338q3.1 1.337 5.4 3.637q2.3 2.3 3.638 5.4Q20 17.475 20 21Zm-6 0q0-3.325-2.338-5.662Q6.325 13 3 13v-3q2.3 0 4.3.863q2 .862 3.488 2.349q1.487 1.488 2.349 3.488Q14 18.7 14 21Z"/></svg> {" "}•</a>
+                            {" "}
                             <a className="hide"  target="_blank" href="https://curius.app/ahmed-saheed">Curius 
-                            </a>{" "}
+                            </a>{" "}{" "}
                             <a className="unhide"  target="_blank" href="https://curius.app/ahmed-saheed"><svg   style={{ display: "inline" }} width="16" height="16" viewBox="0 0 126 123" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="25.2" y="22.05" width="100.8" height="100.8" rx="20" fill="#FEE533"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M80.8 8H20C13.3726 8 8 13.3726 8 20V80.8C8 87.4274 13.3726 92.8 20 92.8H80.8C87.4274 92.8 92.8 87.4274 92.8 80.8V20C92.8 13.3726 87.4274 8 80.8 8ZM20 0C8.95431 0 0 8.9543 0 20V80.8C0 91.8457 8.9543 100.8 20 100.8H80.8C91.8457 100.8 100.8 91.8457 100.8 80.8V20C100.8 8.95431 91.8457 0 80.8 0H20Z" fill="black"></path></svg>
+                            {" "}
                             </a> 
-
+                            {" "}
                         </p>
                         </div>
                         </article>  

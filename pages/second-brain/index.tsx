@@ -45,7 +45,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             byproducts of everyday life, snatches of conversation overheard in the
                             street, or, for that matter, dreams. Once noted, these may lead to more
                             systematic thinking, as well as lend intellectual relevance to more
-                            directed experience. <br/><a href="http://www.aaronsw.com/weblog/about?curius=1978" target="_blank">--aaronsw</a>
+                            directed experience. {"   "}<a href="http://www.aaronsw.com/weblog/about?curius=1978" target="_blank">--aaronsw</a>
                         </>
                     }
                 />
