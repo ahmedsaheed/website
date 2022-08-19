@@ -39,22 +39,22 @@ export default function Home() {
                     <article>
                     <h1 className="third"style={{fontSize: "36px"}}>Crafting & Learning delightful web experiences and user interfaces</h1>
                     <p className="third">
-                            Finally, you made it to my tiny court yard on the web, I see you've come
-                            all the way from <Location />. Currently, I'm working on <a target="_blank" rel="noopener" href="https://algo-ai.vercel.app/"> AlgoAI </a>, an algorithms codegen that convert english into algorithms. Also, i enjoy experimenting with proven thoughts frameworks alondsige pondering on human psychology.
+                            Hey, you've finally made it to my tiny court yard on the web. I perceive you've come
+                            all the way from <Location />. Well, I'm currently working on <a target="_blank" rel="noopener" href="https://algo-ai.vercel.app/"> AlgoAI </a>, an algorithms codegen that convert english into algorithms. 
+                            I'm also experimenting with proven thought frameworks and human psychology.
                         </p>
                         <p className="third">
                             This vestibule doors opens onto the intertwined datasets of my
                             brain. More like a library where i store valuable piece of
-                             information and an archieve of my personal growth. Currently, i am
+                             information and an archieve of my personal growth. While
                             engaged in{" "}
                             <a target="_blank" href="https://griffith.ie">
                                 college
                             </a>{" "}
-                            activities alongside building <a href="/projects">projects</a> and
-                            contributing to open source. Also, I am having a great time being lost
-                            in <a href="/second-brain/tolstoy">Tolstoy's</a> Literature while
-                            puzzling human existence. Please feel free and navigate around, you're
-                            warmly welcomed.
+                            activities, building <a href="/projects">projects</a> alongside
+                            contributing to open source, I'm also having a great time being lost
+                            in <a href="/second-brain/tolstoy">Tolstoy's</a> literature and other art works.
+                            Without further ado feel at home and explore around, you're warmly welcomed!
                         </p>
 
                             <div className="marquee">                     
