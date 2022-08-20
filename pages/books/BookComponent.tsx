@@ -6,18 +6,20 @@ const BookCard = (props: any) => {
         <div className="grid-item">
             <a href={props.url}>
                 <img
-                    style={{ display: "block", marginLeft: "auto", marginRight: "auto", borderRadius: "7px" }}
+                    style={{
+                        display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        borderRadius: "7px",
+                    }}
                     src={props.image}
                     alt="Books"
                 />
             </a>
-           <p><BookRating rating={props.rating} /></p>
+            <p>
+                <BookRating rating={props.rating} />
+            </p>
             <h3>{props.author}</h3>
-
-              
-
-
-            
         </div>
     )
 }
