@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { NextSeo } from "next-seo"
 import Summary from "../../component/summary"
 import Head from "next/head"

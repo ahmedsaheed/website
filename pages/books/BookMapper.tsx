@@ -1,6 +1,6 @@
 import React from "react"
 import BookCard from "./BookComponent"
-import Loader from "../../component/loader"
+
 const BookList = (props: any) => {
     return (
         <div>

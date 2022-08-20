@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Dairy from "./Api"
 import { NextSeo } from "next-seo"
 import Head from "next/head"

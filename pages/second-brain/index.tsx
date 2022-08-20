@@ -1,9 +1,8 @@
-import { GetStaticPaths, GetStaticProps } from "next"
+import { GetStaticProps } from "next"
 import Link from "next/link"
 import { NextSeo } from "next-seo"
 import Layout from "../../component/layout"
-import { getContentBySlug, getAllContent } from "../../lib/api"
-const readingTime = require("reading-time")
+import { getAllContent } from "../../lib/api"
 import Head from "next/head"
 import { BrainEntry } from "../../lib/api"
 import { format } from "date-fns"

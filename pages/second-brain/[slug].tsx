@@ -6,7 +6,7 @@ import { markdownToHtml } from "../../lib/mdToHtml"
 import { getContentBySlug, getAllContent } from "../../lib/api"
 import Layout from "../../component/layout"
 import { NextSeo } from "next-seo"
-const readingTime = require("reading-time")
+import readingTime from "reading-time"
 import { format } from "date-fns"
 
 import React from "react"
