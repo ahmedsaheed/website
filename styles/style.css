@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Newsreader:ital,opsz@1,6..72&family=Source+Sans+Pro:wght@200&family=Spectral:wght@200&family=Stylish&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&display=swap');
 
 html *,
@@ -89,6 +88,7 @@ hr:after {
     background: var(--bi);
     transform: translateY(-0.1em);
     z-index: -999;
+    padding-top: 22px
 }
 .spacers {
     padding-top: 20vh;
@@ -604,7 +604,9 @@ img{
     white-space: pre-wrap;
     font-family: "Stylish";
 }
-
 .page code{
     font-family: "Stylish";
+}
+code span{
+    font-family: "Spectral";
 }

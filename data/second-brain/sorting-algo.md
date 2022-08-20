@@ -33,14 +33,13 @@ The rules of this algorithms are as follows.
 	for(int i=0; i < arr.length; i++){
 		for(int j=1; j < (arr.length - i); j++){
 		if(arr[j-1] > arr[j]){
-//swap elements
 			temp = arr[j-1];
 			arr[j-1] = arr[j];
 			arr[j] = temp;
-			} // if close
-		} // inner for loop close
-	} // outer for loop close
-} // end of method
+			} 
+		} 
+	} 
+} 
 
 //Time Complexity is mostly = 0(n^2)
 
@@ -59,21 +58,17 @@ It’s a very basic and straight forward way of sorting here are the steps:
 3.  Now repeat the above process, this time start scanning from index[i]+1 (because index[i] is already sorted.(where i = currentIndex))
 4.  Reiterate the process till you get to the last data which MUST be the largest.
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f069ac77-d23d-4be8-b4d4-75c1b13803a1/Screenshot_2022-03-01_at_17.43.06.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T202515Z&X-Amz-Expires=86400&X-Amz-Signature=ba6a02b3f9fe06d2f5d3c7034dabbe946ac5153410dedcaea3c5037b4e6d767a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252017.43.06.png%22&x-id=GetObject)
 
 ```java
 static void selectionSort(int f[]){
-	for(int i = 0; i < f.length; i = i + 1){  //iterate through the dataset
+	for(int i = 0; i < f.length; i = i + 1){  
 		int currMin = i;
-		 //storing our current Minimum
 		for(int j = i + 1; j < f.length; j = j + 1){
-			//repeating the iteration from index[i]+1
-			if(f[j] < f[currMin])
-					currMin = j;
+			if(f[j] < f[currMin]){
+				currMin = j;
+			}	
 	}
-// swap f[currMin] with f[i]
 		int temp = f[i];
-		//temporary variable to hold f[i]
 		f[i] = f[currMin];
 		f[currMin] = temp;
 	}
@@ -92,18 +87,16 @@ This algorithm is a basic one. Here it’s very similar to sorting a pack of car
 4.  Now we’d all those predecessors greater than KEY by one position forward to create space for KEY
 5.  We’d insert key into its rightful space.
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/74345031-05e4-4563-8f69-3a9c9f8475c8/Screenshot_2022-03-01_at_18.43.40.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T203658Z&X-Amz-Expires=86400&X-Amz-Signature=1e084d5f08cc60116b6fbe0e7c4aff323f3622154283830b7e8daeff3f6f8f1a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252018.43.40.png%22&x-id=GetObject)
-
 ```java
 static void insertionSort(int k[]){
 		int j = 1;
 	while(j < k.length){
 		int key = j;
-	while(key > 0 && k[key] < k[key-1]){
-    int temp = k[key];
-		k[key] = k[j-1];
-		k[key-1] = temp;
-		key = key - 1;
+		while(key > 0 && k[key] < k[key-1]){
+			int temp = k[key];
+			k[key] = k[j-1];
+			k[key-1] = temp;
+			key = key - 1;
 		}
 			j = j + 1;
 	}
@@ -128,42 +121,26 @@ Given: An array **S** to sort, using divide & conquer we’d go this way:
 2.  **Conquer**: Here, we’d recursively sort both s1 and s2
 3.  **Combine**: Merge the sorted S1 and S2 together to form a sorted S.
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/346cf58d-cff1-43a6-b24e-6a5a496f535c/Screenshot_2022-03-01_at_19.05.01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T204209Z&X-Amz-Expires=86400&X-Amz-Signature=4b954e76472003542332bf536e2134eff9ba483da4adc3a628b67238dcf77314&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252019.05.01.png%22&x-id=GetObject)
-
 ```java
 static void merge(int f[], int lowerB, int mid, int upperB){
 		int i = lowerB;
 		int j = mid;
-	//use temp array to store merged sub-sequence
-	//create a temporary array of size
-	//t is initialised to store the index of temp[]
-		int temp[] = new int[upperB - lowerB];
 		int t = 0;
 
-	//while lowerBound < the middle and middle is also less than upper bound
-	// if f[lowerBound] <= f[middle]
-	//new array temp should copy all the elements in the lowerBound
 	while(i < mid && j < upperB){
 		if(f[i] <= f[j]){
 			temp[t] = f[i]; i++; t++;
 		}
-		 //else, temp should copy all the elements in the upper bound
 		else{
 			temp[t] = f[j]; j++; t++;
+		}
 	}
-}
-	//tag on remaining sequence
-	//while lowerBound is less that mid
-	//the temp array should copy all the elements in the lower bound
 	while(i < mid){
 		temp[t] = f[i]; i++; t++;
 	}
-	//while  the middle is less than the upper bound,
-	//the temp array should copy all elements from the upper bound
 	while(j < upperB){
 		temp[t] = f[j]; j++; t++;
 	}
-	//copy temp back to f
 		i = lowerB;
 		t = 0;
 		while(t < temp.length){
@@ -175,18 +152,17 @@ static void merge(int f[], int lowerB, int mid, int upperB){
 
 ```java
 static void mergeSort(int f[], int lowerB, int upperB){
-if(lowerB + 1 < upperB){
-    int mid = (lowerB + upperB)/2;
-    mergeSort(f, lowerB, mid);
-    mergeSort(f, mid, upperB);
-    merge(f, lowerB, mid, upperB);
-  }
+	if(lowerB + 1 < upperB){
+		int mid = (lowerB + upperB)/2;
+		mergeSort(f, lowerB, mid);
+		mergeSort(f, mid, upperB);
+		merge(f, lowerB, mid, upperB);
+	}
 }
 
 //Time complexity is 0(nlogn)
 ```
 
----
 
 ### Further Reading
 
