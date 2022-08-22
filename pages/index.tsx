@@ -55,7 +55,7 @@ export default function Home() {
                         </p>
 
                             <div className="marquee">                     
-                            <samp className="Third"> <Clock
+                            <samp className="third"> <Clock
                                     format={'HH:mm:ss'}
                                     ticking={true}
                                     timezone={'Europe/Dublin'} /> • Dublin, Ireland • Last visted from <Location/> • </samp>
