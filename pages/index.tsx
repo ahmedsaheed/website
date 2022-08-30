@@ -37,7 +37,7 @@ export default function Home() {
                     <h1 className="third"style={{fontSize: "36px"}}>Crafting & Learning delightful web experiences and user interfaces</h1>
                     <p className="third">
                             Hey, you've finally made it to my tiny court yard on the web. I perceive you've come
-                            all the way from <Location />. Well, I'm currently working on <a target="_blank" rel="noopener" href="https://algo-ai.vercel.app/"> AlgoAI </a>, an algorithms codegen that convert english into algorithms. 
+                            all the way from <Location />. Well, I'm currently working on <a target="_blank" rel="noopener" href="https://github.com/ahmedsaheed/Leaflet"> Leaflet </a>,  a minimal distractionless markdown editor designed to quickly write, edit and navigate between multiple markdown files in a directory and its sub directories. 
                             I'm also experimenting with proven thought frameworks and human psychology.
                         </p>
                         <p className="third">
