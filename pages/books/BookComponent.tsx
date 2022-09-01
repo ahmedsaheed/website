@@ -8,8 +8,6 @@ const BookCard = (props: any) => {
                 <img
                     style={{
                         display: "block",
-                        marginLeft: "auto",
-                        marginRight: "auto",
                         borderRadius: "7px",
                     }}
                     src={props.image}

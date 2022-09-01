@@ -34,44 +34,43 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     title=""
                     content={
                         <>
-                            In a digital garden there is a combination of personal experience and professional
-                            activities, studies under way and studies planned. A second brain or digital garden would
-                            enhance the process of gathering together what one is doing
-                            intellectually and what one is experiencing as a person. Here you will
-                            not be afraid to use your experience and relate it directly to various
-                            work in progress. By serving as a check on repetitious work. It also
-                            encourages you to capture ‘fringe-thoughts’: various ideas which may be
-                            byproducts of everyday life, snatches of conversation overheard in the
-                            street, or, for that matter, dreams. Once noted, these may lead to more
-                            systematic thinking, as well as lend intellectual relevance to more
-                            directed experience. {"   "}<a href="http://www.aaronsw.com/weblog/about?curius=1978" target="_blank">--aaronsw</a>
+                            The mind throws out thoughts and beliefs in so many permutations and
+                            configurations and we are enslaved by it, by the output of our own
+                            minds. The mind is a prison. And when we write the noise is distilled
+                            and alchemised, and the self can find a way out, which I think is what
+                            love is. Franzen ending lines were "I mourn the eclipse of the cultural
+                            authority that literature once possessed, and I rue the onset of an age
+                            so anxious that the pleasure of a text becomes difficult to sustain."
                         </>
                     }
                 />
 
-                {brainEntries.sort((a, b) => new Date(b.date).getTime() -  new Date(a.date).getTime()).map((brainEntry: BrainEntry) => (
-                    <>
-                        <div className="px-10">
-                            <Link
-                                key={brainEntry.slug}
-                                href="/second-brain/[slug]"
-                                as={`/second-brain/${brainEntry.slug.toLowerCase()}`}
-                            >
-                                <a className="px-10 c-lhitIg">
-                                    <p style={{ fontFamily: "stylish", fontSize: "bold" }}>
-                                        {brainEntry.title}
+                {brainEntries
+                    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                    .map((brainEntry: BrainEntry) => (
+                        <>
+                            <div className="writings px-10">
+                                <Link
+                                    key={brainEntry.slug}
+                                    href="/second-brain/[slug]"
+                                    as={`/second-brain/${brainEntry.slug.toLowerCase()}`}
+                                >
+                                    <a className="px-10 c-lhitIg">
+                                        <p style={{ fontFamily: "stylish", fontSize: "bold" }}>
+                                            {brainEntry.title}
 
-                                        <span>
-                                            <span style={{ float: "right" }}>
-                                                {format(new Date(brainEntry.date), "MMM do, y")}
+                                            <span>
+                                                <span className="date" style={{ float: "right" }}>
+                                                    {format(new Date(brainEntry.date), "MMM do, y")}
+                                                </span>
                                             </span>
-                                        </span>
-                                    </p>
-                                </a>
-                            </Link>
-                        </div>
-                    </>
-                )).sort()}
+                                        </p>
+                                    </a>
+                                </Link>
+                            </div>
+                        </>
+                    ))
+                    .sort()}
             </header>
             <br></br>
             <br></br>
@@ -95,4 +94,4 @@ export const getStaticProps: GetStaticProps = async () => {
     }
 }
 
-export default Layout(SecondBrain, "The Garden")
+export default Layout(SecondBrain, "Writings")

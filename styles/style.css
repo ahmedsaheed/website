@@ -18,6 +18,7 @@ html *:before {
     --italics: "Newsreader";
     --search-color: #E7E5E0;
     --samp: #858585;
+    --rule:#252525;
 }
 
 [data-theme="light"] {
@@ -31,6 +32,7 @@ html *:before {
     --italics: "Newsreader";
     --search-color: #E7E5E0;
     --samp: #858585;
+    --rule: #252525
 }
 [data-theme="dark"] {
     --color-default: #000;
@@ -44,6 +46,7 @@ html *:before {
     --italics: "Newsreader";
     --search-color:#33312f !important;
     --samp: #7e7e7e;
+    --rule: #252525
 }
 
 html body {
@@ -173,23 +176,32 @@ footer {
     display: block;
     border-bottom: 0.5px solid var(--text-color);
 }
+@media screen and (max-width: 768px) {
+    .date {
+        display: none;
+    }
+}
+    
+
 
 .c-lhitIg {
     display: block;
-    height: calc(100% - 90px);
-    position: relative;
-    border-radius: 10px;
+    justify-content: space-between;
     cursor: pointer;
-    padding: 10px;
-    border-bottom: 1px solid var(--text-color);
-    transition: background 500ms ease;
-    -webkit-tap-highlight-color: transparent;
-    outline: 0;
+    border-top: 1px solid var(--rule);
+    border-radius: 0;
+    background: transparent;
+    padding-bottom: 0;
+}
+.writings a{
     background-color: transparent;
 }
 
-.c-lhitIg:hover {
+
+    .c-lhitIg:hover {
     background: rgba(143, 159, 169, 0.15);
+    transition:  500ms ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 blockquote {
@@ -318,9 +330,7 @@ p {
     text-align: center;
     padding-top: 50px;
 }
-a:hover {
-    color: plum;
-}
+
 a {
     background-color: rgba(143, 159, 169, 0.15);
     padding: 0 0.1em;
@@ -492,8 +502,7 @@ h2 {
     color: #bbbbbb;
 }
 .bookpad{
-    margin: auto;
-    margin-left: 1px;
+    margin-left: 1.7em;
 
 }
 

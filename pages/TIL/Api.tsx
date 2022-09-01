@@ -6,20 +6,17 @@ import Loader from "../../component/loader"
 const token = process.env.github_api
 const id = "a928b1fbcf1738da26ea5d7125e911cb"
 
-
 class Dairy extends Component {
-       
     state = {
-            entry: [],
-            loading: true,
-        }
-    
-     componentDidMount() {
+        entry: [],
+        loading: true,
+    }
+
+    componentDidMount() {
         this.getData()
     }
 
     async getData() {
-
         const octokit = new Octokit({
             auth: token,
         })
@@ -30,16 +27,12 @@ class Dairy extends Component {
             },
             gist_id: id,
         })
-       // console.log(response.data.body)
+        // console.log(response.data.body)
         this.setState({ entry: [...response.data], loading: false })
     }
     render() {
         const { entry, loading } = this.state
-        return (
-            <div className="xoxo">
-               {loading ? <Loader/> : <MainDiary entry={entry} /> } 
-            </div>
-        )
+        return <div className="xoxo">{loading ? <Loader /> : <MainDiary entry={entry} />}</div>
     }
 }
 

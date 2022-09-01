@@ -1,4 +1,4 @@
-import React  from "react"
+import React from "react"
 import DiarySession from "./EntriesComponent"
 import ReactMarkdown from "react-markdown"
 import remarkMath from "remark-math"

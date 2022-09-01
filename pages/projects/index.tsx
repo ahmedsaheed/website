@@ -4,11 +4,9 @@ import Summary from "../../component/summary"
 import Head from "next/head"
 import Layout from "../../component/layout"
 import "katex/dist/katex.min.css"
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown"
 
-
-
- const markdown = `
+const markdown = `
 
  ---
 
@@ -131,16 +129,13 @@ function projects() {
                         <>
                             I am persuaded that normal human beings are biologically built for an
                             activity that is aimed towards a goal and that idleness, or aimless work
-                            gives rise to suffering and to entropy.
-                            Here's a curation of projects i've worked on.
+                            gives rise to suffering and to entropy. Here's a curation of projects
+                            i've worked on.
                         </>
                     }
                 />
 
-
-            <ReactMarkdown className="mx-auto projects pads" children={markdown} />
-
-            
+                <ReactMarkdown className="mx-auto projects pads" children={markdown} />
             </header>
         </>
     )

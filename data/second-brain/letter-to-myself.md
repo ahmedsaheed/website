@@ -14,7 +14,6 @@ I haven't written such a letter like this throughout my existence, but i'd try t
 ![](https://i.pinimg.com/originals/58/aa/64/58aa641cfe646b0c17972ccc5c312989.jpg)
 
 
----
 
 To begin,  i'd need to rewind a bit to your last days of secondary school. I think this letter would be absolutely incomplete without that flashback. 
 
@@ -101,7 +100,7 @@ I would keep writing to you more often in absolute honesty.
 I hope you're doing exceptionally well whenever you read this.
 
 Yours truthfully, 
-Ahmed.
+Saheed.
 
 
 

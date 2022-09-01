@@ -24,79 +24,81 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     description: `${brainEntry.content.substring(0, 100) + "..."}`,
                 }}
             />
-                <Head>
-                    <meta charSet="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <link href="../styles/blog.css" rel="stylesheet" />
-                    <title>{brainEntry.title} | Ahmed Saheed</title>
-                    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-                    <link
-                        rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
-                        integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
-                        crossOrigin="anonymous"
-                    />
-                    <script
-                        defer
-                        src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
-                        integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
-                        crossOrigin="anonymous"
-                    ></script>
-                    <script
-                        defer
-                        src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
-                        integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
-                        crossOrigin="anonymous"
-                    ></script>
-                </Head>
+            <Head>
+                <meta charSet="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link href="../styles/blog.css" rel="stylesheet" />
+                <title>{brainEntry.title} | Ahmed Saheed</title>
+                <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+                <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+                    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+                    crossOrigin="anonymous"
+                />
+                <script
+                    defer
+                    src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+                    integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+                    crossOrigin="anonymous"
+                ></script>
+                <script
+                    defer
+                    src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+                    integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+                    crossOrigin="anonymous"
+                ></script>
+            </Head>
 
-                <header>
-                    <div className=" mx-auto max-w-3xl px-10 ">
-                        <h2 className="post-title">{brainEntry.title}</h2>
-                        <p className="post-date">
-                            {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
-                            {readingTime(brainEntry.content).minutes < 1
-                                ? 1
-                                : readingTime(brainEntry.content)
-                                      .minutes.toString()
-                                      .substring(0, 3)}{" "}
-                            min read |{" "} <Link href={`https://github.com/ahmedsaheed/saheed.codes/tree/main/data/second-brain/${encodeURI(
-                                                brainEntry.slug,
-                                            )}.md`}>Edit Page</Link>
-                        </p>
-                    </div>
-                    <article
-                        className="prose mx-auto max-w-3xl p-10"
-                        dangerouslySetInnerHTML={{ __html: brainEntry.content }}
-                    />
+            <header>
+                <div className=" mx-auto max-w-3xl px-10 ">
+                    <h2 className="post-title">{brainEntry.title}</h2>
+                    <p className="post-date">
+                        {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
+                        {readingTime(brainEntry.content).minutes < 1
+                            ? 1
+                            : readingTime(brainEntry.content)
+                                  .minutes.toString()
+                                  .substring(0, 3)}{" "}
+                        min read |{" "}
+                        <Link
+                            href={`https://github.com/ahmedsaheed/saheed.codes/tree/main/data/second-brain/${encodeURI(
+                                brainEntry.slug,
+                            )}.md`}
+                        >
+                            Edit Page
+                        </Link>
+                    </p>
+                </div>
+                <article
+                    className="prose mx-auto max-w-3xl p-10"
+                    dangerouslySetInnerHTML={{ __html: brainEntry.content }}
+                />
 
-                    {!!brainEntry.backlinks.length && (
-                        <div className="mx-auto max-w-3xl p-10">
-                            {" "}
-                            <hr />
+                {!!brainEntry.backlinks.length && (
+                    <div className="mx-auto max-w-3xl p-10">
+                        {" "}
+                        <hr />
+                        <div className="">
+                            <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
                             <div className="">
-                                <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
-                                <div className="">
-                                    {brainEntry.backlinks.map((backlink) => (
-                                        <Link
-                                            key={backlink}
-                                            href="/second-brain/[slug]"
-                                            as={`/second-brain/${encodeURI(
-                                                backlink.toLowerCase(),
-                                            )}`}
-                                        >
-                                            <a className="backlinks text-sm text">
-                                                {backlink.charAt(0).toUpperCase() +
-                                                    backlink.slice(1)}
-                                            </a>
-                                        </Link>
-                                    ))}
-                                </div>
+                                {brainEntry.backlinks.map((backlink) => (
+                                    <Link
+                                        key={backlink}
+                                        href="/second-brain/[slug]"
+                                        as={`/second-brain/${encodeURI(backlink.toLowerCase())}`}
+                                    >
+                                        <a className="backlinks text-sm text">
+                                            {backlink.charAt(0).toUpperCase() + backlink.slice(1)}
+                                        </a>
+                                    </Link>
+                                ))}
                             </div>
                         </div>
-                    )}
-                </header>
-                <br></br>
+                    </div>
+                )}
+            </header>
+            <br></br>
         </>
     )
 }
@@ -137,4 +139,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
         fallback: false,
     }
 }
-export default Layout(BrainEntryPage,"")
+export default Layout(BrainEntryPage, "")
