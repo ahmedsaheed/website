@@ -6,100 +6,59 @@ import Layout from "../../component/layout"
 import "katex/dist/katex.min.css"
 import ReactMarkdown from "react-markdown"
 
-const markdown = `
+const markdown = ` 
 
- ---
+![](/7.jpeg)
 
-## Algo-AI -- Convert plain english into algorithms. 
-![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/AlgoAI)  ![](https://api.iconify.design/iconoir:internet.svg?color=%23888888)[Site](https://algo-ai.vercel.app/) 
+[**Leaflet**](https://leaflet.saheed.codes/) is a JavaScript library for mobile-friendly interactive maps. It is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to.
 
-A web application that uses gpt3 code generation to generate algorithms from plain english.
+`
+const markdown2 = ` 
+![](/1.jpeg)
 
-Built with: ![](https://api.iconify.design/mdi:react.svg?color=%23888888)React ![](https://api.iconify.design/mdi:tailwind.svg?color=%23888888)Tailwind ![](https://api.iconify.design/logos:nextjs.svg?color=%23888888)NextJS ![](https://api.iconify.design/ion:logo-vercel.svg?color=%23888888)Vercel
+[**Algo-AI**](https://algo.saheed.codes/) a web application that uses gpt3 code generation to generate algorithms from plain english.
 
+`
 
-## Qurancli -- A simple tool to Read, Search and Recite the Quran from your terminal.
-![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/quranCLI)   ![alt text](https://api.iconify.design/et:documents.svg?color=%23888888) [Documentation](https://github.com/ahmedsaheed/quranCLI/blob/main/README.md)
+const markdown3 = `
+![](/6.jpeg)
 
-A minimal CLI application to read the Quran from the command line.
+[**QuranCLI**](https://github.com/ahmedsaheed/quranCLI) A minimal CLI application to read the Quran from the command line.
 I created this project as an exercise to implement and learn about command line applications development and multiple platform application packagers like homebrew and scoop.
 
-Built with: ![](https://api.iconify.design/mdi:language-java.svg?color=%23888888) Java  ![](https://api.iconify.design/mdi:language-ruby.svg?color=%23888888)Ruby, [Picocli](https://picocli.info/), [AsciiTable](http://www.vandermeer.de/projects/skb/java/asciitable/) and [JReleaser](https://jreleaser.org/)
+`
 
----
+const markdown4 = `
 
-## Sassy Chatbot -- Reinventing Amazon Alexa with poor algorithm.
+![](/2.jpeg)
 
-![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/sassy-chitchatBot)  ![alt text](https://api.iconify.design/et:documents.svg?color=%23888888) [Documentation](https://github.com/ahmedsaheed/sassy-chitchatBot/blob/main/README.md)
-
-A school project to demostrate understanding of speech recognition and natural language processing with focus on unit and integrated testing. This project was fun filled.
+[**Atlas**](https://github.com/ahmedsaheed/sassy-chitchatBot) A school project to demostrate understanding of speech recognition and natural language processing with focus on unit and integrated testing. This project wasn't short of fun.
 Developed entity recognition and natural language processing algorithms using java from scratch.
 Made use of lovely libaries like Wit.ai and TTS. Also learnt to use the Amazon Alexa Skills Kit and IBM Watson.
 
-Built with: ![](https://api.iconify.design/mdi:language-java.svg?color=%23888888)Java ![](https://api.iconify.design/mdi:language-javascript.svg?color=%23888888)Javascript, ![](https://api.iconify.design/simple-icons:googlepodcasts.svg?color=%23888888)GoogleTTS, ![](https://api.iconify.design/simple-icons:googlepodcasts.svg?color=%23888888)GoogleSTT and [WitAI](https://wit.ai/).
+`
+const markdown5 = `
+![](/3.jpeg)
 
----
-
-## Second Brain -- A place where i store ideas interwovenly
-
-![](https://api.iconify.design/iconoir:internet.svg?color=%23888888)[Site](https://www.saheed.codes/) ![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/saheed.codes)
-
-The second brain approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
-
-Built with: ![](https://api.iconify.design/mdi:react.svg?color=%23888888)React ![](https://api.iconify.design/simple-icons:obsidian.svg?color=%23888888)Obsidian ![](https://api.iconify.design/mdi:tailwind.svg?color=%23888888)Tailwind ![](https://api.iconify.design/logos:nextjs.svg?color=%23888888)NextJS ![](https://api.iconify.design/ion:logo-vercel.svg?color=%23888888)Vercel
-
----
-
-## Donation Hub -- A bay which harbours a bunch of donation bodies.
-
-![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/Donation-Hub)  ![alt text](https://api.iconify.design/majesticons:presentation-play-line.svg?color=%23888888) [Demo](https://user-images.githubusercontent.com/87912847/160955953-a64c48c1-d718-4c77-835d-861720846bd8.mov)
-
-A smartphone application that lowers the language barrier which would allow users from different cultural and linguistic background understand and identify the clear outcome of the [sustainable developmental goals of UN](https://sdgs.un.org/) and also make a difference by donating to 30+ donation bodies via the same platform.
+[**Donation Hub**](https://github.com/ahmedsaheed/Donation-Hub) A smartphone application that lowers the language barrier which would allow users from different cultural and linguistic background understand and identify the clear outcome of the [sustainable developmental goals of UN](https://sdgs.un.org/) and also make a difference by donating to 30+ donation bodies via the same platform.
 This project was my first introduction to mobile development.
 
-Built with: ![](https://api.iconify.design/material-symbols:flutter.svg?color=%23888888)Flutter ![](https://api.iconify.design/mdi:firebase.svg?color=%23888888) Firebase.
+`
+const markdown6 = `
+![](/4.jpeg)
 
----
-
-## Boomerang -- A school project to solidify understanding of PHP and MySQL.
-
-![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/boomerang)
-
-A web application based on php and mysql which was used to rate student understanding on php and mysql.
+[**Boomarang**]((https://github.com/ahmedsaheed/boomarang)) A web application based on php and mysql which was used to rate student understanding on php and mysql.
 Learnt to use php dependencies manager like composer, the phpMyAdmin database management tool, regex, validation and sanitization.
 
-Built with: ![](https://api.iconify.design/mdi:language-php.svg?color=%23888888)PHP ![](https://api.iconify.design/simple-icons:mysql.svg?color=%23888888) MySQL.
+`
 
----
+const markdown7 = `
+![](/5.jpeg)
 
-
-## Libary Box -- A dynamic GitHub gist updater.
-
-![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/Library-box) ![alt text](https://api.iconify.design/et:documents.svg?color=%23888888) [Documentation](https://github.com/ahmedsaheed/Library-boxblob/main/README.md)
-
-Update a pinned github gist to contain latest reads & Current reading from Google Books for people without the GoodRead API key
-
-Built with: ![](https://api.iconify.design/mdi:language-javascript.svg?color=%23888888)JavaScript  ![](https://api.iconify.design/ion:logo-docker.svg?color=%23888888)Docker.
-
----
-## Flight Stat -- Where's my flight?
-
-![alt text](https://api.iconify.design/ph:code-fill.svg?color=%23888888)
-[Code](https://github.com/ahmedsaheed/flightstat)  ![alt text](https://api.iconify.design/majesticons:presentation-play-line.svg?color=%23888888)[Demo](https://user-images.githubusercontent.com/87912847/178112007-cf80af94-efc3-429b-b4f6-43f8bc37e1f3.mov)
-
-Very simple flutter application for flight checkup. Developed to solidify my understanding of flutter state management, http request and geolocation mapping.
-
-
-Built with: ![](https://api.iconify.design/material-symbols:flutter.svg?color=%23888888)Flutter ![](https://api.iconify.design/mdi:google-maps.svg?color=%23888888)Google Maps and API AviationStack API
+[**Second Brain**](https://www.saheed.codes/) The second brain approach is quite different from the traditional method of organising ideas and thought. It is a method where ideas are interwovenly connected together by links rather than the use of structure of files and folders.
 
 `
+
 function projects() {
     return (
         <>
@@ -134,8 +93,24 @@ function projects() {
                         </>
                     }
                 />
+                <div className="mx-auto">
+                <ReactMarkdown className=" projects pads" children={markdown} />     
+                <div className="ruler"></div>
+                <ReactMarkdown className="projects pads" children={markdown2} />
+                <div className="ruler"></div>
+                <ReactMarkdown className="projects pads" children={markdown3} />
+                <div className="ruler"></div>
+                <ReactMarkdown className="projects pads" children={markdown4} />
+                <div className="ruler"></div>
+                <ReactMarkdown className="projects pads" children={markdown5} />
+                <div className="ruler"></div>
+                <ReactMarkdown className="projects pads" children={markdown6} />
+                <div className="ruler"></div>
+                <ReactMarkdown className="projects pads" children={markdown7} />
 
-                <ReactMarkdown className="mx-auto projects pads" children={markdown} />
+
+
+                </div>
             </header>
         </>
     )
