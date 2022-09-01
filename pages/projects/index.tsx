@@ -10,7 +10,7 @@ const markdown = `
 
 ![](/7.jpeg)
 
-[**Leaflet**](https://leaflet.saheed.codes/) is a JavaScript library for mobile-friendly interactive maps. It is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to.
+[**Leaflet**](https://leaflet.saheed.codes/) A minimal distractionless markdown editor designed to quickly navigate between multiple .md files in a directory. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader
 
 `
 const markdown2 = ` 
