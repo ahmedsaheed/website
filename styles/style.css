@@ -188,7 +188,7 @@ h1 {
     font-family: ui-serif, 'Crimson Pro';
     font-size: 2.5rem;
     color: var(--name);
-    line-height: 1.2;
+    line-height: 1;
 
 }
 p {
