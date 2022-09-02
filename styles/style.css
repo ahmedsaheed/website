@@ -15,7 +15,6 @@ html *:before {
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #bbbbbb;
-    --italics: "Newsreader";
     --search-color: #E7E5E0;
     --samp: #858585;
     --rule:#7c7c7c;
@@ -29,7 +28,6 @@ html *:before {
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #bbbbbb;
-    --italics: "Newsreader";
     --search-color: #E7E5E0;
     --samp: #858585;
     --rule: #7c7c7c
@@ -43,7 +41,6 @@ html *:before {
     --name: #fff;
     --a-color: #eab308 !important;
     --p-color: #bbbbbb;
-    --italics: "Newsreader";
     --search-color:#33312f !important;
     --samp: #7e7e7e;
     --rule: #252525
@@ -61,16 +58,7 @@ html body {
 h3 {
     font-family: "Stylish";
 }
-.cd {
-    margin-top: 23px;
-}
 
-.moveRight {
-    float: right;
-    font-size: 16px;
-   
-}
-  
 hr {
 
     border: none;
@@ -121,15 +109,9 @@ hr:after {
     background-color: transparent
 }
     
-
-em {
-    font: 600 italic calc(1em + 1px) / normal var(--italics);
-}
-
 .name {
     font-family: 'EB Garamond', serif;
     color: var(--name);
-
 }
 
 
@@ -143,12 +125,13 @@ code {
 
 header,
 main,
+.third,
 footer {
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+    -webkit-animation: fadein 1.5s;
+    animation: fadein 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes fadein {
@@ -160,30 +143,18 @@ footer {
     }
 }
 
-.header {
-    background: transparent;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    transition: background 0.3s;
-}
-
-.horizontal_line {
-    content: " ";
-    display: block;
-    border-bottom: 0.5px solid var(--text-color);
+.date2{
+    display: none;
 }
 @media screen and (max-width: 768px) {
     .date {
         display: none;
     }
+    .date2{
+        display: block;
+    }
 }
     
-
-
 .c-lhitIg {
     display: block;
     justify-content: space-between;
@@ -201,12 +172,9 @@ footer {
 .writings a{
     background-color: transparent;
 }
-
-
-    .c-lhitIg:hover {
+ .c-lhitIg:hover {
     background: rgba(143, 159, 169, 0.15);
-    transition:  500ms ease;
-    -webkit-tap-highlight-color: transparent;
+    transition:  700ms ease;
 }
 
 blockquote {
@@ -215,13 +183,6 @@ blockquote {
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-
-.menu,
-.menu-item {
-    display: flex;
-    height: 100%;
-}
-
 
 h1 {
     font-family: ui-serif, 'Crimson Pro';
@@ -299,24 +260,6 @@ p {
     z-index: 5;
     font-size: 1.4vw;
 }
-
-.third {
-    animation-name: animateIn;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-@keyframes animateIn {
-    0% {
-        opacity: 0;
-        /* transform: scale(0.6) translateY(-8px); */
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 
 .pad {
     padding-left: 1rem;
@@ -468,11 +411,6 @@ h2 {
     color: var(--text-color);
 }
 
-.projects hr:after{
-    content: "";
-    display: block;
-    border-bottom: 1px solid var(--text-color);
-}
 
 .post-title {
     font-size: 25px;
@@ -548,11 +486,6 @@ h2 {
     }
   }
 
-  .liner:after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid var(--text-color);
-}
 li, ul{
     font-family: "Spectral";
     list-style: circle;
@@ -599,7 +532,6 @@ img{
     text-align: left;
 }
 .projects a{
-    /* width: "fit-content"; */
     background-color: transparent
 }
 .projects h2{

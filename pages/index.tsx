@@ -78,7 +78,10 @@ export default function Home() {
 
                     <div style={{ paddingTop: "2vh" }}>
                         <p className="third" style={{ display: "inline", fontFamily: "Spectral" }}>
-                            <div className="moveRight">
+                            <div className="moveRight"
+                            style={{float: "right",
+                                fontSize: "16px"}}
+                            >
                                 <SearchArea />
                             </div>{" "}
                             <a
