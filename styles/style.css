@@ -63,23 +63,23 @@ hr {
 
     border: none;
     overflow: visible;
-    border-top: 1px solid var(--name);
-    color: var(--name);
+    border-top: 1px solid var(--rule);
     text-align: center;
     width: 40%;
     padding-bottom: 10px;
-    margin: 2em auto;
+    margin: 2em auto !important;
 }
 hr:after {
     content: "* * *";
     display: inline-block;
+    color: var(--rule);
     margin: -1em 0 0.5em;
     font-size: 2em;
     padding: 0.5em 0.5em;
     background: var(--bi);
     transform: translateY(-0.1em);
     z-index: -999;
-    padding-top: 22px
+    padding-top: 16px
 }
 .spacers {
     padding-top: 20vh;
@@ -188,6 +188,8 @@ h1 {
     font-family: ui-serif, 'Crimson Pro';
     font-size: 2.5rem;
     color: var(--name);
+    line-height: 1.2;
+
 }
 p {
     font-family: "Spectral", sans-serif;
@@ -278,13 +280,12 @@ p {
     text-align: center;
     padding-top: 50px;
 }
-
 a {
+    color: var(--a-color) !important;
     background-color: rgba(143, 159, 169, 0.15);
     padding: 0 0.1em;
     margin: auto -0.1em;
     border-radius: 3px;
-    color: var(--a-color);
     text-decoration: none;
 }
 
@@ -321,32 +322,41 @@ samp a{
     background-color: transparent;
     color: var(--samp);
 }
+
 samp a:hover {
     color: var(--text-color);
 }
 samp{
     color: var(--samp);
 }
+p{
+    margin: 16px 0px !important;
+}
+.clock{
+    display: none;
+}
 @media (max-width: 768px){
+    .clock{
+        display:block;
+    }
     .marquee {
         margin: 0 auto;
         white-space: nowrap;
         overflow: hidden;
         box-sizing: border-box;
         padding: 0;
-        height: 16px;
+        height: 17px;
         display: block;
+        width: 100%;
     }
 
     samp{
     display: inline-block;
     text-indent: 0;
     overflow: hidden;
-        animation: marquee 15s linear infinite;
-        will-change: transform;
-        text-indent: 0;
-
-
+    animation: marquee 15s linear infinite;
+    will-change: transform;
+    text-indent: 0;
     }
 }
   @keyframes marquee {
@@ -373,7 +383,7 @@ samp{
     flex-direction: row;
     display: flex;
     float: right;
-    padding-top: 5px
+    /* padding-top: 5px */
 }
 .Navspace{
     flex: auto
@@ -435,11 +445,17 @@ h2 {
 }
 .ded p{
     color: #bbbbbb;
+    padding: 0;
+}
+
+ol,ul{
+    margin-left: 3em !important;
 }
 
 .ded{
     color: #bbbbbb;
 }
+
 .bookpad{
     margin-left: 1.7em;
 
@@ -488,10 +504,13 @@ h2 {
 
 li, ul{
     font-family: "Spectral";
-    list-style: circle;
+    list-style: square;
 }
 /* reveal fadein animation with mask */
 
+.command-palette menu, .command-palette ol, .command-palette ul{
+    margin-left: 0 !important;
+}
 
 @keyframes cool-fadein {
     
@@ -534,6 +553,7 @@ img{
 .projects a{
     background-color: transparent
 }
+
 .projects h2{
     font-size: 1.65em;
     font-family: ui-serif;

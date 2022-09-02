@@ -14,7 +14,7 @@ function Layout(PageComponent: any, title: string) {
                     <link rel="icon" type="image/png" href="/icon.png" />
                 </Head>
 
-                <div className="spacers py-32 mx-auto max-w-2xl px-6 md:px-0">
+                <div className="spacers py-32 mx-auto  px-6 md:px-0">
                     <nav className="nav mx-auto max-w-3xl space-y-5" style={{paddingBottom: "10px"}}>
                         <div className="">
                         <p className="name" style={{fontSize: "24px"}}>{title}</p>  

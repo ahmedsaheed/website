@@ -25,7 +25,7 @@ export default function Home() {
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
             <div className="spacers gapps mx-auto max-w-3xl space-y-5">
-                <div className="mx-auto max-w-2xl">
+                <div className="mx-auto ">
                     <br></br>
                     <p
                         className="name third "
@@ -64,8 +64,8 @@ export default function Home() {
                         welcomed!
                     </p>
 
-                    <div className="third marquee">
-                        <samp className="">
+                    <div className="third marquee ">
+                        <samp style={{fontFamily: "Stylish"}} className="clock">
                             {" "}
                             <Clock
                                 format={"HH:mm:ss"}

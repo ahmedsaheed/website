@@ -14,7 +14,7 @@ const Dropdown = ({ date, title, content }) => {
 
     return (
         <div ref={parent}>
-            <p className="ded pad dropdown-label" onClick={reveal}>
+            <p style={{margin: "0"}} className="ded pad dropdown-label" onClick={reveal}>
                 {date.replace(/(\r\n|\n|\r)/gm, "")}
                 {title}
             </p>

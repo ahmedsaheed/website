@@ -14,17 +14,17 @@ const MainDiary = (props: any) => {
         return <Loader />
     }
     return (
-        <div>
+        <div className="pads">
             {props &&
                 //@ts-ignore
                 props.entry?.map((entries, i) => {
                     return (
                         <>
                             {" "}
-                            <header className="mx-auto max-w-3xl space-y-5">
+                            <header className="mx-auto max-w-3xl ">
                                 <div
                                     style={{ backgroundColor: "#292a2c" }}
-                                    className="til page-summary bg-am-black text-am-white mx-2 md:mx-0 p-5 "
+                                    className=" til page-summary"
                                 >
                                     <Dropdown
                                         date={format(new Date(entries.created_at), "MMM do, y")}

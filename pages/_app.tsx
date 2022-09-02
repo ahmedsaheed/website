@@ -1,5 +1,6 @@
 import "../styles/style.css"
-import "../styles/blog.css"
+import "../styles/globals.css"
+
 import { DefaultSeo } from "next-seo"
 import SEO from "../next-seo.config"
 import { ThemeProvider } from "next-themes"
