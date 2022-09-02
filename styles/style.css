@@ -425,7 +425,7 @@ h2 {
 .post-title {
     font-size: 25px;
     color: var(--name);
-    font-family: ui-serif;
+    font-family: "EB Garamond", ui-serif;
 }
 .title {
     font-family: "Stylish";
@@ -434,6 +434,7 @@ h2 {
     font-size: 16px;
     font-weight: 400;
     font-family: "Stylish";
+    margin-top:10px !important;
 }
 .inline {
     display: inline;
@@ -615,6 +616,9 @@ img{
 .page p pre code{
     overflow-x: auto;
     white-space: pre-wrap;
+    font-family: "Stylish";
+}
+code{
     font-family: "Stylish";
 }
 .page code{
