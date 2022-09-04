@@ -55,6 +55,25 @@ html body {
     transition: background 0.3s;
     -webkit-font-smoothing: antialiased;
 }
+.command-palette .bg-white {
+    --tw-bg-opacity: 1;
+    background-color:rgb(17 24 39/var(--tw-bg-opacity)) !important;
+
+}
+
+.command-palette .bg-gray-200\/50 {
+         background-color: rgb(31 41 55) !important;
+}
+.command-palette-list-item:hover {
+  background-color: rgb(31 41 55) !important;
+
+}
+.command-palette .divide-y>:not([hidden])~:not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-color: rgb(31 41 55/var(--tw-divide-opacity)) !important;
+    border-top-width: calc(1px*(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px*var(--tw-divide-y-reverse));
+}
 h3 {
     font-family: "Stylish";
 }
@@ -185,7 +204,7 @@ blockquote {
 }
 
 h1 {
-    font-family: ui-serif, 'Crimson Pro';
+    font-family: ui-serif, 'Crimson Pro' !important;
     font-size: 2.5rem;
     color: var(--name);
     line-height: 1;
@@ -611,6 +630,8 @@ img{
 }
 .truncate{
     font-family: "Spectral";
+   
+    color: white !important
 }
 
 .page p pre code{
