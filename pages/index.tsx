@@ -45,7 +45,7 @@ export default function Home() {
                             {" "}
                             Leaflet{" "}
                         </a>
-                        , a esoteric minimal distractionless markdown editor designed to quickly write, edit
+                        , an esoteric minimal distractionless markdown editor designed to quickly write, edit
                         and navigate between multiple markdown files in a directory and its sub
                         directories. I'm also experimenting with proven thought frameworks and human
                         psychology.
