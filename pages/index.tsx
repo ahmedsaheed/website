@@ -36,7 +36,7 @@ export default function Home() {
                 </div>
                 <article>
                     <h1 className="third" style={{ fontSize: "36px" }}>
-                        Crafting & Learning delightful web experiences and user interfaces
+                        Unabashed digital playground & personal logging system
                     </h1>
                     <p className="third">
                         Hey, you've finally made it to my tiny court yard on the web. I perceive
