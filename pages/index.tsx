@@ -45,7 +45,7 @@ export default function Home() {
                             {" "}
                             Leaflet{" "}
                         </a>
-                        , a minimal distractionless markdown editor designed to quickly write, edit
+                        , a esoteric minimal distractionless markdown editor designed to quickly write, edit
                         and navigate between multiple markdown files in a directory and its sub
                         directories. I'm also experimenting with proven thought frameworks and human
                         psychology.
@@ -59,7 +59,7 @@ export default function Home() {
                         </a>{" "}
                         activities, building esoteric <a href="/projects">software</a> alongside enjoying great music, I'm also having a great time being lost in{" "}
                         <a href="/second-brain/tolstoy">Tolstoy's</a> literature and other anthologies.
-                        works. Without further ado feel at home and explore around, you're warmly
+                        Without further ado feel at home and explore around, you're warmly
                         welcomed!
                     </p>
 
