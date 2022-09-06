@@ -10,7 +10,7 @@ const markdown = `
 
 ![](/7.jpeg)
 
-[**Leaflet**](https://leaflet.saheed.codes/) A minimal distractionless markdown editor designed to quickly navigate between multiple .md files in a directory. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader
+[**Leaflet**](/second-brain/leaflet) A minimal distractionless markdown editor designed to quickly navigate between multiple .md files in a directory. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader
 
 `
 const markdown2 = ` 

@@ -41,7 +41,7 @@ export default function Home() {
                     <p className="third">
                         Hey, you've finally made it to my tiny court yard on the web. I perceive
                         you've come all the way from <Location />. Well, I'm currently working on{" "}
-                        <a target="_blank" rel="noopener" href="https://leaflet.saheed.codes">
+                        <a  href="/second-brain/leaflet">
                             {" "}
                             Leaflet{" "}
                         </a>
@@ -52,14 +52,13 @@ export default function Home() {
                     </p>
                     <p className="third">
                         This vestibule doors opens onto the intertwined datasets of my brain. More
-                        like a library where i store valuable piece of information and an archieve
+                        like a logging system where i store valuable piece of information and an archieve
                         of my personal growth. While engaged in{" "}
                         <a target="_blank" href="https://griffith.ie">
                             college
                         </a>{" "}
-                        activities, building <a href="/projects">projects</a> alongside contributing
-                        to open source, I'm also having a great time being lost in{" "}
-                        <a href="/second-brain/tolstoy">Tolstoy's</a> literature and other art
+                        activities, building esoteric <a href="/projects">software</a> alongside enjoying great music, I'm also having a great time being lost in{" "}
+                        <a href="/second-brain/tolstoy">Tolstoy's</a> literature and other anthologies.
                         works. Without further ado feel at home and explore around, you're warmly
                         welcomed!
                     </p>
