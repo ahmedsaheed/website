@@ -4,14 +4,13 @@ description: "What is going on ? "
 date: "2022-09-09"
 ---
 
-# Log
 
-## September 2022
+### September 2022
 
 ![](https://100r.co/media/content/travel/penelakut_01.jpg)
 
 
-My words are limited, perphaps enormous on the inside but as I try to force these words through my fingers and onto my leaflet, they seemed to flutter away and vanish, refusing to be expressed in any precise form.
+My words are limited, perphaps enormous on the inside but as I try to force these words onto my leaflet, they seem to flutter away and vanish, refusing to be expressed in any precise form.
 
 Lately, i've been living in a state emotional numbness which opposes my real self who's filled with empathy and bursting in emotions. perhaps, this is because nothing really special has been taking place on my daily life or as a result of lack of friends with like mindset or even lack of inner drive.
 
