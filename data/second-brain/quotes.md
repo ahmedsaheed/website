@@ -24,3 +24,9 @@ date: "2022-08-01T00:00:00"
 
  >It is a fundamental law of nature that to evolve one has to push one’s limits, which is painful, in order to gain strength—whether it’s in the form of lifting weights, facing problems head-on, or in any other way. Nature gave us pain as a messaging device to tell us that we are approaching, or that we have exceeded, our limits in some way. At the same time, nature made the process of getting stronger require us to push our limits. Gaining strength is the adaptation process of the body and the mind to encountering one’s limits, which is painful. In other words, both pain and strength typically result from encountering one’s barriers. When we encounter pain, we are at an important juncture in our decision-making process
 - Ray Dalio
+
+>What, if some day or night a demon were to steal after you into your loneliest loneliness and say to you: 'This life as you now live it and have lived it, you will have to live once more and innumerable times more; and there will be nothing new in it, but every pain and every joy and every thought and sigh and everything unutterably small or great in your life will have to return to you, all in the same succession and sequence—even this spider and this moonlight between the trees, and even this moment and I myself. The eternal hourglass of existence is turned upside down again and again, and you with it, speck of dust!'
+>
+>Would you not throw yourself down and gnash your teeth and curse the demon who spoke thus? Or have you once experienced a tremendous moment when you would have answered him: 'You are a god and never have I heard anything more divine.' If this thought gained possession of you, it would change you as you are or perhaps crush you. The question in each and every thing, 'Do you desire this once more and innumerable times more?' would lie upon your actions as the greatest weight. Or how well disposed would you have to become to yourself and to life?
+
+- Nietzsche
