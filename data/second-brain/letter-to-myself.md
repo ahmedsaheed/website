@@ -7,6 +7,8 @@ date: "2022-08-05"
 
 ### Hi Saheed,
 
+> Wait! maybe you intend to read the [[log]] book instead.
+
 This letter goes from my current self to my future self. I am currently writing from a dining table after having a hot bowl of noodles while listening to a chakra meditation sound. You might someday be reading this at a different place, in a different time doing absoluetly something else. 
 
 I haven't written such a letter like this throughout my existence, but i'd try to make it organic as possible. 
