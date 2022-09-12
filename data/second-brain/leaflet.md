@@ -62,6 +62,7 @@ I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" r
 
 - **✨ Simplicity**: Leaflet focuses on simplicity and provides only necessary features needed.
 
+- **Word Suggestion**: Provides about 5,000 english word and synonyms suggestion
 
 - **🕉 Bidirectional Text**: Automatically detect BIDI - text and displays logiaclly.
 
@@ -94,11 +95,6 @@ $ yarn build
 
 ---
 
-
-
-
-
----
 
 # More Features
 
