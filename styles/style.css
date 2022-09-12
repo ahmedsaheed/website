@@ -547,7 +547,6 @@ li, ul{
     
 img, video{
     animation: cool-fadein 1s;
-    box-shadow: 0 0 16px 2px #33333328, 0 0 16px -16px #33333328;
     object-fit: cover;
     border-radius:4px;
 }
