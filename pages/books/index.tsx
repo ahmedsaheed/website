@@ -25,6 +25,7 @@ function books() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 <title>Books | Ahmed Saheed</title>
             </Head>
+            <div className="glow"></div>
             <Summary
                 title=""
                 content={

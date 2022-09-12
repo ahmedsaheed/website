@@ -5,7 +5,7 @@ date: "2022-09-09"
 ---
 
 
-### September 2022
+### August 2022
 
 ![](https://100r.co/media/content/travel/penelakut_01.jpg)
 

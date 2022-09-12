@@ -11,7 +11,7 @@ This letter goes from my current self to my future self. I am currently writing 
 
 I haven't written such a letter like this throughout my existence, but i'd try to make it organic as possible. 
 
-![](https://i.pinimg.com/originals/58/aa/64/58aa641cfe646b0c17972ccc5c312989.jpg)
+![](/relief.jpeg)
 
 
 
@@ -75,7 +75,7 @@ With a leap of fate, he believed in you and sent you 3,198 miles away from home 
 
 ### 2021 Starting Anew
 
-![](https://i.pinimg.com/originals/b9/09/6c/b9096cf99af608099092505cefd2dd96.jpg)
+![](/tranquil.jpeg)
 
 I ended up in Europe, unbelievable! i took awhile to to clearly grasp the message ([[cities-ambition]]) of this new society. I felt a bit overwhelmed at first about the protrayed solemnity of my new settlement, it felt absolutely contrary to what i was used to.
 

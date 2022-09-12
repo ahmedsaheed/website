@@ -49,7 +49,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     crossOrigin="anonymous"
                 ></script>
             </Head>
-
+            <div className="glow"></div>
             <header>
                 <div className=" mx-auto max-w-3xl px-10 ">
                     <h2 className="post-title">{brainEntry.title}</h2>
@@ -96,9 +96,16 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                             </div>
                         </div>
                     </div>
-                )}
+
+                    
+                )}  
+
+                 <div className="mx-auto max-w-3xl p-10"><a href="/second-brain">← go back</a></div>    
+                     
+
             </header>
             <br></br>
+
         </>
     )
 }

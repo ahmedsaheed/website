@@ -24,9 +24,11 @@ export default function Home() {
                 <title>Ahmed Saheed</title>
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
-            <div className="spacers gapps mx-auto max-w-3xl space-y-5">
+         
+            <div className=" spacers gapps mx-auto max-w-3xl space-y-5">
                 <div className="mx-auto ">
                     <br></br>
+                    <div className="glow"></div>
                     <p
                         className="name third "
                         style={{ paddingBottom: "7px", paddingTop: "15px", fontSize: "24px" }}
