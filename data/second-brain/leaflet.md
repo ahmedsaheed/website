@@ -4,12 +4,47 @@ description: "Minimal distractionless markdown editor!"
 date: "2022-09-02T00:00:00"
 ---
 
+<p align="center">
+
+
+
+<video src="https://user-images.githubusercontent.com/87912847/188292656-94da4c10-7fb3-464f-8fad-270b255afaee.mov" controls="controls">
+</video>
+
+
+</p>
+
 
 Leaflet, a **minimal distractionless markdown editor** designed to quickly navigate between multiple `.md` files in a directory and its sub directories. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader.
 
 
 I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">application</a> to help me cope with note taking during school lectures as most of my lecturers spoke too fast. This application is made available as a free and <a href="https://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">open source</a> software.
 
+
+<div align="center">
+     <table>
+    <tbody>
+      <tr>
+        <td>
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-0.0.3.dmg">
+          <img src="https://api.iconify.design/simple-icons:apple.svg?color=%23888888"/>
+          OS X Download</a>
+        </td>
+        <td>
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-Setup-0.0.3.exe">
+          <img src="https://api.iconify.design/icomoon-free:windows.svg?color=%23888888"/>
+          Windows Download</a>
+        </td>
+        <td>
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/leaflet_0.0.3_amd64.snap">
+          <img src="https://api.iconify.design/codicon:terminal-ubuntu.svg?color=%23888888"/>
+          Linux Downloads</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
 
 ---
 
@@ -37,30 +72,7 @@ I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" r
 You'd have to install [pandoc](https://github.com/jgm/pandoc/blob/master/INSTALL.md) to export `.md` to other formats.
 
 
-<div align="center">
-     <table>
-    <tbody>
-      <tr>
-        <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-0.0.3.dmg">
-          <img src="https://api.iconify.design/simple-icons:apple.svg?color=%23888888"/>
-          OS X Download</a>
-        </td>
-        <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-Setup-0.0.3.exe">
-          <img src="https://api.iconify.design/icomoon-free:windows.svg?color=%23888888"/>
-          Windows Download</a>
-        </td>
-        <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/leaflet_0.0.3_amd64.snap">
-          <img src="https://api.iconify.design/codicon:terminal-ubuntu.svg?color=%23888888"/>
-          Linux Downloads</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  
-</div>
+
   
 
 
@@ -82,17 +94,8 @@ $ yarn build
 
 ---
 
-# Demo
-
-<p align="center">
 
 
-
-<video src="https://user-images.githubusercontent.com/87912847/188292656-94da4c10-7fb3-464f-8fad-270b255afaee.mov" controls="controls">
-</video>
-
-
-</p>
 
 
 ---
