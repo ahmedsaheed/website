@@ -20,11 +20,18 @@ Although, somethimes i tend to to convience myself that this might actually be t
 
 I am aware that in my spirit lives a sort of inborn restlessness. For my mind is certainly very unsettled, darting about and directing thoughts to all places known and unknown. Perhaps I am a wanderer who's struggling to endure solemnity.
 
----
+
 
 I've been working on `leaflet`, which i'm current using to document this log. This is the first tool i've created for the sole purpose of my need i.e documenting my feelings and jornaling. This project has brought some tranquil into my wandering mind. It's strongly inspired by [100r.co's `Leaf`](https://100r.co/site/left.html) 
 
 
+I'm currently reading On The Shortness Of Life By Seneca.
+
+---
+
+### September 2022
+
 Today, 9/9/22 i got my final intern interview at microsoft scheduled. I have no idea how i feel. I'm very positive though.
 
-I'm currently reading On The Shortness Of Life By Seneca.
+
+
