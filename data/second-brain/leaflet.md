@@ -26,17 +26,17 @@ I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" r
     <tbody>
       <tr>
         <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-0.0.3.dmg">
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.4/Leaflet-0.0.4.dmg">
           <img src="https://api.iconify.design/simple-icons:apple.svg?color=%23888888"/>
           OS X Download</a>
         </td>
         <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-Setup-0.0.3.exe">
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.4/Leaflet-Setup-0.0.4.exe">
           <img src="https://api.iconify.design/icomoon-free:windows.svg?color=%23888888"/>
           Windows Download</a>
         </td>
         <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/leaflet_0.0.3_amd64.snap">
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.4/leaflet_0.0.4_amd64.snap">
           <img src="https://api.iconify.design/codicon:terminal-ubuntu.svg?color=%23888888"/>
           Linux Downloads</a>
         </td>
