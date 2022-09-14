@@ -19,6 +19,7 @@ html *:before {
     --search-color: #E7E5E0;
     --samp: #858585;
     --rule:#7c7c7c;
+    --selector: black
 }
 
 [data-theme="light"] {
@@ -31,7 +32,8 @@ html *:before {
     --p-color: #bbbbbb;
     --search-color: #E7E5E0;
     --samp: #858585;
-    --rule: #7c7c7c
+    --rule: #7c7c7c;
+   --selector: black
 }
 [data-theme="dark"] {
     --color-default: rgb(1, 2, 4);;
@@ -44,7 +46,8 @@ html *:before {
     --p-color: #bbbbbb;
     --search-color:#33312f !important;
     --samp: #7e7e7e;
-    --rule: #252525
+    --rule: #252525;
+       --selector: white
 }
 
 html body {
@@ -640,7 +643,7 @@ img, video{
 }
 ::selection{
     background-color: transparent;
-    color: var(--a-color);
+    color: var(--selector);
 }
 .hljs *{
     font-family: 'JetBrains Mono', monospace !important;
