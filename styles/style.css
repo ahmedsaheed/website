@@ -20,6 +20,7 @@ html *:before {
     --samp: #858585;
     --rule:#7c7c7c;
     --selector: black
+    --lineafter: var(--bi)
 }
 
 [data-theme="light"] {
@@ -33,7 +34,9 @@ html *:before {
     --search-color: #E7E5E0;
     --samp: #858585;
     --rule: #7c7c7c;
-   --selector: black
+   --selector: black;
+   --lineafter: var(--bi)
+
 }
 [data-theme="dark"] {
     --color-default: rgb(1, 2, 4);;
@@ -47,7 +50,8 @@ html *:before {
     --search-color:#33312f !important;
     --samp: #7e7e7e;
     --rule: #252525;
-       --selector: white
+    --selector: white;
+    --lineafter: #131212
 }
 
 html body {
@@ -99,7 +103,7 @@ hr:after {
     margin: -1em 0 0.5em;
     font-size: 2em;
     padding: 0.5em 0.5em;
-    background: var(--bi);
+    background: var(--lineafter);
     transform: translateY(-0.1em);
     z-index: -999;
     padding-top: 16px
