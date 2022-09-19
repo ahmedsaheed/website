@@ -49,11 +49,10 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     crossOrigin="anonymous"
                 ></script>
             </Head>
-            <div className="glow"></div>
             <header>
-                <div className=" mx-auto max-w-3xl px-10 ">
-                    <h2 className="post-title">{brainEntry.title}</h2>
-                    <p className="post-date">
+                <div style={{paddingLeft: "46px", paddingTop: "10px"}} className=" mx-auto max-w-4xl  ">
+                    <h2 style={{fontSize: "2em", fontFamily: "Crimson Pro"}} className="post-title">{brainEntry.title}</h2>
+                    <span className="post-date">
                         {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
                         {readingTime(brainEntry.content).minutes < 1
                             ? 1
@@ -68,20 +67,20 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         >
                             Edit Page
                         </Link>
-                    </p>
+                    </span>
                 </div>
                 <article
-                    className="prose mx-auto max-w-3xl p-10"
+                    className="prose mx-auto max-w-4xl p-10"
                     dangerouslySetInnerHTML={{ __html: brainEntry.content }}
                 />
 
                 {!!brainEntry.backlinks.length && (
-                    <div className="mx-auto max-w-3xl p-10">
+                    <div className="mx-auto max-w-4xl p-10">
                         {" "}
                         <hr />
                         <div className="">
-                            <h2 className=" text-2xl font-light text-am-white">Backlinks</h2>
-                            <div className="">
+                            <h2 style={{fontSize: "1.2em", fontFamily: "Crimson Pro"}} className="">{brainEntry.backlinks.length > 1 ?"Backlinks" : "Backlink"}</h2>
+                            <div>
                                 {brainEntry.backlinks.map((backlink) => (
                                     <Link
                                         key={backlink}
@@ -100,7 +99,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     
                 )}  
 
-                 <div className="mx-auto max-w-3xl p-10"><a href="/second-brain">← go back</a></div>    
+                 <div className="mx-auto max-w-4xl p-10"><a href="/second-brain">← go back</a></div>    
                      
 
             </header>
@@ -146,4 +145,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
         fallback: false,
     }
 }
-export default Layout(BrainEntryPage, "")
+export default Layout(BrainEntryPage, "Writings")

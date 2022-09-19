@@ -80,8 +80,7 @@ function projects() {
                 <link href="../styles/hovers.css" rel="stylesheet" />
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
-            <div className="glow"></div>
-            <header className=" mx-auto max-w-3xl space-y-5">
+            <header className=" mx-auto max-w-4xl space-y-5">
                 <Summary
                     title=""
                     content={
