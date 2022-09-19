@@ -62,12 +62,6 @@ function detectKeydown(e: KeyboardEvent) {
             href: "/second-brain",
           },
           {
-            id: "til",
-            children: "Today I Learnt",
-            icon: "AcademicCapIcon",
-            href: "/TIL",
-          },
-          {
             id: "projects",
             children: "Projects",
             icon: "CollectionIcon",

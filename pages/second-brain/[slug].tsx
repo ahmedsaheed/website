@@ -145,4 +145,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
         fallback: false,
     }
 }
-export default Layout(BrainEntryPage, "Writings")
+export default Layout(BrainEntryPage, "Musings" )

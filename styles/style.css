@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Newsreader:ital,opsz@1,6..72&family=Source+Sans+Pro:wght@200&family=Spectral:wght@200&family=Stylish&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=EB+Garamond&family=JetBrains+Mono:wght@300&family=Spectral:wght@300&family=Stylish&display=swap');
 
-html *,
 html *:after,
 html *:before {
     box-sizing: inherit; 
@@ -12,7 +9,7 @@ html *:before {
     --color-default: #f5f2e9;
     --text-color: #1d1b1d;
     --dairy: #333;
-    --bi: #f3f2f3;
+    --bi: #EDEAEA;
     --a-color: #284b63;
     --name: var(--text-color);
     --p-color: #bbbbbb;
@@ -25,10 +22,10 @@ html *:before {
 
 [data-theme="light"] {
     --color-default: #f5f2e9;
-    --text-color: #3a333d;
+    --text-color: #0A0A0A;
     --dairy: #333;
-    --bi: #f3f2f3;
-    --a-color: #284b63;
+    --bi: #EDEAEA;
+    --a-color: #ff5532 !important;
     --name: var(--text-color);
     --p-color: #bbbbbb;
     --search-color: #E7E5E0;
@@ -46,7 +43,7 @@ html *:before {
     --dairy: #333;
     --bi: #000;
     --name: #fff;
-    --a-color: #eab308 !important;
+    --a-color: #ff5532 !important;
     --p-color: #bbbbbb;
     --search-color:#33312f !important;
     --samp: #7e7e7e;
@@ -63,6 +60,9 @@ html body {
     background: var(--bi);
     transition: background 0.3s;
     -webkit-font-smoothing: antialiased;
+}
+.command-palette ::-webkit-scrollbar{
+    display: none !important;
 }
 .command-palette .bg-white {
     --tw-bg-opacity: 1;
