@@ -27,7 +27,9 @@ function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
             link: "https://saheed.codes/TIL",
         },
     })
-    brainEntries?.forEach((post) => {
+
+    brainEntries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+       .forEach((post) => {
         feed.addItem({
             title: post.title,
             id: `https://saheed.codes/second-brain/${post.slug}`,
