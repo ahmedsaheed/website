@@ -4,162 +4,12 @@
         <title>Saheed's Second Brain</title>
         <link>https://saheed.codes/</link>
         <description>Ahmed Saheed's Encyclopedia | Second Brain</description>
-        <lastBuildDate>Wed, 10 Aug 2022 13:26:02 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 Sep 2022 12:53:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed</generator>
         <language>en</language>
         <copyright>© Ahmed Saheed 2022</copyright>
         <category>Second Brain</category>
-        <item>
-            <title><![CDATA[Asymptotic Analysis]]></title>
-            <link>https://saheed.codes/second-brain/asymptotic</link>
-            <guid>https://saheed.codes/second-brain/asymptotic</guid>
-            <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[growth of a runtime/rate of growth of an algorithm without worrying about different computers , compilers or implementation.]]></description>
-            <content:encoded><![CDATA[
-Because the time taken to perform an algorithms differs due to input size, compilers, computer language & hardware, they are not efficiently calculated using methods like benchmarking or mere assumptions. **This is where asymptotic analysis comes in:**
-
-During asymptotic analysis we do not really calculate time as said earlier, instead we calculate the amount of operations in the [algorithm](/second-brain/algorithm) because we expect performance “time” to be dependant on both **size of input** and machine power. ([Refer to khan material for better explanation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)).
-
-Formal Definition: It is a way of describing **growth of a runtime/rate of growth** of an algorithm without worrying about different computers , compilers or implementation.
-
-### Asymptotic Notations
-
-1.  BigO notation ⇒ Upper Bound
-
-2.  Omega ⇒ Lower Bound
-
-3.  Theta ⇒ Both upper and lower bound also called tight bound.
-
-### Further Reading
-
--   [Big0 Cheat Sheet](https://www.bigocheatsheet.com/)
-
--   [MIT Asymptotic Analysis Recitation 2011](http://courses.csail.mit.edu/6.006/spring11/rec/rec01.pdf)
-
--   [More consise explanation of time complexities](<https://medium.com/swlh/big-o-notation-and-time-space-complexity-1806936e6330#:~:text=O(nlogn)%20is%20known%20as,using%20O(logn)%20space.>)
-]]></content:encoded>
-            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
-        </item>
-        <item>
-            <title><![CDATA[Cities And Ambibtion]]></title>
-            <link>https://saheed.codes/second-brain/cities-ambition</link>
-            <guid>https://saheed.codes/second-brain/cities-ambition</guid>
-            <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[An essay by Paul Graham which i am obliged keep]]></description>
-            <content:encoded><![CDATA[
-### An essay by Paul Graham which i am obliged keep
-
-Great cities attract ambitious people. You can sense it when you walk around one. In a hundred subtle ways, the city sends you a message: you could do more; you should try harder.
-
-The surprising thing is how different these messages can be. New York tells you, above all: you should make more money. There are other messages too, of course. You should be hipper. You should be better looking. But the clearest message is that you should be richer.
-
-What I like about Boston (or rather Cambridge) is that the message there is: you should be smarter. You really should get around to reading all those books you've been meaning to.
-
-When you ask what message a city sends, you sometimes get surprising answers. As much as they respect brains in Silicon Valley, the message the Valley sends is: you should be more powerful.
-
-That's not quite the same message New York sends. Power matters in New York too of course, but New York is pretty impressed by a billion dollars even if you merely inherited it. In Silicon Valley no one would care except a few real estate agents. What matters in Silicon Valley is how much effect you have on the world. The reason people there care about Larry and Sergey is not their wealth but the fact that they control Google, which affects practically everyone.
-
----
-
-How much does it matter what message a city sends? Empirically, the answer seems to be: a lot. You might think that if you had enough strength of mind to do great things, you'd be able to transcend your environment. Where you live should make at most a couple percent difference. But if you look at the historical evidence, it seems to matter more than that. Most people who did great things were clumped together in a few places where that sort of thing was done at the time.
-
-You can see how powerful cities are from the case of the Milanese Leonardo. Practically every fifteenth century Italian painter you've heard of was from Florence, even though Milan was just as big. People in Florence weren't genetically different, so you have to assume there was someone born in Milan with as much natural ability as Leonardo. What happened to him?
-
-If even someone with the same natural ability as Leonardo couldn't beat the force of environment, do you suppose you can?
-
-I don't. I'm fairly stubborn, but I wouldn't try to fight this force. I'd rather use it. So I've thought a lot about where to live.
-
-I'd always imagined Berkeley would be the ideal place — that it would basically be Cambridge with good weather. But when I finally tried living there a couple years ago, it turned out not to be. The message Berkeley sends is: you should live better. Life in Berkeley is very civilized. It's probably the place in America where someone from Northern Europe would feel most at home. But it's not humming with ambition.
-
-In retrospect it shouldn't have been surprising that a place so pleasant would attract people interested above all in quality of life. Cambridge with good weather, it turns out, is not Cambridge. The people you find in Cambridge are not there by accident. You have to make sacrifices to live there. It's expensive and somewhat grubby, and the weather's often bad. So the kind of people you find in Cambridge are the kind of people who want to live where the smartest people are, even if that means living in an expensive, grubby place with bad weather.
-
-As of this writing, Cambridge seems to be the intellectual capital of the world. I realize that seems a preposterous claim. What makes it true is that it's more preposterous to claim about anywhere else. American universities currently seem to be the best, judging from the flow of ambitious students. And what US city has a stronger claim? New York? A fair number of smart people, but diluted by a much larger number of neanderthals in suits. The Bay Area has a lot of smart people too, but again, diluted; there are two great universities, but they're far apart. Harvard and MIT are practically adjacent by West Coast standards, and they're surrounded by about 20 other colleges and universities. [^1]
-
-Cambridge as a result feels like a town whose main industry is ideas, while New York's is finance and Silicon Valley's is startups.
-
----
-
-When you talk about cities in the sense we are, what you're really talking about is collections of people. For a long time cities were the only large collections of people, so you could use the two ideas interchangeably. But we can see how much things are changing from the examples I've mentioned. New York is a classic great city. But Cambridge is just part of a city, and Silicon Valley is not even that. (San Jose is not, as it sometimes claims, the capital of Silicon Valley. It's just 178 square miles at one end of it.)
-
-Maybe the Internet will change things further. Maybe one day the most important community you belong to will be a virtual one, and it won't matter where you live physically. But I wouldn't bet on it. The physical world is very high bandwidth, and some of the ways cities send you messages are quite subtle.
-
-One of the exhilarating things about coming back to Cambridge every spring is walking through the streets at dusk, when you can see into the houses. When you walk through Palo Alto in the evening, you see nothing but the blue glow of TVs. In Cambridge you see shelves full of promising-looking books. Palo Alto was probably much like Cambridge in 1960, but you'd never guess now that there was a university nearby. Now it's just one of the richer neighborhoods in Silicon Valley. [^2]
-
-A city speaks to you mostly by accident — in things you see through windows, in conversations you overhear. It's not something you have to seek out, but something you can't turn off. One of the occupational hazards of living in Cambridge is overhearing the conversations of people who use interrogative intonation in declarative sentences. But on average I'll take Cambridge conversations over New York or Silicon Valley ones.
-
-A friend who moved to Silicon Valley in the late 90s said the worst thing about living there was the low quality of the eavesdropping. At the time I thought she was being deliberately eccentric. Sure, it can be interesting to eavesdrop on people, but is good quality eavesdropping so important that it would affect where you chose to live? Now I understand what she meant. The conversations you overhear tell you what sort of people you're among.
-
----
-
-> No matter how determined you are, it's hard not to be influenced by the people around you. It's not so much that you do whatever a city expects of you, but that you get discouraged when no one around you cares about the same things you do.
-
-There's an imbalance between encouragement and discouragement like that between gaining and losing money. Most people overvalue negative amounts of money: they'll work much harder to avoid losing a dollar than to gain one. Similarly, although there are plenty of people strong enough to resist doing something just because that's what one is supposed to do where they happen to be, there are few strong enough to keep working on something no one around them cares about.
-
-Because ambitions are to some extent incompatible and admiration is a zero-sum game, each city tends to focus on one type of ambition. The reason Cambridge is the intellectual capital is not just that there's a concentration of smart people there, but that there's nothing *else* people there care about more. Professors in New York and the Bay area are second class citizens — till they start hedge funds or startups respectively.
-
-This suggests an answer to a question people in New York have wondered about since the Bubble: whether New York could grow into a startup hub to rival Silicon Valley. One reason that's unlikely is that someone starting a startup in New York would feel like a second class citizen. [^3] There's already something else people in New York admire more.
-
-In the long term, that could be a bad thing for New York. The power of an important new technology does eventually convert to money. So by caring more about money and less about power than Silicon Valley, New York is recognizing the same thing, but slower. [^4] And in fact it has been losing to Silicon Valley at its own game: the ratio of New York to California residents in the Forbes 400 has decreased from 1.45 (81:56) when the list was first published in 1982 to .83 (73:88) in 2007.
-
----
-
-Not all cities send a message. Only those that are centers for some type of ambition do. And it can be hard to tell exactly what message a city sends without living there. I understand the messages of New York, Cambridge, and Silicon Valley because I've lived for several years in each of them. DC and LA seem to send messages too, but I haven't spent long enough in either to say for sure what they are.
-
-The big thing in LA seems to be fame. There's an A List of people who are most in demand right now, and what's most admired is to be on it, or friends with those who are. Beneath that, the message is much like New York's, though perhaps with more emphasis on physical attractiveness.
-
-In DC the message seems to be that the most important thing is who you know. You want to be an insider. In practice this seems to work much as in LA. There's an A List and you want to be on it or close to those who are. The only difference is how the A List is selected. And even that is not that different.
-
-At the moment, San Francisco's message seems to be the same as Berkeley's: you should live better. But this will change if enough startups choose SF over the Valley. During the Bubble that was a predictor of failure — a self-indulgent choice, like buying expensive office furniture. Even now I'm suspicious when startups choose SF. But if enough good ones do, it stops being a self-indulgent choice, because the center of gravity of Silicon Valley will shift there.
-
-I haven't found anything like Cambridge for intellectual ambition. Oxford and Cambridge (England) feel like Ithaca or Hanover: the message is there, but not as strong.
-
-Paris was once a great intellectual center. If you went there in 1300, it might have sent the message Cambridge does now. But I tried living there for a bit last year, and the ambitions of the inhabitants are not intellectual ones. The message Paris sends now is: do things with style. I liked that, actually. Paris is the only city I've lived in where people genuinely cared about art. In America only a few rich people buy original art, and even the more sophisticated ones rarely get past judging it by the brand name of the artist. But looking through windows at dusk in Paris you can see that people there actually care what paintings look like. Visually, Paris has the best eavesdropping I know. [^5]
-
-There's one more message I've heard from cities: in London you can still (barely) hear the message that one should be more aristocratic. If you listen for it you can also hear it in Paris, New York, and Boston. But this message is everywhere very faint. It would have been strong 100 years ago, but now I probably wouldn't have picked it up at all if I hadn't deliberately tuned in to that wavelength to see if there was any signal left.
-
----
-
-So far the complete list of messages I've picked up from cities is: wealth, style, hipness, physical attractiveness, fame, political power, economic power, intelligence, social class, and quality of life.
-
-My immediate reaction to this list is that it makes me slightly queasy. I'd always considered ambition a good thing, but I realize now that was because I'd always implicitly understood it to mean ambition in the areas I cared about. When you list everything ambitious people are ambitious about, it's not so pretty.
-
-On closer examination I see a couple things on the list that are surprising in the light of history. For example, physical attractiveness wouldn't have been there 100 years ago (though it might have been 2400 years ago). It has always mattered for women, but in the late twentieth century it seems to have started to matter for men as well. I'm not sure why — probably some combination of the increasing power of women, the increasing influence of actors as models, and the fact that so many people work in offices now: you can't show off by wearing clothes too fancy to wear in a factory, so you have to show off with your body instead.
-
-Hipness is another thing you wouldn't have seen on the list 100 years ago. Or wouldn't you? What it means is to know what's what. So maybe it has simply replaced the component of social class that consisted of being "au fait." That could explain why hipness seems particularly admired in London: it's version 2 of the traditional English delight in obscure codes that only insiders understand.
-
-Economic power would have been on the list 100 years ago, but what we mean by it is changing. It used to mean the control of vast human and material resources. But increasingly it means the ability to direct the course of technology, and some of the people in a position to do that are not even rich — leaders of important open source projects, for example. The Captains of Industry of times past had laboratories full of clever people cooking up new technologies for them. The new breed are themselves those people.
-
-As this force gets more attention, another is dropping off the list: social class. I think the two changes are related. Economic power, wealth, and social class are just names for the same thing at different stages in its life: economic power converts to wealth, and wealth to social class. So the focus of admiration is simply shifting upstream.
-
----
-
-Does anyone who wants to do great work have to live in a great city? No; all great cities inspire some sort of ambition, but they aren't the only places that do. For some kinds of work, all you need is a handful of talented colleagues.
-
-What cities provide is an audience, and a funnel for peers. These aren't so critical in something like math or physics, where no audience matters except your peers, and judging ability is sufficiently straightforward that hiring and admissions committees can do it reliably. In a field like math or physics all you need is a department with the right colleagues in it. It could be anywhere — in Los Alamos, New Mexico, for example.
-
-It's in fields like the arts or writing or technology that the larger environment matters. In these the best practitioners aren't conveniently collected in a few top university departments and research labs — partly because talent is harder to judge, and partly because people pay for these things, so one doesn't need to rely on teaching or research funding to support oneself. It's in these more chaotic fields that it helps most to be in a great city: you need the encouragement of feeling that people around you care about the kind of work you do, and since you have to find peers for yourself, you need the much larger intake mechanism of a great city.
-
-You don't have to live in a great city your whole life to benefit from it. The critical years seem to be the early and middle ones of your career. Clearly you don't have to grow up in a great city. Nor does it seem to matter if you go to college in one. To most college students a world of a few thousand people seems big enough. Plus in college you don't yet have to face the hardest kind of work — discovering new problems to solve.
-
-It's when you move on to the next and much harder step that it helps most to be in a place where you can find peers and encouragement. You seem to be able to leave, if you want, once you've found both. The Impressionists show the typical pattern: they were born all over France (Pissarro was born in the Carribbean) and died all over France, but what defined them were the years they spent together in Paris.
-
----
-
-Unless you're sure what you want to do and where the leading center for it is, your best bet is probably to try living in several places when you're young. You can never tell what message a city sends till you live there, or even whether it still sends one. Often your information will be wrong: I tried living in Florence when I was 25, thinking it would be an art center, but it turned out I was 450 years too late.
-
-Even when a city is still a live center of ambition, you won't know for sure whether its message will resonate with you till you hear it. When I moved to New York, I was very excited at first. It's an exciting place. So it took me quite a while to realize I just wasn't like the people there. I kept searching for the Cambridge of New York. It turned out it was way, way uptown: an hour uptown by air.
-
-Some people know at 16 what sort of work they're going to do, but in most ambitious kids, ambition seems to precede anything specific to be ambitious about. They know they want to do something great. They just haven't decided yet whether they're going to be a rock star or a brain surgeon. There's nothing wrong with that. But it means if you have this most common type of ambition, you'll probably have to figure out where to live by trial and error. You'll probably have to find the city where you feel at home to know what sort of ambition you have.
-
-[^1]: This is one of the advantages of not having the universities in your country controlled by the government. When governments decide how to allocate resources, political deal-making causes things to be spread out geographically. No central goverment would put its two best universities in the same town, unless it was the capital (which would cause other problems). But scholars seem to like to cluster together as much as people in any other field, and when given the freedom to they derive the same advantages from it.
-[^2]: There are still a few old professors in Palo Alto, but one by one they die and their houses are transformed by developers into McMansions and sold to VPs of Bus Dev.
-[^3]: How many times have you read about startup founders who continued to live inexpensively as their companies took off? Who continued to dress in jeans and t-shirts, to drive the old car they had in grad school, and so on? If you did that in New York, people would treat you like shit. If you walk into a fancy restaurant in San Francisco wearing a jeans and a t-shirt, they're nice to you; who knows who you might be? Not in New York. One sign of a city's potential as a technology center is the number of restaurants that still require jackets for men. According to Zagat's there are none in San Francisco, LA, Boston, or Seattle, 4 in DC, 6 in Chicago, 8 in London, 13 in New York, and 20 in Paris. (Zagat's lists the Ritz Carlton Dining Room in SF as requiring jackets but I couldn't believe it, so I called to check and in fact they don't. Apparently there's only one restaurant left on the entire West Coast that still requires jackets: The French Laundry in Napa Valley.)
-[^4]: Ideas are one step upstream from economic power, so it's conceivable that intellectual centers like Cambridge will one day have an edge over Silicon Valley like the one the Valley has over New York. This seems unlikely at the moment; if anything Boston is falling further and further behind. The only reason I even mention the possibility is that the path from ideas to startups has recently been getting smoother. It's a lot easier now for a couple of hackers with no business experience to start a startup than it was 10 years ago. If you extrapolate another 20 years, maybe the balance of power will start to shift back. I wouldn't bet on it, but I wouldn't bet against it either.
-[^5]: If Paris is where people care most about art, why is New York the center of gravity of the art business? Because in the twentieth century, art as brand split apart from art as stuff. New York is where the richest buyers are, but all they demand from art is brand, and since you can base brand on anything with a sufficiently identifiable style, you may as well use the local stuff.
-]]></content:encoded>
-            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
-        </item>
         <item>
             <title><![CDATA[Javari]]></title>
             <link>https://saheed.codes/second-brain/javari</link>
@@ -193,8 +43,8 @@ So, there she was now, seventeen and alone.
 
 But this lil' boy that grew in her stomach made her feel strong  
 The angels paid her a visit one night and let it be known  
-This was God's child, woman behold the miracle.  
-She shed tears 'cause she never believed in a spiritual  
+This was God's child, woman behold this miracle.  
+She shed tears because she never believed in the spiritual  
 But her heart was pure and she was good  
 For eighteen years she raised him on Section 8 in the cold embrace of the hood. 
 Did the best as she could, the boy was named Javari  
@@ -212,9 +62,9 @@ That troubles her soul, the day she lets it go, she'll find peace
 She broke down admitting her stepfather had touched her for years  
 She kept it secret for fear of her mother's grief  
 Now the bitterness she feels for that nigga is at a peak  
-And her lack of self-esteem is the reason that she would sleep with anybody
+And her lack of self-esteem is the reason that she would sleep with anybody and not think twice,
 
-And not think twice, Javari spoke calmly  
+Javari spoke calmly  
 Instructing her to forgive her stepfather  
 Though he was wrong he was sick  
 Afflicted by evil, but the power to switch  
@@ -259,15 +109,132 @@ The neighborhood was stressing
 The son of God murdered and carried away on stretcher by the oppressor.
 
 Three days later, the coroner pulled the table  
-And what happened next is like somethin' you see on cable or hear in a fable
+And what happened next is like something you see on cable or hear in a fable
 
 He was suddenly able to open his eyes, look at him rise, the coroner was surprised  
 Without a word Javari walked out, went straight to the hood  
 The people couldn't believe it, they froze right where they stood
 
-As he walked by, God flowin' from every inch of his frame  
-He said "Hear me out my niggas, let me be your proof, my father is real  
-And through love, homie, peace can be found I died for you, so that one day you would be able to see you a child of God, just like me"]]></content:encoded>
+As he walked by, God flowing from every inch of his frame  
+He said 
+>"Hear me out my niggas, let me be your proof, my father is real and through love, homie, peace can be found. I died for you, so that one day you would be able to see you a child of God, just like me"
+
+
+]]></content:encoded>
+            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
+        </item>
+        <item>
+            <title><![CDATA[Leaflet]]></title>
+            <link>https://saheed.codes/second-brain/leaflet</link>
+            <guid>https://saheed.codes/second-brain/leaflet</guid>
+            <pubDate>Thu, 01 Sep 2022 23:00:00 GMT</pubDate>
+            <description><![CDATA[Minimal distractionless markdown editor!]]></description>
+            <content:encoded><![CDATA[
+<p align="center">
+
+
+
+<video src="https://user-images.githubusercontent.com/87912847/188292656-94da4c10-7fb3-464f-8fad-270b255afaee.mov" controls="controls">
+</video>
+
+
+</p>
+
+
+Leaflet, a **minimal distractionless markdown editor** designed to quickly navigate between multiple `.md` files in a directory and its sub directories. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader.
+
+
+I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">application</a> to help me cope with note taking during school lectures as most of my lecturers spoke too fast. This application is made available as a free and <a href="https://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">open source</a> software.
+
+
+<div align="center">
+     <table>
+    <tbody>
+      <tr>
+        <td>
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.1/Leaflet-0.0.1.dmg">
+          <img src="https://api.iconify.design/simple-icons:apple.svg?color=%23888888"/>
+          OS X Download</a>
+        </td>
+        <td>
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.1/Leaflet-Setup-0.0.1.exe">
+          <img src="https://api.iconify.design/icomoon-free:windows.svg?color=%23888888"/>
+          Windows Download</a>
+        </td>
+        <td>
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.1/leaflet_0.0.1_amd64.snap">
+          <img src="https://api.iconify.design/codicon:terminal-ubuntu.svg?color=%23888888"/>
+          Linux Downloads</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+---
+
+# Features
+
+- **🖋 Editing**: Switch between editing and preview mode seemlessly
+
+- **⚛️ Maths & Chemical Equation Typesetting**: Leaflet renders mathematical, physics and chemical equation out of the box.
+
+- **Pandoc Support**: Easily export your `.md` files to `.pdf` and `.docx` files
+
+- **📄 Uses Files**: Leaflet works with users file system directly instead of an external database.
+
+- **🌙 Dark / Light Mode**: Supports your system specified theme.
+
+- **✨ Simplicity**: Leaflet focuses on simplicity and provides only necessary features needed.
+
+- **Word Suggestion**: Provides about 5,000 english word and synonyms suggestion
+
+- **🕉 Bidirectional Text**: Automatically detect BIDI - text and displays logiaclly.
+
+---
+
+## Installation
+
+You'd have to install [pandoc](https://github.com/jgm/pandoc/blob/master/INSTALL.md) to export `.md` to other formats.
+
+
+
+  
+
+
+You can also run Leaflet locally from the command line:
+
+```bash
+$ git clone https://github.com/ahmedsaheed/Leaflet.git && cd Leaflet
+$ yarn install
+$ yarn dev
+```
+
+Or Build 
+
+```bash
+$ git clone https://github.com/ahmedsaheed/Leaflet.git && cd Leaflet
+$ yarn install
+$ yarn build
+```
+
+---
+
+
+# More Features
+
+- Support media like `mp3`, `iframe` and `video` 
+- Displays a table of content on demand
+- Renders task list, tables and footnotes  quite nicely 
+- File statistics displayed in the footer (speed-reader, word count, date).
+
+## Extras
+- Leaflet is strongly inspired by [Left](https://github.com/hundredrabbits/left) and [Opus](https://github.com/pacocoursey/Opus).
+- Leaflet source code  licensed under [BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- Pull Requests are welcome!
+
+]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
         <item>
@@ -280,14 +247,15 @@ And through love, homie, peace can be found I died for you, so that one day you 
 
 ### Hi Saheed,
 
+> Wait! perhaps you intend to read the [log](/second-brain/log) book instead.
+
 This letter goes from my current self to my future self. I am currently writing from a dining table after having a hot bowl of noodles while listening to a chakra meditation sound. You might someday be reading this at a different place, in a different time doing absoluetly something else. 
 
 I haven't written such a letter like this throughout my existence, but i'd try to make it organic as possible. 
 
-![](https://i.pinimg.com/originals/58/aa/64/58aa641cfe646b0c17972ccc5c312989.jpg)
+![](/relief.jpeg)
 
 
----
 
 To begin,  i'd need to rewind a bit to your last days of secondary school. I think this letter would be absolutely incomplete without that flashback. 
 
@@ -349,7 +317,7 @@ With a leap of fate, he believed in you and sent you 3,198 miles away from home 
 
 ### 2021 Starting Anew
 
-![](https://i.pinimg.com/originals/b9/09/6c/b9096cf99af608099092505cefd2dd96.jpg)
+![](/tranquil.jpeg)
 
 I ended up in Europe, unbelievable! i took awhile to to clearly grasp the message ([cities-ambition](/second-brain/cities-ambition)) of this new society. I felt a bit overwhelmed at first about the protrayed solemnity of my new settlement, it felt absolutely contrary to what i was used to.
 
@@ -374,7 +342,7 @@ I would keep writing to you more often in absolute honesty.
 I hope you're doing exceptionally well whenever you read this.
 
 Yours truthfully, 
-Ahmed.
+Saheed.
 
 
 
@@ -392,6 +360,47 @@ Ahmed.
 
 
 
+
+
+
+]]></content:encoded>
+            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
+        </item>
+        <item>
+            <title><![CDATA[Log]]></title>
+            <link>https://saheed.codes/second-brain/log</link>
+            <guid>https://saheed.codes/second-brain/log</guid>
+            <pubDate>Fri, 09 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[What is going on ? ]]></description>
+            <content:encoded><![CDATA[
+
+### August 2022
+
+![](https://100r.co/media/content/travel/penelakut_01.jpg)
+
+
+My words are limited, perphaps enormous on the inside but as I try to force these words onto my leaflet, they seem to flutter away and vanish, refusing to be expressed in any precise form.
+
+Lately, i've been living in a state emotional numbness which opposes my real self who's filled with empathy and bursting in emotions. perhaps, this is because nothing really special has been taking place on my daily life or as a result of lack of friends with like mindset or even lack of inner drive.
+
+Although, somethimes i tend to to convience myself that this might actually be the right lifestyle for myself. Away from the madding crowd, away in an **inferior** state of repose and away in silence during an age of noise.
+
+> Certainly, the word `exile` itself now enters the ears more harshly through a sort of conviction and popular belief, and strikes the listener to be detestible. For that is people's verdicts, but wise men on the whole reject the people's decree
+
+I am aware that in my spirit lives a sort of inborn restlessness. For my mind is certainly very unsettled, darting about and directing thoughts to all places known and unknown. Perhaps I am a wanderer who's struggling to endure solemnity.
+
+
+
+I've been working on `leaflet`, which i'm current using to document this log. This is the first tool i've created for the sole purpose of my need i.e documenting my feelings and jornaling. This project has brought some tranquil into my wandering mind. It's strongly inspired by [100r.co's Leaf](https://100r.co/site/left.html) 
+
+
+I'm currently reading On The Shortness Of Life By Seneca. 
+
+<!-- ---
+
+### September 2022
+
+Today, 9/9/22 i got my final intern interview at microsoft scheduled. I have no idea how i feel. I'm very positive though. -->
 
 
 
@@ -424,7 +433,14 @@ Ahmed.
 - A. Alvarez
 
  >It is a fundamental law of nature that to evolve one has to push one’s limits, which is painful, in order to gain strength—whether it’s in the form of lifting weights, facing problems head-on, or in any other way. Nature gave us pain as a messaging device to tell us that we are approaching, or that we have exceeded, our limits in some way. At the same time, nature made the process of getting stronger require us to push our limits. Gaining strength is the adaptation process of the body and the mind to encountering one’s limits, which is painful. In other words, both pain and strength typically result from encountering one’s barriers. When we encounter pain, we are at an important juncture in our decision-making process
-- Ray Dalio]]></content:encoded>
+- Ray Dalio
+
+>What, if some day or night a demon were to steal after you into your loneliest loneliness and say to you: 'This life as you now live it and have lived it, you will have to live once more and innumerable times more; and there will be nothing new in it, but every pain and every joy and every thought and sigh and everything unutterably small or great in your life will have to return to you, all in the same succession and sequence—even this spider and this moonlight between the trees, and even this moment and I myself. The eternal hourglass of existence is turned upside down again and again, and you with it, speck of dust!'
+>
+>Would you not throw yourself down and gnash your teeth and curse the demon who spoke thus? Or have you once experienced a tremendous moment when you would have answered him: 'You are a god and never have I heard anything more divine.' If this thought gained possession of you, it would change you as you are or perhaps crush you. The question in each and every thing, 'Do you desire this once more and innumerable times more?' would lie upon your actions as the greatest weight. Or how well disposed would you have to become to yourself and to life?
+
+- Nietzsche
+]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
         <item>
@@ -690,203 +706,6 @@ And with all this set up, you should have a theme working fine on your react app
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
         <item>
-            <title><![CDATA[Sorting Algorithms]]></title>
-            <link>https://saheed.codes/second-brain/sorting-algo</link>
-            <guid>https://saheed.codes/second-brain/sorting-algo</guid>
-            <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[A sorting algorithm is an algorithm that puts elements of a list into an order]]></description>
-            <content:encoded><![CDATA[
-Sorting a list of data in ascending, descending, or any order can help both humans and machine sort data efficiently and quickly, perhaps using an algorithm. The sorting algorithms works on data structures of different data types keeping consideration of [asymptotic](/second-brain/asymptotic) analysis.
-
-### Simple Sorting
-
-These algorithms are useful in sorting through data of any type. i.e int, string, object etc. Although the run time of these algorithms are notoriously slow.
-
-1.  Bubble sort
-2.  Selection sort
-3.  Insertion sort
-
-### Bubble Sort
-
-It is the simplest of all sorting algorithms but very slow.(not advisable for large dataset).
-
-The rules of this algorithms are as follows.
-
--   Compare only two indexes at a time starting at index the beginning
--   If the LHS is greater than the RHS SWAP positions else do nothing
--   Then, move one position to the right and repeat the previous step.
--   At each stage of the iteration, the largest or greatest element must be on the extreme end of the RHS.
--   Finally repeat all step.
-
-```java
-
-  static void bubbleSort(int[] arr) {
-	int temp = 0;
-	for(int i=0; i < arr.length; i++){
-		for(int j=1; j < (arr.length - i); j++){
-		if(arr[j-1] > arr[j]){
-//swap elements
-			temp = arr[j-1];
-			arr[j-1] = arr[j];
-			arr[j] = temp;
-			} // if close
-		} // inner for loop close
-	} // outer for loop close
-} // end of method
-
-//Time Complexity is mostly = 0(n^2)
-
-```
-
-> The only comparison done here is check if the LHS > RHS. and for each iteration n - 1 is always sorted (where n = length of the array).
-
-### Selection Sort:
-
-It’s a very basic and straight forward way of sorting here are the steps:
-
-1.Scan through the dataset, and locate the smallest date.
-
-1.  Store that smallest date for reference.
-2.  If the nothing smaller than what we currently have stored, swap our smallest date to the first index i.e index[0]
-3.  Now repeat the above process, this time start scanning from index[i]+1 (because index[i] is already sorted.(where i = currentIndex))
-4.  Reiterate the process till you get to the last data which MUST be the largest.
-
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f069ac77-d23d-4be8-b4d4-75c1b13803a1/Screenshot_2022-03-01_at_17.43.06.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T202515Z&X-Amz-Expires=86400&X-Amz-Signature=ba6a02b3f9fe06d2f5d3c7034dabbe946ac5153410dedcaea3c5037b4e6d767a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252017.43.06.png%22&x-id=GetObject)
-
-```java
-static void selectionSort(int f[]){
-	for(int i = 0; i < f.length; i = i + 1){  //iterate through the dataset
-		int currMin = i;
-		 //storing our current Minimum
-		for(int j = i + 1; j < f.length; j = j + 1){
-			//repeating the iteration from index[i]+1
-			if(f[j] < f[currMin])
-					currMin = j;
-	}
-// swap f[currMin] with f[i]
-		int temp = f[i];
-		//temporary variable to hold f[i]
-		f[i] = f[currMin];
-		f[currMin] = temp;
-	}
-}
-
-//Time Complexity for best & worst case is = 0(n^2)
-```
-
-### Insertion Sort
-
-This algorithm is a basic one. Here it’s very similar to sorting a pack of card by hand.
-
-1.  Iterate through the dataset starting at array[1] until array[array.lenght-1].
-2.  We’d compare the element at our current position (a.k.a KEY) to it’s predecessors(KEY - 1....).
-3.  If the element at current position KEY is smaller that the immediate predecessor, we’d continue the comparison to predecessors after Key immediate predecessor.
-4.  Now we’d all those predecessors greater than KEY by one position forward to create space for KEY
-5.  We’d insert key into its rightful space.
-
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/74345031-05e4-4563-8f69-3a9c9f8475c8/Screenshot_2022-03-01_at_18.43.40.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T203658Z&X-Amz-Expires=86400&X-Amz-Signature=1e084d5f08cc60116b6fbe0e7c4aff323f3622154283830b7e8daeff3f6f8f1a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252018.43.40.png%22&x-id=GetObject)
-
-```java
-static void insertionSort(int k[]){
-		int j = 1;
-	while(j < k.length){
-		int key = j;
-	while(key > 0 && k[key] < k[key-1]){
-    int temp = k[key];
-		k[key] = k[j-1];
-		k[key-1] = temp;
-		key = key - 1;
-		}
-			j = j + 1;
-	}
-}
-```
-
-### Divide & Conquer
-
-Divide and Conquer is an algorithmic paradigm. A typical Divide and Conquer algorithm solves a problem using following three steps.
-
-1.  **Divide**: Break the given problem into subproblems of same type.
-2.  **Conquer**: Recursively solve these subproblems
-3.  **Combine**: Appropriately combine the answers
-
-### Merge Sort:
-
-In merge sort the divide and conquer paradigm is implemented.
-
-Given: An array **S** to sort, using divide & conquer we’d go this way:
-
-1.  **Divide**: If s.length < 1 return s, because there’s nothing to be sorted. ELSE break the array into two such as S1 and S2, each containing about half of S elements. (i.e s1 has s.length/2 elements & s2 has the remaining s.length/2 elements)
-2.  **Conquer**: Here, we’d recursively sort both s1 and s2
-3.  **Combine**: Merge the sorted S1 and S2 together to form a sorted S.
-
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/346cf58d-cff1-43a6-b24e-6a5a496f535c/Screenshot_2022-03-01_at_19.05.01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220618%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220618T204209Z&X-Amz-Expires=86400&X-Amz-Signature=4b954e76472003542332bf536e2134eff9ba483da4adc3a628b67238dcf77314&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot%25202022-03-01%2520at%252019.05.01.png%22&x-id=GetObject)
-
-```java
-static void merge(int f[], int lowerB, int mid, int upperB){
-		int i = lowerB;
-		int j = mid;
-	//use temp array to store merged sub-sequence
-	//create a temporary array of size
-	//t is initialised to store the index of temp[]
-		int temp[] = new int[upperB - lowerB];
-		int t = 0;
-
-	//while lowerBound < the middle and middle is also less than upper bound
-	// if f[lowerBound] <= f[middle]
-	//new array temp should copy all the elements in the lowerBound
-	while(i < mid && j < upperB){
-		if(f[i] <= f[j]){
-			temp[t] = f[i]; i++; t++;
-		}
-		 //else, temp should copy all the elements in the upper bound
-		else{
-			temp[t] = f[j]; j++; t++;
-	}
-}
-	//tag on remaining sequence
-	//while lowerBound is less that mid
-	//the temp array should copy all the elements in the lower bound
-	while(i < mid){
-		temp[t] = f[i]; i++; t++;
-	}
-	//while  the middle is less than the upper bound,
-	//the temp array should copy all elements from the upper bound
-	while(j < upperB){
-		temp[t] = f[j]; j++; t++;
-	}
-	//copy temp back to f
-		i = lowerB;
-		t = 0;
-		while(t < temp.length){
-		f[i] = temp[t];
-		i++; t++;
-	}
-}
-```
-
-```java
-static void mergeSort(int f[], int lowerB, int upperB){
-if(lowerB + 1 < upperB){
-    int mid = (lowerB + upperB)/2;
-    mergeSort(f, lowerB, mid);
-    mergeSort(f, mid, upperB);
-    merge(f, lowerB, mid, upperB);
-  }
-}
-
-//Time complexity is 0(nlogn)
-```
-
----
-
-### Further Reading
-
--   [William Fuset's Sorting Algorithm Implementation](https://github.com/ahmedsaheed/Algorithms/tree/master/src/main/java/com/williamfiset/algorithms/sorting)
-]]></content:encoded>
-            <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
-        </item>
-        <item>
             <title><![CDATA[Leo Tolstoy]]></title>
             <link>https://saheed.codes/second-brain/tolstoy</link>
             <guid>https://saheed.codes/second-brain/tolstoy</guid>
@@ -917,7 +736,8 @@ Sadly, Leo died in 1910 at the age of 82, though the residue of his remarkable l
 
 >   “We lost because we told ourselves we lost.”
 
->   “Boredom: the desire for desires.”]]></content:encoded>
+>   “Boredom: the desire for desires.”
+]]></content:encoded>
             <author>ahmedsaheed2@outlook.com (Ahmed Saheed)</author>
         </item>
     </channel>

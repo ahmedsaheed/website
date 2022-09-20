@@ -6,7 +6,6 @@ import katex from "rehype-katex"
 import stringify from "rehype-stringify"
 import highlight from "rehype-highlight"
 import slug from "rehype-slug"
-import link from "rehype-autolink-headings"
 import rehypeRaw from "rehype-raw"
 import remarkGfm from "remark-gfm"
 
