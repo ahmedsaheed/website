@@ -1,12 +1,13 @@
 import { Feed } from "feed"
-import React, { Component } from "react"
-import { markdownToHtml } from "../lib/mdToHtml"
+import React from "react"
 import { BrainEntry } from "../lib/api"
 import { getContentBySlug, getAllContent } from "../lib/api"
 import { GetStaticProps, GetStaticPaths } from "next"
+var MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
 const fs = require("fs")
 
-function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
+ function getRssFeed ({ brainEntries }: { brainEntries: BrainEntry[] })  {
     const date = new Date()
     const feed = new Feed({
         title: "Saheed's Second Brain",
@@ -28,14 +29,15 @@ function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
         },
     })
 
-    brainEntries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-       .forEach((post) => {
-        feed.addItem({
+    brainEntries.sort((a, b)  => new Date(b.date).getTime() - new Date(a.date).getTime())
+       .forEach( (post) => {
+        
+        feed.addItem ({
             title: post.title,
             id: `https://saheed.codes/second-brain/${post.slug}`,
             link: `https://saheed.codes/second-brain/${post.slug}`,
             description: post.description,
-            content: post.content,
+             content:  md.render(post.content),
             author: [
                 {
                     name: "Ahmed Saheed",
@@ -44,7 +46,9 @@ function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
                 },
             ],
             date: new Date(post.date),
+            
         })
+
     })
 
     feed.addCategory("Second Brain")
@@ -55,7 +59,7 @@ function getRssFeed({ brainEntries }: { brainEntries: BrainEntry[] }) {
         link: "https://saheed.codes/til",
     })
 
-    //console.log(feed.rss2())
+    console.log(feed.rss2())
     // fs.mkdir('./public/rss', { recursive: true });
     // fs.writeFile('./public/rss/feed.xml', feed.rss2());
     // fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
