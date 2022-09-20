@@ -37,6 +37,7 @@ export default function Home() {
                 </div>
                 <article>
                     <h1 className="third" style={{ fontSize: "36px" }}>
+                    {/* Does it dance ? Does it catalyze a joyful affirmation of life? */}
                         Unabashed digital playground & personal logging system
                     </h1>
                     <p className="third">
