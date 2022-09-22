@@ -22,6 +22,6 @@
         "component/theme.js",
         "pages/books/api.txs",
         "component/summary.js"
-    ],
+, "pages/photos/index.jsx"    ],
     "exclude": ["node_modules"]
 }

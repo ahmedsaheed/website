@@ -67,6 +67,12 @@ function detectKeydown(e: KeyboardEvent) {
             icon: "CollectionIcon",
             href: "/projects",
           },
+          {
+            id: "photos",
+            children: "Camera Roll",
+            icon: "PhotographIcon",
+            href: "/photos",
+          },
         ],
       },
       {

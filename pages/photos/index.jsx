@@ -1,0 +1,64 @@
+import { NextSeo } from "next-seo";
+import Head from "next/head";
+import { useEffect, useRef } from "react";
+
+export default function photo(){
+    const ref = useRef(null);
+    
+    useEffect(() => {
+        const el = ref.current;
+            const children = el.children;
+            for (let i = 0; i < children.length; i++) {
+                const child = children[i];
+                let grandchild ;
+                for (let j = 0; j < child.children.length; j++) {
+                    grandchild = child.children[j];
+                }
+                window.addEventListener('scroll', function() {
+                    var element = grandchild
+                    var position = element.getBoundingClientRect();
+                    if(position.top >= 0 && position.bottom <= window.innerHeight) {
+                        grandchild.style.transition= "300ms -webkit-filter linear";
+                        grandchild.style.filter = "blur(0px)";
+                    }
+                });
+            }
+      }, []);
+
+      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/d.png", "/e.png", 
+                        "/u.jpeg","/f.png","/g.png","/h.png","/i.png","/k.png","/l.png","/m.png","/s.jpeg","/n.png","/b.png","/z.jpeg"
+                        ]
+      
+    return(
+        <>
+        <NextSeo
+                title="Ahmed Saheed's TIL"
+                description="Ahmed Saheed's second brain'"
+                canonical="https://saheed.codes/second-brain"
+                openGraph={{
+                    url: "https://saheed.codes/second-brain",
+                    title: "Ahmed Saheed's second brain",
+                    description: "A place to document things i find interesting",
+                }}
+            />
+            <Head>
+                <meta charSet="UTF-8" />
+                <title>Photos | Ahmed Saheed</title>
+                <link rel="icon" type="image/png" href="/icon.png" />
+            </Head>
+            <header style={{ background:"black"}}  className="photos">
+                <ul ref={ref}>
+                    {images.map((image, index) => (
+                        <li key={index} className="imageee">
+                            <img src={image} alt="image" />
+                        </li>
+                    )
+                    )}
+             
+                </ul>
+            </header>
+        </>
+        
+    )
+
+}
