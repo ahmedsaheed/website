@@ -624,9 +624,6 @@ img, video{
     cursor: pointer;
     
 }
-.search-icon:hover{
-    transform: scale(1.01, 1.01);
-}
 
 .search-icon p{
     display: inline;
@@ -715,7 +712,7 @@ body::-webkit-scrollbar{
     display: inline-block;
     position: relative;
     overflow: hidden;
-    min-width: 420px !important;
+    min-width: 440px !important;
     height: 700px;
     outline: 0;
 }
@@ -736,11 +733,12 @@ body::-webkit-scrollbar{
     object-fit: cover !important;
     object-position: center;
     filter: blur(32px);
-    /* transform: scale(1.2) translateZ(0); */
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 
-.photos{
+/* .photos{
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -751,4 +749,4 @@ body::-webkit-scrollbar{
     padding-top: 120px;
     padding-bottom: 120px;
     margin: 0px auto;
-}
+} */

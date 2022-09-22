@@ -1,9 +1,7 @@
 import React  from "react"
 import Head from "next/head"
 import { date } from "../pages/index"
-import { BiRss } from "react-icons/bi"
 import SearchArea from "./searchBar"
-import {useState} from 'react';
 import { greeting } from "./greetings"
 
 function Layout(PageComponent: any, title: string) {
@@ -16,7 +14,7 @@ function Layout(PageComponent: any, title: string) {
 
                 <div className="spacers py-32 mx-auto  px-6 md:px-0">
                     {
-                        title.includes("Photos Musings")   ?
+                        title != "Musings"  ?
                         <nav className="nav mx-auto max-w-4xl space-y-5" style={{paddingBottom: "10px"}}>
                         <div className="">
                         <p className="name px-10" style={{fontSize: "24px"}}>{title}</p>  

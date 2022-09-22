@@ -17,7 +17,7 @@ export default function photo(){
                 window.addEventListener('scroll', function() {
                     var element = grandchild
                     var position = element.getBoundingClientRect();
-                    if(position.top >= 0 && position.bottom <= window.innerHeight) {
+                    if(position.top < window.innerHeight && position.bottom >= 0) {
                         grandchild.style.transition= "300ms -webkit-filter linear";
                         grandchild.style.filter = "blur(0px)";
                     }

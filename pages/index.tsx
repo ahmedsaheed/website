@@ -40,7 +40,7 @@ export default function Home() {
                          Unabashed playground & luscious inner world
                     </h1>
                     <p className="third">
-                        <b>First i'd ask, "Does it dance or perphas trembles with a joyful affirmation of life?"</b> I perceive
+                        First, Does it dance or perphas trembles with a joyful affirmation of life ? I perceive
                         you've come all the way from <Location />. Well, I'm currently working on{" "}
                         <a  href="/second-brain/leaflet">
                             {" "}
