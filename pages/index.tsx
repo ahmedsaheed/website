@@ -37,11 +37,10 @@ export default function Home() {
                 </div>
                 <article>
                     <h1 className="third" style={{ fontSize: "36px" }}>
-                    {/* Does it dance ? Does it catalyze a joyful affirmation of life? */}
-                        Unabashed digital playground & personal logging system
+                         Unabashed playground & luscious inner world
                     </h1>
                     <p className="third">
-                        Hey, you've finally made it to my tiny court yard on the web. I perceive
+                        <b>First i'd ask, "Does it dance or perphas trembles with a joyful affirmation of life?"</b> I perceive
                         you've come all the way from <Location />. Well, I'm currently working on{" "}
                         <a  href="/second-brain/leaflet">
                             {" "}

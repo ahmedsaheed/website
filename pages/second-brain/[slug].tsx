@@ -79,7 +79,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                         {" "}
                         <hr />
                         <div className="">
-                            <h2 style={{fontSize: "1.2em", fontFamily: "Crimson Pro"}} className="">{brainEntry.backlinks.length > 1 ?"Backlinks" : "Backlink"}</h2>
+                            <h2 style={{fontSize: "1em", fontFamily: "Crimson Pro"}} className="">⚘ {brainEntry.backlinks.length > 1 ?"Related Entries" : "Related Entry"}</h2>
                             <div>
                                 {brainEntry.backlinks.map((backlink) => (
                                     <Link

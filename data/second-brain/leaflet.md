@@ -50,21 +50,21 @@ I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" r
 
 # Features
 
-- **🖋 Editing**: Switch between editing and preview mode seemlessly
+- **Editing**: Switch between editing and preview mode seemlessly
 
-- **⚛️ Maths & Chemical Equation Typesetting**: Leaflet renders mathematical, physics and chemical equation out of the box.
+- **Maths & Chemical Equation Typesetting**: Leaflet renders mathematical, physics and chemical equation out of the box.
 
 - **Pandoc Support**: Easily export your `.md` files to `.pdf` and `.docx` files
 
-- **📄 Uses Files**: Leaflet works with users file system directly instead of an external database.
+- **Uses Files**: Leaflet works with users file system directly instead of an external database.
 
-- **🌙 Dark / Light Mode**: Supports your system specified theme.
+- **Dark / Light Mode**: Supports your system specified theme.
 
-- **✨ Simplicity**: Leaflet focuses on simplicity and provides only necessary features needed.
+- **Simplicity**: Leaflet focuses on simplicity and provides only necessary features needed.
 
 - **Word Suggestion**: Provides about 5,000 english word and synonyms suggestion
 
-- **🕉 Bidirectional Text**: Automatically detect BIDI - text and displays logiaclly.
+- **Bidirectional Text**: Automatically detect BIDI - text and displays logiaclly.
 
 ---
 

@@ -15,7 +15,9 @@ function Layout(PageComponent: any, title: string) {
                 </Head>
 
                 <div className="spacers py-32 mx-auto  px-6 md:px-0">
-                    <nav className="nav mx-auto max-w-4xl space-y-5" style={{paddingBottom: "10px"}}>
+                    {
+                        title != "Musings" ?
+                        <nav className="nav mx-auto max-w-4xl space-y-5" style={{paddingBottom: "10px"}}>
                         <div className="">
                         <p className="name px-10" style={{fontSize: "24px"}}>{title}</p>  
                             <div className="Navspace"></div>
@@ -26,6 +28,10 @@ function Layout(PageComponent: any, title: string) {
 
                         </div>
                     </nav>
+                    :
+                    null
+                    }
+                    
                     <main className="mt-12">
                         <PageComponent {...pageProps} />
                     </main>

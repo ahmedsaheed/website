@@ -9,6 +9,7 @@ date: "2022-09-09"
 
 ![](https://100r.co/media/content/travel/penelakut_01.jpg)
 
+[[log]]
 
 My words are limited, perphaps enormous on the inside but as I try to force these words onto my leaflet, they seem to flutter away and vanish, refusing to be expressed in any precise form.
 

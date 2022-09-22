@@ -7,34 +7,28 @@ html *:before {
 
 :root {
     --color-default: #f5f2e9;
-    --text-color: #1d1b1d;
+    --text-color: #273B61;
     --dairy: #333;
-    --bi: #EDEAEA;
-    --a-color: #284b63;
+    --bi: #D0B2B7;
+    --a-color: #ff5532 !important;
     --name: var(--text-color);
     --p-color: #bbbbbb;
-    --search-color: #E7E5E0;
-    --samp: #858585;
-    --rule:#7c7c7c;
-    --selector: black
-    --lineafter: var(--bi)
+    --search-color: ##D0B2B7;
+    --rule: #273B61;
+   --selector: black;
 }
 
 [data-theme="light"] {
     --color-default: #f5f2e9;
-    --text-color: #0A0A0A;
+    --text-color: #273B61;
     --dairy: #333;
-    --bi: #EDEAEA;
+    --bi: #D0B2B7;
     --a-color: #ff5532 !important;
     --name: var(--text-color);
     --p-color: #bbbbbb;
-    --search-color: #E7E5E0;
-    --samp: #858585;
-    --rule: #7c7c7c;
+    --search-color: ##D0B2B7;
+    --rule: #273B61;
    --selector: black;
-   
- 
-
 }
 [data-theme="dark"] {
     --color-default: rgb(1, 2, 4);;
@@ -46,7 +40,6 @@ html *:before {
     --a-color: #ff5532 !important;
     --p-color: #bbbbbb;
     --search-color:#33312f !important;
-    --samp: #7e7e7e;
     --rule: #252525;
     --selector: white;
     
@@ -101,7 +94,7 @@ hr:after {
     content: "* * *";
     display: inline-block;
     color: var(--rule);
-    margin: -1em 0 0.5em;
+    margin: -0.9em 0 0.5em;
     font-size: 2em;
     padding: 0.5em 0.5em;
     background: var(--bi);
@@ -333,13 +326,18 @@ a {
 }
 
 .backlinks {
-    border: 0.7px solid var(--rule);
-    border-radius: 5px;
+    /* border: 0.7px solid var(--rule);
+    border-radius: 5px; */
     color: var(--text-color);
     background-color: transparent;
     margin: 0.5em;
     padding: 0.25em 1em;
     display: inline-block;
+}
+.backlinks::before {
+    content: "✺ ";
+    margin-right: 0.5em;
+    color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -359,14 +357,10 @@ a {
 
 samp a{
     background-color: transparent;
-    color: var(--samp);
 }
 
-samp a:hover {
-    color: var(--text-color);
-}
 samp{
-    color: var(--samp);
+    color: var(--text-color);
 }
 p{
     margin: 16px 0px !important;
@@ -384,9 +378,9 @@ p{
         overflow: hidden;
         box-sizing: border-box;
         padding: 0;
-        height: 17px;
+        height: 19px;
         display: block;
-        width: 100%;
+        min-width: 100%;
     }
 
     samp{
@@ -490,6 +484,7 @@ h2 {
 
 ol,ul{
     margin-left: 1em !important;
+
 }
 
 .ded{
@@ -544,7 +539,7 @@ ol,ul{
 
 li, ul{
     font-family: "Spectral";
-    list-style: square;
+    list-style-type: "✺ ";
 }
 /* reveal fadein animation with mask */
 
@@ -621,6 +616,7 @@ img, video{
 
 .search-icon{
     background-color: var(--search-color);
+    border: 0.2px solid var(--rule);
     border-radius: 4px;
     height: 2em;
     display: flex;
@@ -696,4 +692,7 @@ td img{
 
 a{
     font-family: "Stylish" !important;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
