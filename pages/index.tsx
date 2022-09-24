@@ -22,7 +22,8 @@ export default function Home() {
             <Head>
                 <meta charSet="UTF-8" />
                 <title>Ahmed Saheed</title>
-                <link rel="icon" type="image/png" href="/icon.png" />
+                                <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
             </Head>
          
             <div className="homespacers gapps mx-auto max-w-3xl space-y-5">
