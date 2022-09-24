@@ -6,6 +6,7 @@ export default function photo(){
     const ref = useRef(null);
     
     useEffect(() => {
+        document.body.style.backgroundColor = "black";
         const el = ref.current;
             const children = el.children;
             for (let i = 0; i < children.length; i++) {
@@ -25,8 +26,7 @@ export default function photo(){
             }
       }, []);
 
-      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/d.png", "/e.png", 
-                        "/u.jpeg","/f.png","/g.png","/h.png","/i.png","/k.png","/l.png","/m.png","/s.jpeg","/n.png","/b.png","/z.jpeg"
+      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/xx.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg"
                         ]
       
     return(
@@ -46,8 +46,8 @@ export default function photo(){
                 <title>Photos | Ahmed Saheed</title>
                 <link rel="icon" type="image/png" href="/icon.png" />
             </Head>
-            <header style={{ background:"black"}}  className="photos">
-                <ul ref={ref}>
+            <header  className="photos">
+                <ul style={{padding: "2px"}} ref={ref}>
                     {images.map((image, index) => (
                         <li key={index} className="imageee">
                             <img src={image} alt="image" />
