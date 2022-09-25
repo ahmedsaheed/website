@@ -22,7 +22,7 @@ html *:before {
     --color-default: #f5f2e9;
     --text-color: #273B61;
     --dairy: #333;
-    --bi: #D0B2B7;
+    --bi: #fcfcfc;
     --a-color: #ff5532 !important;
     --name: var(--text-color);
     --p-color: #bbbbbb;
@@ -690,9 +690,9 @@ td img{
 a{
     font-family: "Stylish" !important;
 }
-body::-webkit-scrollbar{
-    display: none;
-}
+ .noscroll::-webkit-scrollbar{
+    display: none !important;
+} 
 
 .photos ul{
     display: grid;
@@ -737,16 +737,3 @@ body::-webkit-scrollbar{
     user-select: none;
 }
 
-
-/* .photos{
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 100vh;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin: 0px auto;
-} */

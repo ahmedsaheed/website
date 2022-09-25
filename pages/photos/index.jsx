@@ -6,7 +6,7 @@ export default function photo(){
     const ref = useRef(null);
     
     useEffect(() => {
-        document.body.style.backgroundColor = "black";
+         document.body.classList.add("noscroll");
         const el = ref.current;
             const children = el.children;
             for (let i = 0; i < children.length; i++) {
@@ -44,7 +44,7 @@ export default function photo(){
             <Head>
                 <meta charSet="UTF-8" />
                 <title>Photos | Ahmed Saheed</title>
-                <link rel="icon" type="image/png" href="/icon.png" />
+                <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
             <header  className="photos">
                 <ul style={{padding: "2px"}} ref={ref}>

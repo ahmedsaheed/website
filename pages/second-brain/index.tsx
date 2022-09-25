@@ -7,6 +7,7 @@ import Head from "next/head"
 import { BrainEntry } from "../../lib/api"
 import { format } from "date-fns"
 import Summary from "../../component/summary"
+import React from "react"
 
 function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
     return (
@@ -24,7 +25,6 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
             <Head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link href="../styles/blog.css" rel="stylesheet" />
                 <title>Second Brain | Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>

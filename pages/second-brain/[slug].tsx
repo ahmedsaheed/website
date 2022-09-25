@@ -12,6 +12,9 @@ import { format } from "date-fns"
 import React from "react"
 
 function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
+    React.useEffect(() => {
+        document.getElementById("upper")!.style.display = "none"
+    }, [])
     return (
         <>
             <NextSeo
