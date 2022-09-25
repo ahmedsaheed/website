@@ -13,6 +13,7 @@ const BookCard = (props: any) => {
                     src={props.image}
                     alt="Books"
                 />
+
             </a>
             <p>
                 <BookRating rating={props.rating} />
