@@ -26,24 +26,24 @@ export default function photo(){
             }
       }, []);
 
-      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/xx.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg"
+      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/xx.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg","/ff.jpeg"
                         ]
       
     return(
         <>
         <NextSeo
                 title="Ahmed Saheed's TIL"
-                description="Ahmed Saheed's second brain'"
-                canonical="https://saheed.codes/second-brain"
+                description="Ahmed Saheed's Pictures"
+                canonical="https://saheed.codes/photos"
                 openGraph={{
-                    url: "https://saheed.codes/second-brain",
-                    title: "Ahmed Saheed's second brain",
+                    url: "https://saheed.codes/photos",
+                    title: "Ahmed Saheed's Pictures",
                     description: "A place to document things i find interesting",
                 }}
             />
             <Head>
                 <meta charSet="UTF-8" />
-                <title>Photos | Ahmed Saheed</title>
+                <title>Photos by Ahmed Saheed</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
             <header  className="photos">

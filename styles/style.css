@@ -23,7 +23,7 @@ html *:before {
     --text-color: #273B61;
     --dairy: #333;
     --bi: #fcfcfc;
-    --a-color: #5f023e !important;
+    --a-color: #ff5532 !important;
     --name: var(--text-color);
     --p-color: #bbbbbb;
     --search-color: ##D0B2B7;
