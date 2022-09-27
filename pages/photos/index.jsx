@@ -26,7 +26,7 @@ export default function photo(){
             }
       }, []);
 
-      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/xx.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg","/ff.jpeg"
+      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/xx.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","gg.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg","/ff.jpeg"
                         ]
       
     return(
