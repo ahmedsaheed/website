@@ -70,6 +70,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                             Edit Page
                         </Link>
                     </span>
+                    <p><em>{brainEntry.description}</em></p>
                 </div>
                 <article
                     className="prose mx-auto max-w-3xl "

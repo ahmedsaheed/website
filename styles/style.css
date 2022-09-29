@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=JetBrains+Mono:wght@300&family=Spectral:wght@300&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 
 html *:after,
 html *:before {
@@ -232,6 +233,10 @@ h1 {
     padding: 10px;
     font-size: 10px;
     text-align: center;
+}
+em {
+    font-style: italic;
+    font-family: 'EB Garamond', serif;
 }
 
 .grid-container:hover {

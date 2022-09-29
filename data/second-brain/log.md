@@ -1,6 +1,6 @@
 ---
 title: "Log"
-description: "What is going on ? "
+description: "A monthly updated log book. "
 date: "2022-09-09"
 ---
 
