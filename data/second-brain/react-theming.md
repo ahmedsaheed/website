@@ -250,7 +250,6 @@ Finally, we'd do some bit of styling work on our css
 
 And with all this set up, you should have a theme working fine on your react app.
 
----
 
 [^1]:
     [Server Side Rendering: A method of rendering pages which generates the HTML on the server for the all page but only **on the first load**](https://medium.com/jspoint/a-beginners-guide-to-react-server-side-rendering-ssr-bf3853841d55)

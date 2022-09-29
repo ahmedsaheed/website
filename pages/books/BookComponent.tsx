@@ -18,7 +18,7 @@ const BookCard = (props: any) => {
             <p>
                 <BookRating rating={props.rating} />
             </p>
-            <h3>{props.author}</h3>
+            <p><strong>{props.author}</strong></p>
         </div>
     )
 }

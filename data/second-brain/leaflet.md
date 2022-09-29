@@ -46,9 +46,9 @@ I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" r
   
 </div>
 
----
 
-# Features
+
+## Features
 
 - **Editing**: Switch between editing and preview mode seemlessly
 
@@ -96,7 +96,7 @@ $ yarn build
 ---
 
 
-# More Features
+## More Features
 
 - Support media like `mp3`, `iframe` and `video` 
 - Displays a table of content on demand

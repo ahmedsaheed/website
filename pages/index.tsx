@@ -26,19 +26,13 @@ export default function Home() {
 
             </Head>
          
-            <div className="homespacers gapps mx-auto max-w-3xl space-y-5">
+            <div className="homespacers gapps mx-auto max-w-4xl space-y-5">
                 <div className="mx-auto ">
                     <br></br>
-                    <p
-                        className="name third "
-                        style={{ paddingBottom: "7px", paddingTop: "15px", fontSize: "24px" }}
-                    >
-                        Ahmed here!
-                    </p>
                 </div>
                 <article>
                     <h1 className="third" style={{ fontSize: "36px" }}>
-                         Unabashed playground & luscious inner world
+                         Ahmed's playground & luscious inner world
                     </h1>
                     <p className="third">
                         First, Does it dance or perphas trembles with a joyful affirmation of life ? I perceive

@@ -52,9 +52,9 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 ></script>
             </Head>
             <header>
-                <div style={{paddingLeft: "46px", paddingTop: "10px"}} className=" mx-auto max-w-4xl  ">
-                    <h2 style={{fontSize: "2em", fontFamily: "Crimson Pro"}} className="post-title">{brainEntry.title}</h2>
-                    <span className="post-date">
+                <div style={{paddingLeft: "1.2rem"}} className=" mx-auto max-w-3xl  ">
+                    <h2 className="post-title">{brainEntry.title}</h2>
+                    <span className="post-date" style={{paddingLeft: "5px"}}>
                         {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
                         {readingTime(brainEntry.content).minutes < 1
                             ? 1
@@ -72,16 +72,13 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     </span>
                 </div>
                 <article
-                    className="prose mx-auto max-w-4xl p-10"
+                    className="prose mx-auto max-w-3xl "
                     dangerouslySetInnerHTML={{ __html: brainEntry.content }}
                 />
 
                 {!!brainEntry.backlinks.length && (
-                    <div className="mx-auto max-w-4xl p-10">
-                        {" "}
-                        <hr />
-                        <div className="">
-                            <h2 style={{fontSize: "1em", fontFamily: "Crimson Pro"}} className="">⚘ {brainEntry.backlinks.length > 1 ?"Related Entries" : "Related Entry"}</h2>
+                    <div style={{paddingLeft: "1.3rem"}} className="mx-auto max-w-3xl ">
+                            <h2>⚘ {brainEntry.backlinks.length > 1 ?"Related Entries" : "Related Entry"}</h2>
                             <div>
                                 {brainEntry.backlinks.map((backlink) => (
                                     <Link
@@ -94,14 +91,13 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                                         </a>
                                     </Link>
                                 ))}
-                            </div>
                         </div>
                     </div>
 
                     
                 )}  
 
-                 <div className="mx-auto max-w-4xl p-10"><a href="/second-brain">← go back</a></div>    
+                 <div className="mx-auto max-w-3xl p-10"><a href="/second-brain">← go back</a></div>    
                      
 
             </header>

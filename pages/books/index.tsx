@@ -28,11 +28,7 @@ function books() {
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 <title>Library of  Ahmed Saheed</title>
             </Head>
-            <p className="name" style={{  paddingLeft: "30px", paddingBottom: "7px", paddingTop: "15px", fontSize: "2em" }}>
-            <p style={{display: "inline"}}>⚘</p> Library
-
-                        
-                    </p>
+            <h2 style={{marginLeft: "40px"}} className="post-title">⚘ Library</h2>
             <br />
             <Books />
             <br />

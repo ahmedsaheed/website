@@ -55,7 +55,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                     as={`/second-brain/${brainEntry.slug.toLowerCase()}`}
                                 >
                                     <a className="px-10 c-lhitIg">
-                                        <p style={{ fontFamily: "stylish", fontSize: "bold" }}>
+                                        <p>
                                             {brainEntry.title}
 
                                             <span>
