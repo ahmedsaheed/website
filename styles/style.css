@@ -112,10 +112,6 @@ hr:after {
 #footnote-label{
     display: none;
 }
-.footnotes{
-
-}
-
 
 @media screen and (max-width: 768px) {
     .homespacers{
@@ -738,3 +734,8 @@ a{
     -webkit-user-select: none;
     user-select: none;
 }
+.third:nth-child(1) { animation-delay: .600ms }
+.third:nth-child(2){animation-delay: 700ms;}
+.third:nth-child(3){animation-delay: 900ms;}
+.third:nth-child(4){animation-delay: 1000ms;}
+.third:nth-child(5){animation-delay: 1100ms;}

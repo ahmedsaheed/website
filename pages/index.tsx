@@ -71,8 +71,8 @@ export default function Home() {
                         </samp>
                     </div>
 
-                    <div style={{ paddingTop: "2vh" }}>
-                        <p className="third" style={{ display: "inline", fontFamily: "Spectral" }}>
+                    <div className="third" style={{ paddingTop: "2vh" }}>
+                        <p className="" style={{ display: "inline"}}>
                             <div className="moveRight"
                             style={{float: "right",
                                 fontSize: "16px"}}
