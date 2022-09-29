@@ -6,24 +6,19 @@ export default function photo(){
     const ref = useRef(null);
     
     useEffect(() => {
-         document.body.classList.add("noscroll");
-        const el = ref.current;
-            const children = el.children;
-            for (let i = 0; i < children.length; i++) {
-                const child = children[i];
-                let grandchild ;
-                for (let j = 0; j < child.children.length; j++) {
-                    grandchild = child.children[j];
-                }
-                window.addEventListener('scroll', function() {
-                    var element = grandchild
-                    var position = element.getBoundingClientRect();
-                    if(position.top < window.innerHeight && position.bottom >= 0) {
-                        grandchild.style.transition= "300ms -webkit-filter linear";
-                        grandchild.style.filter = "blur(0px)";
-                    }
-                });
+
+        const observer = new IntersectionObserver((elements) => {
+            elements.forEach((el) => {
+                if (el.isIntersecting) {
+                        el.target.style.transition= "300ms -webkit-filter linear";
+                        el.target.style.filter = "blur(0px)";
+                }else{
+                    el.target.style.filter = "blur(32px)";
             }
+            });
+        });
+        const images = document.querySelectorAll('.theimage');
+        images.forEach((image) => observer.observe(image));    
       }, []);
 
       const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg","/ll.jpeg","/mm.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/hh.jpeg","/xx.jpeg","jj.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","gg.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg","/ff.jpeg"
@@ -50,7 +45,7 @@ export default function photo(){
                 <ul style={{padding: "2px"}} ref={ref}>
                     {images.map((image, index) => (
                         <li key={index} className="imageee">
-                            <img src={image} alt="image" />
+                            <img className="theimage" src={image} alt="image" />
                         </li>
                     )
                     )}
