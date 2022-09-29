@@ -1,9 +1,8 @@
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 export default function photo(){
-    const ref = useRef(null);
     
     useEffect(() => {
 
@@ -42,7 +41,7 @@ export default function photo(){
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             </Head>
             <header  className="photos">
-                <ul style={{padding: "2px"}} ref={ref}>
+                <ul style={{padding: "2px"}}>
                     {images.map((image, index) => (
                         <li key={index} className="imageee">
                             <img className="theimage" src={image} alt="image" />
