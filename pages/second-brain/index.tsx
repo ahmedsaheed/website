@@ -40,7 +40,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             and alchemised, and the self can find a way out, which I think is what
                             love is. Franzen ending lines were "I mourn the eclipse of the cultural
                             authority that literature once possessed, and I rue the onset of an age
-                            so anxious that the pleasure of a text becomes difficult to sustain."
+                            so anxious that the pleasure of a text becomes difficult to sustain." - Ava
                             </em>
                         </>
                     }
