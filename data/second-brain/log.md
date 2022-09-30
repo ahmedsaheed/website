@@ -1,6 +1,6 @@
 ---
 title: "Log"
-description: "A monthly updated log book. "
+description: "Monthly wiki containing personal activities, professional experiences, studies undertaken, some in progress and others completed. A way to improve my habit of writing and capturing fringe thought."
 date: "2022-09-09"
 ---
 
@@ -16,7 +16,7 @@ Lately, i've been living in a state emotional numbness which opposes my real sel
 
 Although, somethimes i tend to to convience myself that this might actually be the right lifestyle for myself. Away from the madding crowd, away in an **inferior** state of repose and away in silence during an age of noise.
 
-> Certainly, the word `exile` itself now enters the ears more harshly through a sort of conviction and popular belief, and strikes the listener to be detestible. For that is people's verdicts, but wise men on the whole reject the people's decree
+> <em>Certainly, the word `exile` itself now enters the ears more harshly through a sort of conviction and popular belief, and strikes the listener to be detestible. For that is people's verdicts, but wise men on the whole reject the people's decree</em>
 
 I am aware that in my spirit lives a sort of inborn restlessness. For my mind is certainly very unsettled, darting about and directing thoughts to all places known and unknown. Perhaps I am a wanderer who's struggling to endure solemnity.
 

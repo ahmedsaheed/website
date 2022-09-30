@@ -16,14 +16,14 @@ function Layout(PageComponent: any, title: string) {
                     
                         <nav id="upper" className="nav mx-auto max-w-4xl space-y-5" style={{paddingBottom: "10px"}}>
                         <div className="">
-                        <p className="name px-10" style={{fontSize: "24px"}}>{title}</p>  
-                            <div className="Navspace"></div>
+                        <h3 style={{display: "inline", lineHeight: "0"}} className="name px-10">{title}</h3>  
+                        <div style={{display: "inline", float: "right"}}>
+                        <SearchArea />
                         </div>
-                      
-                        <div className="right">
-                        <SearchArea/>
 
                         </div>
+                      
+
                     </nav>
 
                     

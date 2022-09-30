@@ -22,27 +22,27 @@ html *:before {
 [data-theme="light"] {
     --color-default: #f5f2e9;
     --text-color: #333;
-    --dairy: #333;
     --bi: rgb(245, 244, 235);
     --a-color: rgb(148, 85, 3) !important;
     --name: #333;
-    --p-color: #bbbbbb;
-    --search-color: ##D0B2B7;
+    --search-color: #E7E5E0;
     --rule: rgb(148, 85, 3);
-   --selector: black;
+   --selector: #b3d4fc;
+   --selectorColor:var(--text-color);
+
 }
 [data-theme="dark"] {
     --color-default: rgb(1, 2, 4);;
     --text-color: #8a8f98;
     --color-border: #e7e7e7;
-    --dairy: #333;
     --bi: #000;
     --name: #fff;
-    --a-color: #ff5532 !important;
-    --p-color: #bbbbbb;
+    --a-color: #ff9a9e !important;
     --search-color:#33312f !important;
     --rule: #252525;
-    --selector: white;
+    --selector: #ff9a9e;
+    --selectorColor:black;
+
     
 }
 
@@ -100,7 +100,7 @@ hr:after {
     background: var(--bi);
     transform: translateY(-0.1em);
     z-index: -999;
-    padding-top: 16px
+    padding-top: 13px
 }
 .spacers {
     margin-top: 50px;
@@ -196,10 +196,10 @@ footer {
 .writings a{
     background-color: transparent;
 }
- .c-lhitIg:hover {
+ /* .c-lhitIg:hover {
     background: rgba(143, 159, 169, 0.15);
     transition:  700ms ease;
-}
+} */
 
 blockquote {
     border-left: 2.8px solid var(--a-color);
@@ -614,7 +614,6 @@ img, video{
 
 .search-icon{
     background-color: var(--search-color);
-    border: 0.2px solid var(--text-color);
     border-radius: 4px;
     height: 2em;
     display: flex;
@@ -643,14 +642,13 @@ img, video{
    
     color: white !important
 }
-.page p pre code{
-    overflow-x: auto;
-    white-space: pre-wrap;
-    font-family: "Stylish";
+pre{
+    margin-bottom: 2em !important;
 }
 ::selection{
-    background-color: transparent;
-    color: var(--selector);
+    text-shadow: none;
+    background-color: var(--selector);
+    color: var(--selectorColor);
 }
 .hljs *{
     font-family: 'JetBrains Mono', monospace !important;
@@ -739,3 +737,11 @@ a{
 .third:nth-child(3){animation-delay: 900ms;}
 .third:nth-child(4){animation-delay: 1000ms;}
 .third:nth-child(5){animation-delay: 1100ms;}
+
+.writingWrapper:hover .writings{
+    opacity:0.4;
+}
+.writingWrapper .writings:hover{
+    opacity:1;
+}
+

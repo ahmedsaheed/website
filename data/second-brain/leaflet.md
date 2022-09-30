@@ -1,6 +1,7 @@
 ---
 title: "Leaflet"
-description: "Minimal distractionless markdown editor!"
+description: "We use software because we have goals to achieve and things to do. The software we use is coded by programmers who have their own goals, sometimes these goals overlap with ours, over time these will diverge. The tools we depend on grow features we don't use or understand, introducing bugs that will prevent us from reaching our goals - Devine Lu Linvega.
+"
 date: "2022-09-02T00:00:00"
 ---
 
@@ -15,7 +16,7 @@ date: "2022-09-02T00:00:00"
 </p>
 
 
-Leaflet, a **minimal distractionless markdown editor** designed to quickly navigate between multiple `.md` files in a directory and its sub directories. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader.
+Leaflet, a minimal distractionless markdown editor designed to quickly navigate between multiple `.md` files in a directory and its sub directories. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader.
 
 
 I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">application</a> to help me cope with note taking during school lectures as most of my lecturers spoke too fast. This application is made available as a free and <a href="https://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">open source</a> software.
@@ -93,7 +94,8 @@ $ yarn install
 $ yarn build
 ```
 
----
+
+
 
 
 ## More Features

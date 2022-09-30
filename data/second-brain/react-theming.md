@@ -1,16 +1,10 @@
 ---
 title: "Theming In React"
-description: "Theming isn't that tricky!"
+description: "Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled with the implementation of this feature so i've decided to write about it."
 date: "2022-06-02T00:00:00"
 ---
 
-Lately, the use of multiple themes on web and mobile applications has risen immersely. While developing this website, I struggled during implementation this feature.
-
-I have decided to write this brief note on next js and react theming.
-
-There are many ways to implement theming in react, but I have decided to explain two only.
-
-### prerequisite
+### Prerequisite
 
 I assert you already have a react environment to work with, if not you can easily create one using:
 
@@ -24,9 +18,9 @@ or
 npx create-react-app my-app
 ```
 
-### Implementing the theming.
+### Implementing the theming approach one.
 
-First Approaching - using the [next theme libary](https://github.com/pacocoursey/next-themes)
+Using the [next theme libary](https://github.com/pacocoursey/next-themes) by [paco](https://paco.me/)
 
 You'd need to add the libary to your project:
 
@@ -101,7 +95,7 @@ const mode = () => {
 export default mode
 ```
 
-Second Approach - Implement the theming yourself.
+### Second Approach - Implement the theming yourself.
 
 Before we begin, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
 
@@ -211,7 +205,7 @@ function mode() {
 export default mode
 ```
 
-Let's add a touch of fun, we could also switch between themes by using our keyboard buttons by adding listeners, obviously this wouldn't work for mobile devices. To implement this we'd need to add an extra function in our `theme.js` file which would detect keys pressed.
+Let's add a touch of fun, we could also toggle between themes by using keyboard events. To implement this we'd need to add an extra function in our `theme.js` file which would detect keys pressed.
 
 ```js
 useEffect(() => {

@@ -4,7 +4,6 @@ description: "Some quote to live by"
 date: "2022-08-01T00:00:00"
 ---
 
-### Some quote to live by
 
 > I am persuaded that normal human beings are biologically built for an activity that is aimed towards a goal and that idleness, or aimless work gives rise to suffering and to entropy
  - Primo Levi

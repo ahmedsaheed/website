@@ -61,14 +61,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                             : readingTime(brainEntry.content)
                                   .minutes.toString()
                                   .substring(0, 3)}{" "}
-                        min read |{" "}
-                        <Link
-                            href={`https://github.com/ahmedsaheed/saheed.codes/tree/main/data/second-brain/${encodeURI(
-                                brainEntry.slug,
-                            )}.md`}
-                        >
-                            Edit Page
-                        </Link>
+                        min read
                     </span>
                     <p><em>{brainEntry.description}</em></p>
                 </div>
@@ -98,7 +91,6 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                     
                 )}  
 
-                 <div className="mx-auto max-w-3xl p-10"><a href="/second-brain">← go back</a></div>    
                      
 
             </header>

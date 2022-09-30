@@ -1,6 +1,6 @@
 ---
 title: "Letter to my future self"
-description: "A ponder on my past, present and future"
+description: "This letter goes from my current self to my future self. I am currently writing from a dining table after having a hot bowl of noodles while listening to a chakra meditation sound. You might someday be reading this at a different place, in a different time doing absoluetly something else."
 date: "2022-08-05"
 ---
 
@@ -8,16 +8,6 @@ date: "2022-08-05"
 ### Hi Saheed,
 
 > Wait! perhaps you intend to read the [[log]] book instead.
-
-This letter goes from my current self to my future self. I am currently writing from a dining table after having a hot bowl of noodles while listening to a chakra meditation sound. You might someday be reading this at a different place, in a different time doing absoluetly something else. 
-
-I haven't written such a letter like this throughout my existence, but i'd try to make it organic as possible. 
-
-![](/relief.jpeg)
-
-
-
-To begin,  i'd need to rewind a bit to your last days of secondary school. I think this letter would be absolutely incomplete without that flashback. 
 
 ### Early 2019
 

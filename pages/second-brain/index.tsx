@@ -44,6 +44,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     }
                 />
 
+                <div className="writingWrapper">
                 {brainEntries
                     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
                     .map((brainEntry: BrainEntry) => (
@@ -73,6 +74,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                         </>
                     ))
                     .sort()}
+                    </div>
             </header>
             <br></br>
             <br></br>
