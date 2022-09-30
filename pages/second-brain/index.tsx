@@ -33,6 +33,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     title=""
                     content={
                         <>
+                        <em>
                             The mind throws out thoughts and beliefs in so many permutations and
                             configurations and we are enslaved by it, by the output of our own
                             minds. The mind is a prison. And when we write the noise is distilled
@@ -40,6 +41,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                             love is. Franzen ending lines were "I mourn the eclipse of the cultural
                             authority that literature once possessed, and I rue the onset of an age
                             so anxious that the pleasure of a text becomes difficult to sustain."
+                            </em>
                         </>
                     }
                 />
