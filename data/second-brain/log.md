@@ -27,11 +27,11 @@ I've been working on `leaflet`, which i'm current using to document this log. Th
 
 I'm currently reading On The Shortness Of Life By Seneca. 
 
-<!-- ---
 
-### September 2022
 
-Today, 9/9/22 i got my final intern interview at microsoft scheduled. I have no idea how i feel. I'm very positive though. -->
+<!-- ### September 2022 -->
+
+<!-- It's been a long selfless month, I'd lived it without mindfullness and a lot has occured. -->
 
 
 

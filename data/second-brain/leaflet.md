@@ -8,9 +8,7 @@ date: "2022-09-02T00:00:00"
 <p align="center">
 
 
-
-<video src="https://user-images.githubusercontent.com/87912847/188292656-94da4c10-7fb3-464f-8fad-270b255afaee.mov" controls="controls">
-</video>
+<video muted controls src="https://user-images.githubusercontent.com/87912847/193433133-49c8d27c-beb3-4d8d-8fb7-4096bd5dfe45.mov"></video>
 
 
 </p>
@@ -27,17 +25,17 @@ I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" r
     <tbody>
       <tr>
         <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.2/Leaflet-0.0.2.dmg">
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-0.0.3.dmg">
           <img src="https://api.iconify.design/simple-icons:apple.svg?color=%23888888"/>
           OS X Download</a>
         </td>
         <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.2/Leaflet-Setup-0.0.2.exe">
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/Leaflet-Setup-0.0.3.exe">
           <img src="https://api.iconify.design/icomoon-free:windows.svg?color=%23888888"/>
           Windows Download</a>
         </td>
         <td>
-          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.2/leaflet_0.0.2_amd64.deb">
+          <a href="https://github.com/ahmedsaheed/Leaflet/releases/download/v0.0.3/leaflet_0.0.3_amd64.deb">
           <img src="https://api.iconify.design/codicon:terminal-ubuntu.svg?color=%23888888"/>
           Ubuntu Download</a>
         </td>
