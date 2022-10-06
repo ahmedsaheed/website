@@ -14,14 +14,14 @@ function Layout(PageComponent: any, title: string) {
 
                 <div  className="spacers py-32 mx-auto  px-6 md:px-0">
                     
-                        <nav id="upper" className="nav mx-auto max-w-4xl space-y-5" style={{paddingBottom: "10px"}}>
-                        <div className="">
-                        <h3 style={{display: "inline", lineHeight: "0"}} className="name px-10">{title}</h3>  
+                        <nav id="upper" className=" px-10 nav mx-auto max-w-4xl space-y-5" style={{paddingBottom: "10px"}}>
+                        <h3 style={{display: "inline", lineHeight: "0"}}>{title}</h3> 
+                     <div style={{flex: "auto"}}></div>
+
                         <div style={{display: "inline", float: "right"}}>
                         <SearchArea />
                         </div>
 
-                        </div>
                       
 
                     </nav>

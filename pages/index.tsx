@@ -31,7 +31,7 @@ export default function Home() {
                     <br></br>
                 </div>
                 <article>
-                    <h1 className="third" style={{ fontSize: "36px" }}>
+                    <h1 className="third" style={{ fontSize: "39px !important" }}>
                          Ahmed's playground & luscious inner world
                     </h1>
                     <p className="third">

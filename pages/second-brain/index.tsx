@@ -78,8 +78,7 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                     .sort()}
                     </div>
             </header>
-            <br></br>
-            <br></br>
+      
         </>
     )
 }

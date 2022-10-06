@@ -382,10 +382,10 @@ p{
     margin: 0;
 }
 .nav {
-    padding: 2rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0 2em;
     box-sizing: border-box;
     color: var(--text-color);
 }
