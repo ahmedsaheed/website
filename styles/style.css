@@ -615,7 +615,7 @@ img, video{
 .search-icon{
     background-color: var(--search-color);
     border-radius: 4px;
-    height: 2em;
+ 
     display: flex;
     align-items: center;
     cursor: pointer;

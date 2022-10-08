@@ -8,6 +8,7 @@ import Layout from "../../component/layout"
 import { NextSeo } from "next-seo"
 import readingTime from "reading-time"
 import { format } from "date-fns"
+import SearchArea from "../../component/searchBar"
 
 import React from "react"
 
@@ -53,7 +54,8 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
             </Head>
             <header>
                 <div style={{paddingLeft: "1.2rem"}} className=" mx-auto max-w-3xl  ">
-                    <h2 className="post-title">{brainEntry.title}</h2>
+                    <h2 className="post-title">{brainEntry.title}  <div style={{float: "right",paddingRight: "10px !important", height: "10px !important" }}><SearchArea/></div></h2>
+                   
                     <span className="post-date" style={{paddingLeft: "5px"}}>
                         {format(new Date(brainEntry.date), "MMM do, y")} |{" "}
                         {readingTime(brainEntry.content).minutes < 1

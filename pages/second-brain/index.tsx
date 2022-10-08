@@ -59,13 +59,13 @@ function SecondBrain({ brainEntries }: { brainEntries: BrainEntry[] }) {
                                 >
                                     <a className="px-10 c-lhitIg">
                                         <p>
-                                            {brainEntry.title}
+                                            <span style={{display: "inline"}}>{brainEntry.title}</span>
 
                                             <span>
                                                 <span className="date" style={{ float: "right" }}>
                                                     {format(new Date(brainEntry.date), "MMM do, y")}
                                                 </span>
-                                                <span className="date2" style={{float: "right" }}>
+                                                <span className="date2" style={brainEntry.title.length > 20 ? {display: "none"} : {float:"right"}}>
                                                     {format(new Date(brainEntry.date), "MM/dd")}
                                                 </span>
                                             </span>
