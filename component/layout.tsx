@@ -2,7 +2,6 @@ import React  from "react"
 import Head from "next/head"
 import { date } from "../pages/index"
 import SearchArea from "./searchBar"
-import { greeting } from "./greetings"
 
 function Layout(PageComponent: any, title: string) {
     const PageComponentWithLayout = ({ ...pageProps }) => {
@@ -30,9 +29,8 @@ function Layout(PageComponent: any, title: string) {
                     <main className="mt-12">
                         <PageComponent {...pageProps} />
                     </main>
-                    <div className="pt-10 grey-text cent ">
+                    <div className="pt-10 grey-text cent">
                         <span className=" text-sm">
-                            {greeting()}<br/>
                             CC{" "}
                             <a
                                 target="_blank"

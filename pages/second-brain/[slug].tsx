@@ -9,6 +9,8 @@ import { NextSeo } from "next-seo"
 import readingTime from "reading-time"
 import { format } from "date-fns"
 import SearchArea from "../../component/searchBar"
+import { greeting } from "../../component/greetings"
+
 
 import React from "react"
 
@@ -53,7 +55,7 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                 ></script>
             </Head>
             <header>
-                <div style={{paddingLeft: "1.2rem"}} className=" mx-auto max-w-3xl  ">
+                <div style={{paddingLeft: "1.2rem", paddingRight: "1.2rem"}} className=" mx-auto max-w-3xl  ">
                     <h2 className="post-title">{brainEntry.title}  <div style={{float: "right",paddingRight: "10px !important", height: "10px !important" }}><SearchArea/></div></h2>
                    
                     <span className="post-date" style={{paddingLeft: "5px"}}>
@@ -65,14 +67,14 @@ function BrainEntryPage({ brainEntry }: { brainEntry: BrainEntry }) {
                                   .substring(0, 3)}{" "}
                         min read
                     </span>
-                    <p><em>{brainEntry.description}</em></p>
+                    <p><em><b>{brainEntry.description}</b></em></p>
                 </div>
                 <article
                     className="prose mx-auto max-w-3xl "
-                    dangerouslySetInnerHTML={{ __html: brainEntry.content }}
-                />
+                    dangerouslySetInnerHTML={{ __html: brainEntry.content}}
 
-                {!!brainEntry.backlinks.length && (
+                />
+                             {!!brainEntry.backlinks.length && (
                     <div style={{paddingLeft: "1.3rem"}} className="mx-auto max-w-3xl ">
                             <h2>⚘ {brainEntry.backlinks.length > 1 ?"Related Entries" : "Related Entry"}</h2>
                             <div>
