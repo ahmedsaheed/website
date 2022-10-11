@@ -229,6 +229,7 @@ h1 {
     padding: 10px;
     font-size: 10px;
     text-align: center;
+    max-width: 170px;
 }
 em {
     font-style: italic;

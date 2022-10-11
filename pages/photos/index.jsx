@@ -20,7 +20,7 @@ export default function photo(){
         images.forEach((image) => observer.observe(image));    
       }, []);
 
-      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg","/ll.jpeg","/mm.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/hh.jpeg","/xx.jpeg","jj.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","gg.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg","/ff.jpeg"
+      const images = ["/v.jpeg", "/t.jpeg", "/o.jpeg","/ll.jpeg","/mm.jpeg", "/p.jpeg", "/q.jpeg", "/a.png", "/r.jpeg", "/e.png", "/aa.jpeg", "/bb.jpeg","/hh.jpeg","/xx.jpeg","nn.jpeg","jj.jpeg", "/cc.jpeg", "/dd.jpeg", "/ee.jpeg","/u.jpeg","gg.jpeg","/f.png","/g.png","/l.png","/b.png","/z.jpeg","/ff.jpeg"
                         ]
       
     return(
