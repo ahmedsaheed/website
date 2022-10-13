@@ -26,7 +26,7 @@
     },
     "homepage": "https://github.com/ahmedsaheed/ahmed-saheed#readme",
     "dependencies": {
-        "autoprefixer": "^10.4.11",
+        "autoprefixer": "^10.4.12",
         "axios": "^0.27.2",
         "date-fns": "^2.28.0",
         "feed": "^4.2.2",
