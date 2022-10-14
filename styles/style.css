@@ -141,11 +141,16 @@ hr:after {
 }
 
 
-code {
+kbd, code {
     background-color: rgba(143, 159, 169, 0.15);
     border-radius: 6px;
+    font-family: 'spectral', serif !important;
     padding: 0.2em 0.4em;
     color: var(--a-color);
+}
+
+kbd{
+    background-color: transparent !important;
 }
 
 

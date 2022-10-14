@@ -5,20 +5,42 @@ description: "We use software because we have goals to achieve and things to do.
 date: "2022-09-02T00:00:00"
 ---
 
-<p align="center">
+
+Leaflet, a minimal distractionless markdown editor designed to quickly navigate between multiple markdown files in a directory and its sub directories. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader.
 
 
-<video muted controls src="https://user-images.githubusercontent.com/87912847/193433133-49c8d27c-beb3-4d8d-8fb7-4096bd5dfe45.mov"></video>
+I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">application</a> to help me cope with note taking during school lectures as most of my lecturers spoke too fast. This application is made available as a free and open source software.
+
+![Leaflet Dark Mode](https://user-images.githubusercontent.com/87912847/195345060-a966ecf4-f2ed-47df-8beb-0058db38fe4f.png)
+<br/>
+![Leaflet Light Mode](https://user-images.githubusercontent.com/87912847/195346382-0b29051c-5f10-4c3b-865c-942398108aa7.png)
 
 
-</p>
 
 
-Leaflet, a minimal distractionless markdown editor designed to quickly navigate between multiple `.md` files in a directory and its sub directories. It features a clean mathematical typesetting, chemical equation rendering, code blocks highlighting, writing statistics and a speed-reader.
 
 
-I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">application</a> to help me cope with note taking during school lectures as most of my lecturers spoke too fast. This application is made available as a free and <a href="https://github.com/ahmedsaheed/Leaflet" target="_blank" rel="noreferrer" class="external ">open source</a> software.
+## Features
 
+- **Editing**: Switch between editing and preview mode seemlessly
+
+- **Maths & Chemical Equation Typesetting**: Leaflet renders mathematical, physics and chemical equation out of the box.
+
+- **Pandoc Support**: Easily export your `md` files to `.pdf` and `.docx` files
+
+- **Uses Files**: Leaflet works with users file system directly instead of an external database.
+
+- **Dark / Light Mode**: Supports your system specified theme.
+
+- **Simplicity**: Leaflet focuses on simplicity and provides only necessary features needed.
+
+- **Word Suggestion**: Provides about 5,000 english word and synonyms suggestion
+
+- **Bidirectional Text**: Automatically detect BIDI - text and displays logiaclly.
+
+---
+
+## Installation
 
 <div align="center">
      <table>
@@ -45,36 +67,7 @@ I created this <a href="http://github.com/ahmedsaheed/Leaflet" target="_blank" r
   
 </div>
 
-
-
-## Features
-
-- **Editing**: Switch between editing and preview mode seemlessly
-
-- **Maths & Chemical Equation Typesetting**: Leaflet renders mathematical, physics and chemical equation out of the box.
-
-- **Pandoc Support**: Easily export your `.md` files to `.pdf` and `.docx` files
-
-- **Uses Files**: Leaflet works with users file system directly instead of an external database.
-
-- **Dark / Light Mode**: Supports your system specified theme.
-
-- **Simplicity**: Leaflet focuses on simplicity and provides only necessary features needed.
-
-- **Word Suggestion**: Provides about 5,000 english word and synonyms suggestion
-
-- **Bidirectional Text**: Automatically detect BIDI - text and displays logiaclly.
-
----
-
-## Installation
-
-You'd have to install [pandoc](https://github.com/jgm/pandoc/blob/master/INSTALL.md) to export `.md` to other formats.
-
-
-
-  
-
+You'd have to install [pandoc](https://github.com/jgm/pandoc/blob/master/INSTALL.md) to export `.md` to other format.
 
 You can also run Leaflet locally from the command line:
 
@@ -93,7 +86,28 @@ $ yarn build
 ```
 
 
+---
+## Shortcuts and Controls
 
+### General
+- <kbd>⌘ | Ctrl</kbd> + <kbd>n</kbd> : New
+- <kbd>⌘ | Ctrl</kbd> + <kbd>s</kbd> : Save
+- <kbd>⌘ | Ctrl</kbd> + <kbd>o</kbd> : Open
+- <kbd>⌘ | Ctrl</kbd> + <kbd>i</kbd> : Insert
+- <kbd>⌘ | Ctrl</kbd> + <kbd>p</kbd> : Preview
+- <kbd>⌘ | Ctrl</kbd> + <kbd>d</kbd> : Convert to Docx
+- <kbd>⌘ | Ctrl</kbd> + <kbd>e</kbd> : Convert to PDF
+- <kbd>Shift</kbd> + <kbd>Tab</kbd> : Toggle Suggested Word
+
+
+
+### Quick Insert
+- <kbd>⌘ | Ctrl</kbd> + <kbd>y</kbd> : Date
+- <kbd>⌘ | Ctrl</kbd> + <kbd>t</kbd> : Time
+- <kbd>⌘ | Ctrl</kbd> + <kbd>f</kbd> : Finder
+- <kbd>⌘ | Ctrl</kbd> + <kbd>/</kbd> : Comment
+
+---
 
 
 ## More Features

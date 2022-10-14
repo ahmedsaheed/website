@@ -5,11 +5,11 @@ date: "2022-08-05"
 ---
 
 
-### Hi Saheed,
 
-> Wait! perhaps you intend to read the [[log]] book instead.
 
 ### Early 2019
+
+> Wait! perhaps you intend to read the [[log]] book instead.
 
 At that point your life felt abysmal and lacked meaning, You had just gotten into SS3 the final point of the Nigerian Secondary Education system. This was one of the most memorable moments of your life. You were quite young then  perphaps 15 or 16yo, getting ready for college and  embedding into your brain your then assumed imagination of a college student. At that age you hadn't understood anything about your thought process, You only did whatever you felt would please your peers irrespective of your parent words which were considered a burden. You lived in a very delusional and detestable bubble called life. Things really went fast! You eventually encircled yourself with a very wrong set of individuals which you looked up to and called your friends.
 

@@ -1,6 +1,6 @@
 ---
 title: "Quotes"
-description: "Some quote to live by"
+description: "Some quote and philosophy to live by"
 date: "2022-08-01T00:00:00"
 ---
 

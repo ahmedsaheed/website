@@ -6,23 +6,15 @@ date: "2022-06-02T00:00:00"
 
 ### Prerequisite
 
-I assert you already have a react environment to work with, if not you can easily create one using:
+I assert you already have a react environment to work with, if not you can easily create one using
 
 ```bash
 npx create-next-app@latest
 ```
 
-or
+### Approach One.
 
-```bash
-npx create-react-app my-app
-```
-
-### Implementing the theming approach one.
-
-Using the [next theme libary](https://github.com/pacocoursey/next-themes) by [paco](https://paco.me/)
-
-You'd need to add the libary to your project:
+Using the [next theme libary](https://github.com/pacocoursey/next-themes). You'd need to add the libary to your project:
 
 ```bash
 $ npm install next-themes
@@ -30,7 +22,7 @@ $ npm install next-themes
 $ yarn add next-themes
 ```
 
-In your `pages/_app.js` file, you'd need to add the following line:
+In your `pages/_app.js` file, you'd also need to add the following line:
 
 ```js
 import { ThemeProvider } from "next-themes"
@@ -95,15 +87,15 @@ const mode = () => {
 export default mode
 ```
 
-### Second Approach - Implement the theming yourself.
+### Second Approach. 
 
-Before we begin, we'd make use of react hook [`useLocalStorage`](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
+We'd make use of react hook [useLocalStorage](https://usehooks.com/useLocalStorage/) which stores the users selected theme in local storage so that it persists through a page refresh.
 
 We'd Also need our theme colors and element specified out in our stylesheet.
 
 And with all these basic stuff out, we're good to go!
 
-To begin, create a `hooks` folder in your root directory. Add a new javascript file in the directory like so `useLocalStorage.js`.
+To begin, create a `hooks` folder in your root directory. Add a new `.js` file in the directory like so `useLocalStorage.js`.
 
 Now in your `useLocalStorage.js` file lets add some code to allow SSR[^1] and SSG[^2] work decently.
 
@@ -203,24 +195,6 @@ function mode() {
 }
 
 export default mode
-```
-
-Let's add a touch of fun, we could also toggle between themes by using keyboard events. To implement this we'd need to add an extra function in our `theme.js` file which would detect keys pressed.
-
-```js
-useEffect(() => {
-
-document.addEventListener("keydown", detectKeydown, true)
-
-}, [])
-
-const detectKeydown = (e) => {
-// on pressing ctlr + d or ctlr + l our theme would be switched.
-if (e.key === "d" && (e.ctrlKey || e.metaKey) || (e.key === "l" && (e.ctrlKey || e.metaKey) )) {
-
-toggleDarkMode()
-
-}
 ```
 
 Finally, we'd do some bit of styling work on our css
