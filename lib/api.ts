@@ -1,5 +1,3 @@
-//code from https://github.com/amorriscode/anthonymorris.dev/blob/main/lib/api.ts
-
 import fs from "fs"
 import { join } from "path"
 import matter from "gray-matter"

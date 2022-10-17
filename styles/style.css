@@ -25,6 +25,7 @@ html *:before {
     --bi: rgb(245, 244, 235);
     --a-color: rgb(148, 85, 3) !important;
     --name: #333;
+    --code-block: rgb(0,0,0);
     --search-color: #E7E5E0;
     --rule: rgb(148, 85, 3);
    --selector: #b3d4fc;
@@ -42,6 +43,7 @@ html *:before {
     --rule: #252525;
     --selector: #ff9a9e;
     --selectorColor:black;
+    --code-block: #232223;
 
     
 }
@@ -144,7 +146,7 @@ hr:after {
 kbd, code {
     background-color: rgba(143, 159, 169, 0.15);
     border-radius: 6px;
-    font-family: 'spectral', serif !important;
+    font-family: monospace, serif !important;
     padding: 0.2em 0.4em;
     color: var(--a-color);
 }
@@ -204,10 +206,6 @@ footer {
 .writings a{
     background-color: transparent;
 }
- /* .c-lhitIg:hover {
-    background: rgba(143, 159, 169, 0.15);
-    transition:  700ms ease;
-} */
 
 blockquote {
     border-left: 2.8px solid var(--a-color);
@@ -310,8 +308,6 @@ a {
 }
 
 .backlinks {
-    /* border: 0.7px solid var(--rule);
-    border-radius: 5px; */
     color: var(--text-color);
     background-color: transparent;
     margin: 0.5em;
@@ -652,6 +648,7 @@ img, video{
     color: white !important
 }
 pre{
+    font-family: monospace;
     margin-bottom: 2em !important;
 }
 ::selection{
@@ -659,11 +656,12 @@ pre{
     background-color: var(--selector);
     color: var(--selectorColor);
 }
-.hljs *{
-    font-family: 'JetBrains Mono', monospace !important;
+.hljs {
+    font-family: monospace !important;
+    background-color: var(--code-block) !important;
 }
 code{
-    font-family: "Stylish" !important;
+    font-family: monospace !important;
 }
 .page code{
     font-family: "Stylish";
