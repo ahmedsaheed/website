@@ -37,7 +37,7 @@ export default function Home() {
                     <p className="third">
                         First, Does it dance or perphas trembles with a joyful affirmation of life ? I perceive
                         you've come all the way from <Location />. Well, I'm currently working on{" "}
-                        <a  href="/second-brain/leaflet">
+                        <a target="_blank" rel="noopener noreferrer" href="https://leaflet.saheed.codes/">
                             {" "}
                             Leaflet{" "}
                         </a>
