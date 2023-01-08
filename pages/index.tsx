@@ -35,8 +35,8 @@ export default function Home() {
                          Ahmed's playground & luscious inner world
                     </h1>
                     <p className="third">
-                        First, Does it dance or perphas trembles with a joyful affirmation of life ? I perceive
-                        you've come all the way from <Location />. Well, I'm currently working on{" "}
+                        First, i'd like you to tremble or perphas dance with a joyful affirmation of life. I perceive
+                        you've come all the way from <Location />. Currently, I'm working on{" "}
                         <a target="_blank" rel="noopener noreferrer" href="https://leaflet.saheed.codes/">
                             {" "}
                             Leaflet{" "}
