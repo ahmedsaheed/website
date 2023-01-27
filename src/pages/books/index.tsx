@@ -23,20 +23,7 @@ export default function Books() {
 
       <div className="space-y-8">
         <p>
-          Yo! I'm a full-stack engineer from the United Kingdom. I care about
-          performant, accessible code. I'm a huge fan of making, reading and
-          contributing to open source &amp; you can{" "}
-          <a
-            href="https://github.com/sponsors/alii"
-            rel="noreferrer"
-            target="_blank"
-          >
-            sponsor me on GitHub
-          </a>
-          {/**/}. Programming since seven, I've learned a lot about core
-          programming principles, scaling, and systems architecture. A large
-          proportion of my life is spent listening to all sorts of electronic
-          music, and below you can see what I've been enjoying recently...
+        The mind throws out thoughts and beliefs in so many permutations and configurations and we are enslaved by it, by the output of our own minds. The mind is a prison. And when we write the noise is distilled and alchemised, and the self can find a way out, which I think is what love is—the escape of the self from the self.
         </p>
         <Library/>
       </div>
