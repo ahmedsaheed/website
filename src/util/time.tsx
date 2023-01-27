@@ -20,7 +20,7 @@ export default function Age() {
 
   return (
     <strong>
-      <code className="age" style={{display: "inline"}} suppressHydrationWarning>{age}</code>
+      <code  style={{display: "inline" , fontSize: "16px"}} suppressHydrationWarning>{age}</code>
     </strong>
   );
 }
