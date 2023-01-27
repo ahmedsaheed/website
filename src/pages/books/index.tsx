@@ -1,6 +1,6 @@
 import Image from "next/image";
 import  BookCard  from "../../components/bookcard";
-import bookData from "../api/books-api"
+import Library from "../api/books-api"
 import Banner from "../../../public/banners.jpeg";
 export default function Books() {
   return (
@@ -38,29 +38,7 @@ export default function Books() {
           proportion of my life is spent listening to all sorts of electronic
           music, and below you can see what I've been enjoying recently...
         </p>
-      <div className="books">
-          {bookData().map((book, i) => (
-            // @ts-ignore
-            <BookCard
-              key={i}
-                // @ts-ignore
-
-              ranking={book.volumeInfo.averageRating}
-                          // @ts-ignore
-
-              link={book.volumeInfo.canonicalVolumeLink}
-                          // @ts-ignore
-
-              title={book.volumeInfo.title}
-                          // @ts-ignore
-
-              author={book.volumeInfo.authors}
-                          // @ts-ignore
-
-              cover={book.volumeInfo.imageLinks.thumbnail}
-            />
-          ))}
-        </div>
+        <Library/>
       </div>
     </div>
   );
