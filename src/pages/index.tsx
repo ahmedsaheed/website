@@ -173,7 +173,6 @@ export default function Index(props: Props) {
           <ListItem icon={SiStyledComponents} text="styled-components" />
           <ListItem icon={SiMongodb} text="Mongo" />
           <ListItem icon={SiDart} text="Dart" />
-          <ListItem icon={SiDart} text="Dart" />
           <ListItem icon={SiMysql} text="Mysql" />
           <ListItem icon={SiPython} text="Python" />
         </ul>
