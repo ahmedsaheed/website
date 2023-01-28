@@ -1,4 +1,4 @@
-import type { GetStaticPaths, GetStaticProps, PageConfig } from "next";
+import type { GetStaticPaths, GetStaticProps} from "next";
 import Head from "next/head";
 import {
   Blog,
@@ -7,9 +7,6 @@ import {
 } from "../../util/generate-blog";
 import { markdownToHtml } from "../../util/parse-md";
 
-// export const config: PageConfig = {
-// 	unstable_runtimeJS: false,
-// };
 
 export default function BlogPosts({ blog }: { blog: Blog }) {
   return (
