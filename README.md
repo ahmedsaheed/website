@@ -1,2 +1,2 @@
 ### Personal Websit & Blog 
-- Inspired by ![Alistair](https://github.com/alii/website)
+- Inspired by [Alistair](https://github.com/alii/website)
