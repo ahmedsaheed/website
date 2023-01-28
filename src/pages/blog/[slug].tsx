@@ -17,7 +17,7 @@ export default function BlogPosts({ blog }: { blog: Blog[] }) {
         <Head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>{blog.title}</title>
+                <title>{blog?.title}</title>
                 <link rel="icon" type="image/x-icon" href="./favicon.ico" />
                 <link
                     rel="stylesheet"
@@ -59,12 +59,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     ])
 
     const content = await markdownToHtml(blog.content || "")
+    const title = blog.title
 
     return {
         props: {
             blog: {
                 ...blog,
                 content,
+                title
             },
         },
     }
