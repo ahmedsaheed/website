@@ -1,2 +1,2 @@
 ### Personal Websit & Blog 
-- Inspired by [Alistair](https://github.com/alii/website)
+<sub>**Design heavily inspired by [Alistair](https://github.com/alii)'s [personal site](https://alistair.sh)**</sub>
