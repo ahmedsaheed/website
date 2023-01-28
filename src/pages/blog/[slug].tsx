@@ -5,10 +5,10 @@ import {  getAllContent , getContentBySlug} from "../../util/generate-blog"
 import { markdownToHtml } from "../../util/parse-md"
 
 type Blog = {
+    title: string
     slug: string
     content: string
     backlinks: string[]
-    title: string
     description?: string
     date: string
 }
