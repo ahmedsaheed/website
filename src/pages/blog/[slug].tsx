@@ -1,18 +1,11 @@
 import type {GetStaticPaths, GetStaticProps, PageConfig} from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-import {  getAllContent , getContentBySlug} from "../../util/generate-blog"
+import {Blog  getAllContent , getContentBySlug} from "../../util/generate-blog"
 import { markdownToHtml } from "../../util/parse-md"
 
-type Blog = {
-    title: string
-    slug: string
-    content: string
-    backlinks: string[]
-    description?: string
-    date: string
-}
-export default function BlogPosts({ blog }: { blog: Blog[] }) {
+
+export default function BlogPosts({ blog }: { blog: Blog }) {
     return(<>
         <Head>
                 <meta charSet="UTF-8" />
