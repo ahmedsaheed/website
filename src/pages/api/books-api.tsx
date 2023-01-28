@@ -2,11 +2,8 @@ import React from "react"
 import request from "superagent"
 import  BookCard  from "../../components/bookcard";
 
-
-
 export default function Library() {
-    const [books, setBooks] = React.useState([])
-    
+    const [books, setBooks] = React.useState([])    
     React.useEffect(() => {
         request
         .get("https://www.googleapis.com/books/v1/users/101611817084658660916/bookshelves/4/volumes?&startIndex=0&maxResults=40&key=AIzaSyDNMnPGw3yUzfIwUnH3PR4oMJiP-PecbhU")
@@ -14,7 +11,6 @@ export default function Library() {
             setBooks(data.body.items)
         })
     }, [])
-    console.log(books)
     
     return(
 

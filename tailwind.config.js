@@ -8,10 +8,15 @@ module.exports = {
 
 	theme: {
 		fontFamily: {
-			mono: ['"JetBrains Mono"', ...defaults.fontFamily.mono],
+			mono: ['"DM Mono"', 'monospace'],
 			sans: ['"GeneralSans-Variable"', ...defaults.fontFamily.sans],
 		},
+		fontWeight: {
+			light: 300,
+			medium: 500,
+		},
 	},
-
 	plugins: [],
+
+	plugins: [require('@tailwindcss/typography')],
 };

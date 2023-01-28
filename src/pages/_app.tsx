@@ -3,6 +3,8 @@ import "react-tippy/dist/tippy.css";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 import "../../public/fonts/general-sans/css/general-sans.css";
+import "highlight.js/styles/atom-one-dark-reasonable.css";
+
 
 import { Squash as Hamburger } from "hamburger-react";
 import type { AppProps } from "next/app";

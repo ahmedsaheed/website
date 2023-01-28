@@ -1,6 +1,5 @@
 html {
 	min-height: 100%;
-
 	@apply bg-gradient-to-tr dark:from-neutral-900 dark:to-black bg-white dark:text-neutral-100;
 }
 
@@ -82,6 +81,10 @@ img {
 	@apply opacity-100;
 }
 
+.blog{
+	font-family: "DM Mono", monospace !important;
+}
+
 .books{
 	@apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
 
@@ -98,4 +101,7 @@ img {
 .age{
 	font-size: 17px;
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important 
+}
+.font-bold {
+    font-weight: 700 !important;
 }
