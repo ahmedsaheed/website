@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { Blog, getAllContent } from "../../util/generate-blog"
 import React from "react"
 import type {ReactNode} from 'react';
-export const config: PageConfig = {
-	unstable_runtimeJS: false,
-};
+// export const config: PageConfig = {
+// 	unstable_runtimeJS: false,
+// };
 
 export default function BlogPost({ blog }: { blog: Blog[] }) {
     return(

@@ -7,9 +7,9 @@ import {
 } from "../../util/generate-blog";
 import { markdownToHtml } from "../../util/parse-md";
 
-export const config: PageConfig = {
-	unstable_runtimeJS: false,
-};
+// export const config: PageConfig = {
+// 	unstable_runtimeJS: false,
+// };
 
 export default function BlogPosts({ blog }: { blog: Blog }) {
   return (
