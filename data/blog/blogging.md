@@ -20,4 +20,6 @@ Here, on this blog, i'll  try to gather what i'm doing intellectually and my exp
 
 As Aaron Swartz says "I like sharing my thoughts and I like hearing yours and I like practicing expressing ideas, but fundamentally this blog is not for you, it’s for me. I hope that you enjoy it anyway."
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AH7YxbuZQs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Thanks for reading!

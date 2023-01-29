@@ -36,12 +36,7 @@ export default function BlogPosts({ blog }: { blog: Blog }) {
         ></script>
       </Head>
       <p>
-        <time
-          className="prose blog"
-          dateTime={new Date(blog.date).toISOString()}
-        >
-          {new Date(blog.date).toDateString()}
-        </time>
+        {new Date(blog.date).toDateString()}
       </p>
 
       <main
