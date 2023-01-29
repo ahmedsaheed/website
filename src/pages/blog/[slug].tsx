@@ -35,7 +35,7 @@ export default function BlogPosts({ blog }: { blog: Blog }) {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <p>
+      <p className="prose blog">
         {new Date(blog.date).toDateString()}
       </p>
 
