@@ -2,21 +2,22 @@ import styled from "styled-components";
 import Image from "next/image";
 import {  FiExternalLink,
 } from "react-icons/fi";
-
+type BookCardProps = {
+  small?: boolean;
+  cover?: string;
+  title: string;
+  ranking?: number;
+  author: string;
+  link: string;
+}
 export default function BookCard({
-  //@ts-ignore
   small,
-  //@ts-ignore
   cover,
-  //@ts-ignore
   title,
-  //@ts-ignore
   ranking,
-  //@ts-ignore
   author,
-  //@ts-ignore
   link,
-}) {
+}: BookCardProps) {
   return (
     <a
       style={{ cursor: "pointer" }}
@@ -24,8 +25,8 @@ export default function BookCard({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <StyledBookCard small={small}>
-        <ExternalHoverLink small={small}>
+      <StyledBookCard >
+        <ExternalHoverLink>
           View on Google Books{" "}
           <FiExternalLink style={{display :"inline"}}/>
         </ExternalHoverLink>
@@ -56,7 +57,7 @@ const ImageWrapper = styled.div`
 const ExternalHoverLink = styled.a`
   position: absolute;
   top: 35%;
-  left: ${(props) => (props.small ? "10%" : "18%")};
+  left: ${(props: any) => (props?.small ? "10%" : "18%")};
   transform-origin: center;
   z-index: 1;
   font-family: var(--font-sans);
@@ -78,7 +79,7 @@ const StyledBookCard = styled.div`
   flex-direction: column;
   transition: all 0.3s ease-in-out;
   margin: 0 var(--space-2xs) var(--space-2xs) 0;
-  padding: ${(props) =>
+  padding: ${(props: any) =>
     props.small
       ? "0 0 var(--space-xs) 0"
       : "0 var(--space-3xs) var(--space-l) var(--space-3xs)"};

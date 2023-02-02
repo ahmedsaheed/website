@@ -4,8 +4,6 @@ import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 import "../../public/fonts/general-sans/css/general-sans.css";
 import "highlight.js/styles/atom-one-dark-reasonable.css";
-
-
 import { Squash as Hamburger } from "hamburger-react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -18,10 +16,8 @@ import { Toaster } from "react-hot-toast";
 import { SWRConfig } from "swr";
 import { Song } from "../components/songs";
 import { loadCursor } from "../util/cursor";
-
 import { AnimatePresence, motion } from "framer-motion";
 import { fetcher } from "../util/fetcher";
-
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
@@ -95,19 +91,11 @@ export default function App({
   const navLinks = (
     <>
       <NavLink href="/" closeMenu={closeMenu}>
-        ../
+        home
       </NavLink>
-      <NavLink href="/books" closeMenu={closeMenu}>
-        books
+      <NavLink href="/blog" closeMenu={closeMenu}>
+      blog
       </NavLink>
-      <li className="shrink-0">
-        <a
-          href="/blog"
-          className={navlinkClassname}
-        >
-          blog
-        </a>
-      </li>
     </>
   );
 

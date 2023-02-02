@@ -10,7 +10,7 @@ Hello everyone! ahmed here. Today, i've decided to recommence blogging. About a 
 
 ## So why write again ?
 
-Personally, i won't be considering this a form of mere writing, but more like a process of gathering my thoughts - a way for me access my own interiority and create a something out it. Reductively, taking consistent walks through the network of my ideas and emotions.
+Personally, i won't be considering this a form of writing, but more like a process of gathering my thoughts - a way to access my own interiority and create a something out it. 
 
 In his 1959 classic, *The Sociological Imagination*, Wright Mills told students of his discipline:
 
@@ -18,8 +18,6 @@ In his 1959 classic, *The Sociological Imagination*, Wright Mills told students
 
 Here, on this blog, i'll try to gather what i'm doing intellectually and my experiences as a person. On this blog, i won't be afraid to use these experiences and relate them directly to various work in progress. By serving as a check on repetitious work, this blog would also encourage constistent capturing of ‘fringe-thoughts’ and various ideas which may be byproducts of everyday life. It would be a place to contemplate and process experience, a space for distillation and a storage for my atrophying memory.
 
-As Aaron Swartz says "I like sharing my thoughts and I like hearing yours and I like practicing expressing ideas, but fundamentally this blog is not for you, it’s for me. I hope that you enjoy it anyway."
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/AH7YxbuZQs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+I like sharing my thoughts and listening to yours and also practicing expressing ideas, but fundamentally this blog is not for you, it’s for me. I hope that you enjoy it anyway -- aaronsw.
 
 Thanks for reading!

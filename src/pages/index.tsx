@@ -1,12 +1,11 @@
 import dayjs from "dayjs";
 import { AnimatePresence, motion } from "framer-motion";
 import type { GetStaticProps } from "next";
-import { Fragment, useReducer } from "react";
+import {  useReducer } from "react";
 import { GiSkateboard } from "react-icons/gi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import {
   SiAmazonaws,
-
   SiGit,
   SiGithub,
   SiGo,
@@ -33,9 +32,7 @@ import { DISCORD_ID } from "../components/songs";
 import type { PinnedRepo } from "../hooks/github";
 import { useGitHubPinnedRepos } from "../hooks/github";
 import Age from "../util/time";
-
 import relativeTime from "dayjs/plugin/relativeTime";
-
 dayjs.extend(relativeTime);
 
 type Props = {
@@ -123,9 +120,8 @@ export default function Index(props: Props) {
           <span suppressHydrationWarning>
             <Age />
           </span>{" "}
-          year old software engineer from the Dublin. Interested in developing
-          efficient and user-friendly web and mobile applications, and
-          implementing secure and robust backend systems."{" "}
+          year old software engineer based in Dublin. Interested in developing
+          efficient and user-friendly web and mobile experiences."{" "}
         </p>
       </div>
 
@@ -134,12 +130,11 @@ export default function Index(props: Props) {
         <p className="opacity-80">
           Currently, I'm interning at{" "}
           <a href="https://pos.toasttab.com/" target="_blank" rel="noreferrer">
-            Toast Tab
+            toast tab
           </a>{" "}
-          as a software engineer. In my spare time, I create and maintain some
-          personal open-source projects. I am interested in exploring ways to
-          improve user privacy and security in technology. Below are some of the
-          more popular open source projects I've worked on.
+          as a software engineer. In my spare time, I create and maintain
+          personal open-source software that makes your day better. Or weirder. Aside from coding, i really enjoy blasting
+          music and film photography.
         </p>
 
         <div className="grid auto-cols-max grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3">
