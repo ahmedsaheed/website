@@ -18,7 +18,7 @@
     "@vercel/og": "^0.0.27",
     "alistair": "^1.4.3",
     "dayjs": "^1.11.7",
-    "eslint": "8.32.0",
+    "eslint": "8.33.0",
     "eslint-config-next": "13.1.5",
     "framer-motion": "^8.5.3",
     "gray-matter": "^4.0.3",
