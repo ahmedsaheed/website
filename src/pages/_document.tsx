@@ -14,7 +14,7 @@ export default class DocumentStruct extends Document {
 					<meta name="theme-color" content="#ffffff" />
 					<meta
 						name="description"
-						content="Ahmed Saheed, Software Engineering Intern from the UK"
+						content="Ahmed Saheed, Software Engineering Intern at Toast, Inc."
 					/>
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
