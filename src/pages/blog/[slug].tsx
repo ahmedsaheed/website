@@ -1,4 +1,5 @@
-import type { GetStaticPaths, GetStaticProps} from "next";
+import type { GetStaticPaths, GetStaticProps } from "next";
+import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import Head from "next/head";
 import {
   Blog,
@@ -7,8 +8,8 @@ import {
 } from "../../util/generate-blog";
 import { markdownToHtml } from "../../util/parse-md";
 
-
 export default function BlogPosts({ blog }: { blog: Blog }) {
+
   return (
     <>
       <Head>
@@ -35,14 +36,19 @@ export default function BlogPosts({ blog }: { blog: Blog }) {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <p className="prose blog">
-        {new Date(blog.date).toDateString()}
-      </p>
-
-      <main
+      <main className="prose blog dark:prose-invert">
+      <p className="">{new Date(blog.date).toDateString()}</p>
+      <h1 className="">{blog.title}</h1>
+      </main>
+      <AnimatePresence>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         className="prose blog prose-hr:border-neutral-200 dark:prose-hr:border-neutral-800 prose-blue prose-img:rounded-md prose-img:w-full dark:prose-invert"
         dangerouslySetInnerHTML={{ __html: blog.content }}
       />
+      </AnimatePresence>
     </>
   );
 }

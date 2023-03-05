@@ -4,7 +4,6 @@ description: "Blogging"
 date: "2023-01-29T00:00:00"
 ---
 
-# Future of this blog
 
 Greetings, fellow readers. It is Ahmed here, and after a year-long hiatus, I have made the decision to resume blogging. Although I do not consider myself a professional writer, I do believe that writing can serve as a subtle form of self-expression.
 
@@ -16,4 +15,4 @@ On this very blog, I aspire to collect my intellectual pursuits and personal exp
 
 While I enjoy sharing my thoughts and engaging with your ideas, I must emphasize that this blog is primarily for me. Nonetheless, I hope you enjoy it as well. As the late Aaron Swartz once said, "It's not for you, it's for me. But I hope you enjoy it anyway."
 
-<sup>Thank you for reading!</sup>
+Thank you for reading!

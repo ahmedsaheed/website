@@ -11,6 +11,7 @@ import Link from "next/link";
 import { Router } from "next/router";
 import NProgress from "nprogress";
 import type { ReactNode } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import { SWRConfig } from "swr";
@@ -184,6 +185,7 @@ export default function App({
             >
               <main className="mx-auto max-w-3xl space-y-12 md:py-24">
                 <Component {...pageProps} />
+                <Analytics />
               </main>
 
               <footer className="mx-auto mt-20 max-w-3xl border-t-2 border-neutral-900/10 p-4 py-10 opacity-50 dark:border-white/10  select-none">

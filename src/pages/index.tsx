@@ -260,7 +260,7 @@ function ProjectCard({ repo: project }: { repo: PinnedRepo }) {
 
 export const getStaticProps: GetStaticProps<Props> = async function () {
   const pinnedRepos = await fetch(
-    "https://gh-pinned.nxl.sh/api/user/alii"
+    "https://gh-pinned.nxl.sh/api/user/ahmedsaheed"
   ).then(async (response) => response.json() as Promise<PinnedRepo[]>);
 
   const request = new Request(

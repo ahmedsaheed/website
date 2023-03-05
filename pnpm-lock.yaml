@@ -14,8 +14,8 @@ specifiers:
   '@types/react-dom': 18.0.10
   '@types/styled-components': ^5.1.26
   '@types/superagent': ^4.1.16
+  '@vercel/analytics': ^0.1.11
   '@vercel/og': ^0.0.27
-  alistair: ^1.4.3
   autoprefixer: ^10.4.13
   dayjs: ^1.11.7
   eslint: 8.32.0
@@ -65,8 +65,8 @@ dependencies:
   '@types/node': 18.11.18
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
+  '@vercel/analytics': 0.1.11_react@18.2.0
   '@vercel/og': 0.0.27
-  alistair: 1.4.3_react@18.2.0
   dayjs: 1.11.7
   eslint: 8.32.0
   eslint-config-next: 13.1.5_7uibuqfxkfaozanbtbziikiqje
@@ -674,6 +674,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: false
 
+  /@vercel/analytics/0.1.11_react@18.2.0:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /@vercel/og/0.0.27:
     resolution: {integrity: sha512-cUk6HmfLmBOISAA8gvPRNUx3eVOSyXblxiuv3uN9UTxLwdalQzPlHC/0byvTMR1eVi0y1trD5u6um/4xiTqgOQ==}
     engines: {node: '>=16'}
@@ -723,15 +731,6 @@ packages:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-    dev: false
-
-  /alistair/1.4.3_react@18.2.0:
-    resolution: {integrity: sha512-e9AJnoTGcZDf6Lz38ENirNEHkmz+RkGadBmG2X8Qk/7AmpGIu8fntqYX0HUVOMrPkUlDLlI5JkGt3/UhcADisA==}
-    peerDependencies:
-      react: '*'
-    dependencies:
-      react: 18.2.0
-      urlcat: 2.0.4
     dev: false
 
   /ansi-regex/5.0.1:
@@ -4469,10 +4468,6 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
-    dev: false
-
-  /urlcat/2.0.4:
-    resolution: {integrity: sha512-12c4Vi40DHVdZ/8mOLjZjp0asCzM6hi8Gj116fpImRP1FN4gBMCtMi9XhLNOmre/FEQYNqHbZmX8iyYAtIcy8Q==}
     dev: false
 
   /urlcat/3.1.0:
