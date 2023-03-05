@@ -1,8 +1,7 @@
 import dayjs from "dayjs";
 import { AnimatePresence, motion } from "framer-motion";
 import type { GetStaticProps } from "next";
-import {  useReducer } from "react";
-import { GiSkateboard } from "react-icons/gi";
+import { useReducer } from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import {
   SiAmazonaws,
@@ -18,7 +17,6 @@ import {
   SiTailwindcss,
   SiTwitter,
   SiTypescript,
-  SiYarn,
   SiDart,
   SiPython,
   SiMysql,
@@ -31,6 +29,7 @@ import type { PinnedRepo } from "../hooks/github";
 import { useGitHubPinnedRepos } from "../hooks/github";
 import Age from "../util/time";
 import relativeTime from "dayjs/plugin/relativeTime";
+import Link from "next/link";
 dayjs.extend(relativeTime);
 
 type Props = {
@@ -87,30 +86,12 @@ export default function Index(props: Props) {
 
                 <span className="-mb-0.5 ml-1 block h-[6px] w-[6px] animate-pulse rounded-full bg-neutral-600 dark:bg-white" />
               </a>
-
-              {boostedActivity?.timestamps && (
-                <p className="flex items-center rounded-full bg-neutral-200 px-2 pr-3 text-neutral-600 no-underline transition-colors dark:bg-neutral-700 dark:text-white dark:text-opacity-50">
-                  <span>
-                    <GiSkateboard className="inline dark:text-white" />
-                    &nbsp;
-                  </span>
-
-                  <span className="-mb-0.5">
-                    Boosted boarding for{" "}
-                    {dayjs(boostedActivity.timestamps.start).fromNow(true)}
-                    &nbsp;
-                  </span>
-
-                  <span className="-mb-0.5 ml-1 block h-[6px] w-[6px] animate-pulse rounded-full bg-neutral-600 dark:bg-white" />
-                </p>
-              )}
             </p>
           )}
         </div>
 
         <h1 className="text-3xl font-bold sm:text-4xl md:text-6xl">
-          Hey, I'm <span className="text-blue-700 dark:text-white">Ahmed</span>{" "}
-          ✌️
+          Hey, I'm <span className="text-blue-700 dark:text-white">Ahmed.</span>{" "}
         </h1>
 
         <p className="opacity-80">
@@ -118,21 +99,22 @@ export default function Index(props: Props) {
           <span suppressHydrationWarning>
             <Age />
           </span>{" "}
-          year old software engineer based in Dublin. Interested in developing
-          efficient and user-friendly web and mobile experiences."{" "}
+          year old software engineer based in Dublin. My passion lies in
+          crafting streamlined and user-centric web and mobile experiences.
         </p>
       </div>
 
       <div className="space-y-4">
-        <h1 className="text-2xl font-bold sm:text-3xl">What do I do? 💭</h1>
+        <h1 className="text-2xl font-bold sm:text-3xl">What do I do? </h1>
         <p className="opacity-80">
-          Currently, I'm interning at{" "}
+          At present, I find myself interning at{" "}
           <a href="https://pos.toasttab.com/" target="_blank" rel="noreferrer">
-            toast tab
+            Toast
           </a>{" "}
-          as a software engineer. In my spare time, I create and maintain
-          personal open-source software that makes your day better. Or weirder. Aside from coding, i really enjoy blasting
-          music and film photography.
+          as a software engineer, delving into the intricacies of human computer
+          interaction. Beyond my professional pursuits, I devote the majority of
+          my time to honing my craft in software interface design and refining
+          my skills in the art of <Link href="/blog">essay writing</Link> and storytelling.
         </p>
 
         <div className="grid auto-cols-max grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3">
@@ -143,13 +125,13 @@ export default function Index(props: Props) {
       </div>
 
       <div className="space-y-4">
-        <h1 className="text-2xl font-bold sm:text-3xl">Technologies 💻</h1>
+        <h1 className="text-2xl font-bold sm:text-3xl">Technologies</h1>
 
         <p className="opacity-80">
-          I use a variety of tools to streamline my development process and
-          increase the quality of both my code, and my projects. Below is a list
-          of technologies and languages I've had experience with in the past, or
-          use currently.
+          In order to optimize my development process and elevate the caliber of
+          my code and projects, I employ a diverse array of tools. Enclosed
+          below, you will find a compilation of the various technologies and
+          languages with which I possess prior experience or presently utilize.
         </p>
 
         <ul className="grid grid-cols-3 gap-4 sm:grid-cols-4">
@@ -160,7 +142,6 @@ export default function Index(props: Props) {
           <ListItem icon={SiJava} text="Java" />
           <ListItem icon={SiAmazonaws} text="AWS" />
           <ListItem icon={SiNextDotJs} text="Next.js" />
-          <ListItem icon={SiYarn} text="Yarn" />
           <ListItem icon={SiTailwindcss} text="TailwindCSS" />
           <ListItem icon={SiGit} text="Git" />
           <ListItem icon={SiStyledComponents} text="styled-components" />

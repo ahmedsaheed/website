@@ -124,7 +124,6 @@ export default function App({
               exit={{ opacity: 0 }}
               className="fixed inset-0 z-10 space-y-2 bg-white py-24 px-8 dark:bg-neutral-900 sm:hidden"
             >
-              <h1 className="text-4xl font-bold">Menu.</h1>
 
               <ul className="grid grid-cols-1 gap-2">{navLinks}</ul>
             </motion.div>
@@ -143,7 +142,7 @@ export default function App({
               className={`flex justify-between space-x-2 pr-5 transition-colors ${
                 mobileMenuOpen
                   ? "bg-neutral-100 dark:bg-neutral-800"
-                  : "bg-transparent"
+                  : "bg-transparent border-white/10"
               }`}
             >
               <button
@@ -187,7 +186,7 @@ export default function App({
                 <Component {...pageProps} />
               </main>
 
-              <footer className="mx-auto mt-20 max-w-3xl border-t-2 border-neutral-900/10 p-4 py-10 opacity-50 dark:border-white/10">
+              <footer className="mx-auto mt-20 max-w-3xl border-t-2 border-neutral-900/10 p-4 py-10 opacity-50 dark:border-white/10  select-none">
                 <h1 className="text-3xl font-bold">Ahmed Saheed</h1>
                 <p>Software Engineer • {new Date().getFullYear()}</p>
               </footer>

@@ -73,6 +73,6 @@ export function useGitHubPinnedRepos(username: string) {
 			};
 
 			return data;
-		}),
+		})
 	};
 }

@@ -6,18 +6,14 @@ date: "2023-01-29T00:00:00"
 
 # Future of this blog
 
-Hello everyone! ahmed here. Today, i've decided to recommence blogging. About a year ago, i had an active blog although i had to shut it down. I don't actually think of myself as a bad writer, neither i'm a professional. But i've come to realise that writing can be a subtle form of self expression.
+Greetings, fellow readers. It is Ahmed here, and after a year-long hiatus, I have made the decision to resume blogging. Although I do not consider myself a professional writer, I do believe that writing can serve as a subtle form of self-expression.
 
 ## So why write again ?
 
-Ideally, i won't be considering this a form of ordinary writing, but more like a process of thoughts gathering - a way to access my own interiority and create a something out it. 
+Rather than regarding it as ordinary writing, I view it as a means of gathering my thoughts and accessing my own interiority. In his renowned 1959 work, The Sociological Imagination, Wright Mills advised his students to capture their experiences and sort them out in order to use them to guide and test their reflections and shape themselves as intellectual craftsmen.
 
-In his 1959 classic, *The Sociological Imagination*, Wright Mills told students of his discipline:
+On this very blog, I aspire to collect my intellectual pursuits and personal experiences. I will not shy away from using these experiences to connect with works in progress, nor will I hesitate to explore "fringe-thoughts" and various ideas that may result from everyday life. This blog will serve as a platform to contemplate and process experiences, a space for distillation, and a storage unit for my fading memory.
 
-> You'd have to … capture what you experience and sort it out; only in this way can you hope to use it to guide and test your reflection, and in the process shape yourself as an intellectual craftsman.
+While I enjoy sharing my thoughts and engaging with your ideas, I must emphasize that this blog is primarily for me. Nonetheless, I hope you enjoy it as well. As the late Aaron Swartz once said, "It's not for you, it's for me. But I hope you enjoy it anyway."
 
-Here, on this blog, i'll try to gather what i'm doing intellectually and my experiences as a person. On this blog, i won't be afraid to use these experiences and relate them directly to various work in progress. By serving as a check on repetitious work. This blog would also encourage capturing of ‘fringe-thoughts’ and various ideas which may be byproducts of everyday life. It would be a place to contemplate and process experience, a space for distillation and a storage for my atrophying memory.
-
-I like sharing my thoughts and listening to yours and also practicing expressing ideas, but fundamentally this blog is not for you, it’s for me. I hope that you enjoy it anyway -- aaronsw.
-
-Thanks for reading!
+<sup>Thank you for reading!</sup>
