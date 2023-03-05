@@ -8,7 +8,6 @@ import {
   SiGit,
   SiGithub,
   SiGo,
-  SiJava,
   SiMongodb,
   SiNextdotjs as SiNextDotJs,
   SiNodedotjs as SiNodeDotJs,
@@ -139,7 +138,6 @@ export default function Index(props: Props) {
           <ListItem icon={SiNodeDotJs} text="Node.js" />
           <ListItem icon={SiTypescript} text="TypeScript" />
           <ListItem icon={SiGo} text="Golang" />
-          <ListItem icon={SiJava} text="Java" />
           <ListItem icon={SiAmazonaws} text="AWS" />
           <ListItem icon={SiNextDotJs} text="Next.js" />
           <ListItem icon={SiTailwindcss} text="TailwindCSS" />
