@@ -1,0 +1,21 @@
+import CodeBlock from '../components/Codeblocks'
+
+# My MDX page
+
+
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+Checkout my React component:
+          <CodeBlock
+            metastring="{6-8} title=Code snippet title"
+            language="javascript"
+            codeString={`console.log("hello world")
+function sayHi(name) {
+    var message = \`hi \${name}\`
+    return message;
+}`}
+          />

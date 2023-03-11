@@ -19,6 +19,7 @@ import {
   SiDart,
   SiPython,
   SiMysql,
+  SiRss
 } from "react-icons/si";
 import type { Data as LanyardData, LanyardResponse } from "use-lanyard";
 import { LanyardError, useLanyard } from "use-lanyard";
@@ -29,12 +30,17 @@ import { useGitHubPinnedRepos } from "../hooks/github";
 import Age from "../util/time";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Link from "next/link";
+import { Blog, getAllContent } from "@/util/generate-blog";
+import { getRssFeed } from "./rss";
 dayjs.extend(relativeTime);
 
 type Props = {
   pinnedRepos: PinnedRepo[];
   lanyard: LanyardData;
+  blog: Blog[];
 };
+
+
 
 export default function Index(props: Props) {
   const { data: projects = props.pinnedRepos } =
@@ -48,7 +54,7 @@ export default function Index(props: Props) {
     <>
       <div className="space-y-4">
         <div className="flex items-center space-x-3">
-          <a
+          <Link
             href="https://github.com/ahmedsaheed"
             target="_blank"
             rel="noreferrer"
@@ -56,41 +62,21 @@ export default function Index(props: Props) {
           >
             <SiGithub className="h-7 w-7" />
             <span className="sr-only">GitHub Profile</span>
-          </a>
-
-          <a
-            href="https://twitter.com/helloahmed_"
+          </Link>
+          <Link
+            href="/rss.xml"
             target="_blank"
             rel="noreferrer"
-            aria-label="Twitter Profile"
+            aria-label="Rss Feed"
           >
-            <SiTwitter className="h-7 w-7" />
-            <span className="sr-only">Twitter Profile</span>
-          </a>
+            <SiRss className="h-5 w-7" />
+            <span className="sr-only">Rss</span>
+          </Link>
 
-          {/* {lanyard && (
-            <p className="inline-flex items-center space-x-2">
-              <a
-                target="_blank"
-                href="https://en.wikipedia.org/wiki/Dublin"
-                rel="noreferrer"
-                className="flex items-center rounded-full bg-neutral-200 px-2 pr-3 text-neutral-600 no-underline transition-colors dark:bg-neutral-700 dark:text-white dark:text-opacity-50 dark:hover:bg-neutral-800"
-              >
-                <span>
-                  <HiOutlineLocationMarker className="inline dark:text-white" />
-                  &nbsp;
-                </span>
-
-                <span className="-mb-0.5">Dublin, IE &nbsp;</span>
-
-                <span className="-mb-0.5 ml-1 block h-[6px] w-[6px] animate-pulse rounded-full bg-neutral-600 dark:bg-white" />
-              </a>
-            </p>
-          )} */}
         </div>
 
         <h1 className="text-3xl font-bold sm:text-4xl md:text-6xl">
-          Hey, I'm <span className="text-blue-700 dark:text-white">Ahmed.</span>{" "}
+          Hi there!  
         </h1>
 
         <p className="opacity-80">
@@ -107,9 +93,9 @@ export default function Index(props: Props) {
         <h1 className="text-2xl font-bold sm:text-3xl">What do I do? </h1>
         <p className="opacity-80">
           At present, I find myself interning at{" "}
-          <a href="https://pos.toasttab.com/" target="_blank" rel="noreferrer">
+          <Link href="https://pos.toasttab.com/" target="_blank" rel="noreferrer">
             Toast Inc
-          </a>{" "}
+          </Link>{" "}
           as a software engineer, delving into the intricacies of human computer
           interaction. Beyond my professional pursuits, I devote the majority of
           my time to honing my craft in software interface design and refining
@@ -274,9 +260,21 @@ export const getStaticProps: GetStaticProps<Props> = async function () {
   if ("error" in body) {
     throw new LanyardError(request, response, body);
   }
+  const blog = getAllContent("blog", [
+    "slug",
+    "content",
+    "backlinks",
+    "title",
+    "description",
+    "date",
+])
+
+getRssFeed({blog})
+
+
 
   return {
-    props: { pinnedRepos, lanyard: body.data },
+    props: { pinnedRepos, lanyard: body.data, blog },
     revalidate: 120,
   };
 };

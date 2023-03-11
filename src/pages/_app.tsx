@@ -22,7 +22,12 @@ import { fetcher } from "../util/fetcher";
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
+import { MDXProvider } from '@mdx-js/react'
 
+const components = {
+    a: (props: any) => <a {...props} target="_blank" rel="noopener noreferrer" />,
+    h1: (props: any) => <h1 className="text-3xl font-bold" {...props} />,
+    }
 type PageProps = {
   lanyard?: unknown;
   pinnedRepos?: unknown;
@@ -182,8 +187,11 @@ export default function App({
               exit={{ opacity: 0 }}
             >
               <main className="mx-auto max-w-3xl space-y-12 md:py-24">
+
+                <MDXProvider components={components}>
                 <Component {...pageProps} />
                 <Analytics />
+                </MDXProvider>
               </main>
 
               <footer className="mx-auto mt-20 max-w-3xl border-t-2 border-neutral-900/10 p-4 py-10 opacity-50 dark:border-white/10  select-none">
