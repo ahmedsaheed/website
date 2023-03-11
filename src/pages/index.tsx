@@ -75,7 +75,7 @@ export default function Index(props: Props) {
 
         </div>
 
-        <h1 className="text-3xl font-bold sm:text-4xl md:text-6xl">
+        <h1 className="text-3xl font-bold sm:text-4xl md:text-4xl">
           Hi there!  
         </h1>
 
