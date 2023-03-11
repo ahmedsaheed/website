@@ -1,9 +1,7 @@
 import { Feed } from "feed"
 import { Blog } from "../util/generate-blog"
 import { getAllContent } from "../util/generate-blog"
-import { GetServerSideProps, GetStaticProps } from "next"
-import fs from "fs"
-import path from "path"
+import { GetServerSideProps } from "next"
 var MarkdownIt = require('markdown-it'),
     md = new MarkdownIt();
 
@@ -61,25 +59,6 @@ var MarkdownIt = require('markdown-it'),
 
     return feed.rss2()
 }
-
-// export const getStaticProps: GetStaticProps = async () => {
-//     const blog = getAllContent("blog", [
-//         "slug",
-//         "content",
-//         "backlinks",
-//         "title",
-//         "description",
-//         "date",
-//     ])
-
-//     const rss = getRssFeed({ blog })
-
-//     return {
-//         props: {
-//             blog,
-//         },
-//     }
-// }
 
 export const getServerSideProps: GetServerSideProps = async () => {
     const blog = getAllContent("blog", [
