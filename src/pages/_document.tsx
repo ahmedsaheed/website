@@ -27,7 +27,7 @@ export default class DocumentStruct extends Document {
 						rel="stylesheet"
 					/>
 				</Head>
-				<body>
+				<body className='tk-brandon-grotesque'>
 					<Main />
 					<NextScript />
 					<script async src="/theme.js" />

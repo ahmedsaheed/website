@@ -37,8 +37,8 @@ export default function BlogPosts({ blog }: { blog: Blog }) {
         ></script>
       </Head>
       <main className="prose blog dark:prose-invert">
-      <p className="">{new Date(blog.date).toDateString()}</p>
-      <h1 className="">{blog.title}</h1>
+      <h1 className="mb-1">{blog.title}</h1>
+      <p className="blog-date mt-1">{new Date(blog.date).toDateString()}</p>
       </main>
       <AnimatePresence>
       <motion.main

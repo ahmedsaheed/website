@@ -68,7 +68,7 @@ export default function Index(props: Props) {
             <span className="sr-only">Twitter Profile</span>
           </a>
 
-          {lanyard && (
+          {/* {lanyard && (
             <p className="inline-flex items-center space-x-2">
               <a
                 target="_blank"
@@ -86,7 +86,7 @@ export default function Index(props: Props) {
                 <span className="-mb-0.5 ml-1 block h-[6px] w-[6px] animate-pulse rounded-full bg-neutral-600 dark:bg-white" />
               </a>
             </p>
-          )}
+          )} */}
         </div>
 
         <h1 className="text-3xl font-bold sm:text-4xl md:text-6xl">
@@ -98,7 +98,7 @@ export default function Index(props: Props) {
           <span suppressHydrationWarning>
             <Age />
           </span>{" "}
-          year old software engineer based in Dublin. My passion lies in
+          year old undergrad studying at Griffith College Dublin. My passion lies in
           crafting streamlined and user-centric web and mobile experiences.
         </p>
       </div>
@@ -108,7 +108,7 @@ export default function Index(props: Props) {
         <p className="opacity-80">
           At present, I find myself interning at{" "}
           <a href="https://pos.toasttab.com/" target="_blank" rel="noreferrer">
-            Toast
+            Toast Inc
           </a>{" "}
           as a software engineer, delving into the intricacies of human computer
           interaction. Beyond my professional pursuits, I devote the majority of

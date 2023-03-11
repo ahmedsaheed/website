@@ -2,7 +2,7 @@ import "nprogress/nprogress.css";
 import "react-tippy/dist/tippy.css";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
-import "../../public/fonts/general-sans/css/general-sans.css";
+import "../../public/fonts/brandon-grotesque/css/brandon-grotesque.css";
 import "highlight.js/styles/atom-one-dark-reasonable.css";
 import { Squash as Hamburger } from "hamburger-react";
 import type { AppProps } from "next/app";
@@ -65,8 +65,6 @@ export default function App({
     }
 
     setMobileMenuOpen(false);
-
-    void new Audio("/pop.mp3").play().catch(() => null);
   }, [router.pathname]);
 
   useEffect(() => {
@@ -206,7 +204,7 @@ export default function App({
 }
 
 const navlinkClassname =
-  "block py-3 font-mono text-lg dark:hover:text-white no-underline dark:sm:hover:bg-white/10 rounded-md sm:inline-block sm:px-5 sm:text-sm sm:font-normal sm:bg-white/0 sm:hover:bg-neutral-900/5 sm:rounded-full";
+  "block py-3 font-sans text-lg dark:hover:text-white no-underline dark:sm:hover:bg-white/10 rounded-md sm:inline-block sm:px-5 sm:text-sm sm:font-normal sm:bg-white/0 sm:hover:bg-neutral-900/5 sm:rounded-full user-select-none";
 
 function NavLink(props: {
   children: ReactNode;

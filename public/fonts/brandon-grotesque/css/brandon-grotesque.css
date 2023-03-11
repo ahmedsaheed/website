@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'brandon-grotesque';
+	src: url('../Brandon_reg.otf') format("opentype"),
+		url('../Brandon_reg_it.otf') format("opentype");
+	
+	font-weight: 200 700;
+	font-display: swap;
+	font-style: normal;
+}

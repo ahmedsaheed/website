@@ -9,14 +9,14 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			mono: ['"DM Mono"', 'monospace'],
-			sans: ['"GeneralSans-Variable"', ...defaults.fontFamily.sans],
+			sans: ['"brandon-grotesque"', 'sans-serif'],
 		},
 		fontWeight: {
 			light: 300,
 			medium: 500,
 		},
 	},
-	plugins: [],
+	// plugins: [],
 
 	plugins: [require('@tailwindcss/typography')],
 };
