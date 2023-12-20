@@ -1,84 +1,81 @@
-import { Feed } from "feed"
-import { Blog } from "../util/generate-blog"
-import { getAllContent } from "../util/generate-blog"
-import { GetServerSideProps } from "next"
+import { Feed } from 'feed'
+import { Blog } from '../util/generate-blog'
+import { getAllContent } from '../util/generate-blog'
+import { GetServerSideProps } from 'next'
 var MarkdownIt = require('markdown-it'),
-    md = new MarkdownIt();
+    md = new MarkdownIt()
 
- export function getRssFeed ({ blog }: { blog: Blog[] })  {
+export function getRssFeed({ blog }: { blog: Blog[] }) {
     const date = new Date()
     const feed = new Feed({
-        title: "Ahmed Saheed's Blog",
-        description: "Ahmed Saheed's Blog",
-        id: "https://saheed.codes/",
-        link: "https://saheed.codes/",
-        language: "en",
-        copyright: `© Ahmed Saheed ${date.getFullYear()}`,
+        title: "Ahmed Saheed's RSS Feed",
+        description: "an rss feed for ahmed's blog posts",
+        id: 'https://helloahmed.me/',
+        link: 'https://helloahmed.me/',
+        language: 'en',
+        copyright: `Copyright © Ahmed Saheed ${date.getFullYear()}`,
         updated: date,
-        generator: "Feed",
+        generator: 'Feed',
         feedLinks: {
-            json: "https://www.saheed.codes/",
-            atom: "https://www.saheed.codes/",
+            json: 'https://helloahmed.me/',
+            atom: 'https://helloahmed.me/',
         },
         author: {
-            name: "Ahmed Saheed",
-            email: "ahmedsaheed2@outlook.com",
-            link: "https://saheed.codes/TIL",
+            name: 'Ahmed Saheed',
+            email: 'ahmedsaheed2@outlook.com',
+            link: 'https://helloahmed.me/',
         },
     })
 
-    blog.sort((a, b)  => new Date(b.date).getTime() - new Date(a.date).getTime())
-       .forEach( (post) => {
-        
-        feed.addItem ({
+    blog.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    ).forEach(post => {
+        feed.addItem({
             title: post.title,
-            id: `https://saheed.codes/blog/${post.slug}`,
-            link: `https://saheed.codes/blog/${post.slug}`,
+            id: `https://helloahmed.me/blog/${post.slug}`,
+            link: `https://helloahmed.me/blog/${post.slug}`,
             description: post.description,
-             content:  md.render(post.content),
+            content: md.render(post.content),
             author: [
                 {
-                    name: "Ahmed Saheed",
-                    email: "ahmedsaheed2@outlook.com",
-                    link: "https://saheed.codes/",
+                    name: 'Ahmed Saheed',
+                    email: 'ahmedsaheed2@outlook.com',
+                    link: 'https://helloahmed.me/',
                 },
             ],
             date: new Date(post.date),
-            
         })
-
     })
 
-    feed.addCategory("Blog")
+    feed.addCategory('Blog')
 
     feed.addContributor({
-        name: "Ahmed Saheed",
-        email: "ahmedsaheed2@outlook.com",
-        link: "https://saheed.codes/",
+        name: 'Ahmed Saheed',
+        email: 'ahmedsaheed2@outlook.com',
+        link: 'https://helloahmed.me/',
     })
 
     return feed.rss2()
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const blog = getAllContent("blog", [
-      "slug",
-      "content",
-      "backlinks",
-      "title",
-      "description",
-      "date",
-    ]);
-  
-    const rss = getRssFeed({ blog });
-  
+    const blog = getAllContent('blog', [
+        'slug',
+        'content',
+        'backlinks',
+        'title',
+        'description',
+        'date',
+    ])
+
+    const rss = getRssFeed({ blog })
+
     return {
-      props: {
-        rss,
-      },
-    };
-  };
-  
+        props: {
+            rss,
+        },
+    }
+}
 
 export default function Rss() {
     return null
