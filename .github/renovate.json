@@ -1,0 +1,8 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended"],
+	"commitMessagePrefix": "⬆️",
+	"commitMessageTopic": "{{depName}}",
+	"branchPrefix": "deps/",
+	"dependencyDashboard": false
+}
