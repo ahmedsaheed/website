@@ -8,7 +8,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@formkit/auto-animate": "^0.8.1",
+    "@formkit/auto-animate": "^0.9.0",
     "@tabler/icons-react": "2.47.0",
     "@tailwindcss/typography": "^0.5.10",
     "@vercel/analytics": "^1.1.1",
